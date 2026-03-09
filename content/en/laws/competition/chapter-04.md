@@ -2,7 +2,7 @@
 heading: "Chapter 4"
 title: "Mergers And Acquisitions"
 description: "The Commission shall have the power to review mergers and acquisitions based on factors deemed relevant by the Commission"
-image: "/covers/competition.jpg"
+c: "#1e4aaa"
 weight: 10
 ---
 

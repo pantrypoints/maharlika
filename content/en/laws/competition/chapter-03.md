@@ -2,7 +2,7 @@
 heading: "Chapter 3"
 title: "Prohibited Acts"
 description: ""
-image: "/covers/competition.jpg"
+c: "#1e4aaa"
 weight: 8
 ---
 

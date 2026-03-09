@@ -2,7 +2,7 @@
 heading: "Chapter 5"
 title: "DISPOSITION OF CASES"
 description: "The Commission shall have the power to review mergers and acquisitions based on factors deemed relevant by the Commission"
-image: "/covers/competition.jpg"
+c: "#1e4aaa"
 weight: 10
 ---
 

@@ -161,3 +161,6 @@ BLUE #1e4aaa;
   {{ if $bgStyle }}
   style="{{ $bgStyle | safeCSS }}"
   {{ end }}
+
+
+c: "#1e4aaa"

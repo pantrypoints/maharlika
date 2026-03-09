@@ -2,7 +2,7 @@
 heading: "Chapter 1"
 title: "General Provisions"
 description: ""
-image: "/covers/competition.jpg"
+c: "#1e4aaa"
 weight: 4
 ---
 

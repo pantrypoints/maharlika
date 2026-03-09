@@ -2,7 +2,7 @@
 heading: "Chapter 2"
 title: "Philippine Competition Commission"
 description: ""
-image: "/covers/competition.jpg"
+c: "#1e4aaa"
 weight: 6
 ---
 

@@ -1,8 +1,8 @@
 ---
 heading: "Chapter 6"
-title: "FINES AND PENALTIES"
+title: "Fines And Penalties"
 description: "The Commission shall have the power to review mergers and acquisitions based on factors deemed relevant by the Commission"
-image: "/covers/competition.jpg"
+c: "#1e4aaa"
 weight: 14
 ---
 
