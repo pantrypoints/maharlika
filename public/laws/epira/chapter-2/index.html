@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" id="html-root">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>TRANSCO | Maharlikanism</title>
+<meta name="description" content="EPIRA Republic Act 9136">
+<meta name="author" content="Maharlikanism">
+
+
+<meta property="og:title" content="TRANSCO">
+<meta property="og:description" content="EPIRA Republic Act 9136">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/laws/epira/chapter-2/">
+<meta property="og:image" content="http://localhost:1313/covers/epira.jpg">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TRANSCO">
+<meta name="twitter:description" content="EPIRA Republic Act 9136">
+
+
+<link rel="canonical" href="http://localhost:1313/laws/epira/chapter-2/">
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" >
+
+
+<script>
+  (function() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+
+<link rel="icon" type="image/png" href="/icons/favicon.svg">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+
+
+
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/laws/epira/chapter-2/">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="min-h-screen flex flex-col"><nav class="navbar" id="navbar">
+
+  
+  <a href="/" class="flex items-center gap-3 shrink-0">
+    <div class="w-9 h-9 flex items-center justify-center">
+      <img src="/icons/sun.svg">
+    </div>
+    <span class="font-cinzel font-bold text-gold-300 text-lg tracking-widest hidden sm:block">MAHARLIKA</span>
+  </a>
+
+  
+  <div class="hidden lg:flex items-center gap-6 xl:gap-8 mx-6">
+    
+    <div class="nav-item relative">
+      <a href="/advocacy/" class="nav-link">Advocacy</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/culture/" class="nav-link">Culture</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/governance/" class="nav-link">Governance</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/history/" class="nav-link">History</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/infrastructure/" class="nav-link">Infrastructure</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/laws/" class="nav-link">Laws</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/metaphysics/" class="nav-link">Metaphysics</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/politicians/" class="nav-link">Politicians</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/writers/" class="nav-link">Writers</a>
+    </div>
+    
+  </div>
+
+  
+  <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
+
+    
+    <div class="search-box relative hidden md:block" id="search-container">
+      <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-gold-300/60 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input w-36 xl:w-52 focus:w-64 transition-all duration-300"
+        placeholder="Search articles…"
+        autocomplete="off"
+        aria-label="Search"
+      >
+      <div id="search-results" class="hidden"></div>
+    </div>
+
+    
+    <button
+      id="music-btn"
+      class="relative flex items-center gap-1 px-2 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle background music"
+      title="Toggle music"
+    >
+      <svg id="music-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span class="music-playing hidden" id="music-bars">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+    <audio id="bg-music" loop preload="none">
+      <source src="/music.mp3" type="audio/mpeg">
+    </audio>
+
+    
+    <button
+      id="theme-toggle"
+      class="p-2 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle dark mode"
+    >
+      
+      <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      
+      <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+
+    
+    <div class="relative" id="lang-dropdown">
+      <button
+        id="lang-btn"
+        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200 text-sm font-medium"
+        aria-expanded="false"
+        aria-haspopup="true"
+      >
+        <span>🇺🇸</span>
+        <span class="hidden sm:block uppercase text-xs tracking-wider font-cinzel">en</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div id="lang-menu" class="nav-dropdown min-w-36" role="menu">
+        
+        
+        <div class="flex items-center gap-2 px-4 py-2.5 text-sm bg-royal-800/50" aria-current="true">
+          <span>🇺🇸</span>
+          <span class="font-cinzel text-xs tracking-wider uppercase text-gold-400">en</span>
+          <span class="text-gold-300/60 ml-1">English</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <button
+      id="mobile-menu-btn"
+      class="lg:hidden p-2 text-gold-300 hover:text-gold-100 rounded-lg hover:bg-royal-800 transition-all"
+      aria-label="Open menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+
+  </div>
+</nav>
+<main class="flex-1 pt-16">
+
+
+<div class="article-header" >
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
+  <div class="relative max-w-4xl mx-auto px-4">
+    
+    <nav class="breadcrumb mb-6 flex-wrap justify-center" aria-label="Breadcrumb">
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  </a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Maharlikanism</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/laws/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Laws</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/laws/epira/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">EPIRA Simplified</a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <span class="text-gold-300/80 font-cinzel text-xs uppercase tracking-wider">TRANSCO</span>
+  
+</nav>
+
+    
+    
+    <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-gold-400 border border-gold-500/30 px-4 py-2 rounded-full inline-block mb-4">
+      Chapter 2
+    </span>
+    
+    <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">TRANSCO</h1>
+    <div class="gold-divider"></div>
+    
+    <p class="text-gold-100/80 text-xl mt-4 font-crimson italic max-w-2xl mx-auto">EPIRA Republic Act 9136</p>
+    
+    <div class="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gold-100/50">
+      
+      
+      <span class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        12 min read
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    
+    
+    <aside class="lg:w-72 shrink-0">
+      <div class="lg:sticky lg:top-24">
+        <div class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-5">
+          <h3 class="font-cinzel text-sm font-semibold text-[var(--color-primary)] tracking-widest uppercase mb-4">
+            Contents
+          </h3>
+          <nav class="toc text-sm text-[var(--color-muted)]" id="toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#section-5-organization">Section 5. Organization</a></li>
+    <li><a href="#section-6-generation">Section 6. Generation</a></li>
+    <li><a href="#section-7-transmission-sector">Section 7 Transmission Sector</a></li>
+    <li><a href="#section-8-creation-of-the-national-transmission-company">Section 8. Creation of the National Transmission Company</a></li>
+    <li><a href="#section-9-functions-and-responsibilities">Section 9. Functions and Responsibilities</a></li>
+    <li><a href="#section-10-corporate-powers-of-the-tansco">Section 10. Corporate Powers of the TANSCO</a></li>
+    <li><a href="#section-11-transco-board-of-directors">Section 11. TRANSCO Board of Directors</a></li>
+    <li><a href="#section-12-powers-and-duties-of-the-board">Section 12. Powers and Duties of the Board</a></li>
+    <li><a href="#section-13-board-meetings">Section 13. Board Meetings</a></li>
+    <li><a href="#section-14-board-per-diems-and-allowances">Section 14. Board Per Diems and Allowances</a></li>
+    <li><a href="#section-15-quorum">Section 15. Quorum</a></li>
+    <li><a href="#section-16-powers-of-the-transco-president">Section 16. Powers of the TRANSCO President</a></li>
+    <li><a href="#section-17-exemption-from-the-salary-standardization-law">Section 17. Exemption from the Salary Standardization Law</a></li>
+    <li><a href="#section-18-profits">Section 18. Profits</a></li>
+    <li><a href="#section-19-transmission-charges">Section 19. Transmission Charges</a></li>
+    <li><a href="#section-20-transco-related-businesses">Section 20. TRANSCO Related Businesses</a></li>
+    <li><a href="#section-21-transco-privatization">Section 21. TRANSCO Privatization</a></li>
+  </ul>
+</nav>
+          </nav>
+        </div>
+        
+        
+        <div class="mt-6 text-center">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-XXXXXXXXXX"
+               data-ad-slot="SIDEBAR_AD_SLOT"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        
+      </div>
+    </aside>
+    
+
+    
+    <article class="flex-1 min-w-0">
+      
+      
+      <div class="mb-8 rounded-2xl overflow-hidden shadow-xl">
+        <img src="/covers/epira.jpg" alt="TRANSCO" class="w-full object-cover max-h-80">
+      </div>
+      
+
+      
+      <div class="prose-maharlika">
+        <h2 id="section-5-organization">Section 5. Organization</h2>
+<p>The electric power industry shall be divided into 4 sectors:</p>
+<ul>
+<li>generation</li>
+<li>transmission</li>
+<li>distribution</li>
+<li>supply</li>
+</ul>
+<h2 id="section-6-generation">Section 6. Generation</h2>
+<p>The generation of electric power<!-- , a business affected with public interest, --> shall be competitive and open.</p>
+<p>Any new generation company must secure:</p>
+<ul>
+<li>from the ERC a certificate of compliance.</li>
+<li>health, safety and environmental clearances from the appropriate government agencies under existing laws.</li>
+</ul>
+<p>Any law to the contrary notwithstanding, power generation shall not be considered a public utility operation.</p>
+<p>For this purpose, any person or entity engaged or which shall engage in power generation and supply of electricity shall not be required to secure a national franchise.</p>
+<p>Upon implementation of retail competition and open access, the prices charged by a generation company for the supply of electricity shall not be subject to regulation by the ERC except as otherwise provided in this Act.</p>
+<p>Pursuant to the objective of lowering electricity rates to end-users, sales of generated power by
+generation companies shall be value added tax zero-rated.</p>
+<p>The ERC shall, in determining the existence of market power abuse or anti-competitive behavior, require from generation companies the submission of their financial statements.</p>
+<h2 id="section-7-transmission-sector">Section 7 Transmission Sector</h2>
+<p>The transmission of electric power shall be regulated common electricity carries business, subject to the ratemaking powers of the ERC.</p>
+<p>The ERC shall set the standards of the voltage transmission that shall distinguish the transmission from the subtransmission assets.</p>
+<p>Pending the issuance of such new standards, the distinction between the transmission and subtransmission assets shall be as follows:</p>
+<ul>
+<li>230 kilovolts and above in the Luzon grid</li>
+<li>69 kilovolts and above in the Visayas and in the isolated distribution systems</li>
+<li>138 kilovolts and above in the Mindanao Grid</li>
+</ul>
+<p>Provided, That for the Visayas and the isolated distribution system, should the 69 kilovolt line not form part of the main transmission grid and be directly connected to the substation of the distribution utility, it shall form part of the subtransmission system.</p>
+<h2 id="section-8-creation-of-the-national-transmission-company">Section 8. Creation of the National Transmission Company</h2>
+<p>TRANSCO is created to assume the electrical transmission function of NAPOCOR.</p>
+<ul>
+<li>It shall be wholly owned by PSALM</li>
+<li>It shall plan, construct, and centrally operate and maintain its high voltage transmission facilities, including
+grid interconnections and ancillary services.</li>
+<li>Within 6 months from the effectivity of this Act, the transmission and subtransmission facilities of NAPOCOR and all other assets related to transmission operations, including the nationwide franchise of NAPOCOR for the operation of the transmission system and the grid, shall be transferred to the TRANSCO.</li>
+</ul>
+<p>The subtransmission functions and assets shall be segregated from the transmission functions, assets and liabilities for transparency and disposal as long as:</p>
+<ul>
+<li>the subtransmission assets shall be operated and maintained by TRANSCO until their disposal to qualified distribution utilities which are in a position to take over the responsibility for operating, maintaining, upgrading, and expanding said assets.</li>
+</ul>
+<p>All transmission and subtransmission related liabilities of NAPOCOR shall be transferred to and assumed by the PSALM Corp.</p>
+<p>TRANSCO shall negotiate with and thereafter transfer such functions, assets, and associated liabilities to the qualified distribution utility or utilities connected to such subtransmission facilities notlater than two (2) years from the effectivity of this Act or the start of open access, whichever comes earlier:</p>
+<p>Provided, That in the case of electric cooperatives, the TRANSCO shall grant concessional financing over a period of twenty (20) years: Provided, however, That the installment payments to TRANSCO for the acquisition of subtransmission facilities shall be given first priority by the electric cooperatives out of the net income derived from such facilities. The TRANSCO shall determine the disposal value of the subtransmission assets based on the revenue potential of such assets.</p>
+<p>In case of disagreement in valuation, procedures, ownership participation and other issues, the ERC shall resolve such issues.</p>
+<p>The take over by a distribution utility of any subtransmission asset shall not cause a diminution of service and quality to the end-users. Where there are two or more connected distribution utilities, the consortium or juridical entity shall be formed by and composed of all of them and thereafter shall be granted a franchise to operate the subtransmission asset by the ERC.</p>
+<p>The subscription rights of each distribution utility involved shall be proportionate to their load requirements unless otherwise agreed by the parties.</p>
+<p>Aside from the PSALM Corp., TRANSCO and connected distribution utilities, no third party shall be allowed ownership or management participation, in whole or in part, in such subtransmission entity.</p>
+<p>The TRANSCO may exercise the power of eminent domain subject to the requirements of the Constitution and existing laws.</p>
+<p>Except as provided herein, no person, company or entity other than the TRANSCO shall own any transmission facilities.</p>
+<p>Prior to the transfer of the transmission functions by NAPOCOR to TRANSCO, and before thepromulgation of the Grid Code, ERC shall ensure that NAPOCOR shall provide to all electric power industry participants open and non-discriminatory access to its transmission system. Any violation thereof shall be subject to the fines and penalties imposed herein.</p>
+<h2 id="section-9-functions-and-responsibilities">Section 9. Functions and Responsibilities</h2>
+<p>TRANSCO shall:</p>
+<ul>
+<li>be the system operator of the nationwide electrical transmission and subtransmission system</li>
+<li>provide open and non-discriminatory access to its transmission system to all electricity users</li>
+<li>ensure and maintain the reliability, adequacy, security, stability and integrity of the nationwide electrical grid as set  in a Grid Code to be adopted by the ERC within 6 months from the effectivity of this Act</li>
+<li>improve and expand its transmission facilities, consistent with the Grid Code and the Transmission Development Plan (TDP) to be promulgated pursuant to this Act, to adequately serve generation companies, distribution utilities and suppliers requiring transmission service and/or ancillary services through the transmission system: Provided, That TRANSCO shall submit any plan for expansion or improvement of its facilities for approval by the ERC</li>
+<li>the grid operator of the TRANSCO shall provide central dispatch of all generation facilities connected, directly or indirectly, to the transmission system in accordance with the dispatch schedule submitted by the market operator, taking into account outstanding bilateral contracts</li>
+<li>TRANSCO shall undertake the preparation of the TDP.</li>
+</ul>
+<p>In the preparation of the TDP, TRANSCO shall consult the other participants of the electric power industry such as the generation companies, distribution utilities, and the electricity end-users.</p>
+<p>The TDP shall be submitted to the DOE for integration with the Power Development Program and the Philippine Energy Plan, provided for in Republic Act No. 7638 otherwise known as ‘the Department of Energy Act of 1992”.</p>
+<p>A generation company may develop and own or operate dedicated point-to-point limited transmission facilities that are consistent with the TDP as long as:</p>
+<ul>
+<li>such facilities only connect to the transmission system and are used solely by the generating facility subject to prior authorization by the ERC</li>
+<li>in the event that such assets are required for competitive purposes, its ownership shall be transferred to the TRANSCO at a fair market price</li>
+<li>in the case of disagreement on the fair market price, the ERC shall determine the fair market value of the asset</li>
+</ul>
+<h2 id="section-10-corporate-powers-of-the-tansco">Section 10. Corporate Powers of the TANSCO</h2>
+<p>As a corporate entity, TRANSCO shall have the following corporate powers:</p>
+<ul>
+<li>have continuous succession under its corporate name until otherwise provided by law</li>
+</ul>
+<!-- - adopt and use a corporate seal and to change, alter or modify the same, if necessary; -->
+<ul>
+<li>can sue and be sued</li>
+<li>enter into a contract and execute any instrument</li>
+<li>borrow funds private or public, foreign or domestic and issue bonds and other evidence of indebtedness as long as:
+<ul>
+<li>it is approved by the President upon recommendation of the Secretary of Finance</li>
+<li>foreign loans shall be obtained in accordance with existing laws, rules and regulations of the Bangko Sentral ng Pilipinas</li>
+</ul>
+</li>
+<li>maintain a provident fund which consists of contributions made by both the TRANSCO and its officials and employees and their earnings for the payment of benefits to such officials and employees or their heirs under such terms and conditions as it may prescribe</li>
+<li>do any act necessary or proper to carry out the purpose for which it is created, or which, from time to time, may be declared by the TRANSCO Board as necessary, useful, incidental or auxilliary to accomplish its purposes and objectives</li>
+<li>exercise all the powers of a corporation under the corporation law insofar as they are not inconsistent with this Act.</li>
+</ul>
+<h2 id="section-11-transco-board-of-directors">Section 11. TRANSCO Board of Directors</h2>
+<p>All TRANSCO powers is with the Board of Directors with:</p>
+<ul>
+<li>1 Chairman as the Secretary of the Department of Finance (DOF)</li>
+<li>6 members serving for 6 years
+<ul>
+<li>the Secretary of the DOE</li>
+<li>the Secretary of DENR</li>
+<li>the President of TRANSCO</li>
+<li>(3) members appointed by the President each representing Luzon, Visayas and Mindanao.</li>
+</ul>
+</li>
+</ul>
+<p>All members of the Board shall be professionals of recognized competence and expertise in the fields of engineering, finance, economics, law or business management.</p>
+<p>No member of the Board or any of his relatives within the fourth civil degree of consanguinity or affinity shall have any interest, either as investor, officer or director, in any generation company or distribution utility or other entity engaged in transmitting, generating and supplying electricity specified by ERC.</p>
+<h2 id="section-12-powers-and-duties-of-the-board">Section 12. Powers and Duties of the Board</h2>
+<p>The following are the powers of the Board:</p>
+<ul>
+<li>provide strategic direction for TRANSCO</li>
+<li>formulate medium and long-term strategies pursuant to the vision, mission, and objectives of TRANSCO</li>
+<li>develop and adopt policies and measures for the efficient and effective management and operation of TRANSCO;</li>
+<li>To organize, re-organize, and determine the organizational structure and staffing patterns of
+TRANSCO; abolish and create offices and positions; fix the number of its officers and
+employees; transfer and re-align such officers and personnel; fix their compensation,
+allowance, and benefits;</li>
+<li>fix the compensation of the President of TRANSCO and to appoint and fix the compensation of other corporate officers;
+(e) For cause, to suspend or remove any corporate officer appointed by the Board;
+(f) To adopt and set guidelines for the employment of personnel on the basis of merit, technical
+competence, and moral character; and
+(g) Any provisions of the law to the contrary notwithstanding, to write-off bad debts.</li>
+</ul>
+<h2 id="section-13-board-meetings">Section 13. Board Meetings</h2>
+<p>The Board shall meet as often as may be necessary upon the call of the Chairman of the Board or by a majority of the Board members.</p>
+<h2 id="section-14-board-per-diems-and-allowances">Section 14. Board Per Diems and Allowances</h2>
+<p>The members of the Board shall receive per diem for each regular or special meeting of the board actually attended by them, and, upon approval of the Secretary of the Department of Finance, such other allowances as the Board may prescribe.</p>
+<h2 id="section-15-quorum">Section 15. Quorum</h2>
+<p>The presence of at least four (4) members of the Board shall constitute a quorum, which shall be necessary for the transaction of any business. The affirmative vote of a majority of the members present in a quorum shall be adequate for the approval of any resolution, decision or order, except when the Board shall otherwise agree that a greater vote is required.</p>
+<h2 id="section-16-powers-of-the-transco-president">Section 16. Powers of the TRANSCO President</h2>
+<p>The TRANSCO President shall be appointed by the President.</p>
+<p>In the absence of the Chairman, the President shall preside over board meetings. The TRANSCO President shall be the CEO of TRANSCO and shall have the following powers:</p>
+<ul>
+<li>execute and administer the policies and measures approved by the Board, and take responsibility for the efficient discharge of management functions</li>
+<li>oversee the preparation of the budget of TRANSCO</li>
+<li>direct and supervise the operation and internal administration of TRANSCO and, for this purpose, may delegate some or any of his administrative responsibilities and duties to other officers of TRANSCO;(d) Subject to the guidelines and policies set up by the Board, to appoint and fix the number and compensation of subordinate officials and employees of TRANSCO; and for cause, to remove, suspend, or otherwise discipline any subordinate employee of TRANSCO</li>
+<li>submit an annual report to the Board on the activities and achievements of TRANSCO at the close of each fiscal year and upon approval thereof, submit a copy to the President of the Philippines and to such other agencies as may be required by law</li>
+<li>represent TRANSCO in all dealings and transactions with other offices, agencies, and instrumentalities of the Government and with all persons and other entities, private or public, domestic or foreign</li>
+<li>exercise such other powers and duties as may be vested in him by the Board from time to time.</li>
+</ul>
+<h2 id="section-17-exemption-from-the-salary-standardization-law">Section 17. Exemption from the Salary Standardization Law</h2>
+<p>The salaries and benefits of employees in the TRANSCO shall be exempt from Republic Act. No. 6758 and shall be fixed by the
+TRANSCO Board.</p>
+<h2 id="section-18-profits">Section 18. Profits</h2>
+<p>The net profit, if any, of TRANSCO shall be remitted to the PSALM Corp. not later than ninety (90) days after the immediately preceding quarter.</p>
+<h2 id="section-19-transmission-charges">Section 19. Transmission Charges</h2>
+<p>The transmission charges of the TRANSCO shall be filed with and approved by the ERC pursuant to Paragraph (f) of Section 43 hereof.</p>
+<h2 id="section-20-transco-related-businesses">Section 20. TRANSCO Related Businesses</h2>
+<p>TRANSCO may engage in any related business which maximizes utilization of its assets: Provided, That a portion of the net income derived from such undertaking utilizing assets which form part of the rate base shall be used to reduce transmission wheeling
+rates as determined by the ERC. Such portion of net income used to reduce the transmission wheeling rates
+shall not exceed fifty percent (50%) of the net income derived from such undertaking.
+Separate accounts shall be maintained for each business undertaking to ensure that the
+transmission business shall neither subsidize in any way such business undertaking nor encumber its
+transmission assets in any way to support such business.</p>
+<h2 id="section-21-transco-privatization">Section 21. TRANSCO Privatization</h2>
+<p>Within six (6) months from the effectivity of this Act, the PSALM Corp. shall submit a plan for the endorsement by the Joint Power Commission and the approval of the President of the Philippines. The President of the Philippines thereafter shall direct PSALM Corp. to award in open competitive bidding, the transmission facilities, including grid interconnections and ancillary services to a qualified party either through an outright sale or a concession contract.</p>
+<p>The buyer/concessionaire shall be responsible for the improvement, expansion, operation, and/or maintenance of its transmission assets and the operation of any related business.</p>
+<p>The award shall result in maximum present value of proceeds to the national government. In case a concession contract is awarded, the concessionaire shall have a contract period of twenty-five (25) years, subject to review and renewal for a
+maximum period of another twenty-five (25) years.</p>
+<p>In any case, the awardee shall comply with the Grid code and the TDP as approved.</p>
+<p>The sale agreement/concession contract shall include, but not limited to, the provision for performance and financial
+guarantees or any other covenants which the national government may require. Failure to comply with such
+obligations shall result in the imposition of appropriate sanctions or penalties by the ERC.
+The awardee shall be financially and technically capable, with proven domestic and./or
+international experience and expertise as a leading transmission system operator. Such experience must be
+with a transmission system of comparable capacity and coverage as the Philippines.SEC. 22. Distribution Sector. – The distribution of electricity to end-users shall be a regulated
+common carrier business requiring a national franchise. Distribution of electric power to all end-users may
+be undertaken by private distribution utilities, cooperatives, local government units presently undertaking
+this function and other duly authorized entities, subject to regulation by the ERC.</p>
+
+      </div>
+
+      
+      <div class="mt-10 pt-6 border-t border-[var(--color-border)]">
+        
+      </div>
+
+      
+      <nav class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Article navigation">
+        
+        
+        <a href="/laws/epira/chapter-3/" class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200 sm:col-start-2">
+          <div class="min-w-0 text-right">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Next</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">Role Of The Department Of Energy</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        
+      </nav>
+
+    </article>
+  </div>
+</div>
+
+
+  </main><footer class="bg-royal-950 text-gold-100/80 py-12 px-4 md:px-8 mt-auto border-t border-gold-700/20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+      
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center">
+            <img src="/icons/sun.svg">
+          </div>
+          <span class="font-cinzel font-bold text-gold-300 text-xl tracking-widest">MAHARLIKA</span>
+        </div>
+        <p class="text-sm leading-relaxed text-gold-100/60">
+          An advocacy to restore the true identity, culture, and socio-economics of Maharlika.
+        </p>
+        
+        
+        <div class="flex items-center gap-4 mt-6">
+          <a href="https://www.facebook.com/maharlikanism/" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@maharlikanism" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+          </a>
+          <a href="mailto:maharlikanism@gmail.com" class="text-gold-400 hover:text-gold-300 transition-colors text-sm flex items-center gap-1" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span class="hidden sm:inline">maharlikanism@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Advocacy</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/advocacy/" class="hover:text-gold-300 transition-colors">Advocacy</a></li>
+          <li><a href="/culture/" class="hover:text-gold-300 transition-colors">Culture</a></li>
+          <li><a href="/governance/" class="hover:text-gold-300 transition-colors">Governance</a></li>
+          <li><a href="/history/" class="hover:text-gold-300 transition-colors">History</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Reference</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/infrastructure/" class="hover:text-gold-300 transition-colors">Infrastructure</a></li>
+          <li><a href="/laws/" class="hover:text-gold-300 transition-colors">Laws</a></li>
+          <li><a href="/metaphysics/" class="hover:text-gold-300 transition-colors">Metaphysics</a></li>
+          <li><a href="/writers/" class="hover:text-gold-300 transition-colors">Writers</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">The Book</h4>
+        
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="block">
+          <img src="/books/towards.jpg" alt="Towards Maharlika" class="w-24 rounded-lg shadow-lg mb-3 hover:scale-105 transition-transform duration-200">
+        </a>
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="btn-gold text-xs px-4 py-2">
+          Get the Book
+        </a>
+        
+      </div>
+
+    </div>
+
+    <div class="border-t border-gold-700/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gold-100/40">
+        © 2026 Maharlikanism. All rights reserved.
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/XXXXXXXX\/XXXXXXXX';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+
+
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  
+  <div id="mobile-menu" role="dialog" aria-modal="true">
+    <button id="mobile-menu-close" class="absolute top-5 right-5 text-gold-100 p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    
+    <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Advocacy
+    </a>
+    
+    <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Culture
+    </a>
+    
+    <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Governance
+    </a>
+    
+    <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      History
+    </a>
+    
+    <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Infrastructure
+    </a>
+    
+    <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Laws
+    </a>
+    
+    <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Metaphysics
+    </a>
+    
+    <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Politicians
+    </a>
+    
+    <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Writers
+    </a>
+    
+    <div class="flex items-center gap-6 mt-4">
+      
+
+
+
+
+
+
+<span class="px-4 py-2 rounded-lg bg-royal-800 text-gold-400 font-cinzel text-sm uppercase tracking-wider border border-gold-500/30">
+  🇺🇸 en
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <script>
+
+const htmlRoot = document.getElementById('html-root');
+const themeToggle = document.getElementById('theme-toggle');
+const themeSun = document.getElementById('theme-sun');
+const themeMoon = document.getElementById('theme-moon');
+
+function updateThemeIcons() {
+  const isDark = htmlRoot.classList.contains('dark');
+  themeSun.classList.toggle('hidden', !isDark);
+  themeMoon.classList.toggle('hidden', isDark);
+}
+
+updateThemeIcons();
+
+themeToggle?.addEventListener('click', () => {
+  const isDark = htmlRoot.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeIcons();
+});
+
+
+const musicBtn = document.getElementById('music-btn');
+const musicAudio = document.getElementById('bg-music');
+const musicIcon = document.getElementById('music-icon');
+const musicBars = document.getElementById('music-bars');
+let isPlaying = false;
+
+musicBtn?.addEventListener('click', () => {
+  if (isPlaying) {
+    musicAudio.pause();
+    musicIcon.classList.remove('hidden');
+    musicBars.classList.add('hidden');
+  } else {
+    musicAudio.play().catch(() => {});
+    musicIcon.classList.add('hidden');
+    musicBars.classList.remove('hidden');
+  }
+  isPlaying = !isPlaying;
+});
+
+
+const langBtn = document.getElementById('lang-btn');
+const langMenu = document.getElementById('lang-menu');
+
+langBtn?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = langMenu.classList.contains('opacity-100');
+  langMenu.classList.toggle('opacity-100', !isOpen);
+  langMenu.classList.toggle('visible', !isOpen);
+  langMenu.classList.toggle('-translate-y-2', isOpen);
+  langMenu.classList.toggle('translate-y-0', !isOpen);
+  langBtn.setAttribute('aria-expanded', String(!isOpen));
+});
+
+document.addEventListener('click', () => {
+  langMenu?.classList.remove('opacity-100', 'visible', 'translate-y-0');
+  langMenu?.classList.add('-translate-y-2');
+  langBtn?.setAttribute('aria-expanded', 'false');
+});
+
+
+const scrollTopBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+  scrollTopBtn?.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+scrollTopBtn?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileClose = document.getElementById('mobile-menu-close');
+
+mobileMenuBtn?.addEventListener('click', () => {
+  mobileMenu.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+mobileClose?.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar?.classList.toggle('shadow-2xl', window.scrollY > 20);
+}, { passive: true });
+
+
+if (typeof lucide !== 'undefined') {
+  lucide.createIcons();
+}
+
+
+(function initSearch() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  if (!input || !results) return;
+
+  let searchIndex = null;
+
+  
+  async function loadIndex() {
+    if (searchIndex) return searchIndex;
+    try {
+      const res = await fetch('\/index.json');
+      searchIndex = await res.json();
+    } catch (e) {
+      searchIndex = [];
+    }
+    return searchIndex;
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  input.addEventListener('focus', loadIndex);
+
+  input.addEventListener('input', async () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q || q.length < 2) {
+      results.classList.add('hidden');
+      results.innerHTML = '';
+      return;
+    }
+    const index = await loadIndex();
+    const matches = index.filter(item =>
+      (item.title && item.title.toLowerCase().includes(q)) ||
+      (item.description && item.description.toLowerCase().includes(q))
+    ).slice(0, 8);
+
+    if (!matches.length) {
+      results.innerHTML = '<div class="px-4 py-3 text-gold-300/60 text-sm">No results found</div>';
+    } else {
+      results.innerHTML = matches.map(item => `
+        <a href="${item.permalink}" class="search-result-item">
+          <div class="font-medium text-sm text-gold-100">${escapeHtml(item.title || '')}</div>
+          ${item.description ? `<div class="text-xs text-gold-300/60 mt-0.5 line-clamp-1">${escapeHtml(item.description)}</div>` : ''}
+        </a>
+      `).join('');
+    }
+    results.classList.remove('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('search-container')?.contains(e.target)) {
+      results.classList.add('hidden');
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      results.classList.add('hidden');
+      input.blur();
+    }
+  });
+})();
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+
+document.getElementById('subscribe-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('[name="email"]').value;
+  const msg = document.getElementById('subscribe-msg');
+  if (msg) {
+    msg.textContent = 'Thank you for subscribing!';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+
+
+document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const msg = document.getElementById('contact-msg');
+  if (msg) {
+    msg.textContent = 'Thank you! We will get back to you soon.';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+</script>
+
+</body>
+</html>

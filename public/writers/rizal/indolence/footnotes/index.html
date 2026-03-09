@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" id="html-root">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Footnotes | Maharlikanism</title>
+<meta name="description" content="An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika">
+<meta name="author" content="Maharlikanism">
+
+
+<meta property="og:title" content="Footnotes">
+<meta property="og:description" content="An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/writers/rizal/indolence/footnotes/">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Footnotes">
+<meta name="twitter:description" content="An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika">
+
+
+<link rel="canonical" href="http://localhost:1313/writers/rizal/indolence/footnotes/">
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" >
+
+
+<script>
+  (function() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+
+<link rel="icon" type="image/png" href="/icons/favicon.svg">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+
+
+
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/writers/rizal/indolence/footnotes/">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="min-h-screen flex flex-col"><nav class="navbar" id="navbar">
+
+  
+  <a href="/" class="flex items-center gap-3 shrink-0">
+    <div class="w-9 h-9 flex items-center justify-center">
+      <img src="/icons/sun.svg">
+    </div>
+    <span class="font-cinzel font-bold text-gold-300 text-lg tracking-widest hidden sm:block">MAHARLIKA</span>
+  </a>
+
+  
+  <div class="hidden lg:flex items-center gap-6 xl:gap-8 mx-6">
+    
+    <div class="nav-item relative">
+      <a href="/advocacy/" class="nav-link">Advocacy</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/culture/" class="nav-link">Culture</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/governance/" class="nav-link">Governance</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/history/" class="nav-link">History</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/infrastructure/" class="nav-link">Infrastructure</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/laws/" class="nav-link">Laws</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/metaphysics/" class="nav-link">Metaphysics</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/politicians/" class="nav-link">Politicians</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/writers/" class="nav-link">Writers</a>
+    </div>
+    
+  </div>
+
+  
+  <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
+
+    
+    <div class="search-box relative hidden md:block" id="search-container">
+      <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-gold-300/60 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input w-36 xl:w-52 focus:w-64 transition-all duration-300"
+        placeholder="Search articles…"
+        autocomplete="off"
+        aria-label="Search"
+      >
+      <div id="search-results" class="hidden"></div>
+    </div>
+
+    
+    <button
+      id="music-btn"
+      class="relative flex items-center gap-1 px-2 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle background music"
+      title="Toggle music"
+    >
+      <svg id="music-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span class="music-playing hidden" id="music-bars">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+    <audio id="bg-music" loop preload="none">
+      <source src="/music.mp3" type="audio/mpeg">
+    </audio>
+
+    
+    <button
+      id="theme-toggle"
+      class="p-2 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle dark mode"
+    >
+      
+      <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      
+      <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+
+    
+    <div class="relative" id="lang-dropdown">
+      <button
+        id="lang-btn"
+        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200 text-sm font-medium"
+        aria-expanded="false"
+        aria-haspopup="true"
+      >
+        <span>🇺🇸</span>
+        <span class="hidden sm:block uppercase text-xs tracking-wider font-cinzel">en</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div id="lang-menu" class="nav-dropdown min-w-36" role="menu">
+        
+        
+        <div class="flex items-center gap-2 px-4 py-2.5 text-sm bg-royal-800/50" aria-current="true">
+          <span>🇺🇸</span>
+          <span class="font-cinzel text-xs tracking-wider uppercase text-gold-400">en</span>
+          <span class="text-gold-300/60 ml-1">English</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <button
+      id="mobile-menu-btn"
+      class="lg:hidden p-2 text-gold-300 hover:text-gold-100 rounded-lg hover:bg-royal-800 transition-all"
+      aria-label="Open menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+
+  </div>
+</nav>
+<main class="flex-1 pt-16">
+
+
+<div class="article-header" style="background: linear-gradient(135deg, seagreen, #0e1f4d 100%);">
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
+  <div class="relative max-w-4xl mx-auto px-4">
+    
+    <nav class="breadcrumb mb-6 flex-wrap justify-center" aria-label="Breadcrumb">
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  </a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Maharlikanism</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Writers</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/rizal/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Jose Rizal</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/rizal/indolence/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">The Indolence Of The Filipino</a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <span class="text-gold-300/80 font-cinzel text-xs uppercase tracking-wider">Footnotes</span>
+  
+</nav>
+
+    
+    
+    <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Footnotes</h1>
+    <div class="gold-divider"></div>
+    
+    <div class="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gold-100/50">
+      
+      
+      <span class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        9 min read
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    
+    
+    <aside class="lg:w-72 shrink-0">
+      <div class="lg:sticky lg:top-24">
+        <div class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-5">
+          <h3 class="font-cinzel text-sm font-semibold text-[var(--color-primary)] tracking-widest uppercase mb-4">
+            Contents
+          </h3>
+          <nav class="toc text-sm text-[var(--color-muted)]" id="toc">
+            <nav id="TableOfContents"></nav>
+          </nav>
+        </div>
+        
+        
+        <div class="mt-6 text-center">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-XXXXXXXXXX"
+               data-ad-slot="SIDEBAR_AD_SLOT"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        
+      </div>
+    </aside>
+    
+
+    
+    <article class="flex-1 min-w-0">
+      
+      
+
+      
+      <div class="prose-maharlika">
+        <ol>
+<li>Sancianco y Goson, Gregorio: El progreso de Filipinas. Estudios económicos, administrativos y políticos. Parte económica. Madrid, Imp. de la Vda. de J M. Perez, 1881 Pp XIV-260.</li>
+</ol>
+<p>An eminent student of Philippine life and history, James A. LeRoy in his &ldquo;The Philippines, 1860-1898—Some comment and bibliographical notes&rdquo; published in volume 52 of Blair and Robertson, Philippine Islands 1493-1898, praises this book (p. 141) as &ldquo;especially valuable on administrative matters just prior to the revision of the fiscal regime in connection with the abolition of the government tobacco monopoly&rdquo;, and for its &ldquo;data on land, commerce, and industry&rdquo;</p>
+<ol start="2">
+<li>
+<p>Before 1590, one of the Spanish officers in the Philippines, commenting on the climate of the Islands, declared, with considerable acumen, that Europeans could stand life and work here if they observed continence in regard to the use of alcoholic beverages.</p>
+</li>
+<li>
+<p>See Morga&rsquo;s &ldquo;Report of conditions in the Philippines (June 8, 1598)&rdquo; in Blair and Robertson vol. 10. pp. 75-80, in which various abuses of the friars are set forth. This should be compared with the following pages of the same relation (pp. 89-90) on secular affairs, from which it will be recognized that the condition was not so much the resultant of one class as of Spanish national character. Cf. also, Anda y Salazar B. and R, vol. 50, pp. 137-190; and Le Gentil, Voyage (Paris, 1779-81), vol. 1, pp. 183-191. It would be hardly fair not to call to mind that the Filipinos are debtors to the friars in many ways, and the Filipinos themselves should be the last to forget this. For a good exposition from the friar point of view, see Zamora, Las Corporaciones-Religiosas en Filipinas: Valladolid, 1901.</p>
+</li>
+</ol>
+<p>See also Mallat, Les Philippines (Paris, 1846), vol. 1, pp. 374-389.</p>
+<ol start="4">
+<li>The history of the Philippines is full of references to Chinese who came here for the reasons assigned by Rizal. The antiquarian will be interested in consulting a small work entitled Notes on the Malay Archipelago and Malacca, compiled from Chinese sources, by W. P. Groeneveldt.</li>
+</ol>
+<p>5 See B. and R., vol 34, pp. 183-191 for a description of the early Chinese trade in the Philippines, also translated by Hirth from Chinese sources, but evidently not the same as referred to by Rizal,</p>
+<ol start="6">
+<li>This citation is translated directly from the original Italian Ms. Rizal&rsquo;s account is seen to be slightly different and arises from the fact that he made use of Amoretti&rsquo;s printed version of the Ms., which is wrong in many particulars. Amoretti attempted to change the original Ms. into modern Italian, with disastrous result. It is to be regretted that Walls y Merino followed the same garbled text, in his Primer viaje alrededor del Mundo (Madrid, 1899).</li>
+</ol>
+<p>Dr. Antonio de Morga&rsquo;s book is perhaps the most famous of all the early books treating of the Philippines. Its full title is as follows: &ldquo;Sucesos de las Islas Filipinas: Dirigido á Don Cristoval Gomez de Sandoval y Rojas, Duque de Cea, Mexico, En casa de Geronymo Balli, 1609.&rdquo; The original edition is very rare, and is worth almost its weight in gold. The manuscript circulated for some years before the date of publication.</p>
+<p>The second Spanish edition of the work was published by Rizal himself, who was always a sincere admirer of the book. It bears the following title-page: &ldquo;Sucesos de las Islas Filipinas por el Doctor Antonio de Morga. Obra publicada en Mejico el año de 1609 nuevamente sacada á luz y anotada por José Rizal y precedida de un prólogo del Prof. Fernando Blumentritt. Paris, Libreria de Garnier Hermanos, 1890.&rdquo; Shortly before Rizal began work on his edition, a Spanish scholar, Justo Zaragoza, began the publication of a new edition of Morga. The book was reprinted, but the notes, prologue, and life of Morga which Zargoza had intended to insert, were never completed because of that editor&rsquo;s death. Only two copies of this edition, so far as known, were ever bound, one of which belongs to the Ayer collection in Chicago, and the other by the Tabacalera purchase to the Philippine Library, in Manila. Still one other Spanish edition has appeared, namely: &ldquo;Sucesos de las Islas Filipinas por el Dr. Antonio de Morga. Nueva edición enriquecida con los escritos inéditos del mismo autor ilustrada con numerosas notas que amplian el texto y prologada extensamente por W. E. Retana, Madrid, Libreria General de Victoriano Suarez, Editor, 1909.&rdquo; Retana adds a life of Morga and numerous documents written by him. An English edition was published as follows: &ldquo;The Philippine Islands, Moluccas, Siam, Cambodia, Japan, and China. at the close of the sixteenth century. By Antonio de Morga. Translated from the Spanish, with notes and a preface, and a letter from Luis Vaez de Torres, describing his voyage through the Torres Straits, by the Hen. Henry E. J. Stanley, London, Printed for the Hakluyt Society, 1868&rdquo;. However, Stanley&rsquo;s translation is poor, and parts of passages are not translated at all. [It was this edition then in preparation by the Hakluyt Society, which Sir John Bowring, a director of the society, mentioned on his visit to Rizal&rsquo;s uncle in Biñan, so that to make the book available to Spaniards and Filipinos became an ambition from childhood with Rizal.-C.] A second English translation appears in B. and R. vols. 15 and 16. A separate copy of this translation was also published in a very limited edition, with the title: &ldquo;History of the Philippine Islands from their discovery by Magellan in 1521 to the beginning of the XVII century; with descriptions of Japan, China and adjacent countries, by Dr. Antonio de Morga, alcalde of criminal causes, in the Royal Audiencia of Nueva España, and counsel for the Holy Office of the inquisition. Completely translated into English, edited and annotated by E. H. Blair and J. A. Robertson. Cleveland, Ohio, The Arthur H. Clark Company, 1907.&rdquo; See B. and R. vols. 9-12 for other documents by Morga, and vol. 53 (or Robertson&rsquo;s Bibliography of the Philippine Islands, Cleveland, 1908), for bibliographical details regarding Morga and titles to documents. Perhaps the most famous of all his writings outside of his book is his relation mentioned ante, note 3.</p>
+<ol start="7">
+<li>
+<p>Published at London in 1783. See p. 346.</p>
+</li>
+<li>
+<p>See B. and R., vol. 4, pp. 221, 222, for an old boatsong.</p>
+</li>
+<li>
+<p>Colin&rsquo;s Labor evangelica, published in Madrid, 1663; a new edition, in three volumes, and greatly enriched by notes and was published by Pablo Pastells, S. J. (Barcelona, 1900-1902).</p>
+</li>
+<li>
+<p>See B. and R., vol. 33, pp. 233-235. The original says the ransom included 150 chickens; hence 450, an error due again to Amoretti.</p>
+</li>
+</ol>
+<p>11, Conquistas do las Islas Fillpinas (Madrid, 1698). There is no doubt of the frequency of inter-island trade among the peoples of the Philippines at an early period. Trade was stimulated by the very fact that the Malay peoples, except those who have been driven into the mountainous interiors, are by their very nature a seafaring people. The fact of an inter-island traffic is indicative of a culture above that possessed by a people in the barbarian stage of culture. Of course, there was considerable Chinese trade as well throughout the islands.</p>
+<ol start="12">
+<li>This estimate is somewhat high. A writer in speaking of the population of Manila, the metropolis of the Philippines then as now, about 1570 says that its population scarcely reached 80,000, instead of the 200,000 reported.</li>
+</ol>
+<p>13 Licentiate Pedro de Rojas, of the Manila Audiencia, in a letter to Felipe II, June 30, 1586—Vol.6, pp. 265-274 says (p. 270): &ldquo;If there were no trade with China, the citizens of these islands, would be richer; for the natives if they had not so many tostons, would pay their tributes in the articles which they produce, and which are current, that is, cloths, lampotes, cotton, and gold.—all of which have great value in Nueva España. These they cease to produce because of the abundance of silver; and what is worse and entails more loss upon your Majesty, is that they do not, as formerly, work the mines and take out gold&rdquo;. The old records contains numerous references to the decline of the native industries of the Philippines after the arrival of the Spaniards and the increase of Chinese trade.</p>
+<ol start="14">
+<li>
+<p>See ante, note 13.</p>
+</li>
+<li>
+<p>The decrease of population among native people in the Philippines after the arrival of the Spaniards compares in no degree with what occurred in America. A most distressing picture of conditions in the Philippines is given by Bishop Domingo de Salazar in his relation written about 1583 (see B. &amp; R., vol 5, pp. 210-255. See especially p. 212.) It is well to balance Salazar&rsquo;s account with those of others</p>
+</li>
+</ol>
+<p>(A &ldquo;tributary&rdquo; was generally reckoned as five persons, one &ldquo;tribute&rdquo; being required for each adult male. Hence &ldquo;tributaries&rdquo; and &ldquo;families&rdquo; may here be taken to mean about the same number,—D.)</p>
+<ol start="16">
+<li>
+<p>The forced labor required by the Spaniards in shipbuilding formed one of the legitimate causes of complaint among the people almost from the beginning.</p>
+</li>
+<li>
+<p>See ante, note 15, also note 16.</p>
+</li>
+<li>
+<p>The early friars, although many of them fell into some of the very faults which they condemned, inveighed boldly against the cruelty of the Spaniards. Doubtless their attitude did encourage their converts to withdraw from industry to a certain degree.</p>
+</li>
+<li>
+<p>See B. &amp; R, vol. 4, pp. 148-303.</p>
+</li>
+</ol>
+<p>20 See B &amp; R., vol. 6, for early accounts of Chinese trade and Spanish measures affecting it The hostility between Spaniards and Portuguese enters largely into the question. The effects of the deplorably bad economics of Spain in its trade relations are still felt in the Peninsula.</p>
+<ol start="21">
+<li>
+<p>See ante, note 20.</p>
+</li>
+<li>
+<p>See ante, note 20. The arrival and departure of the annual galleon were times of activity, but otherwise Manila was a dull town, with little industry. The Chinese usurped all the petty trade.</p>
+</li>
+</ol>
+<p>23 It is to the credit, of the Sociedad Económica de Amigos del Pais de Filipinas, founded by the energetic governor Basco y Vargas in 1781, that it extended its many-sided interests to the destruction of the devastating hordes of locusts that visit the Philippines so frequently.</p>
+<p>24 The Spanish policy remained to the end one of exclusion, and the privileges granted were almost all because of coercion, and the penetrating force of modern ideas.</p>
+<ol start="25">
+<li>
+<p>A loose use of the word &ldquo;monk&rdquo;, which is properly used of a cloistered ecclesiastic who does not leave his convent. &ldquo;Friar&rdquo; would be a more exact term. The Benedictines are monks; the Augustinians, Dominicans, Franciscans, and Recollects, are friars.</p>
+</li>
+<li>
+<p>This was the Filipino chemist Anacleto del Rosario, whom Rizal rightly praises.</p>
+</li>
+<li>
+<p>This refers doubtless to Rizal himself, who competed in an open contest for Spaniards and Indians, of the Liceo Artistico-Literario de Manila, and of whom such an occurrence is related. He was awarded first prose prize for a production entitled &ldquo;El Consejo de los Dioses&rdquo;, which see in the &ldquo;Revista del Liceo Artistico-Literario de Manila, No. 4, 1880, pd. 45. This production, which bears neither signature nor sign of authorship, is dated April 13, 1880.</p>
+</li>
+</ol>
+
+      </div>
+
+      
+      <div class="mt-10 pt-6 border-t border-[var(--color-border)]">
+        
+      </div>
+
+      
+      <nav class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Article navigation">
+        
+        <a href="/writers/rizal/indolence/chapter-01/" class="group flex items-center gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m15 18-6-6 6-6"/></svg>
+          <div class="min-w-0">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Previous</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">Indolence Exists Everywhere</p>
+          </div>
+        </a>
+        
+        
+      </nav>
+
+    </article>
+  </div>
+</div>
+
+
+  </main><footer class="bg-royal-950 text-gold-100/80 py-12 px-4 md:px-8 mt-auto border-t border-gold-700/20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+      
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center">
+            <img src="/icons/sun.svg">
+          </div>
+          <span class="font-cinzel font-bold text-gold-300 text-xl tracking-widest">MAHARLIKA</span>
+        </div>
+        <p class="text-sm leading-relaxed text-gold-100/60">
+          An advocacy to restore the true identity, culture, and socio-economics of Maharlika.
+        </p>
+        
+        
+        <div class="flex items-center gap-4 mt-6">
+          <a href="https://www.facebook.com/maharlikanism/" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@maharlikanism" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+          </a>
+          <a href="mailto:maharlikanism@gmail.com" class="text-gold-400 hover:text-gold-300 transition-colors text-sm flex items-center gap-1" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span class="hidden sm:inline">maharlikanism@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Advocacy</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/advocacy/" class="hover:text-gold-300 transition-colors">Advocacy</a></li>
+          <li><a href="/culture/" class="hover:text-gold-300 transition-colors">Culture</a></li>
+          <li><a href="/governance/" class="hover:text-gold-300 transition-colors">Governance</a></li>
+          <li><a href="/history/" class="hover:text-gold-300 transition-colors">History</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Reference</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/infrastructure/" class="hover:text-gold-300 transition-colors">Infrastructure</a></li>
+          <li><a href="/laws/" class="hover:text-gold-300 transition-colors">Laws</a></li>
+          <li><a href="/metaphysics/" class="hover:text-gold-300 transition-colors">Metaphysics</a></li>
+          <li><a href="/writers/" class="hover:text-gold-300 transition-colors">Writers</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">The Book</h4>
+        
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="block">
+          <img src="/books/towards.jpg" alt="Towards Maharlika" class="w-24 rounded-lg shadow-lg mb-3 hover:scale-105 transition-transform duration-200">
+        </a>
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="btn-gold text-xs px-4 py-2">
+          Get the Book
+        </a>
+        
+      </div>
+
+    </div>
+
+    <div class="border-t border-gold-700/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gold-100/40">
+        © 2026 Maharlikanism. All rights reserved.
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/XXXXXXXX\/XXXXXXXX';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+
+
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  
+  <div id="mobile-menu" role="dialog" aria-modal="true">
+    <button id="mobile-menu-close" class="absolute top-5 right-5 text-gold-100 p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    
+    <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Advocacy
+    </a>
+    
+    <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Culture
+    </a>
+    
+    <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Governance
+    </a>
+    
+    <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      History
+    </a>
+    
+    <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Infrastructure
+    </a>
+    
+    <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Laws
+    </a>
+    
+    <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Metaphysics
+    </a>
+    
+    <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Politicians
+    </a>
+    
+    <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Writers
+    </a>
+    
+    <div class="flex items-center gap-6 mt-4">
+      
+
+
+
+
+
+
+<span class="px-4 py-2 rounded-lg bg-royal-800 text-gold-400 font-cinzel text-sm uppercase tracking-wider border border-gold-500/30">
+  🇺🇸 en
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <script>
+
+const htmlRoot = document.getElementById('html-root');
+const themeToggle = document.getElementById('theme-toggle');
+const themeSun = document.getElementById('theme-sun');
+const themeMoon = document.getElementById('theme-moon');
+
+function updateThemeIcons() {
+  const isDark = htmlRoot.classList.contains('dark');
+  themeSun.classList.toggle('hidden', !isDark);
+  themeMoon.classList.toggle('hidden', isDark);
+}
+
+updateThemeIcons();
+
+themeToggle?.addEventListener('click', () => {
+  const isDark = htmlRoot.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeIcons();
+});
+
+
+const musicBtn = document.getElementById('music-btn');
+const musicAudio = document.getElementById('bg-music');
+const musicIcon = document.getElementById('music-icon');
+const musicBars = document.getElementById('music-bars');
+let isPlaying = false;
+
+musicBtn?.addEventListener('click', () => {
+  if (isPlaying) {
+    musicAudio.pause();
+    musicIcon.classList.remove('hidden');
+    musicBars.classList.add('hidden');
+  } else {
+    musicAudio.play().catch(() => {});
+    musicIcon.classList.add('hidden');
+    musicBars.classList.remove('hidden');
+  }
+  isPlaying = !isPlaying;
+});
+
+
+const langBtn = document.getElementById('lang-btn');
+const langMenu = document.getElementById('lang-menu');
+
+langBtn?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = langMenu.classList.contains('opacity-100');
+  langMenu.classList.toggle('opacity-100', !isOpen);
+  langMenu.classList.toggle('visible', !isOpen);
+  langMenu.classList.toggle('-translate-y-2', isOpen);
+  langMenu.classList.toggle('translate-y-0', !isOpen);
+  langBtn.setAttribute('aria-expanded', String(!isOpen));
+});
+
+document.addEventListener('click', () => {
+  langMenu?.classList.remove('opacity-100', 'visible', 'translate-y-0');
+  langMenu?.classList.add('-translate-y-2');
+  langBtn?.setAttribute('aria-expanded', 'false');
+});
+
+
+const scrollTopBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+  scrollTopBtn?.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+scrollTopBtn?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileClose = document.getElementById('mobile-menu-close');
+
+mobileMenuBtn?.addEventListener('click', () => {
+  mobileMenu.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+mobileClose?.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar?.classList.toggle('shadow-2xl', window.scrollY > 20);
+}, { passive: true });
+
+
+if (typeof lucide !== 'undefined') {
+  lucide.createIcons();
+}
+
+
+(function initSearch() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  if (!input || !results) return;
+
+  let searchIndex = null;
+
+  
+  async function loadIndex() {
+    if (searchIndex) return searchIndex;
+    try {
+      const res = await fetch('\/index.json');
+      searchIndex = await res.json();
+    } catch (e) {
+      searchIndex = [];
+    }
+    return searchIndex;
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  input.addEventListener('focus', loadIndex);
+
+  input.addEventListener('input', async () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q || q.length < 2) {
+      results.classList.add('hidden');
+      results.innerHTML = '';
+      return;
+    }
+    const index = await loadIndex();
+    const matches = index.filter(item =>
+      (item.title && item.title.toLowerCase().includes(q)) ||
+      (item.description && item.description.toLowerCase().includes(q))
+    ).slice(0, 8);
+
+    if (!matches.length) {
+      results.innerHTML = '<div class="px-4 py-3 text-gold-300/60 text-sm">No results found</div>';
+    } else {
+      results.innerHTML = matches.map(item => `
+        <a href="${item.permalink}" class="search-result-item">
+          <div class="font-medium text-sm text-gold-100">${escapeHtml(item.title || '')}</div>
+          ${item.description ? `<div class="text-xs text-gold-300/60 mt-0.5 line-clamp-1">${escapeHtml(item.description)}</div>` : ''}
+        </a>
+      `).join('');
+    }
+    results.classList.remove('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('search-container')?.contains(e.target)) {
+      results.classList.add('hidden');
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      results.classList.add('hidden');
+      input.blur();
+    }
+  });
+})();
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+
+document.getElementById('subscribe-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('[name="email"]').value;
+  const msg = document.getElementById('subscribe-msg');
+  if (msg) {
+    msg.textContent = 'Thank you for subscribing!';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+
+
+document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const msg = document.getElementById('contact-msg');
+  if (msg) {
+    msg.textContent = 'Thank you! We will get back to you soon.';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+</script>
+
+</body>
+</html>

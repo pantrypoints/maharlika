@@ -30,9 +30,11 @@
       {{ with .Params.heading }}
       <span class="inline-block text-xs font-cinzel text-gold-400 tracking-widest uppercase mb-2">{{ . }}</span>
       {{ end }}
-      <h3 class="font-cinzel font-semibold text-white text-base leading-snug group-hover:text-gold-300 transition-colors">
-        {{ .Title }}
-      </h3>
+
+<h3 class="font-cinzel font-semibold text-white text-base leading-snug group-hover:text-gold-300 transition-colors bg-black/50 px-3 py-1 rounded inline-block">
+  {{ .Title }}
+</h3>
+
       {{ with .Description }}
       <p class="text-gold-100/60 text-xs mt-1 line-clamp-2">{{ . }}</p>
       {{ end }}

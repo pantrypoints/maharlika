@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" id="html-root">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Flora and Fauna | Maharlikanism</title>
+<meta name="description" content="Meat and fish they relish better when it has begun to spoil and when it stinks">
+<meta name="author" content="Maharlikanism">
+
+
+<meta property="og:title" content="Flora and Fauna">
+<meta property="og:description" content="Meat and fish they relish better when it has begun to spoil and when it stinks">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/writers/morga/events/chapter-08d/">
+<meta property="og:image" content="http://localhost:1313/photos/medieval/magellan.jpg">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flora and Fauna">
+<meta name="twitter:description" content="Meat and fish they relish better when it has begun to spoil and when it stinks">
+
+
+<link rel="canonical" href="http://localhost:1313/writers/morga/events/chapter-08d/">
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" >
+
+
+<script>
+  (function() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+
+<link rel="icon" type="image/png" href="/icons/favicon.svg">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+
+
+
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/writers/morga/events/chapter-08d/">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="min-h-screen flex flex-col"><nav class="navbar" id="navbar">
+
+  
+  <a href="/" class="flex items-center gap-3 shrink-0">
+    <div class="w-9 h-9 flex items-center justify-center">
+      <img src="/icons/sun.svg">
+    </div>
+    <span class="font-cinzel font-bold text-gold-300 text-lg tracking-widest hidden sm:block">MAHARLIKA</span>
+  </a>
+
+  
+  <div class="hidden lg:flex items-center gap-6 xl:gap-8 mx-6">
+    
+    <div class="nav-item relative">
+      <a href="/advocacy/" class="nav-link">Advocacy</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/culture/" class="nav-link">Culture</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/governance/" class="nav-link">Governance</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/history/" class="nav-link">History</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/infrastructure/" class="nav-link">Infrastructure</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/laws/" class="nav-link">Laws</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/metaphysics/" class="nav-link">Metaphysics</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/politicians/" class="nav-link">Politicians</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/writers/" class="nav-link">Writers</a>
+    </div>
+    
+  </div>
+
+  
+  <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
+
+    
+    <div class="search-box relative hidden md:block" id="search-container">
+      <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-gold-300/60 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input w-36 xl:w-52 focus:w-64 transition-all duration-300"
+        placeholder="Search articles…"
+        autocomplete="off"
+        aria-label="Search"
+      >
+      <div id="search-results" class="hidden"></div>
+    </div>
+
+    
+    <button
+      id="music-btn"
+      class="relative flex items-center gap-1 px-2 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle background music"
+      title="Toggle music"
+    >
+      <svg id="music-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span class="music-playing hidden" id="music-bars">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+    <audio id="bg-music" loop preload="none">
+      <source src="/music.mp3" type="audio/mpeg">
+    </audio>
+
+    
+    <button
+      id="theme-toggle"
+      class="p-2 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle dark mode"
+    >
+      
+      <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      
+      <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+
+    
+    <div class="relative" id="lang-dropdown">
+      <button
+        id="lang-btn"
+        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200 text-sm font-medium"
+        aria-expanded="false"
+        aria-haspopup="true"
+      >
+        <span>🇺🇸</span>
+        <span class="hidden sm:block uppercase text-xs tracking-wider font-cinzel">en</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div id="lang-menu" class="nav-dropdown min-w-36" role="menu">
+        
+        
+        <div class="flex items-center gap-2 px-4 py-2.5 text-sm bg-royal-800/50" aria-current="true">
+          <span>🇺🇸</span>
+          <span class="font-cinzel text-xs tracking-wider uppercase text-gold-400">en</span>
+          <span class="text-gold-300/60 ml-1">English</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <button
+      id="mobile-menu-btn"
+      class="lg:hidden p-2 text-gold-300 hover:text-gold-100 rounded-lg hover:bg-royal-800 transition-all"
+      aria-label="Open menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+
+  </div>
+</nav>
+<main class="flex-1 pt-16">
+
+
+<div class="article-header" >
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
+  <div class="relative max-w-4xl mx-auto px-4">
+    
+    <nav class="breadcrumb mb-6 flex-wrap justify-center" aria-label="Breadcrumb">
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  </a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Maharlikanism</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Writers</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/morga/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Antonio Morga</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/morga/events/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Events in the Philippine Islands</a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <span class="text-gold-300/80 font-cinzel text-xs uppercase tracking-wider">Flora and Fauna</span>
+  
+</nav>
+
+    
+    
+    <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-gold-400 border border-gold-500/30 px-4 py-2 rounded-full inline-block mb-4">
+      Chapter 8d
+    </span>
+    
+    <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Flora and Fauna</h1>
+    <div class="gold-divider"></div>
+    
+    <p class="text-gold-100/80 text-xl mt-4 font-crimson italic max-w-2xl mx-auto">Meat and fish they relish better when it has begun to spoil and when it stinks</p>
+    
+    <div class="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gold-100/50">
+      
+      <time datetime="2024-09-22" class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+        September 22, 2024
+      </time>
+      
+      
+      <span class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        9 min read
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    
+    
+    <aside class="lg:w-72 shrink-0">
+      <div class="lg:sticky lg:top-24">
+        <div class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-5">
+          <h3 class="font-cinzel text-sm font-semibold text-[var(--color-primary)] tracking-widest uppercase mb-4">
+            Contents
+          </h3>
+          <nav class="toc text-sm text-[var(--color-muted)]" id="toc">
+            <nav id="TableOfContents"></nav>
+          </nav>
+        </div>
+        
+        
+        <div class="mt-6 text-center">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-XXXXXXXXXX"
+               data-ad-slot="SIDEBAR_AD_SLOT"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        
+      </div>
+    </aside>
+    
+
+    
+    <article class="flex-1 min-w-0">
+      
+      
+      <div class="mb-8 rounded-2xl overflow-hidden shadow-xl">
+        <img src="/photos/medieval/magellan.jpg" alt="Flora and Fauna" class="w-full object-cover max-h-80">
+      </div>
+      
+
+      
+      <div class="prose-maharlika">
+        <p>The land is well shaded in all parts by trees of different kinds, and fruit-trees which beautify it throughout the year, both along the shore and inland among the plains and mountains.</p>
+<p>It is very full of large and small rivers, of good fresh water, which flow into the sea. All of them are navigable, and abound in all kinds of fish, which are very pleasant to the taste.</p>
+<p>This is why there is a large supply of lumber, which is cut and sawed, dragged to the rivers, and brought down.</p>
+<p>This lumber is very useful for houses and buildings, and for the construction of small and large vessels.</p>
+<p>Many very straight thick trees, light and pliable, are found, which are used as masts for ships and galleons.</p>
+<p>Consequently, vessels of any size may be fitted with masts from these trees, made of one piece of timber, without its being necessary to splice them or make them of different pieces.</p>
+<p>For the hulls of the ships, the keels, futtock-timbers, top-timbers, and any other kinds of supports and braces, compass-timbers, transoms, knees small and large, and rudders, all sorts of good timber are easily found; as well as good planking for the sides, decks, and upper-works, from very suitable woods. [243]</p>
+<p>There are many native fruit-trees, such as the sanctors, mabolos, tamarinds, nancas, custard-apples, papaws, guavas, and everywhere many oranges, of all kinds—large and small, sweet and sour; citrons, lemons, and 10-12 varieties of very healthful and palatable bananas. [244]</p>
+<p>There are many cocoa-palms bearing fruit of pleasant taste—from which is made wine and common oil, which is a very healing remedy for wounds; and other wild palms of the forests—that do not yield cocoa-nuts, but serve as wood, and from whose bark is made bonote, a tow for rigging and cables, and also for calking ships.</p>
+<p>Efforts have been made to plant olives and quinces, and other fruit-trees of España, but as yet they have had no success, except with pomegranates and grapevines, which bear fruit the second year.</p>
+<p>These bear abundance of exceedingly good grapes 3 times a year. Some fig-trees have succeeded.</p>
+<p>Vegetables of every kind grow well and very abundantly, but do not seed, and it is always necessary to bring the seeds from Castilla, China, or Japon.</p>
+<p>In the Cagayan provinces are found chestnut-trees, which produce fruit.</p>
+<p>In other districts are found pines and other trees which yield certain very large pine-nuts, with a hard shell and a pleasant taste, which are called piles. [245]</p>
+<p>There is abundance of cedar which is called calanta, a beautiful red wood called asana, [246] ebony of various qualities, and many other precious woods for all uses.</p>
+<p>The meat generally eaten is that of swine, of which there is a great abundance, and it is very palatable and wholesome.</p>
+<p>Beef is eaten, cattle being raised abundantly in stock-farms in many different parts of the islands. The cattle are bred from those of China and Nueva España. [247]</p>
+<p>The Chinese cattle are small, and excellent breeders.</p>
+<p>Their horns are very small and twisted, and some cattle can move them. They have a large hump upon the shoulders, and are very manageable beasts.</p>
+<p>There are plenty of fowls like those of Castilla, and others very large, which are bred from fowls brought from China. They are very palatable, and make fine capons.</p>
+<p>Some of these fowls are black in feather, skin, flesh, and bones, and are pleasant to the taste. [248]</p>
+<p>Many geese are raised, as well as swans, ducks, and tame pigeons brought from China.</p>
+<p>There is abundance of flesh of wild game, such as venison, and wild boars, and in some parts porcupines.</p>
+<p>There are many buffaloes, which are called carabaos, which are raised in the fields and are very spirited; others are brought tame from China. These are very numerous, and very handsome.</p>
+<p>These last are used only for milking, and their milk is thicker and more palatable than that of cows.</p>
+<p>Goats and kids are raised, although their flesh is not savory, because of the humidity of the country.</p>
+<p>These animals sicken and die for that reason, and because they eat certain poisonous herbs.</p>
+<p>Ewes and rams, although often brought from Nueva España, never multiply. Consequently there are none of these animals, for the climate and pasturage has not as yet seemed suitable for them. [249]</p>
+<p>There were no horses, mares, or asses in the islands, until the Spaniards had them brought from China and  Nueva España.</p>
+<p>Asses and mules are very rare, but there are many horses and mares.</p>
+<p>Some farms are being stocked with them, and those born there (mixed breeds for the most part) turn out well, and have good colors, are good tempered and willing to work, and are of medium size.</p>
+<p>Those brought from China are small, very strong, good goers, treacherous, quarrelsome, and bad-tempered.</p>
+<p>Some horses of good colors are brought from Japon.</p>
+<p>They have well-shaped bodies, thick hair, large fetlocks, large legs and front hoofs, which makes them look like draft-horses. Their heads are rather large, and their mouths hard.</p>
+<p>They run but slowly, but walk well, and are spirited, and of much mettle. The daily feed of the horses consists throughout the year of green provender, [250] besides rice in the husk, which keeps them very fat. [251]</p>
+<p>There are many fowls and field birds, and wild birds of wonderful colors and very beautiful. There are no singing birds suitable for keeping in cages, although some calendar larks [Calandrias] called fimbaros, [252] smaller than those of España, are brought from Japon, whose song is most sweet.</p>
+<p>There are many turtle-doves, ring-doves; other doves with an extremely green plumage, and red feet and beaks; and others that are white with a red spot on the breast, like a pelican.</p>
+<p>Instead of quail, there are certain birds resembling them, but smaller, which are called povos [253] and other smaller birds called mayuelas. [254]</p>
+<p>There are many wild chickens and cocks, which are very small, and taste like partridge. There are royal, white, and grey herons, flycatchers, and other shore birds, ducks, lavancos, [255] crested cranes, sea-crows, eagles, eagle-owls, and other birds of prey, although none are used for hawking.</p>
+<p>There are jays and thrushes as in España, and white storks and cranes. [256] They do not rear peacocks, rabbits, or hares, although they have tried to do so.</p>
+<p>It is believed that the wild animals in the forests and fields eat and destroy them, namely, the cats, foxes, badgers, and large and small rats, which are very numerous, and other land animals. [257]</p>
+<p>Throughout these islands are found a great number of monkeys, of various sizes, with which at times the trees are covered.</p>
+<p>There are green and white parrots, but they are stupid in talking; and very small parroquets, of beautiful green and red colors, which talk as little. The forests and settlements have many serpents, of various colors, which are generally larger than those of Castilla.</p>
+<p>Some have been seen in the forests of unusual size, and wonderful to behold. [258]</p>
+<p>The most harmful are certain slender snakes, of less than one vara in length, which dart down on passersby from the trees where they generally hang and sting them.</p>
+<p>Their venom is so powerful that within 24 hours the person dies raving.</p>
+<p>There are many very large scorpions in the rivers and creeks, and many crocodiles which are very bloodthirsty and cruel.</p>
+<p>They quite commonly pull from their bancas the natives who go in those boats, and cause many injuries among the horned cattle and the horses of the stock-farms, when they go to drink.</p>
+<p>The people fish for them often and kill them, yet they are never diminished in number.</p>
+<p>This is why the natives set closely-grated divisions and enclosures in the rivers and creeks of their settlements, where they bathe.</p>
+<p>There they enter the water to bathe, secure from those monsters, which they fear so greatly that they venerate and adore them, as if they were beings superior to themselves.</p>
+<p>All their oaths and execrations, and those which are of any weight with them (even among the Christians) are, thus expressed: &ldquo;So may the crocodile kill him!&rdquo;</p>
+<p>They call the crocodile buhaya in their language.</p>
+<p>It has happened when some one has sworn falsely, or when he has broken his word, that then some accident has occurred to him with the crocodile, which God, whom he offends, has so permitted for the sake of the authority and purity of the truth, and the promise of it. [259]</p>
+<p>The fisheries of sea and rivers are most abundant, and include all kinds of fish; both of fresh and salt water.</p>
+<p>These are generally used as food throughout the entire country.</p>
+<p>There are many good sardines, sea-eels, sea-breams (which they call bacocos), daces, skates, bicudas, tanguingues, soles, plantanos, [260] taraquitos, needle-fish, gilt-heads, and eels; large oysters, mussels, [261] porçebes, crawfish, shrimp, sea-spiders, center-fish, and all kinds of cockles, shad, white fish, and in the Tajo River of Cagayan, [262] during their season, a great number of bobos, which come down to spawn at the bar.</p>
+<p>In the lake of Bonbon, a quantity of tunny-fish, not so large as those of España, but of the same shape, flesh, and taste, are caught.</p>
+<p>Many sea-fish are found in the sea, such as whales, sharks, caellas, marajos, bufeos, and other unknown species of extraordinary forms and size.</p>
+<p>In 1596, during a furious storm, a fish was flung into shallow water on one of the Luzon coasts near the province of Camarines.</p>
+<p>It was so huge and misshapen, that although it lay in more than 3.5 braças of water, it could not again get afloat, and died there.</p>
+<p>The natives said that they had never seen anything like it, nor another shaped like it.</p>
+<p>Its head was of wonderful size and fierce aspect.</p>
+<p>On its front was 2 horns, which pointed toward its back.</p>
+<p>One of them was taken to Manila. It was covered with its skin or hide, but had no hair or scales.</p>
+<p>It was white, and 20 feet long. Where it joined the head it was as thick as the thigh, and gradually tapered proportionally to the tip.</p>
+<p>It was somewhat curved and not very round; and to all appearances, quite solid. It caused great wonder in all beholders. [263]</p>
+
+      </div>
+
+      
+      <div class="mt-10 pt-6 border-t border-[var(--color-border)]">
+        
+      </div>
+
+      
+      <nav class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Article navigation">
+        
+        <a href="/writers/morga/events/chapter-08e/" class="group flex items-center gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m15 18-6-6 6-6"/></svg>
+          <div class="min-w-0">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Previous</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">Laguna de Bay</p>
+          </div>
+        </a>
+        
+        
+        <a href="/writers/morga/events/chapter-08c/" class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200 sm:col-start-2">
+          <div class="min-w-0 text-right">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Next</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">Native Food</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        
+      </nav>
+
+    </article>
+  </div>
+</div>
+
+
+  </main><footer class="bg-royal-950 text-gold-100/80 py-12 px-4 md:px-8 mt-auto border-t border-gold-700/20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+      
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center">
+            <img src="/icons/sun.svg">
+          </div>
+          <span class="font-cinzel font-bold text-gold-300 text-xl tracking-widest">MAHARLIKA</span>
+        </div>
+        <p class="text-sm leading-relaxed text-gold-100/60">
+          An advocacy to restore the true identity, culture, and socio-economics of Maharlika.
+        </p>
+        
+        
+        <div class="flex items-center gap-4 mt-6">
+          <a href="https://www.facebook.com/maharlikanism/" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@maharlikanism" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+          </a>
+          <a href="mailto:maharlikanism@gmail.com" class="text-gold-400 hover:text-gold-300 transition-colors text-sm flex items-center gap-1" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span class="hidden sm:inline">maharlikanism@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Advocacy</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/advocacy/" class="hover:text-gold-300 transition-colors">Advocacy</a></li>
+          <li><a href="/culture/" class="hover:text-gold-300 transition-colors">Culture</a></li>
+          <li><a href="/governance/" class="hover:text-gold-300 transition-colors">Governance</a></li>
+          <li><a href="/history/" class="hover:text-gold-300 transition-colors">History</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Reference</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/infrastructure/" class="hover:text-gold-300 transition-colors">Infrastructure</a></li>
+          <li><a href="/laws/" class="hover:text-gold-300 transition-colors">Laws</a></li>
+          <li><a href="/metaphysics/" class="hover:text-gold-300 transition-colors">Metaphysics</a></li>
+          <li><a href="/writers/" class="hover:text-gold-300 transition-colors">Writers</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">The Book</h4>
+        
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="block">
+          <img src="/books/towards.jpg" alt="Towards Maharlika" class="w-24 rounded-lg shadow-lg mb-3 hover:scale-105 transition-transform duration-200">
+        </a>
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="btn-gold text-xs px-4 py-2">
+          Get the Book
+        </a>
+        
+      </div>
+
+    </div>
+
+    <div class="border-t border-gold-700/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gold-100/40">
+        © 2026 Maharlikanism. All rights reserved.
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/XXXXXXXX\/XXXXXXXX';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+
+
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  
+  <div id="mobile-menu" role="dialog" aria-modal="true">
+    <button id="mobile-menu-close" class="absolute top-5 right-5 text-gold-100 p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    
+    <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Advocacy
+    </a>
+    
+    <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Culture
+    </a>
+    
+    <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Governance
+    </a>
+    
+    <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      History
+    </a>
+    
+    <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Infrastructure
+    </a>
+    
+    <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Laws
+    </a>
+    
+    <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Metaphysics
+    </a>
+    
+    <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Politicians
+    </a>
+    
+    <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Writers
+    </a>
+    
+    <div class="flex items-center gap-6 mt-4">
+      
+
+
+
+
+
+
+<span class="px-4 py-2 rounded-lg bg-royal-800 text-gold-400 font-cinzel text-sm uppercase tracking-wider border border-gold-500/30">
+  🇺🇸 en
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <script>
+
+const htmlRoot = document.getElementById('html-root');
+const themeToggle = document.getElementById('theme-toggle');
+const themeSun = document.getElementById('theme-sun');
+const themeMoon = document.getElementById('theme-moon');
+
+function updateThemeIcons() {
+  const isDark = htmlRoot.classList.contains('dark');
+  themeSun.classList.toggle('hidden', !isDark);
+  themeMoon.classList.toggle('hidden', isDark);
+}
+
+updateThemeIcons();
+
+themeToggle?.addEventListener('click', () => {
+  const isDark = htmlRoot.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeIcons();
+});
+
+
+const musicBtn = document.getElementById('music-btn');
+const musicAudio = document.getElementById('bg-music');
+const musicIcon = document.getElementById('music-icon');
+const musicBars = document.getElementById('music-bars');
+let isPlaying = false;
+
+musicBtn?.addEventListener('click', () => {
+  if (isPlaying) {
+    musicAudio.pause();
+    musicIcon.classList.remove('hidden');
+    musicBars.classList.add('hidden');
+  } else {
+    musicAudio.play().catch(() => {});
+    musicIcon.classList.add('hidden');
+    musicBars.classList.remove('hidden');
+  }
+  isPlaying = !isPlaying;
+});
+
+
+const langBtn = document.getElementById('lang-btn');
+const langMenu = document.getElementById('lang-menu');
+
+langBtn?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = langMenu.classList.contains('opacity-100');
+  langMenu.classList.toggle('opacity-100', !isOpen);
+  langMenu.classList.toggle('visible', !isOpen);
+  langMenu.classList.toggle('-translate-y-2', isOpen);
+  langMenu.classList.toggle('translate-y-0', !isOpen);
+  langBtn.setAttribute('aria-expanded', String(!isOpen));
+});
+
+document.addEventListener('click', () => {
+  langMenu?.classList.remove('opacity-100', 'visible', 'translate-y-0');
+  langMenu?.classList.add('-translate-y-2');
+  langBtn?.setAttribute('aria-expanded', 'false');
+});
+
+
+const scrollTopBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+  scrollTopBtn?.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+scrollTopBtn?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileClose = document.getElementById('mobile-menu-close');
+
+mobileMenuBtn?.addEventListener('click', () => {
+  mobileMenu.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+mobileClose?.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar?.classList.toggle('shadow-2xl', window.scrollY > 20);
+}, { passive: true });
+
+
+if (typeof lucide !== 'undefined') {
+  lucide.createIcons();
+}
+
+
+(function initSearch() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  if (!input || !results) return;
+
+  let searchIndex = null;
+
+  
+  async function loadIndex() {
+    if (searchIndex) return searchIndex;
+    try {
+      const res = await fetch('\/index.json');
+      searchIndex = await res.json();
+    } catch (e) {
+      searchIndex = [];
+    }
+    return searchIndex;
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  input.addEventListener('focus', loadIndex);
+
+  input.addEventListener('input', async () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q || q.length < 2) {
+      results.classList.add('hidden');
+      results.innerHTML = '';
+      return;
+    }
+    const index = await loadIndex();
+    const matches = index.filter(item =>
+      (item.title && item.title.toLowerCase().includes(q)) ||
+      (item.description && item.description.toLowerCase().includes(q))
+    ).slice(0, 8);
+
+    if (!matches.length) {
+      results.innerHTML = '<div class="px-4 py-3 text-gold-300/60 text-sm">No results found</div>';
+    } else {
+      results.innerHTML = matches.map(item => `
+        <a href="${item.permalink}" class="search-result-item">
+          <div class="font-medium text-sm text-gold-100">${escapeHtml(item.title || '')}</div>
+          ${item.description ? `<div class="text-xs text-gold-300/60 mt-0.5 line-clamp-1">${escapeHtml(item.description)}</div>` : ''}
+        </a>
+      `).join('');
+    }
+    results.classList.remove('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('search-container')?.contains(e.target)) {
+      results.classList.add('hidden');
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      results.classList.add('hidden');
+      input.blur();
+    }
+  });
+})();
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+
+document.getElementById('subscribe-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('[name="email"]').value;
+  const msg = document.getElementById('subscribe-msg');
+  if (msg) {
+    msg.textContent = 'Thank you for subscribing!';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+
+
+document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const msg = document.getElementById('contact-msg');
+  if (msg) {
+    msg.textContent = 'Thank you! We will get back to you soon.';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+</script>
+
+</body>
+</html>

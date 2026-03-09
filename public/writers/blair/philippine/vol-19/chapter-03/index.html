@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" id="html-root">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title> | Maharlikanism</title>
+<meta name="description" content="An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika">
+<meta name="author" content="Maharlikanism">
+
+
+<meta property="og:title" content="">
+<meta property="og:description" content="An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/writers/blair/philippine/vol-19/chapter-03/">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika">
+
+
+<link rel="canonical" href="http://localhost:1313/writers/blair/philippine/vol-19/chapter-03/">
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" >
+
+
+<script>
+  (function() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+
+<link rel="icon" type="image/png" href="/icons/favicon.svg">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+
+
+
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/writers/blair/philippine/vol-19/chapter-03/">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="min-h-screen flex flex-col"><nav class="navbar" id="navbar">
+
+  
+  <a href="/" class="flex items-center gap-3 shrink-0">
+    <div class="w-9 h-9 flex items-center justify-center">
+      <img src="/icons/sun.svg">
+    </div>
+    <span class="font-cinzel font-bold text-gold-300 text-lg tracking-widest hidden sm:block">MAHARLIKA</span>
+  </a>
+
+  
+  <div class="hidden lg:flex items-center gap-6 xl:gap-8 mx-6">
+    
+    <div class="nav-item relative">
+      <a href="/advocacy/" class="nav-link">Advocacy</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/culture/" class="nav-link">Culture</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/governance/" class="nav-link">Governance</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/history/" class="nav-link">History</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/infrastructure/" class="nav-link">Infrastructure</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/laws/" class="nav-link">Laws</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/metaphysics/" class="nav-link">Metaphysics</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/politicians/" class="nav-link">Politicians</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/writers/" class="nav-link">Writers</a>
+    </div>
+    
+  </div>
+
+  
+  <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
+
+    
+    <div class="search-box relative hidden md:block" id="search-container">
+      <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-gold-300/60 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input w-36 xl:w-52 focus:w-64 transition-all duration-300"
+        placeholder="Search articles…"
+        autocomplete="off"
+        aria-label="Search"
+      >
+      <div id="search-results" class="hidden"></div>
+    </div>
+
+    
+    <button
+      id="music-btn"
+      class="relative flex items-center gap-1 px-2 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle background music"
+      title="Toggle music"
+    >
+      <svg id="music-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span class="music-playing hidden" id="music-bars">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+    <audio id="bg-music" loop preload="none">
+      <source src="/music.mp3" type="audio/mpeg">
+    </audio>
+
+    
+    <button
+      id="theme-toggle"
+      class="p-2 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle dark mode"
+    >
+      
+      <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      
+      <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+
+    
+    <div class="relative" id="lang-dropdown">
+      <button
+        id="lang-btn"
+        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200 text-sm font-medium"
+        aria-expanded="false"
+        aria-haspopup="true"
+      >
+        <span>🇺🇸</span>
+        <span class="hidden sm:block uppercase text-xs tracking-wider font-cinzel">en</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div id="lang-menu" class="nav-dropdown min-w-36" role="menu">
+        
+        
+        <div class="flex items-center gap-2 px-4 py-2.5 text-sm bg-royal-800/50" aria-current="true">
+          <span>🇺🇸</span>
+          <span class="font-cinzel text-xs tracking-wider uppercase text-gold-400">en</span>
+          <span class="text-gold-300/60 ml-1">English</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <button
+      id="mobile-menu-btn"
+      class="lg:hidden p-2 text-gold-300 hover:text-gold-100 rounded-lg hover:bg-royal-800 transition-all"
+      aria-label="Open menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+
+  </div>
+</nav>
+<main class="flex-1 pt-16">
+
+
+<div class="article-header" >
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
+  <div class="relative max-w-4xl mx-auto px-4">
+    
+    <nav class="breadcrumb mb-6 flex-wrap justify-center" aria-label="Breadcrumb">
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  </a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Maharlikanism</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Writers</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/blair/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Emma Helen Blair</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/blair/philippine/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">The Philippine Islands, 1493–1898</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/blair/philippine/vol-19/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">1620–1621</a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <span class="text-gold-300/80 font-cinzel text-xs uppercase tracking-wider"></span>
+  
+</nav>
+
+    
+    
+    <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"></h1>
+    <div class="gold-divider"></div>
+    
+    <div class="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gold-100/50">
+      
+      
+      <span class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        115 min read
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    
+    
+    <aside class="lg:w-72 shrink-0">
+      <div class="lg:sticky lg:top-24">
+        <div class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-5">
+          <h3 class="font-cinzel text-sm font-semibold text-[var(--color-primary)] tracking-widest uppercase mb-4">
+            Contents
+          </h3>
+          <nav class="toc text-sm text-[var(--color-muted)]" id="toc">
+            <nav id="TableOfContents"></nav>
+          </nav>
+        </div>
+        
+        
+        <div class="mt-6 text-center">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-XXXXXXXXXX"
+               data-ad-slot="SIDEBAR_AD_SLOT"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        
+      </div>
+    </aside>
+    
+
+    
+    <article class="flex-1 min-w-0">
+      
+      
+
+      
+      <div class="prose-maharlika">
+        <p>Letter from Fajardo to Felipe III</p>
+<p>Sire:</p>
+<p>1st. The ships from Nueva España has been delayed.</p>
+<p>The anticipated rise of the vendavals with the so great fury with which they began this year; and fearing on that account some disaster, or their making port in distress at Japon, where also there is cause for fear; and while considering the hardship that might result to this country from any one of those things:</p>
+<p>we had news that 3 ships of the Dutch rebels were awaiting our ships between the channel of San Bernardino and the Cape of Spiritu Sancto, where the latter had to come.</p>
+<p>Consequently our anxiety deepened, knowing that this country would necessarily be endangered if those ships were driven from its coasts, with the men that we have for its defense, at such a season that, if they left the strait, they could not possibly return here this year; or, if there were a failure to act, the people [of this city] must remain not properly cared for, much less contented.</p>
+<p>Although it was evident that we might go out at a time when we could be of [no] use, and when the aforesaid danger would not happen to the ships, with all the resources at my command, I had the galleys and light craft manned, so that they might go out immediately with what advices and orders [91]seemed advisable. While preparing the ships, which were almost ready to go out, for whatever might arise, and in the midst of that anxiety, God was pleased to do us the favor of freeing us from it by the news that I received of our ships. That news, thanks to His Divine Majesty, was most favorable, when one considers what might have come.</p>
+<p>The flagship was a large galleon and not a very good sailer.</p>
+<p>It encountered alone the 3 Dutch ships.</p>
+<p>These approached the galleon, and ordered it to strike its sails for Mauricio.</p>
+<p>Captain and Sargento-mayor Don Fernando de Ayala, warder of the port at the point of Cavite (whom I had sent out in order that he might return as commander of the said ships because the person who went as commander from here was to remain in Nueva España—namely, Don Luys Fernandez de Cordova, a relative of the viceroy of that province) answered them, as a valiant cavalier and soldier, with his artillery and firearms. He continued fighting and defending himself all that day and part of the night, until under cover of its darkness and a heavy fog that settled down, pursuing their voyage, the Spaniards left the enemy with the intention of running upon the coast of an island of the strait, called Ybabao.</p>
+<p>Our Lord guided them to a port, where a ship was never known to have entered. There they anchored, and fearing that the wind with which they entered might shift to that which generally prevails in that season and with greater fury, they determined to run the said ship into the mud, and to cut away the mainmast, in order to render them less liable to drag, and to leave the port again [92]and encounter the enemy. Accordingly, all possible haste was displayed in disembarking the men, and the silver and reals of your Majesty and of private persons, and the most valuable goods; but scarcely was that done when the storm, coming down upon the ship, drove it upon some rocks. There it foundered and sank, although in a place so shallow that but little of the ship’s cargo was lost.</p>
+<p>For they continued to take out and use many things, except the articles of luxury. Although no use could be made of the ship’s hull, as it was entirely ruined, the resultant loss is almost nothing, and inconsiderable when one thinks what it might have been, and what this event has gained in advantage and reputation for these islands, and for your Majesty’s arms herein. For, although your Majesty, thanks to God, has had excellent successes in the islands, still it has all been by superiority of ships and men; and there is nothing, according to common opinion, so fortunate as this event, considering what the enemy will have lost in all the aforesaid respects among all the nations with whom they have relations—especially with that of the Japanese, who place their honor and ground for self-praise in war. It would appear that they will not be well esteemed there, nor even pleasantly received by their creditors—with whom, as we understand here, they were indebted for about three hundred thousand ducados for their preparations and the relief of their forts, having assigned to the creditors their pay from a good prize that they were to make, which must have been this galleon.</p>
+<p>Then, in order that everything might turn out well, our Lord guided the patache—which was coming as almiranta—without its meeting an enemy. However, [93]from the severity of the weather, the same thing happened to them as to the flagship; but they lost no cargo, for that vessel was so small that I bought it for not more than one thousand pesos.</p>
+<p>Although some think that those ships did not have a more satisfactory voyage because they left Acapulco April 4, in my opinion that could not have been avoided; for they reached that port late because their voyage thither was long and troublesome. Notwithstanding that they had been despatched, they would have found, when they arrived, vendavals already in these islands, as these commenced so early, as I have said. Although the viceroy wrote requesting greater haste in those despatches, yet because they are sent late from there, they also arrive late here, even if no such events happen as the above. It is almost impossible for the ships to leave here early, if the arrival of those from Nueva España is delayed, unless no opportunity be given the inhabitants to receive their share of money and letters, which is a thing that they would feel keenly.</p>
+<p>[Marginal note: “War. What you say in these sections is reduced to three points. Firstly, the thanks that you give and should have given to our Lord for the good success of the flagship, and the same has been done here. May He be praised for all, and thus it is to be hoped, in His divine mercy, that He will be in all other events; for the just end and cause to which all is directed is His holy service and the extension of the holy Catholic faith. The second main point is of the utmost importance, and is regarding what has been written you, with the remonstrances required by the case—namely, that if the flagship and almiranta sail late, it is impossible that they can be [94]despatched early from Nueva España; and although we have written to the latter country, giving the method that is advisable to be used in that voyage and despatch, they always excuse themselves for the late sailing of the ships by the risk of vendavals, as the violence of the weather is an unavoidable difficulty. We have also written to you that the only cause of the delay is the waiting to lade those ships with the commerce of Manila—which are detained for personal ends, by awaiting the merchandise from Japon, China, and the Orient. That is poor management; and the welfare of private persons must not have more force than that of the public. For the customs duties received on departing and returning are not at all to be considered with the great danger of bad weather, in which everything is risked—especially since the only cause for the commerce between Nueva España and those islands is not the benefit of the merchants, nor the lading of Chinese cloth, but the maintenance, succor, and payment of the military and of the ministers who assist in the service and defense of that country. If you should one year cause the ships to sail on time, those at Acapulco [los terceros] would be warned by it for the future, and would understand the diligence that they must use in their despatch. It is said—and let this serve as caution and warning to you—that the chief officials who have in charge the despatch of the flagship and almiranta are those most interested, as figure-heads for third persons, in what is laded. The third point is, that when those vessels (not only of trade, but of war) sail, and since their risk of enemies is at the departure and return (but most on the return), you are advised to take warning not to let the [95]ships be so overladen that because of that they go ill equipped with seamen, and even worse defended. In conformity with this we have written to the viceroy of Nueva España; and have stated that it would be a less disadvantage to increase the number of ships than to overload those that are sent—to say nothing of the damage done to the hull of the ship by carrying so heavy a cargo. Also you are advised, on account of what you say in this section—since you say that the Dutch get help in boats, money, ammunition, food, and men in Xapon—that it would be well, since there is so continual communication between Japon and our government [in those islands], that you endeavor—through an embassy, or in any other way—to negotiate with any king of those of Xapon, or with the person who is the cause of that [aid to the Dutch], and tell them that those enemies are pirates, and that they violate the laws of nations and the public peace. Finally, since you have the matter in hand and know the importance of separating the Japanese and Dutch, you shall do this with such energy and skill as your prudence admits, doing all that you shall deem necessary and useful to attain that end.” In another hand: “A letter is being written to the viceroy of Nueva España, sending him a copy of his [i.e., Fajardo’s] clause, and what answer is made to it; and advising him, as here above stated, that an order has been given so that they shall endeavor to have the despatch of the flagship and almiranta of Filipinas attended to promptly and seasonably, as is necessary for their voyage. Accordingly he shall again issue orders to that effect, and advise us of what is done in this matter.”]1[96]</p>
+<p>2d. I am also writing to the viceroy not to waste time and money in making unnecessary repairs on the ships, and those for which their captains and commanders do not ask; for that is of use only for those who have slaves who act as calkers and as other kinds of mechanics, in which they sometimes gain more in such works than they are worth.</p>
+<p>In the same way [I have requested] that he shall not furnish rigging and other supplies unless they are requested; for I am sending the vessels from here already provided, for both going and coming, with everything necessary (even the candles), in the endeavor to avoid the expense caused to your Majesty in the past with such outlays as have been made, and with the things brought here. This can be very well avoided, because there have been certain articles that can be obtained here for one-tenth as much as they cost in Nueva España, both rigging and other things that are not needed; while ammunition and arms are so extremely necessary. Of these, on the occasion that I have mentioned, there was known to be a very [97]great lack. The mistake must have been occasioned by my saying, in regard to the arms that I requested, that powder-horns were unnecessary here (as is the fact). But it was not to be understood by that that the arquebuses and muskets for arming the infantry should come without powder-horns. That appears to have been the understanding, for on the said occasion not thirty pairs of them were found, and very little powder. All that resulted from those who despatched those ships not paying attention to what their commanders asked, while they supply them at times with what they do not need or request; and other things those persons furnish at their own pleasure, with no care whatever except for the bulk and lump—obliging the masters to receive them on faith, and even on appearances, according to what is observed here. Those who have made those voyages think strongly that the standards of measure there should be somewhat less. I hope for a reform in all this, through the good management and zeal of the viceroy, and that he will set a limit to what those who attend to these despatches at the port of Acapulco have done—as also to the vexation and trouble caused to the sailors and workmen of those ships by examining so minutely the wretched belongings that they carry in their little chests, and by treating them with more severity in this than appears advisable for men so necessary and who work so hard.</p>
+<p>[Marginal note: “In the letters that were written you, in the next to the last and the last despatch before this one, that discussed this reform and the avoidance of expenses which were made and caused in Nueva España for those reënforcements, you were directed to try to give special and minute information [98]as to what you have there, and of its cost; and advised that, if prices are so much more advantageous than those of Nueva España, those expenses might be avoided. The same thing has been written to the viceroy, while the royal officials there [i.e., in Filipinas] have been notified to send a detailed report of the matters of that sort [in which expense] could be avoided. If that has not been done, you shall do it; and with it those in whose charge are the despatch and provision of the ships and the supplies, shall be convinced, and the losses and expenses repaired. Since you have abundance of all kinds of rigging and sea-stores, and they are obtained so advantageously in the ports and regions of your archipelago, provision shall be made only in the smaller firearms—that is, outside the situado. And inasmuch as the Council should have the information that is desirable in regard to these matters, you shall always send us a copy of what you write upon them to the viceroy and royal officials, so that observance of what is enacted in this regard may be demanded from here, and that the account may be somewhat better regulated. The other things that pertain to the excesses that you mention in the preparations in Nueva España have been written to the viceroy, as per the enclosed copy, so that redress may be provided in what is so just.”] [Here follows a note, on a separate piece of paper.2]</p>
+<p>3d. And inasmuch as I am not confident that the viceroy will be willing to admit that the appointments of offices and officials of these ships from these islands do not concern him, when those who are appointed complete the exercise of their duties on their [99]arrival at Nueva España—as, for instance, Don Francisco de la Serna, who is going this year as commander; and Don Luis Fernandez de Cordova, who was commander last year, as they commenced to exercise those offices from the time of their departure from those provinces and are returning in those functions through courtesy, and for just considerations—the viceroy undertakes to appoint men to those places, refusing to understand as he ought what your Majesty has ruled and ordered in this matter. On the contrary, in order to establish himself in this pretension, he has suppressed the appointments that I sent last year. Indeed, although he deprived Don Fernando de Ayala of his appointment, he did not make another appointment, but said that he was satisfied for that time with that act of jurisdiction. He said that he would send me another as commander of the ships—a young man, like those whom he sends as captains of infantry. That would have resulted in the disinclination of people in this country to send what is of so much importance [i.e., their cargoes to Nueva España], with the supplies and artillery which I sent—very differently from the usual practice, in charge of a man of action and valor, who has fought very often. I cannot see why the viceroy should wonder at a thoroughly satisfactory person being appointed and sent from here, in order to return in such a post, since for a matter of so great consideration, value, and importance, it does not seem much or hurtful that each ship should always have a captain, like those whom your Majesty appoints in the flagships and almirantas of the trading-fleets, with the same preëminences and the right of succession to the responsibility and management [100]of them, in case of the death or absence of their commanders. For it would be a misfortune, in case of their absence, for the relief or the ruin of these islands to depend, on the occasion of a fight or other emergency in which there is need of a leader, on the direction of a pilot or a master, when suitable provision can be made without any considerable increase of expense to your royal treasury.</p>
+<p>If your Majesty be so pleased, and will give me authority for it, I prefer to do this, even if, in order to give them some pay, that of the commanders and officials be curtailed; or by seeking another plan and supplying them something with certain accommodations in their vessels, as might be done better here. The men levied in Mexico and those provinces might be delivered at Acapulco to those captains, thus saving the pay granted to the infantry captains and officers. For most of the latter are not usually very eager in their service, while their persons and the troubles that they bring are of no little embarrassment to the governors; and perhaps it would be advisable to do away with their banners and distribute the men among the old companies. That has not been done at any time, both to place the aforesaid persons under some obligations, and because they bring the pay for one year already paid to them. I petition your Majesty to order this matter to be examined and considered, and to command me what I am to do in regard to it and to order the said viceroy, in accordance with the above, to refrain from annoying with that pretension the respectable and deserving inhabitants who sail [on the ships] with appointments to such offices. For there are men here who have merits and are old residents of [101]the country, to whom these employments might well be given; and others who, although they are not of so much prominence in this country, have been and are engaged in the service of your Majesty. Consequently, both for that reason and because of their qualifications, no one ought to be preferred to them—although there are, besides the aforesaid persons (who are numerous), a much greater number of others who demand everything, without right, reason, or justification, and assert that they deserve it. They must believe this, by the way in which they get angry about it; for it comes to such a pass that they do not treat one another well, as we have just experienced. For I appointed Captain and Sargento-mayor Esteban de Alcazar admiral of these ships that I am despatching—a man of many years of service (some in Flandes), and more than fifteen years of residence in this country, whither he came as captain of an infantry company. He has also served in Terrenate, and reënforced those forts with the supplies that he took in his charge, in consideration of which your Majesty confirmed him in an encomienda, without debarring him therefrom because he was a brother-in-law of the fiscal. That relationship, however, no longer exists, because there is another fiscal, a man young in years and of little judgment, without services, merits, or any other qualifications to support his claims, not even for the office of government notary, which an uncle of his resigned. This man has tried to oppose my choice; he has had the audacity to demand the place, trying to disqualify the appointee with a suit brought by my predecessor, from which the royal Audiencia freed and acquitted him. Although I am certain [102]that he [Esteban de Alcazar] is one of the most deserving of those who might be employed in this, I have chosen to send a sworn testimony in the form of a report (in duplicate), so that your Majesty, if such be your pleasure, may order it to be examined. Although any one might resent having to furnish an exoneration when there is no cause for the accusation, there is much more to resent here in the accusations which some are wont to write without any justification, and without the matter being known; for, by reason of the long time that must elapse before one comes to have notice of it and the truth of the matter is made known, he has already suffered much in darkness from an evil and unauthentic relation, and this is the truth.</p>
+<p>According to the news received here of what has come in the said ships, the aid in silver and reals that has come on your Majesty’s account amounts to three hundred and fifty-two thousand pesos; while the supplies that I asked both this year and last come to less than one-third of the amount that was generally brought in several former years—for I am very careful not to exceed what is actually necessary and unavoidable, in order to save the so excessive expenses which were generally incurred in this; since other expenses are not wanting that render that saving very necessary.</p>
+<p>The infantry does not amount to two hundred men, in three companies. If these men were that number, and Spaniards, it would not be so bad; but, although I have not seen them, because they have not yet arrived here, I am told that they are, as at other times, for the most part boys, mestizos, and mulattoes, with some Indians. There is no little [103]cause for regret in the great sums that reënforcements of such men waste for, and cost, your Majesty. I cannot see what betterment there will be until your Majesty shall provide it, since I do not think, that more can be done in Nueva Spaña, although the viceroy must be endeavoring to do so, as he is ordered.</p>
+<p>[Marginal note: “Have the orders held by the viceroys regarding this collected. All that he says for the benefit of the treasury is good. Thus I am trying to do on all occasions. In regard to the quality of the soldiers, have the viceroy of Nueva España informed that they must always be men who have served, and of the quality desirable. Those who were boys might be kept in presidios, and in places where there is not so great need of experienced soldiers. By placing them in other companies and in diverse services, they might supply the lack of other persons. Have a letter written to the viceroy of Nueva España, and a copy of this section and the answer to it sent to him. Have him advised to try, at the levy of these soldiers, that no places be given to any but persons who are suitable and useful for the Filipinas, for the contrary becomes a useless expense.”]</p>
+<p>4th. I wrote to the viceroy last year that if, in any year in the future—through any misfortune, or for any other cause or obstacle that might prevent it—no ships from this country should reach those provinces, he should try to send what aid he could, as is usually requested, especially that of money; so that in case of such a lack, the need should not increase, or the danger caused when ships of this commerce do not sail. According to his reply, it seems [104]that the viceroy does not dare assure it, because he doubts whether he can find ships in the ports of that country for that purpose.</p>
+<p>Desiring to find some plan for the greater facility and less cost of sending these reënforcements, it has occurred to us here and has been considered a reasonable and feasible means and expedient to have them come by way of Panama. If your Majesty would be pleased to keep there one of the two ships that leave these islands for Nueva España, that would have very good results, if no obstacles thereto arise which we have not considered here.</p>
+<p>The advantages are, that what infantry your Majesty pleases can come from España divided among the vessels of the trading fleet of Tierra Firme, that go to Puertovelo or Nombre de Dios. Their passage and the transportation of their food would not cost much, and the owners of the vessels might even carry them free for the concession of the register or permission for the voyage. If they left in due season, nothing would be lost, nor any soldier either, in the short passage which must be made, in order to embark at Panama from Cruces, a distance of five leguas. One can reach that place in boats by means of a river. In the same way, all the things shipped here from España can be transported, thus saving the vast sum generally incurred by the freight charges and carriage of the goods in Nueva España. This expense is caused by the long and dangerous road to Acapulco, and the rather long space of time from the arrival of the trading fleet at the beginning of September until the departure of our ships at the last of March—both in what the infantry consume and waste, and in those men of it who are lost.[105]</p>
+<p>There will also be another advantage if your Majesty should be pleased to locate there [i.e., at Panama] the reënforcements of money and provisions for these forts. For if the ships from this country, by any misfortune or other occasion for delay, should not arrive, as many ships as were needed could be obtained there, ready, in which to send the ordinary and even extraordinary succor that your Majesty might despatch; while in Acapulco there would be no such facility, or even possibility, in addition to the long and most costly voyage of the ships despatched thence. And, according as the despatch from Panama is considered and regarded, our ships, even if they should arrived there one month later, would leave the port earlier, and much earlier than from Acapulco, since the journey thence here is so safe and short, as experience has already demonstrated.</p>
+<p>By dividing this commerce, and by one ship going to Acapulco and another to Panama, one would think that, if the vessels’ were not more nor larger, the export or sale of Spanish merchandise would not be checked; for inasmuch as Mexico would be abandoned in order to go to Panama, the former country would come to have need of España, and would consume as much and perhaps even more than the amount that was not used in Panama because of the departure of the ships of this country. It is almost a certainty that no innovation would have to be experienced because of the way in which, it may be understood, the Mexican merchants have communication with those of Peru and all the Indias—avoiding the royal duties on what is smuggled. If each ship went publicly by permission from [106]your Majesty to that region, as I have said, the increase of duties would be very great, and there would be no difficulty in the way, according to the understanding here—which, I have understood, is also the opinion of this city. They petition it from your Majesty, and I do the same, with the desire that I have and ought to have for you royal service and the welfare of this country. I find myself daily under new obligations to this country, which the inhabitants lay upon me by the willingness with which they respond to the service of your Majesty with their possessions, persons, and lives, as I have experienced from many on the occasions that have arisen. According to the limit of my understanding, and that which I have been able to grasp with it in this particular, I regard the aforesaid as so important to your Majesty’s service that, considering the matter in case that it should be necessary for the ships to go together, I would regard it as more advisable for both to go to Panama rather than to Acapulco—although I think that the said division is better, and the advantage of the reënforcement of men, and that which that country [i.e., Nueva España] can give easily; for thus results service to your Majesty and good to this country, and apparently not a little benefit to the commerce of España. For the products and merchandise of España that are esteemed here would be bought and imported in a much greater quantity with the saving of the freight charges overland, which are so excessive from Vera Cruz to Acapulco. The cost of those articles is also increased by the profit of the merchants who buy and retail them in that country [i.e., Nueva España]. If the merchandise were relieved from so high prices [107]as it reaches to in this manner, and if the goods can be so easily passed on from owner to purchaser without resale, the shipment here of a great amount of the said merchandise and products, and of money less that quantity, is certain.</p>
+<p>Likewise, in addition to the above, if the enemy should station themselves on that coast [i.e., of Nueva España], to await the ships that sail to Acapulco (as they have already done at other times), where they have captured some of those that have sailed hence, not only are there not ships at hand ready to go out to fight with them and to prevent them from making such attempts, but not one patache in which to send advice of it out to sea; while in Panama and on its coast that danger would be more easily averted because there are plenty of ships and seamen there. Will your Majesty be pleased to have this matter examined and considered so that, after understanding the pros and cons, what is most advisable to your service may be done.</p>
+<p>[Marginal note: “Note of what was decreed, on a separate paper.”3]</p>
+<p>5th. We are very happy at the good news that has arrived here of the favor that your Majesty concedes, to all of us who live in this country, of sending us reënforcements of soldiers and ships by the Cape of Buena Esperanza; and I more happy than I could express, because of my great desire for it and my great regret over its lack, in order to demonstrate effectively the desire that I have always had, and have, of employing myself in your Majesty’s service. May His Divine Majesty so well manage it that, if life does not fail me, I shall, with the protection of God, [108]endeavor to employ it to my very utmost—without my promising more at greater length, for we can promise much from the hands of His Divine Majesty, but from our own but little. In order that the successful end of such intents may be better attained, at the best time, without there being any lack, I petition your Majesty to the utmost of my ability that the sending of this help, together with troops, be continued for some years—by way of Panama, or by whatever way your Majesty may please—so that the forces which might be assembled with such a fleet as is above mentioned might not be weakened so soon because of the many men that die here; and that the provision of money be in proportion to the men, and for the same time. I trust that, with the above, the cost and trouble incurred will succeed, without my endeavoring to excuse myself from it, or failing to economize and well administer the revenues as well as other things. The results certify it; for, with less money than has entered the royal treasury for many years, I have accomplished so many works, and have built or bought, in two years only, as many boats, provisions, and war stores as was done during many years in the past, and at a much less cost. For I have paid for all these, and of the arrears of debt a very large amount—as, if time allowed, could be seen by the official statements that would be sent to that effect. However, I shall try to do that on another occasion. I have come to say this, because your Majesty charges me to be very careful of your revenues, and as I have a bit of vanity in it, which seems to me not to be the most harmful vanity. I desire exceedingly that the manner in which I manage this matter be known, for there is [109]a great difference in faithfulness, in good administration alone.</p>
+<p>[Marginal note: “Council. You have already been informed in another letter that God was pleased to let the reënforcement be lost because of a bad storm. Nevertheless, all possible care is being taken to prepare another. May our Lord be pleased to direct it, since it is so important for the things of His service. By the despatches that you will receive from the hand of the castellan Pedro de Heredia, you will understand about the two hundred infantrymen, with which your present need will be supplied, until the more important aid is made ready. Inasmuch as you are advised of other things touching this matter in the despatch of the said castellan, nothing more will be told you of it, as I refer you to what it contains.”]</p>
+<p>6th. For this purpose, very acceptable aid has come to me with the arrival of the factor, Diego de Castro Lison. For the favor that your Majesty granted him in this—both to him and to me—I kiss your royal feet with the humility and acknowledgment that is fitting.</p>
+<p>It seems to me that with the commission borne by the above-mentioned, it will be very well if, during his execution of it, he be relieved somewhat of the many onerous duties of the office of factor; and for that purpose I shall endeavor to give him the aid and leisure that should appear necessary. If the treasurer—who has not yet arrived and whom I do not know—is such as I believe and have proved the factor to be, I shall have no need of carrying memoranda in my pocket of what is paid into the royal treasury, as I have done sometimes, even constraining [110]this present treasurer so that he might ordain that those warrants for whose despatch and payment he did not have my decrees should not be honored. Consequently, I would not be sorry to see here two or three men for the accountancy of this treasury and for that of Terrenate; but, although the governors are accustomed to make that appointment, I cannot find many to choose here.</p>
+<p>[Marginal note: “It is well. With the arrival of the treasurer and that of the treasury accountant, he is relieved of his anxiety about the matter of accounts.”]</p>
+<p>7th. I have equalized the pay of the captains, officers, and soldiers here and at Terrenate, by increasing that of some and diminishing that of others, as your Majesty has ordered. In order that they may have an equal amount of work, and comfort also, I am having part of them changed every year, so that their exile may not be perpetual, nor desperation compel them to go over to the enemy, as many have done. Accordingly, for this reason, and so that the smaller and larger boats, in which the reënforcements are conveyed, may go and come in safety, I cause some infantry to go in all of them.</p>
+<p>[Marginal note: “Council. It is well. You have already been informed in regard to this, and it was referred to your prudence and better judgment, as you are the one in direct charge of affairs. You shall give licenses and shall arrange for the passage of the soldiers from one part to the other in the manner most advisable.”]</p>
+<p>8th. The last reënforcement that I despatched this year has been the most abundant that has entered those forts since their recovery, especially in money [111]and men; for there were almost two hundred and fifty Spanish soldiers, besides the Pampangos and pioneers, and the men of the two galleys and four ships in which that reënforcement was taken. Of the latter only one small patache was lost, which is considered miraculous here because of what has happened on other occasions. But I, although not neglecting to give thanks to God for it, cannot be well satisfied with the result, until I can ascertain whether the galleys could have gone more quickly and efficiently to the aid of the patache—although I am told that when they sailed there was sufficient wind so that they could not fight with a galleon carrying heavy artillery. I shall endeavor to inform myself of it, and of what the person in charge of the patache did, and what he neglected to do; and, punishing the guilt that I shall find, I shall inform your Majesty of everything. I do not see how the master-of-camp, Don Luis Bracamonte, who had charge of that reënforcement, can entirely clear himself; for after I had appointed captains and private persons to whom the ships could be entrusted, he committed the one that was lost to an accountant, one Don Alonso Fajardo de Villalobos, when neither he nor I knew that man sufficiently to entrust such a ship to him. But until I have heard the reasons on which he based that action, I do not dare to blame him.</p>
+<p>[Marginal note: “What investigation you make in this will be very suitable. You have also well understood the matter, and reason on it in such a manner that there is nothing to add to what you propose, except to await your reply with the suitable execution of it, for the good example that must emanate from it in similar matters.”][112]</p>
+<p>9th. I believe that your Majesty will already have learned of the occasion for sending the said master-of-camp to those places, by letters that I sent via India. By them will be seen the causes that preceded, and the pressing efforts made by the castellan Lucas de Vergara Gaviria, in order that he might be permitted to come here. A son of Doctor Quesada, ex-auditor of Mexico, a man respected for his learning and integrity, went to take his residencia. I gave him charge of one of the companies that I sent to those places and which had to be reorganized in them, for that purpose, and because of his rank, the services of his father, and his wish to follow a military life. When the residencia and acquittal are made, I shall inform your Majesty of that also. It will have so much that is good or evil, as the religious shall have aided or opposed him; since their friendship is the greatest advantage here, and their hostility the greatest evil. For if they desire to grant honors, even to one who does not merit them, the documents, vouchers, and negotiations are drawn up as may be desired; and the governor has to give in payment what they demand, even if he be unable. If he do not act thus, woe to him; for they reach him in conversations and pulpit in his most vulnerable spot, his honor. Consequently, as I know that to be usual here, I am resolved not to credit what they have written of Lucas de Vergara Gaviria; on the other hand, I am meanwhile not sure of the contrary. I consider him a good soldier, although he has something of the harshness of temper that is reported. I also wrote to your Majesty when I informed you of his coming and of the departure of Don Luis de Bracamonte, asking you to be pleased [113]to send a governor for those places, for Don Luis said that he would remain there only until the arrival of your Majesty’s appointee—a thing that was self-evident, even had he not said it. Had it not been for placing a captain before one whom your Majesty had honored with the title of master-of-camp, I would have given those forts in charge to Captain Don Andres Perez Franco, to whom your Majesty, while he was alferez, granted thirty escudos’ pay to induce him to come with me; and I would trust him not only with those forts, but also with other things of importance that your Majesty has in these parts. But I considered the above facts, and his few years as captain, although he has spent many in service; and, on account of his popularity and the excellent proofs of his integrity and valor (as your Majesty can learn from the soldiers of Flandes who know him), I am not sorry—although I would be glad to have him in Terrenate—to detain him here, as he is one whom I value most highly. He has aided me in all that I am doing in your Majesty’s service, and in the fulfilment of the duties of my office—which he aids in the building of ships and in the repair and equipment of them, in all the works and the despatch of ships that are carried on at the point of Cavite, and in whatever else arises, very much to my satisfaction and to that of all. That is not inconsiderable, and I assure your Majesty of this on account of my obligations to your royal service, and to inform you of those who aid in it, rather than through my goodwill and affection for this gentleman, although these are great. His mode of procedure constrains me to it. Although I have relatives here, I shall not inform your Majesty of them, as long as they do not [114]merit my doing so by their time and experience here.</p>
+<p>If a governor is to be sent for Terrenate, your Majesty will not forget those persons whom I have proposed for that post. They are Captains Don Diego de Salcedo, Joan Gonçales Corrilla y Santander, who were among the men of best judgment in Flandes when I was there, and of whom I would rejoice to hear news. But if, in another man, to such qualities were united some experience as a sailor, or a taste for naval affairs, he would not be worse for that; for very gallant deeds might he done among those islands.</p>
+<p>[Marginal note: “The points mentioned in this section are reduced to two. First, you will already have learned about the appointment of Pedro de Heredia as governor of Terrenate. It is thought that you will be well satisfied with his person, and that he will suitably conduct the public service. Concerning the other persons of whom you advise me, and especially of Captain Perez Franco, I am informed of his good qualities. So long as nothing offers here in which to occupy him, you shall take charge of his person, and shall employ him for what you think him suitable, for the reputation of generals consists in their efficient choice of persons, giving to each office what concerns it and what it needs. The second and chief point is concerning the religious who through their favors and friendships affect the standing of officials, and by altering the truth impose blame on the latter or injure their reputation—reducing [public] affairs to their own methods, which has pernicious and evil results. Since you see that, and have experienced it, as you say, it would be your own fault if you did not remedy that matter. [115]I leave it to you to do what is most fitting. What occurs to us to advise you is, not to allow any religious to make charges or prove the innocence of any government official, unless it should be in some very special and particular case, in which his act may have occurred with the knowledge of such religious, and can be investigated in no other way. You shall observe the same rule in official investigations, in which if the religious do not form a part of the court, certainty may thus be felt that affairs will proceed with sincerity and truth, as justice requires. This that is told you, you shall impart to the Audiencia in your meeting. You shall endeavor to have the same course followed in the case of the government agents and other persons who shall conduct similar investigations. Inasmuch as the interpositions generally made by religious are usually effective, as well as the means by which they intimidate some and encourage others, you shall take measures, immediately upon receipt of this, to inform the superiors of those religious, so that they may be warned and advise their subordinates of it, so that they may not perplex themselves or meddle in any case of these secular judicial proceedings, or with claims of third parties. For their occupation does not consist in this, but in the contemplative life, and in the exercise of the spiritual activities; and, moreover, the gravest disadvantages to the service of our Lord result from the contrary course. You shall advise me of what you shall do and what you shall have put into execution, so that I may know what occurs.”]</p>
+<p>10th. I have had no other advices of anything new, or of matters of greater importance, in those forts [of Maluco] than the above-mentioned entrance [116]of the reënforcements. From the people sent thither, and from those who wrote me from Japon, I have learned that the reënforcement was very timely; for the Dutch had crews of Japanese, whom they hired with the intention, as was understood, of attempting with them some deed of arms in that place, or something else that would have meant evil to our forces and fortifications.</p>
+<p>I was also advised from Japon that a squadron of Dutch ships was to sail thence to run along these coasts, in order to hinder the commerce of the Chinese ships, awaiting and robbing them on their way. In order to obviate this mischief, I prepared two strong ships, one patache, and two galleys, with which to make the said coast safe. I gave warning to China; and thus, in consequence, many ships and merchants of China, thanks to God, have arrived in safety. That squadron is in charge of Admiral Joan Baptista de Molina, a man who has served many years, and who has served here with especial courage and good fortune. And since every one in this country considers that he is the one who deserves most, and in order to avoid the punctilios of those who hesitated in embarking and in taking charge of those vessels—desiring, perhaps, under pretext of this to remain ashore—I gave out that the squadron was to be in charge of Don Luis Fajardo, my brother. Thereupon all followed him, and he obeyed the orders of the said admiral, Joan Baptista de Molina, like the meanest soldier of those who embarked with him. The enemy must have heard of it, or they must have had more important business to look after, for they did not approach these coasts. On the contrary, it has been learned that they lost one of their large [117]vessels (than which never better sailed), at the head of the island of Hermosa; and that, for the last two years, they have obtained nothing from this coast beyond the destruction of what had been made for equipment of our vessels, and the loss of the ships that have been wrecked. I am thoroughly convinced that opportunities will not be lacking in which, coming to blows, they will lose more, if God help us; for their attachment is strong to the profit that they claim from these pillagings, as well as from those that they made in former years.</p>
+<p>Had not the Dutch been so embarrassed by the so ruinous wars that they have had with the English, beyond doubt a greater number of vessels would have come here. According to what I have just heard from a Spanish pilot, whom the Dutch held prisoner, and who escaped from the ships that fought with us, those two nations [i.e., the Dutch and the English] were negotiating a peace, in order to be able to come here with a great number of vessels, or for other advantages to them. If the ships that I am awaiting with the reënforcements arrive, by God’s help, I shall not care when the enemy comes.</p>
+<p>[Marginal note: “It is well. Through your diligence and zeal for the affairs of my service, I hope that our Lord will grant very good results in everything, since the expense and care incurred by those regions are known.”]</p>
+<p>11th. That ship that I bought at Macan has come, with some freight charges and duties on goods that it carried. That goes a good way toward aiding the cost of its purchase and the expense [of maintaining it]. The price was eleven thousand pesos, with sails, rigging, seven anchors, and four good [118]cables. I am satisfied with it; and it appears at least to be made of better woods than those here. It was made in India, and its burden is more than six hundred toneladas of the Northern Sea.4</p>
+<p>Contract and agreement have been made to build another ship in Sasima [i.e., Satsuma?] a province of Japon near here. I am assured that it can be built there very well, and it will be strong and of good timber, and very well-proportioned and suitable as is needed for this line and trade with Nueva España.</p>
+<p>[Marginal note: “Since the counsel that you have taken in this matter is very prudent; and since you have been advised in your despatches (which you have already received) as to what you shall do; and since the benefit to the royal treasury and the quality of the vessels is so well known: you shall continue the same plan for the vessels that must be built, since, as you have seen in other despatches, the vexations to the natives occupied in this shipbuilding and the heavy expenses incurred by that construction, are thus avoided. Since you already have plans for the factory at Terrenate and for the cloves and drugs that you may get at Terrenate and its adjacent islands, it will be a very efficacious means, in order that the vessels may be cheaper, to send the cloves and drugs where they may have greatest value, so that with that profit the vessels may be built more cheaply. After you shall have more fully established that advantage to the royal treasury, you shall endeavor to put into practice the building of some boats for the service of the South Sea in Callao, Panama, and the other ports of Tierra Firme. This alone I [119]refer to you, so that you may endeavor from now on to lessen as much as possible the profit [made by others] in this, both in material and construction.”]</p>
+<p>12th. The vessel that went to Goa with a quantity of cloves, which I had traded for in Maluco and sent there on your Majesty’s account (as will be done whenever possible), arrived safely; and in the same way, was despatched and returned here (thanks to God), bringing slaves for the galleys and other supplies for the magazines, and the provisions and articles necessary for your Majesty’s service.</p>
+<p>[Marginal note. “It is well. In this way continue. In every despatch that you shall send, you shall not advise in general terms of matters like this, nor summarize; but shall send a copy of the list of what cloves and drugs you shall have or obtain in trade; their cost, as well as the expense of sending them; the price and method of sale; the transfer that was made, and in what articles and at what price. And in order that we might have as exact information and account of it as is advisable, you shall inform us, especially and in detail, of all the aforesaid, so that things of this kind may not be furnished from Nueva España or any other region.”]</p>
+<p>13th. I thought that I would send them to those kingdoms, so that your Majesty might see some cloves from Maluco. Although they are not cheap, they would be a product not often seen in the ports of Castilla, and not often carried from here. But the majority of the auditors opposed me, thinking perhaps that an oral or written relation would be sent with them not greatly to their favor. However, the one that I have already given your Majesty is not favorable to them. I suspect that they have learned [120]of it; but I am not sorry for that, as I consider it correct. Or [their opposition may have been] for other reasons, and for private ends. They do not desire me to achieve success, and I would not wonder at that so much, if I alone were the interested party. But where your Majesty and your royal service are concerned, such a thing appears incredible of any one who has a good heart and soul, and is under the obligations of honor. Therefore I would be ashamed even to think this, were there not many other causes like that mentioned, that are similar to it. I could send an account of them in authentic documents, had I more time and fewer occupations. But having to attend to these, not only can I not do more than I am doing in this, but I cannot even attend continually to the Audiencia, or consider many things that they have tried and attempted in it contrary to the authority and preeminences that your Majesty has given to this office. Many of them I must swallow, in order not to fail in the affairs of your Majesty’s service—which could not be conducted as their importance demands and compels, if one were to give much attention to these matters which concern personal grudges. For if one did that, he could necessarily attend to nothing else, because as the auditors here have few important matters that oblige them to close application, they must apply the greater part of their time to devising petty tricks on the president in order to vex and weary him, until [as they hope], not only will he allow them to live according to their own inclination, but also their relatives and followers shall, in whatever posts they desire, be employed and profited. And since harmony has never been seen here without this expedient, [121]one would think it easy to believe such a supposition. Regarding what your Majesty writes in this matter of posts being given to the relatives or followers of the auditors, there is not much to amend. Perhaps that is the reason that some are ill satisfied and to such an extent that they show it not only by inflicting annoyances on the persons who aid me in the obligations of my office and in your Majesty’s service—because they know that I esteem such men for that reason, and see our gratefulness for it—but in doing whatever can cause injury, and also in any acts of discourtesy, which are much to be regretted. Such has been the demonstration that they made by public act when, the chairs of this Audiencia having been carried in order to go to one of the sermons and festivals to which they go here; and the chair of my wife, Dona Catherina Maria Çambrana y Fajardo, having been placed behind them—just as is the custom in other places, and as was continued here, without exceeding in anything what is permitted to the wife of a president—the auditors voted that my wife’s chair should be placed outside, or that they would not take theirs, as did Doctor Don Alonso de Mesa and Doctor Don Antonio Rodriguez. It is a matter whose telling even causes me shame. Were it the resentment and sorrow of another, I could set it right, by the mildest and most advisable method possible. But as it is my own affair, and a matter akin to vanity (from which I believe myself quite free)—for when I have finished the public acts of pomp and display in my office, I return to that of sailor, which is the chief thing of this government—I lay it before your Majesty, so that you may be pleased to provide in this matter and in other [122]things touching auditors, as may best suit you. [I ask that your Majesty act] without greater inclination to one side than the other, since this office is yours, not mine; and since I shall live in the same manner with or without it, without coveting greater honors than your Majesty (may God preserve you for us) has granted me and grants me in employing my services.</p>
+<p>[Marginal note: “After considering what you mention in this matter, it is reduced to the following points. The first and more essential is that which you mention (although in ambiguous terms) regarding the trading of the auditors and government employees there, for which reason they prevented the sending of the cloves. The testimony that you send of it does not concern this matter, but only that of the goods and money that were to be sent to Terrenate for trading. That indeed was done in accordance with your opinion. The opinion that you shall hold in matters so worthy of reform you must always send to me distinctly and clearly expressed; for if there are such officials who commit illegal acts—not only in trading, but in hindering the profit of the royal treasury—it is advisable not only for the greater security of the treasury, but also for the administration of justice, that such persons be punished with the rigor that the case requires. Consequently, you shall do this, sending me information of what is done in this matter. If any proven guilt results you shall sequester the property of offenders, in order to assure the judgment. In accordance with this, we are writing to the Audiencia, advising it of what it must do. In order that no official may have any cause to think that you, of your own accord, are trying [123]to prove him guilty in a matter so grave, you shall be accompanied, in whatever concerns the sequestration of goods, by the archbishop resident there, in whose person we have the necessary confidence. The second point is that you will have been informed of all the things that concern the advantage of the royal treasury. You shall accordingly declare those things in the tribunal of the treasury and in the assembly. This reply by letter will be your authority, so that you shall need nothing more special than this for whatever may be to the benefit of my royal treasury, and shall procure that benefit by all and any justifiable means. The third point is—as you have been informed and instructed in other letters concerning the purpose of the factory at Terrenate—that all the benefit received from the islands of Maluco by the enemy is by way of barter; and that so vast profits are obtained by them in this that these enable them to be on the offensive and defensive, and convey to their own country the wealth that we see in the Malucas, the value of which is evident in the armies and other expenses that are incurred. From this example, since the expenses of my royal treasury are so heavy—inasmuch as the trade is carried on only by conquest and force of arms—everything is reduced to expense, and nothing to gain. In order to make profit you are advised that the factory of Terrenate should barter and negotiate, in order that the profit obtained by the enemy might follow, and more if possible. And if the natives of those islands see that their property is not taken from them, and if they are paid in the ordinary form, they will grow fond of us and become converted to our friendship. From that it will be possible to pass to other objects, the chief one being [124]the evangelical preaching. Consequently, setting aside the universal gain that might come to the royal treasury for the gain in a specific case, the chief thing, and one which you are to push thoroughly (or rather two things), is the operation of mines and of factories for trade. Fourth, that since you have already experienced the utility that follows from sending those cloves to the East, and using this merchandise for other purposes and trade, you shall continue to do so. You shall always send the detailed account about which you have been advised, of everything that will be of importance in this matter. Whenever any case of doubt occurs to you in regard to the ceremonious observance due your office, send the proposition that you shall have made in the assembly, together with what resolution shall have been made regarding it, so that after examination here, just measures may be ordered; for in no other manner could any decision be reached without depending on the Audiencia. In order to gain time, letters are being written to the Audiencia ordering them, in accordance with what has been done at other times, to maintain with you, in the condition of affairs at present, the amicable relations and the respect due your office and person; and to observe toward you and your wife such ceremonies as have been observed hitherto, and as are the custom. When there is any doubt about the matter, I shall be consulted, so that, having examined it thoroughly, I may provide what is advisable for the public peace and for decorous relations between the president and Audiencia. (Note for a separate paper.)”5]</p>
+<p>14th. Although it is my desire to restrain myself [125]in this particular, in order not to drag on this letter to greater length, and for other considerations, certain of my obligations move me to say the things that I cannot avoid, because I have heard that the auditors claim that your Majesty should take from the office of governor and captain-general and president, the declaration and trial of suits that concern government and war—which your Majesty conceded to him, on account of those which were being tried then, and the disadvantages that were experienced in leaving them to the Audiencia. This is a matter from which—even if it pertained to them, by opposing what your Majesty has ordered in this matter—it is impossible to dissuade them, seeking in such things any pretext or excuse to meddle in them, and to embarrass and hinder me in the exercise of my office. Thus have they endeavored to do in many things, especially in one trial, begun here by the master-of-camp against various persons employed for wages in marine works (who were under the military jurisdiction) because of a conspiracy and desertion that they had planned, and which they were ready to execute if they had any one to get their pay for them for that purpose. This occurred at a time when I, because of a pressing need then of men for your Majesty’s service, was compelling the master-of-camp and Aclaras to restore all those to their places who for ten years back had been removed from them. In their guilt Pedro Alvarez, war and government notary, appeared to be implicated. One of his friends, an ecclesiastic, named Joan Çevicos, tried to prove himself leader of this affair, in order perhaps to clear him and the auditors, according to what I understand and many believe. In complaisance [126]to Doctor Don Alvaro de Meso, or for other objects, the auditors took it into their heads that the notary of war did not belong to the military jurisdiction; and that the master-of-camp had not the right of first instance in his cause, but that it belonged to me, in order that appeals might go to them. Without what I declared, in accordance with your Majesty’s royal decree (which I presented), being sufficient, they hindered me so in it that it was impossible to administer justice. At last, as I thought that the notary’s imprisonment had been long enough—although during his trial he had no guards who could levy costs on him—at the news that the men and possessions of your Majesty and of private individuals that we desired from Nueva España were in safety, and that the enemy were waiting, I released him (in part as a demonstration of the thanks due our Lord), among other prisoners who had not been tried, and who had no one to plead for them, whom I also released. Such, then, is the end of that affair.</p>
+<p>[Marginal note: “Let them observe the laws and what I have commanded by the decrees that I have given. Advices are being sent to the Audiencia in accordance with this.” In another hand: “Have letters of this tenor sent to the Audiencia, so that they may observe the decrees of enforcement [lo acordado]. Let it be noted that since the distance from those islands to these kingdoms is as is known, and the delay and obstacles in the replies and receipt of letters is the same and in some cases greater, it is commanded and ordered that he who shall be guilty of opposing what is ordered for the good government of those islands, both in military and in civil matters, will be punished with the severity and example [127]that the case requires; for it is not right that he who merits it be unpunished in matters of such importance, involving loss and delay.”]</p>
+<p>15th. Also the auditors claim the right of trial and jurisdiction in the lawsuits of the seamen. That has come to such a pass that when I ordered that a sailor, one Luys Rivero, should be hanged for an atrocious murder that he had committed—of whose trial and of what passed then I enclose a sworn statement—they actually ordered that he be not executed. That happened on a day when I had left this city, on account of having ordered that on that same day a retired sergeant be beheaded, who had deserted while under pay and after receiving help, and had abandoned his colors at the time of the embarcation; and in order to avoid the intercessions and importunities that they lavish in order that justice might not be done. But this is only a pretext of mercy, since punishment, when deserved, is the greatest mercy—especially in this country, where the punishment of offenses was so forgotten or almost never administered. For that reason, and to lessen my grief over the execution by being farther away from it, I left the city and went up the river. The proceedings of Doctor Don Alvaro de Mesa, in procuring the obstruction of what he and his associates had ordered, were of such nature that some clamor might have occurred, had not the people been satisfied at the justification of the case, and had they not had some confidence in me, mixed with sufficient respect not to lose it on similar occasions, even in my absence.</p>
+<p>[Marginal note: “Let what is provided in the preceding section be observed, and whatever pertains to your office. Thus shall you declare in the assembly, [128]and in like cases. Let the Audiencia observe the decrees and ordinances given that order the captain-general to try military persons and their criminal causes, just as and in the form ruled by the said decrees. Let the Audiencia report why it prevented the execution of the sentence against that man.”]</p>
+<p>16th. If for such things, and others like them, the Audiencia petition (as they are doing) for power to convoke the people, since as yet has not happened, and, God helping, will not happen what they suppose can occur—namely, that I will hinder them from the exercise of their duties and the execution of such of their provisions as concern them—let your Majesty determine whether their demand is well directed. Let your Majesty also consider the evidence and rectitude that I have, other than they have, for having the greater authority in matters touching the Sangleys and their Parian; since for this they give as an argument that it would be advisable for them to have that jurisdiction, in order to expel and drive out of the country those whom it will need for its quiet and security, so that no other insurrection might happen, as in the term of Don Pedro de Acuña—as if that did not even more concern the governor and captain-general. They had resolved, a few days before, in the Audiencia, that my reason for ordering certain Sangleys to be expelled should be explained before them—although I had told the auditors before that resolution that those Sangleys and others were known to be wandering and lazy people, without any trade or any other manner of living than that of sowing discord, causing uneasiness, and stirring up disturbances; and that they had other customs that were harmful and injurious to them and even to [129]us. I told them that in order to cleanse the country of such people, who are wont to disturb it and even to endanger it on such occasions as those of insurrection, I had ordered them to go to their own countries. Notwithstanding all this, the auditors persevered in the said resolution. From that one can see what good results are attained with the intention that they show by such a demand; since the most certain thing is, that they wish to have the authority over this people, who are wont to be useful and even profitable to him who devotes himself to them.</p>
+<p>[Marginal note: “Let the ordinance of the preceding section be observed.”]</p>
+<p>17th. The said auditors also claim the right to fill the offices of the minor officials in the Audiencia and others, which may be filled in the interim until your Majesty grants them. These appointments usually belong to the president. In order to make those appointments I took the depositions that I enclose herewith; while they base their claim for this on a certain act of introduction which they had made in regard to this, at a time when there was no president. In the absences of the president, and during the government of the Audiencia, they have disused or destroyed many preeminences and decrees in favor of the governors and captains-general and president. Finally, they seek all the methods of opposition that they can find, so that, if one were to judge without looking for the best object, it might be thought that they are trying by this improper method and means to pass more speedily to better employments. I do not know whether there is more than to add the assertion that, when I called a council and asked their opinions, in order that an entrance might be effected [130]into the province of the Igolotes Indians6 (which is situated almost in the middle of these islands), and that it might be pacified and reduced to the obedience of your Majesty, for the greater service of God and the welfare of its souls—and, what is more useful, the operation of those mines (of which I shall inform your Majesty in due time)—Doctors Don Alvaro and Don Antonio opposed me; and the latter did so by a method that did not satisfy all, proposing greater doubts as to whether it could be done or no, as one can see clearly by the testimony. I am persuaded that, if his wishes and inclinations were not so biased and so ready not to become a good associate, even in what is just, many of the things above mentioned and that I could mention would be avoided. For that and complete harmony, it would be of great importance if all the auditors were not new, as they are. They make more trouble than even arises from the ignorance of their duties, since that does not prevent them from presuming that they know everything. For lack of another and better remedy—and one from which no trouble would arise—it would not be bad for those who come here to fill such places to be started [in their duties] and to be taught methods and usages by the auditors of Mexico, at least during the time while they are detained there; for it is a pity to see their deficiencies in this regard, and even more the qualifications that I have mentioned in this and other letters. The eye that was left to us in this Audiencia, whereby we could see and direct ourselves to the light, God chose to take from us, by the death of Andres de Alcaraz. We [131]were left with very great grief at the loss of so wise and prudent an associate, and at his not having had so great prudence at his death (at which time one needs more) as he showed during his life and government, and in governing himself; for he died without receiving the holy sacraments. However, one who was sick so long, it is believed, would have often received communion, since at the end he did not do so. Neither did he dispose of his possessions, which were not few. Of that Doctor Don Alvaro de Mesa, probate judge, will advise and inform your Majesty. May God keep him in heaven, as we scarcely doubt He will.</p>
+<p>[Marginal note: “This section is answered in the preceding ones. With your prudence you shall try to direct affairs so that the service of God our Lord shall be accomplished, and that the good results that are demanded shall be secured by your person.”]</p>
+<p>18th. With this reason, I again represent to your Majesty and lay before you, as I have done at other times, that I may die; for even if my subjection to death were not so natural, and more liable to accident, as in one who holds offices exposed to the dangers of sea and war, I suffer at times from lack of health; and no matter how poor may be the head, it leaves a lack in any body. Your Majesty has no auditors here who can govern, even in affairs of only justice and peace; for at times they prove deficient therein. Had Don Hieronimo de Silva been absent at such a time—as he has told me that he desires and has requested leave of your Majesty for it—I do not know to whom I could leave the charge of military matters, who would bind himself to such [132]trouble (and even impossibility) as would be the necessity of obeying, pleasing, and satisfying such leaders.</p>
+<p>Until your Majesty shall appoint persons to the government of Terrenate or to the position of master-of-camp of this place, who, in such case [i.e., the death of the governor], might act in this capacity—providing for it by the usual methods and appointments, or as might be more pleasing to your Majesty—I cannot find here any person whose ability for this is equal to that of the archbishop. He is a man of force, system, and executive ability; and, in my opinion, he will lose nothing of the authority and preeminences of the office, or of the jurisdiction and power that your Majesty might grant him; for I regard it as certain that he would not err in his government through having less knowledge than the auditors, and in it would make arrangements for greater efforts and aid to military affairs and those who engage therein. The latter would be advantaged by him, for even in this, although it is not his profession, I consider him as having more decision and effective energy than the said [auditors] have.</p>
+<p>And that it may not appear that I am in every case speaking of them in general terms (my intention being to tell the plain truth, without reserve or any other consideration than the telling of it), I declare what I believe: namely, that if Doctor Don Antonio Rodriguez—who is the latest auditor, and has not much health or maturity of years—had resided here longer I would trust his executive ahility in preference to that of the two others here, whom I do not consider very capable, for the reasons explained in other letters and in this; for as has been seen by experience, [133]he shows himself to be a man of greater knowledge and prudence, and of great sagacity. However, for a long time there have been rumors (and not few) that he has been the one who has disturbed the minds of his associates, writing, advising, and counseling them secretly. But by his not approving the object of such things, and by his keeping aloof from the others, for that reason and something of this having been well understood, I do not consider it as certain or sure; and in other things outside of this (except that it seems to me that he is anxious to grow rich quickly) I consider him as a man of good method, very prudent and well informed, and one who takes pride in appearing to be a good judge.</p>
+<p>[Marginal note: “Council. May our Lord be pleased to grant you health, so that, having finished your term of office and fulfilled the hopes that are entertained of your service, you may be promoted to better things. Although what is advisable is decreed in this matter, you will accordingly take all the care possible in it. It is to be hoped, in our Lord, that He will give you the health that you desire and the fortunate success that is so important.”]</p>
+<p>19th. Consequently, I have requested him to take charge of the cause of one Joan Mohedano who was arrested ten days ago for the accusation made against him of having entered the seminary of Sancta Potenciana; and because there are so few here who could act as judges—some not having authority to try this cause, and others having been refused therein—it has not been possible to finish it hitherto, which Doctor Don Antonio will do.</p>
+<p>[Marginal note: “It is well. Take special note [134]that such crimes and acts of sacrilege as this demand their punishment in the presence of our Lord. Accordingly it is advisable, and I order and charge you, that in this crime and in others similar—may God forbid their commission—you shall show yourself, as shall the judges who take charge of these causes, as severe and rigorous in judgment, and prompt in their despatch, as the cause requires. You shall advise me fully, in a short account, of what should be done in this matter, and the sentence and execution of justice therein.”]</p>
+<p>20th. As for the other two causes similar to the above, of which I have also informed your Majesty, I remitted that of Captain Don Fernando Bezerra to Licentiate Legaspi; for certain persons, on seeing justice done in this land, say that it is not justice, but only passion, while others say that it is cruelty. Accordingly he concluded and judged it, and freed him. For the same reason, I committed to him the appeal to the Audiencia in the other cause of Don Joan de la Vega. While the latter, on my conscience, was more than guilty enough to suffer decapitation (to which I sentenced him), the same auditors so managed the cause that at last they did the same thing; they set him free, and condemned Captain Lucas de Mañozca, formerly alcalde-in-ordinary of this city—who aided me in this cause and others to the service of your Majesty—to the sum of five hundred pesos and other penalties, and caused him to suffer a considerable time in prison, and to spend for other particular objects much time and money.</p>
+<p>[Marginal note: “You and the Audiencia have already been answered in regard to this matter, as [135]to what must be done. Now you are ordered to send a copy of these processes and acts—so that, having been examined, the satisfaction that is proper may be obtained—and of the justice that has been administered in like matters.”7</p>
+<p>21st. I am accustomed at times, for the sake of greater assurance, to refer to the Audiencia certain causes and matters that are of importance to your Majesty’s service and the obligation of my office—some, to one of the auditors, who consults with me in them; and in some, according to their nature—to ask them for their opinions. They are generally accustomed to excuse themselves from all of these, if they do not care to attend to them, and arguments or reason do not suffice for it. I cannot tell how they are to be compelled to act if reason does not move them, or unless your Majesty be pleased to order a reform in this matter, with the orders that concern each one, and what is to be done both in the above and in the declaration of jurisdictions—concerning which I wrote to your Majesty quite fully in letters of last year.</p>
+<p>[Marginal note: “Observe the ordinances according to the despatches that have been sent you regarding this.”]</p>
+<p>22d. I have committed the inspection of this country—which your Majesty ordered to be made by one of the auditors for the consolation and relief of its miserable natives, and of which no memorandum exists as to when it must be made—to Doctor Don Alvaro de Mesa, as he is in better health and more suitable for that purpose than are his other associates. Although he resisted (even saying that [136]I could not appoint him), and even gave me other excuses, I think that he would do it after the conclusion of this despatch of ships, had not the commissions come for the residencias that your Majesty has entrusted to him. Consequently, when he concludes these, if there is nothing else to hinder, or another associate who may then be regarded as more suitable for it, he will have to do it. Yet I petition your Majesty to have him advised of his obligation in this matter.</p>
+<p>[Marginal note: “These inspections are very essential, since they are based on the relief of miserable persons, and in no way can the condition of affairs be fully ascertained unless by means of these inspections; and the most advisable measures can hardly be well understood, if the condition and facts of what ought to be remedied and can be bettered are not known. Hence I again charge you to pay especial attention to these inspections. The Audiencia is commanded to observe the orders that you shall give in your capacity as president, so that each auditor, when it concerns him, may observe his obligations and go out on the inspections.”8]</p>
+<p>23d. On receiving your Majesty’s despatch, in observance of your royal order that was directed to me, I gave his despatch to the fiscal, Don Joan de Alvarado Bracamonte, ordering him to refrain from going to the Audiencia and from the exercise of such office, and that he get ready to embark. He did so, and when he was ready for his voyage and had placed on board what he had for it, and while he was making his farewells preparatory to embarking: he was arrested by the judge of his residencia, [137]in order that he might give bail for the claims and appear before the judge; and the property found to be his was sequestered. Thereupon, what he had aboard ship was taken ashore. I communicated to the Audiencia your Majesty’s royal order to embark, that he had received. It appeared right for him to give bail. That and other things were referred to the said judge, to whom I also showed the decree, so that he might facilitate the preparations of the said Don Joan and act according to justice. But it must be that he could not do so until now; for yesterday, when I had come from Cavite, and the ships had sailed—even being outside the bay, since they are not seen inside it—the notary of the residencia came to me to say that the judge had now remitted the imprisonment and removed the guards with whom he had arrested the said fiscal. As if now there were any resource for his embarcation; or as if one could send him, with his goods, household, and sea-stores, overland on the shoulders of Indians, in order to intercept the ship at the landing-place where these letter packets go out! I am sending a statement of the time when I was informed of it, lest the matter should be forgotten, or in case he should not choose to make this report. As I know him, and here are now recognized the unjust complaints that he makes, that the Audiencia have hindered him in part from the exercise of his commission, I deem it advisable that the truth be recounted, without leaving it solely to his relation; for I am sure that he has not been restrained in anything, and that in this regard the Audiencia has proceeded with circumspection and particular care, as they also know him. Although to all there his ancient hostility to us was [138]apparent, for which reason the fiscal challenged his judge, the only provision made in the matter was that he be accompanied as should be deemed advisable by the acts. From them likewise will be apparent the certainty of the guilt of which he has been accused.</p>
+<p>[Marginal note: “Have this section filed with everything touching the causes of this fiscal; and should there be any letter from the latter that discusses this point, let a report of it be made when this section is examined. Have the governor answered, that we are advised of this; and that he will be answered in a separate letter regarding this particular.”]</p>
+<p>24th. Answering the letters and decrees that I received from your Majesty just now, in those matters that I shall not have answered and satisfied in the course of this letter, I declare that I have done or arranged most or a great part of what your Majesty orders in them. For I have always been careful to do all that I knew with certainty; or should consider to be advantageous to your Majesty’s service, the efficient management of your royal treasury, and the welfare of this land, without halting therein because of the lack of such royal commands and orders, but not exceeding those given to this government. Consequently, when I received the said letters, I had already suppressed the repartimiento of rice, a thing so unjust and harmful, as they informed your Majesty and as I wrote last year.</p>
+<p>[Marginal note: “In regard to what you say in this section, you are to note that, for the better understanding of the correspondence that is maintained with you, you observe in the future the order [139]that is always followed. You shall always advise us of the receipt of the despatches, with the day, month, and year of their date, and also the dates of your receipt of them. In its order you shall insert the section written you; and, after answering it, you shall go on to the next, observing the same order. By that means, what you have received and what you have answered to that particular case can be separately and explicitly ascertained, and although, with your good prudence, you shall have enacted certain things beforehand, which are already executed, in whole or in part, at the time of their ordering, or you shall have been intending such action, yet you shall advise us of what is ordered and of its fulfilment. That concluded, in a separate letter you shall report, as you are doing, of the other matters that it is advisable should be understood, in the department and office to which your correspondence goes, of what is ordered you, and what you have done, and the notice of what you say, so that you may be answered and what is advisable be provided.”]</p>
+<p>25th. In the same manner, I have reduced the pay that it has been customary to give, of all those who came here with me.</p>
+<p>[Marginal note: “It is well.”]</p>
+<p>26th. In Terrenate there are four salaries of thirty pesos. Those who enjoy them are men of service and merits, both for aiding the governor and for their ability to enter and supply the lack of any captain, or to be entrusted with any post or affair that demands such a person. I am ignorant of the assignment and origin of these salaries, and by whom they were made. I shall inform myself of it from the documents of those forts, and ascertain what people [140]are sufficient for them. I shall give your Majesty a full account of everything, so that you may take what measures you deem best.</p>
+<p>[Marginal note: “It is well. Observe what is ordained.”]</p>
+<p>27th. The expense incurred in Terrenate, both in the pay and in the reënforcements and other extraordinary demands, is of such nature that it is very heavy, although according to the account, not very adequate; and as yet I have not made it so large as your Majesty has been informed. It is a fact that, without that drainage of men and money, the expenses here would be much less; and we would get along and live with very small expenditures, and much better. But it must also be considered that if the enemy enjoy Maluco in quiet, their profits and gains would be very great; and I think they could consequently succeed in whatever plan they wished, and whatever they did would result well. But because they do not possess it, there is war—in which he will prevail and succeed better who has more tenacity and force, especially on the sea. He who will remain lord of them will be lord of many profits and riches, which can be taken from these districts. Inasmuch as this is a matter that demands a more orderly and full treatment, in regard to experience and certain well considered relations, I shall not involve myself further in it, until I shall be able to do so with these necessary conditions. But I shall endeavor to do it as soon and as much better as possible.</p>
+<p>[Marginal note: “It is well. Endeavor will always be made to reënforce and protect those islands and your government with the forces possible. But [141]as these are limited, and consumed in so many diverse occasions and armies in Germany, Flandes, and Ytalia, and other places, it is highly advisable, as has been written you, to be careful in your expenses and in the accuracy of their account. It is also desirable that you endeavor to work the mines of the country, and to carry on a factory and the trade of cloves and drugs as much as is possible, so that you may sustain yourselves and may not prove so expensive, as has been represented to you in preceding clauses.”]</p>
+<p>28th. I shall also endeavor to tell your Majesty what I shall ascertain and hear about the duties on the cloves of Terrenate and the factory, taking for that the depositions of the Audiencia and of the royal officials—which I shall not do now, for want of time. In the opinion that I asked from them some days ago in regard to sending [a vessel] to trade for cloves on your Majesty’s account with goods and money that I had for that purpose, Don Alvaro opposed me so strongly in everything, that one would think that he considers that the risks are mine and that it is done on my account (as if the gains were mine), rather than for your Majesty’s service. However, I sent the goods necessary for this trading, because of the gain that results from it and its investment to the royal revenues and the provisions brought from India.</p>
+<p>[Marginal note: “Council. You have already been answered as to this.”]</p>
+<p>29th. If it is true, as has been said in regard to these despatches of ships from Terrenate, India, and Nueva España, that the relatives and followers of him who made and managed them have profited, [142]now, thanks to God, things are run more openly and honestly, at least in so far as I have authority, and in matters that I can prevent or remedy. That I do, in such manner that well do my condition and that of my servants attest it; for the latter live on the rations and clothes that I give them now, and they will do so until they be entitled to more as citizens, and not by serving me, or by other merits. Consequently, I can affirm that the offices that my predecessors have given to the citizens, in fulfilment of your Majesty’s orders, I have granted in the same manner; and have even given them others to which they had no right, either by custom or royal decree.</p>
+<p>[Marginal note: “It is well, and I trust that you will govern yourself in all matters as I expect from your person.”]</p>
+<p>30th. In regard to preferring one’s relatives, I have thus far not done anything that is not strictly in accordance with your Majesty’s service. Two companies are under one of my cousins and a cousin of my wife, because of their many years of service when I gave those companies to them. One of them I entrusted with the office of alcalde-mayor in a place where he was, for an interim of four days. Outside of that I remember nothing more in this particular.</p>
+<p>I shall not neglect to tell your Majesty what occurs to me in this matter, so that you may take what measures in it are deemed fitting: namely, that eight out of ten of the influential men that come here come with the governors, and the other two in various ways and through various causes, and with honorable intents. Of those other and common men who came [143]to retail what they bought there [i.e., in España], those who established a place in order to gamble, and those who came under sentence (and these men are numerous), some, because of having acquired money, try to imitate the men of rank and merits here. Of a truth there are many of the latter to esteem, and I shall do it, employing each one as he deserves and for what he is suitable. For that reason, however, it is not advisable that the number of the influential, good and useful men should not continue to increase. I assure your Majesty that not a few of those whom I brought with me were such, and some of them of qualities no less excellent than those above mentioned possess. I believe that their deeds will remain and testify as to that.</p>
+<p>[Marginal note: “Observe in this matter what has been written you; and whenever there is any occasion for any of these persons to be employed, advise us of their qualities, and answer will be made regarding them. In the meantime, furnish a good example, in your good life, discipline, and manner of governing, so that the other people, imitating you, may live as is proper and may obey and observe the commands given them.” In another hand: “It is well.”]</p>
+<p>31st. The deeds of Don Luis Fajardo, my brother, will, I trust in God, judging from the road that he is taking, merit not only the honor and favor that your Majesty has given him, with the pay of thirty [pesos?] that he now enjoys (for which we both kiss your royal feet in all humility and acknowledgment), if not even greater favors, such as we his brothers receive and his father received.</p>
+<p>[Marginal note: “It is well. In everything [144]that pertains to you, account of your person shall be taken, as well as just remembrance of the services of your father.”]</p>
+<p>32d. In one of the letters and decrees of your Majesty, to which I am replying, was a memorial signed by Joan Ruis de Contreras, concerning posts, pay, and other things which were represented to your Majesty as unnecessary. Because of it you ordered it to be sent to me for the restriction of those things. I shall endeavor to observe it with the circumspection and consideration that is advisable to the service of your Majesty, consulting on the matter with the Audiencia, the master-of-camp, and the royal officials. Whatever expense they shall find that can be reduced will be reduced. If I believed that it could be done throughout without any disadvantage, it would all be done. But for greater justification I shall make this effort; and if your Majesty shall yet order, notwithstanding what seems best here, that it is more advisable to retrench everything, that will accordingly be done. Security will at least be given for the salaries that are not reduced, by the persons who should enjoy them, so that they would be returned if your Majesty did not consider it fitting; or if not, I shall pay them, although I should not do so willingly. Inasmuch as the salaries of those of all the posts and offices were not stated in the memorial I shall do so here.</p>
+<p>The sargento-mayor of this camp and city of Manila receives forty ducados of ten reals each per month.</p>
+<p>There are three adjutants, two of whom receive pay of twenty-four ducados per month; while the other serves in the ordinary post of soldier, waiting [145]until one of the two paid offices becomes vacant, and on account of meriting more. All are necessary.</p>
+<p>The captain of the guard receives twenty-four ducados of ten reals per month.</p>
+<p>The companies have their two drummers and the ordinary additional pay but not all of them.</p>
+<p>The reduction will include the companies that lately came new, as that is more proper, in order not to cause the old colors to be disbanded. But they will not be greatly restricted, if the captains and officers with their staff have brought a year’s advance pay from Nueva Spaña.</p>
+<p>The castellan of Manila enjoys eight hundred pesos per year, or fifty-three ducados of ten reals, and three and one-third reals per month. If he has an encomienda, in addition to this, as your Majesty has been informed, it is a very small one.</p>
+<p>His lieutenant receives twenty-eight ducados of ten reals.</p>
+<p>The other lesser officers and soldiers receive the pay of those of any company of the army.</p>
+<p>The commandants of the forts of Nueva Segovia, the town of Arebalo, and the city of Cibu, receive each thirteen ducadoes of ten reals, plus three and one-third reals per month. Will your Majesty decide, according to the clear statement of this relation, what you desire to be reduced, and the reduction will be carried out, in accordance with your royal order; and the said effort will be made immediately, in order to assure this expense, as it certainly shall be reduced from now on.</p>
+<p>[Marginal note: “Join to this section what was written to him, and bring them here this afternoon. What you write in this section has been caused by [146]some misunderstanding. In order that you may understand it better, and that what is advisable be done, three points are to be noted by you. The first is in regard to the number of men who have the title of officer. If such offices are those of the old men—that is, those offices that were introduced, and which have always existed, since the creation of the infantry [there], and which have always been filled by such men—there shall be no innovation. In case that other and supernumerary offices shall have been added, this is what you are to reduce, because this number of officers is costly and only serves for expense and the ambition that there be many to command, and that the infantry be in charge of many superiors. All that is contrary to good military discipline. Such is usually tolerated in temporary armies when they go out on a campaign, because of the special achievements and undertakings in which they are occupied, all of which is usual in the training of the militia. In the reductions ordered or made in the armies of Flandes and other places, this order has always been observed. The contrary is bad government, and means debt where there is no revenue, and causes the accounts to be always in arrears and to be never entirely paid—especially to the common soldiers, to whom the officers are always preferred. The second point concerns the pay, and what was ordered you by a section of the letter of December 19, 618, and what is contained in the relation of the secretary Juan Ruis de Contreras. The pay of the ordinary officers shall not be entirely suppressed but only lessened and reduced in accordance with the old list; and the increase of pay that has been granted them shall be reduced for the just causes contained [147]in the despatches where this is ordered to you. In this consideration, also, you are ordered, by virtue of what has been given you in the said despatches, that if, besides what there might be of this reduction of pay, you should find any pay, even though of those long in service, that is not strictly necessary, and that will not detract from the necessary defense, it shall also be lessened and reduced, cautiously, as is advisable, in order that the service be made effective, that as much expense as possible be avoided, and that there be sufficient revenue with which to pay the active and serviceable soldiers. The third point is what you mention concerning consultation with the Audiencia and with other persons, in order to avoid difficulties. If this cannot be secured in executing what has been ordered you, and in the rest, it will be advisable that you speak clearly and not in ambiguous and general terms—especially stating what those difficulties are, what injury they cause, and whether they concern the public, or only the private affairs of certain interested parties. For to the latter no attention is to be given, since it is certain that every one is working for his own interest and profit. Whenever these reductions have been made in armies and militia, they are resented at the beginning. Everything is assured, as is advisable, with good management and the execution of what is ordered. Hence I again charge you most earnestly that, inasmuch as this matter of the expenses and revenues of those islands is paramount and cannot be overlooked, you shall endeavor to preserve whatever is possible, paying heed that the expense of what you shall take upon yourself does not prove of greater harm than what you are trying to remedy thereby.”][148]</p>
+<p>33d. I shall endeavor to have the same done in all the expenses that should be increased, when their utility and necessity should not be clear and evident, if they are not approved and confirmed by your Majesty. I shall exercise constant care that the expenses do not increase in the treasury sessions. I have also tried and shall try to lessen the expenses of the articles that are generally requested from Nueva Spaña, and that can be avoided; for never have fewer things been requested than now, as will be seen by the enclosed certifications.</p>
+<p>[Marginal note: “It is well.”]</p>
+<p>34th. The most considerable and valuable part of the abundant aid that your Majesty was informed was given me in Nueva Spaña, when I came here, was the soldiers; and of them the most and best, and those who made the best appearance, were the men that I brought from Spaña. The greater part of these, or nearly all, came aided and helped with my money, and even with the plate and silver pieces of my household. I do not know that notice of it should have been given to your Majesty, for one should not charge to you so slight a service to whom all his possessions, his blood, and his life are due. Consequently, I am not surprised that this should have been passed by for another.</p>
+<p>[Marginal note: “It is well.”]</p>
+<p>35th. The number of tributes will be placed in the titles of the encomiendas, what they pay, the value of their products, and in what district they are located, as your Majesty orders.</p>
+<p>Your Majesty has some encomiendas apportioned to your royal crown, some distance from here and in a district where their products cannot be used. [149]That is the most serious thing; for the collectors generally defraud [the royal officials] by saying that it was a bad year, and that they collected in money. If they confess to have collected something in kind, they say that it was too great trouble to bring it; and they sell it there, as they wish—perhaps selling it at retail to one who immediately returns it to them, and, besides this, harassing the Indians. On account of the distance, that is not often discovered, and less often can it be proved. And so that your Majesty might have much greater benefit from another equal number of tributes, I think that, as the encomiendas of private persons of La Pampanga and those in other districts near here, which yield a good harvest in products, continue to fall vacant, they should be exchanged for the said distant ones; for the latter will not be unsuitable with which to reward services. If they have a private person as encomendero, the Indians will be much better treated, and the tributes will be well collected and administered, with more justification and mildness. The tributes near here will result well for your Majesty through the profit on those paid in kind, which can come from this bay overland and by rivers, straight to the door of the magazines. It would be better for your Majesty to have charge of them than the encomenderos, for they are so near the Indians that they never fail to gather in a harvest of some kind—either in services, or some other thing. Being so near the governor, no collector would dare to treat the Indians badly. For the above reasons I think that I shall place this in execution as opportunity offers, unless I am so strongly opposed in this as in other things, that I would be embarrassed in it—although I cannot see [150]what arguments they would have for doing so.</p>
+<p>[Marginal note: “Council. This scheme and method of management that you present is excellent, and thus you shall do. In the council of the treasury, you shall always continue to deliberate on what could be of greater advantage to my royal revenues. Thus shall you do and advise, since it will all be so proper and justifiable, as I expect from you. You have noted one matter of unjust government, namely, excess [in the collections.] Accordingly, you ought to censure and punish it, and not permit any officer of justice or collector, whether for himself or for third persons, to be able to collect in public auction, or secretly outside of public auction, any products or articles that are owed by tributarios, landlords, Indians, or debtors. For great frauds are wont to ensue in that, and the laws punish and prohibit such acts as you are advised. For greater justification in the matter, the above shall be set forth as a clause in the patents made out for each one of these collectors, with a penalty of four times the amount of any excess that they might obtain.”]</p>
+<p>36th. All the letters and decrees directed to this royal Audiencia, and your Majesty’s orders therein, will be punctually fulfilled, although in the sale of offices, the city declares that it has sent a petition to your Majesty with representations of the justice in not diminishing here the little that there is with which to reward services. However, those that might bring a considerable price will be sold, and likewise those that might cause no great difficulty.</p>
+<p>[Marginal note: “It is well. In these matters of difficulties, you shall observe the order written to you in the preceding section.”][151]</p>
+<p>37th. I have heard that some of the reports of services and merits that are generally made by order and officially, which your Majesty commands and orders to be made, as is fitting and as is ordered, have been too much exaggerated and favored by the opinions of the Audiencia. By this new system, and by what I am attempting and shall attempt to fulfil, I hope this will be corrected—although since the making of these reports is usually divided among the auditors, each one appears to be favorable to his own client. If they agree in their opinions, this difficulty would scarcely intervene.</p>
+<p>Among the reports made and despatched this year are three, seemingly most justifiable. One is that of Captain Francisco Moreno Donoso, a man of honorable character, and who, as I have understood, has fulfilled his obligations as he should—both in peace, where he has been esteemed and honored; and in affairs of war that have occurred and have been entrusted to him. If your Majesty be pleased to occupy him in one of the posts that he desires, and of which the Audiencia expresses its opinion, my opinion is that he deserves it, and will give excellent service.</p>
+<p>I cannot refrain from saying the same in the second report, that of Admiral Rodrigo de Guillestegui, for many reasons, especially those that have moved me to what I have written your Majesty in other letters, because of his honored abilities, services, and merits.</p>
+<p>Admiral Joan Baptista Molina has no less, but as much as he who deserves them most. He is an old soldier, having served from his youth, and is as obedient and attentive as when a youth. He deserves [152]thoroughly what is said in the opinion, but I would be sorry to have him go from here before me, for I am glad to have the aid of soldiers who have always professed the trade of arms. On that account your Majesty should not neglect to concede him the favor that he requests, for he has also deserved it, as appears from his papers.</p>
+<p>[Marginal note: “It is well. In these relations and reports made by the Audiencia, charge them in the assembly that they try to make them with the exactness and integrity that the case requires. Inasmuch as the importunity and presumption of the parties necessitates at times that unsuitable things be said or done, the remedy for that will be for you to send—in a separate letter, that treats only of this matter—an annual relation of the persons who have had their reports taken under color of remuneration for services. You shall say of each one whatever offers; and here the necessary secrecy will be maintained. Although you have been informed at length regarding this matter, inasmuch as it is an essential point you are again charged with it.”]</p>
+<p>38th. On finishing the present despatch, I shall do what your Majesty orders me to do, together with the archbishop, both of us summoning the provincials of the orders who reside here, and charging them with the reformation of the matters contained in the section that treats of this.</p>
+<p>He who made such a relation to your Majesty might have made it more complete by saying what is so true, that there are in these orders (in which also there are those of every sort, as in all countries), religious so virtuous and exemplary that if laymen did not divert and engage them in their affairs, [153]they would, I believe, work miracles. But they are so importuned that many cannot stay in their cells; nor do those who go to their cells to disturb them leave them until they negotiate with them what they desire. It might easily happen that any one who had received an unmerited favor from their hand, gave pay for it by such a relation, which is the one practiced here. The relation that I can make for your Majesty is, that there are among them men very pentitent and of most exemplary life, and of great utility for souls; and also others who render vain any merits in one who does not fulfil their command and will. If it has been said that they distress the Indians, this is not to be believed of all of them, for most of them at most times respond with great charity and love to the defense of the natives of their districts, even when the latter are of such a nature that almost all do not care to have this protection.</p>
+<p>In what pertains to your Majesty’s service, according to what I have experienced, I can say that thus far all the orders—each one in what concerns it generally—have often responded well, for which I render them many thanks. The fact is, that since that does not keep them satisfied in all matters (for that is impossible), I have found the secret for this particular, namely, to refer everything to the religious of the district where such [i.e., personal, by the Indians] service is rendered to your Majesty, making them masters and intermediaries in the pay, which takes precedence of all else, as I have done. Everything is executed in a wonderful and perfect manner; but without this expedient, there is nothing to hope, but rather the reverse. For anything that the religious do not wish cannot be done, by any [154]means or method; for no one has any influence without them, except themselves. In my opinion, and that of many, they are lords in the temporal and spiritual affairs of the Indians, both men and women, and even of the Spaniards. There is no one who can oppose or who does oppose them, for there is no one from whom to obtain redress, not only in such things, but in regard to the complaints of Indians. For the provincials and superiors have before their eyes the end of their offices, and the necessity of their returning to be inferiors. Consequently, so long as your Majesty furnishes no remedy—either by your order that some superior should be sent who would not have to remain here afterward without acting as superior; or by giving authority to the bishops of those districts over the ministers of the missions—it must continue forever as hitherto. Well might Maestro Don Fray Diego de Guevara tell the little rigor that the provincial of St. Francis displayed toward certain friars who lost respect for him—among whom was one who went for the bishop with a sword and dagger, as if the right of each one was to lie in such armor. I have heard that he drew up a testimony in order to give your Majesty an account of it, and also of what little need there is for a bishop in his bishopric.</p>
+<p>I can also tell what happened to me with this same provincial, when, on the arrival of the morning of holy Thursday, I freed Pedro Alvarez, government notary—who is said to be some relative of his, and who was arrested on the charge of that desertion of which I have already written your Majesty in the present letters, telling you that I would have recourse to the judge who tried his cause. He succeeded in [155]making the provincial resolve, and decide obstinately as to what he had to do for him, or had to preach of me, just as he pleased. He fulfilled it, as a man of his word. Although it was not much, it was so uncertain, that his conscience obliged him, according to what the other religious say, to retract it publicly in another sermon. This is Fray Pedro de Sant Pablo, one of those considered here as a most holy man. I think that he must be one.</p>
+<p>As appears, by his protection and by that of Fray Joan Baptista of the same Order of St. Francis, Pedro Alvarez resolved to have me told that, unless I determined to give to his office the distribution of the Sangley licenses, he would write [information] against me. That threat did not give me any anxiety, but such audacity made me angry, as did the fact that those fathers had given hospitality in their house for it, if not for my being a magistrate, at least for what I represent, and since this is the royal patronage. But the latter is here regarded by them as nothing. Then they draw copies of what my predecessors in this government thought.</p>
+<p>[Marginal note: “Ecclesiastical council. In regard to this matter of the religious, in another section what has been written you is the order that you must observe; and to the Audiencia, so that they may order that in no case shall religious be admitted as witnesses, except in the manner ordered. The same has been said in regard to the insertions, so that like things or matters may be embarrassed in no manner. Thus shall you fulfil the order. In accordance with this, general letters are being written to the provincials of the orders, which will be given them by your hand. In regard to what you say here of the [156]sermons, and that the religious reserve approbation or reproof, with censure or gratefulness, for the persons whom they wish, this is prohibited by different general laws, councils, orders, etc. In some of their own special rules, a penalty is assigned them, among others, of reserved excommunication9 to the [MS. holed]lation. Thus shall you be advised of this, so that you may govern yourself according to the matters that arise; and you shall inform those fathers. You shall endeavor to avoid the trouble caused you by what you say in this section, and shall reduce matters to plain and open terms, so that what you say at the last shall not contradict what you say in the beginning. Have general letters written to all the provincials of the orders, who already know that it is forbidden under the most severe penalties by divers councils, canonical rules, orders, laws, etc., and by our decrees, for preachers to censure the government in the sermons that they give to the people or in conversation with private persons, or to speak evil of their ecclesiastical or secular superiors, by censuring their management or action, in order that the people or private persons may not cast discredit on their superiors and be scandalized. Neither shall they meddle or interfere in secular affairs; but shall continue in their seclusion, and in the observance of their vows, as they are obliged. Inasmuch as it has been learned that, contrary to the tenor of all this, and to the serious harm of the administration of justice, many religious and preachers, and others who [157]hold special offices transgress against the above rules, from which results odium cast on the religious, factions, the intimidation of justice, the reduction of affairs to their way of thinking and to their will, and other great annoyances, which they cause continually under pretext of insertions, importunities, and impositions hidden under the name of charity: I charge and warn you to take particular care that the religious of your order and you, in what concerns you, observe the aforesaid, and they likewise. They shall not transgress in proceedings of that sort, for such things being so, it will be necessary to use other and more special remedies, as has already been called to your attention by the said decrees despatched to the viceroys, audiencias, and governors of their districts. I expect from your devotion, and from your obligation for the continued kindness that is shown you, that you will endeavor to inculcate the reform and proper method of procedure in this that is required for the good government of those islands, and the preservation of the public peace.”]</p>
+<p>39th. In order that your Majesty may know what this Pedro Alvarez demands, I shall relate it here as briefly as possible, referring you to the report made concerning it (which is enclosed with the licenses of the Sangleys), since these licenses have been given in writing here, many years since10 the imposition or tax of the eight pesos, for distribution by different persons to whom the governor committed it, or whom he appointed. Of these the Sangleys paid two reals for the cost of the document, whether printed or written. The notary, judge, interpreter, [158]and other agents who made this distribution, according to the order of the judge himself or of the governor, were ordered to distribute them. In this the government notary never had any hand, share, or participation. Many years after the payment of the eight pesos which were collected for it, and slightly before the death of Don Juan de Silva, Gaspar Alvarez, then government notary, petitioned the governor to allow him to countersign them after the former had signed them, in order to get hold of it. This is the same thing that his nephew demands now. Don Juan, who was under many obligations to him, and was by nature very liberal, did not hesitate to concede it to him. Consequently, Gaspar Alvarez countersigned the licenses by declaring that he did so. I do not know why so special a commission as this should belong to the government notary—especially when, because he may be busy or for just reasons, the governor does not sign them, and entrusts them to a trustworthy and qualified person who signs them. For if this had to be given to the charge of the government notary, although from the division of the two reals he would get only the third, which would amount to five hundred pesos, besides another four hundred that he demands annually from the royal treasury, by arguments that moved them at a meeting of the treasury to concede them to him—but which I abrogated because it did not seem proper, as I have advised your Majesty before now, from which has resulted that anger of his—the whole would amount to nine hundred pesos of sure income, which means a principal of eighteen thousand pesos, although it only cost seventeen thousand, for which your Majesty sold the office to him. The office [159]yielded [MS. holed: last?] year, without counting these nine hundred pesos, more than two thousand five hundred. In other matters pertaining to this, I refer to the report that, as above stated, in enclosed herewith.</p>
+<p>[Marginal note: “It is well. Have the fiscal examine this section.” In another hand: “It was taken to the fiscal.”]</p>
+<p>40th. I had already made a beginning in what your Majesty orders to be done in the opening and working of gold mines, as I was desirous of obtaining such an order by authority, with excellent news. What I can impart of it is the news written me by Captain Garcia de Aldana, to whom I entrusted it.11 Consequently, I am sending his letter and a copy with this, and his duplicate, in which he adds that they have greater hopes than those that we promised ourselves from the mines, since we had to continue the entrance into those provinces, and endeavor to enjoy the fruits of our labor, with the pacification and reduction of so many people to the service of your Majesty, and their souls to the service of God (which is the thing of chief importance). If all cannot be obtained at once, it is well to have already made a beginning, and that it shall continue to advance. Touching the gold, it cannot be little, since those Indians who are called Ygolotes do not extract more than what they need for trade and barter—for cattle, salt, and iron—with our peaceful Indians with whom they trade. One year ago, from that province alone, according to the report here, the latter brought for sale to this city about twenty thousand [160]taes, each of which is equivalent to a peso of ten reals. When we secure efficient management of these mines and the duties from them, it may be that they will help in many expenses. That I shall do this with as great energy and force as possible, there is no doubt. The fathers of the Order of St. Dominic have assisted me greatly in this; and those of St. Augustine, in this and in whatever has offered in the service of your Majesty. For what I owe in all this, and in order to declare the truth in all things, I certify this to your Majesty.</p>
+<p>Although the fathers of the Society have no missions in those provinces near there, they supported very well by writing and speech the reasons and just rights that we had for making this entrance, so that no one doubted them—not even the members of the Audiencia, as I have written to your Majesty in this letter. What I can say of the Jesuits and their devotion, system, procedure, and prudence, and their gain of souls, is that they differ in no wise from what they are and do in those kingdoms [i.e., España and Portugal], and in those where they exert themselves in the conversion of new Christianities. For that reason, and because they do not return [to Europe] daily, as do others, it will be a good thing for your Majesty to grant them the religious that they request.</p>
+<p>The discalced Recollects of St. Augustine also help toward the same end of the pacification of the said provinces. I have known naught but humility among them in all things hitherto, and they do not meddle with the government of what does not concern them; nor do they do anything else outside their profession—offering to take charge of certain missions [161]on the entrance into Ytuy, which lies on the other side next the missions of the Ygolotes. I bear them in mind and will try to act in concert with them by this same path, God helping. May His Divine Majesty, as He is able, bring it to pass so that they may know Him as their God, and your Majesty for their as well as our king.</p>
+<p>[Marginal note: “Ecclesiastical.”]</p>
+<p>41st. Thanks to our Lord, this country is peaceful and prosperous in other things. The native vassals are orderly and full of courage, and those who were living in the forests have been reduced to their settlements and missions, being very confident that their possessions will not be taken from them, and that no repartimiento or [MS. holed: edict?] will be made among them, or that any other service will force them to flee or to be made slaves, in order to make them render service, as has happened to innumerable of these poor wretches; for they hope that what I have done hitherto to relieve them from so many burdens will be continued. If I avail myself of their services in any unavoidable and necessary labor, I do so, by paying them beforehand, saving the money from other things for it. Consequently, they now rather desire the opportunity to earn money by their services or the products of their fields, which now they reckon and hold as their own. I trust that, with divine favor, this will go daily from good to better, and that everything will succeed in the same way, until acts of injustice to these poor wretches will be avoided. Although I was taking delight in doing thus, now I am very happy, for I have learned what your Majesty desires, and that you commit this to me.</p>
+<p>They and we are so well supplied with churches [162]that inside this city and about one legua around it, there are thirty of them, unless I have counted wrong; and of those not three are of other material than stone, nor are there as many others that fail to cause expense to your Majesty and labor to the natives—and this in one legua about the city as I have said, in a semicircle, which is even not entire, for the other half falls within this bay. I have not resolved before now to inform your Majesty of it, because I hesitated, on the grounds that our Lord would be just so much better served by the increase of churches, and these Christians would be better governed. But since your Majesty is discussing the limitation of this, I cannot refrain from answering you with the plain and naked truth. Well do I know that this and the other things that I have related have not [MS. holed] me, because I am already advised of it; and [MS. holed] resolution and execution of many, among whom are some who have issued a proclamation [for the services of the Indians?], while it was prohibited, for anyone in the world, not only of their profession but also for seculars, to issue one. But considering as surely slight any peril that will result, if revenge is to be taken on truth as truth, while, on the contrary, the neglect to tell the truth will result in great risk, I am convinced that I am doing my duty in this.12 If they should say that I am a very good governor, your Majesty does not excuse me from my residencia for that reason. If they should say that I am very evil, I petition you to hear us all, and that you will pardon me for saying this which was unnecessary.[163]</p>
+<p>[Marginal note: “Ecclesiastical government. You mention some things in this section which it is advisable for you to understand thoroughly because of their gravity and for their better management, as follows. What you say of the good treatment of the natives, and of the burdens and evils that come upon them, is excellent. Endeavor that what you think best be carried out in regard to their services, relieving, consoling, and comforting them by good works, equity, and administration of justice, taking their cause ex officio against the more influential and powerful who [MS. holed: oppress?] them. This, being to the service of our Lord and good government, will give a most effective example and method for the reduction of the rest of the natives of those islands, and their incorporation into the Catholic church and our government. Accordingly endeavor to do what you have so thoroughly understood, and live with the prudence that the matter necessitates. Inform yourself by all means of what is being done, and of the fruit that results from it. No church or convent, not even a chapel, ought to be, or can be, founded unless concurrent with your permission, and that of the Audiencia, together with that of the ordinary. You shall demolish and reduce to its former state what should be done in violation of this, for the contrary is disobedience, spoliation, and offense; and it is not proper that reward, or permission to contradict what is proper, should follow from such assumptions, and that the insolent shame by their license those who are obedient and modest. The number of churches that you mention seems great, and there is excess in that, about which it is proper to be cautious. For few churches, well served and endowed, [164]are advisable and are sufficient, while from a great number of them signal disadvantages arise. You shall take note of all this, for religious zeal, when unaccompanied with the knowledge and prudence necessary, becomes excess and disorder, and a matter for troubles, which will be avoided by seeing that the churches are established in the manner above mentioned.”]</p>
+<p>42d. One of those of this profession, named Pedro Leussara, has been arrested on the petition of parties whom he has greatly offended, by word and writing, in the most vital part of their honor—and without proof, as will be seen by the writ. In this matter, if natural inclination frees from guilt, he will have to remain free.</p>
+<p>[Marginal note: “It is well.”]</p>
+<p>43d. A ship just now in from Malaca brings as news that it was known there that the Dutch and English were already allied; but when the relief that we are awaiting arrives, I hope, with Divine favor, for better results. May our Lord give them to us, as He is able; and may He preserve the royal Catholic person of your Majesty, as Christendom needs. Manila, August 15, 1620.</p>
+<p>44th. While about to direct these despatches, so that they might cross over to Mindoro—where the ships generally stop in order to lighten and get sailors for their voyage—I am told that the ships had not even been able to double the island of Fortuna, because of the violent head-winds, which have continued there with so great force; and also that [MS. holed] from China, which, although it is more than [167]one month since they left, have not had the weather to enable them to get entirely free of the shoals and promontories of this bay, which is in [MS. holed] the greatest difficulty.</p>
+<p>Don Alonso Fajardo de Tença</p>
+<p>[This belongs to the second section: “Have a letter written to the viceroy of Nueva España, enclosing a copy of this section, and advising him at the same time of what is being written to the governor. Having informed himself of these disorders and lack of good management that have been observed in the government agents and persons who take part in that despatch of ships, he shall be advised that he must investigate and punish it. What results from that is being awaited for public example, which is so necessary, and for the better despatch of those ships. Inasmuch as both the remedy and the punishment are to be included in this investigation, you [i.e., the viceroy of Nueva España] shall endeavor to procure the execution of this with the earnestness demanded by the matter. In the future very trusty men shall be appointed, namely, men who do not commit the offenses and disorders so strongly prohibited. The vessels particularly shall sail very lightly laden, and in the order mentioned in the preceding section. Inasmuch as I understand that what the governor notes in his letter about sending unnecessary and costly things has been remedied, you are again charged to send a detailed relation every year to the Council of everything sent [to Filipinas], so that we may know what articles and products are sent, their prices, and whether they contain any things mentioned [168]by the governor. It is a serious matter, and one that heavily charges your conscience and the reputation of the officials—who in that matter are aware that it is declared that in order to burden the royal treasury and to give advantages to third persons, opportunity is given for such actions. The service that you would perform would be very grateful to us, if you would advise us immediately of the condign punishment of any official guilty of such an offense; for it is a great offense for those who are placed in offices to protect the royal treasury, and to benefit the public cause, to convert the exercise of their offices into all manner of wrongs like this.”]</p>
+<p>[Note to section 4: “Have a copy of this section sent to the [India] House of Trade. State that although the matter there mentioned has always been considered harmful to the general commerce of these kingdoms; and although the silver which must come here from Peru would in great part, if not all, be taken to Eastern Yndia, and delivered to our enemies, whereby two wrongs would ensue, since the Filipinas serve only as a station and bridge: still we have considered whether adjusting the matter in the following manner would be a suitable expedient, and one that would avoid all the troubles mentioned. That the reënforcements be sent straight to Filipinas from Panama, since it is a road so sure and favorable; and also, as pointed out in this section, one could take the merchandise from España that would be useful and valuable in Filipinas, with which the blessing of this trade could be enjoyed; and that the soldiers could sail from España until they should disembark for the short journey from Chagre River to Panama. In order to avoid any silver from Peru [169]being taken in these vessels on their departure to Filipinas and so that the merchandise of those islands might not be brought to Peru on the return trip (which is forbidden), it shall be ordered that the return trip of those ships be to Acapulco, as now—prohibiting them under any circumstance from returning to Panama, Callao, or any port of Tierra Firme; and so that these boats should not remain [idle] in Acapulco without making a voyage, they might be used for the voyage to Peru, because of the permission that has been decreed for the preservation of mutual correspondence and trade between Peru and Acapulco. They shall advise us of their opinion, so that all expedient measures may be taken. Likewise have all the matter bearing on this in the Peruvian secretarial office collected, so that, upon the arrival of the relation from Lalasa, the most expedient measures in all things may be taken, and the [present] section of this letter answered.”]</p>
+<p>[Note to section 13, which these decrees concern: “Have a letter written to the Audiencia telling them that inasmuch as it has been learned that some government officials, both lawyers and clerks, notwithstanding the prohibition decreed by royal acts, laws, and decrees—forbidding them to trade or engage in business, buy, sell, or lade vessels, themselves or through intermediaries, under the penalties contained in the said laws, acts, and decrees against all the aforesaid—secretly and clandestinely, under cover of intermediaries, make confidants of certain persons, so that, by means of the said trade, they not only become rich but prove an obstacle to the benefit of the royal revenues, besides causing other evils which are not mentioned because they are well known: for [170]the correction of all this it has been commanded and ordered that if any of the said officials should be guilty of like transgressions, the president and governor and captain-general of those islands shall investigate and verify the aforesaid and send us a report, so that, after examining it, justice may be meted out and the fitting remedy applied. When the said investigation shall prove guilt, we have ordered the said president by an act, to sequester property, and to be rigorous in the sentence of this execution, according as we decreed it, and in the form ordered. In order that you understand this, this decree is despatched.” In another hand: “Despatch a decree to the Audiencia, so that if there should be any mutual doubt—whether any on the part of the president toward the Audiencia, or on the part of the latter toward the president, concerning the matters of ceremony that must be observed toward the said president and governor and captain-general of those islands and his wife—in such case, the claims of each side shall be considered with the modesty, gravity, and promptness that are desirable; and I shall be advised of the result, so that after examining it I may decree what is expedient. And inasmuch as time spent in such matters is not only the loss of time necessary for other things, but also the causing of certain rivalries harmful to the common welfare; and inasmuch as under this pretext they are accustomed to revenge themselves for certain causes of anger: in order to avoid disturbances from persons who are obliged to give so good an example, I thus also order and command, and desire that you understand that, together with decreeing what shall be expedient in such matters, I shall order that he who [171]shall be at all guilty of this, or who should violate customs or make any demonstration at public celebrations that is observed, or who leaves the body of the church or the public place where he ought to be, be punished severely and exemplarily; for that very thing serves as a scandal to the public, and a bad example to all, and these acts would arouse mutual enmities, to the harm of the royal service.”]</p>
+<p>[Note to section 20: “Have a letter written to the Audiencia saying that inasmuch as letters were sent to them in regard to these matters in the despatch of a former year, on such and such a day of such a month and of such a year, a section to the following effect (here insert the section). And now it has been learned by a letter from Don Alonso Faxardo, present governor of those islands, that those criminals have been set at liberty; and, in order that what happened in this matter may be understood, it is ordered that you send a copy of the records, together with the part of the fiscal, with a memorial collated by him of all that results from the deed; so that, having examined it, the expedient measures may be taken, and that the condition of everything may be understood. The memorial and the records which shall be remitted shall be communicated to the governor, so that if there should be anything of which to advise, he may do it.”]</p>
+<p>[Note to section 22: “Have a letter written to the Audiencia and a copy of it sent to the governor, in which mention shall be made that although it has been ruled by royal ordinances and decrees, and by other divers letters and orders, as to those things which must be observed, and the official visits to the natives in all and whatsoever parts where there are [172]missions and where justice is administered, this is not obeyed with the exactness required by the case; and on that depends the relief and compensation of the poor, and the punishment of those who live licentiously, or make bad use of their offices. The visits were introduced for the consolation and relief of the natives—not only on that account, but in order to ascertain the characteristics of each region, and the products and articles that can be produced in them and carried in case of need to any other region; and in order to take what measures may be advisable for justice and good government. It has been learned that this has not been done with the exactness required, and that on account of the personal occupation and toils that generally accompany it, you excuse yourselves and state other objections, in order not to make those visits; but I order you to busy yourselves in them, in accordance with the order that shall be given you by your president, Don Alonso Fajardo, who shall advise me of what shall be done in this. You shall take very special care to send a minute copy of the findings for the districts visited; for thus it is advisable for the good government and for the information that must be had of affairs there; and so that what has been ordered for the benefit of the natives may not be converted into mischief and burdens for them, especially since that land is pacified. It is ordered to you that, in going to make the said visits, you observe the order decreed, avoiding followers and retainers. And in order that we may have the satisfaction necessary from this, when you send a relation of the said visits, you shall send one of the men whom the visitor took with him, and an account of what occurred in this.”][173]</p>
+<p>1 One may see in this and subsequent marginal notes of this [88n]nature, in this and in other documents, the possible working of the Spanish government offices. The memoranda thus made on the margins of the document by the council or government representative in the king’s name, evidently formed the basis of the various decrees and orders despatched to the colonies, in regard to points brought out in the document that needed legislation. The document would probably be then turned over to the clerk or notarial secretary, who would have the decrees filled out properly, and in the stereotyped form, from these memoranda. Lastly, they would receive the king’s signature (rubrica). Each of the marginal notes on this and other documents, when made by king or council, is generally accompanied by a rubrica, which attests its legality. These notes often consist of two distinct parts, one of matter to be addressed to the governor, in which the second person is used; the other, directions to clerks in regard to what should be done on points called up in the document. These distinct parts have each their rubricas.</p>
+<p>2 See this note at end of the document, p. 167.</p>
+<p>3 See this note, post, p. 168.</p>
+<p>4 See Vol. XII, pp. 53, 54, “four hundred short toneladas of the Northern Sea, which amount to three hundred [of the Southern Sea].”</p>
+<p>5 See this note, post, p. 169.</p>
+<p>6 The report of this expedition, which was effected, will be given later, in a document of 1624.</p>
+<p>7 See a further note to this section, post, p. 171.</p>
+<p>8 See a further note on this section, post, p. 171.</p>
+<p>9 The reservation signifies that absolution from the said censure is reserved exclusively to a superior, as the prior of a convent, a provincial, or general, or even to the supreme pontiff himself. See Addis and Arnold’s Catholic Dict., pp. 135, and 717 and 718.—Rev. T.C. Middleton, O.S.A.</p>
+<p>10 The original reads “despues” (“since”), but the sense seems to require “antes” (“before”).</p>
+<p>11 An account of this expedition will be presented in a later document.</p>
+<p>12 The words lacking in the above, due to the dilapidation of the MS., render it impossible to translate this passage clearly.</p>
+
+      </div>
+
+      
+      <div class="mt-10 pt-6 border-t border-[var(--color-border)]">
+        
+      </div>
+
+      
+      <nav class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Article navigation">
+        
+        <a href="/writers/blair/philippine/vol-19/chapter-04/" class="group flex items-center gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m15 18-6-6 6-6"/></svg>
+          <div class="min-w-0">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Previous</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors"></p>
+          </div>
+        </a>
+        
+        
+        <a href="/writers/blair/philippine/vol-19/chapter-02c/" class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200 sm:col-start-2">
+          <div class="min-w-0 text-right">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Next</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors"></p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        
+      </nav>
+
+    </article>
+  </div>
+</div>
+
+
+  </main><footer class="bg-royal-950 text-gold-100/80 py-12 px-4 md:px-8 mt-auto border-t border-gold-700/20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+      
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center">
+            <img src="/icons/sun.svg">
+          </div>
+          <span class="font-cinzel font-bold text-gold-300 text-xl tracking-widest">MAHARLIKA</span>
+        </div>
+        <p class="text-sm leading-relaxed text-gold-100/60">
+          An advocacy to restore the true identity, culture, and socio-economics of Maharlika.
+        </p>
+        
+        
+        <div class="flex items-center gap-4 mt-6">
+          <a href="https://www.facebook.com/maharlikanism/" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@maharlikanism" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+          </a>
+          <a href="mailto:maharlikanism@gmail.com" class="text-gold-400 hover:text-gold-300 transition-colors text-sm flex items-center gap-1" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span class="hidden sm:inline">maharlikanism@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Advocacy</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/advocacy/" class="hover:text-gold-300 transition-colors">Advocacy</a></li>
+          <li><a href="/culture/" class="hover:text-gold-300 transition-colors">Culture</a></li>
+          <li><a href="/governance/" class="hover:text-gold-300 transition-colors">Governance</a></li>
+          <li><a href="/history/" class="hover:text-gold-300 transition-colors">History</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Reference</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/infrastructure/" class="hover:text-gold-300 transition-colors">Infrastructure</a></li>
+          <li><a href="/laws/" class="hover:text-gold-300 transition-colors">Laws</a></li>
+          <li><a href="/metaphysics/" class="hover:text-gold-300 transition-colors">Metaphysics</a></li>
+          <li><a href="/writers/" class="hover:text-gold-300 transition-colors">Writers</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">The Book</h4>
+        
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="block">
+          <img src="/books/towards.jpg" alt="Towards Maharlika" class="w-24 rounded-lg shadow-lg mb-3 hover:scale-105 transition-transform duration-200">
+        </a>
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="btn-gold text-xs px-4 py-2">
+          Get the Book
+        </a>
+        
+      </div>
+
+    </div>
+
+    <div class="border-t border-gold-700/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gold-100/40">
+        © 2026 Maharlikanism. All rights reserved.
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/XXXXXXXX\/XXXXXXXX';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+
+
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  
+  <div id="mobile-menu" role="dialog" aria-modal="true">
+    <button id="mobile-menu-close" class="absolute top-5 right-5 text-gold-100 p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    
+    <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Advocacy
+    </a>
+    
+    <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Culture
+    </a>
+    
+    <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Governance
+    </a>
+    
+    <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      History
+    </a>
+    
+    <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Infrastructure
+    </a>
+    
+    <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Laws
+    </a>
+    
+    <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Metaphysics
+    </a>
+    
+    <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Politicians
+    </a>
+    
+    <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Writers
+    </a>
+    
+    <div class="flex items-center gap-6 mt-4">
+      
+
+
+
+
+
+
+<span class="px-4 py-2 rounded-lg bg-royal-800 text-gold-400 font-cinzel text-sm uppercase tracking-wider border border-gold-500/30">
+  🇺🇸 en
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <script>
+
+const htmlRoot = document.getElementById('html-root');
+const themeToggle = document.getElementById('theme-toggle');
+const themeSun = document.getElementById('theme-sun');
+const themeMoon = document.getElementById('theme-moon');
+
+function updateThemeIcons() {
+  const isDark = htmlRoot.classList.contains('dark');
+  themeSun.classList.toggle('hidden', !isDark);
+  themeMoon.classList.toggle('hidden', isDark);
+}
+
+updateThemeIcons();
+
+themeToggle?.addEventListener('click', () => {
+  const isDark = htmlRoot.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeIcons();
+});
+
+
+const musicBtn = document.getElementById('music-btn');
+const musicAudio = document.getElementById('bg-music');
+const musicIcon = document.getElementById('music-icon');
+const musicBars = document.getElementById('music-bars');
+let isPlaying = false;
+
+musicBtn?.addEventListener('click', () => {
+  if (isPlaying) {
+    musicAudio.pause();
+    musicIcon.classList.remove('hidden');
+    musicBars.classList.add('hidden');
+  } else {
+    musicAudio.play().catch(() => {});
+    musicIcon.classList.add('hidden');
+    musicBars.classList.remove('hidden');
+  }
+  isPlaying = !isPlaying;
+});
+
+
+const langBtn = document.getElementById('lang-btn');
+const langMenu = document.getElementById('lang-menu');
+
+langBtn?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = langMenu.classList.contains('opacity-100');
+  langMenu.classList.toggle('opacity-100', !isOpen);
+  langMenu.classList.toggle('visible', !isOpen);
+  langMenu.classList.toggle('-translate-y-2', isOpen);
+  langMenu.classList.toggle('translate-y-0', !isOpen);
+  langBtn.setAttribute('aria-expanded', String(!isOpen));
+});
+
+document.addEventListener('click', () => {
+  langMenu?.classList.remove('opacity-100', 'visible', 'translate-y-0');
+  langMenu?.classList.add('-translate-y-2');
+  langBtn?.setAttribute('aria-expanded', 'false');
+});
+
+
+const scrollTopBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+  scrollTopBtn?.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+scrollTopBtn?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileClose = document.getElementById('mobile-menu-close');
+
+mobileMenuBtn?.addEventListener('click', () => {
+  mobileMenu.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+mobileClose?.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar?.classList.toggle('shadow-2xl', window.scrollY > 20);
+}, { passive: true });
+
+
+if (typeof lucide !== 'undefined') {
+  lucide.createIcons();
+}
+
+
+(function initSearch() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  if (!input || !results) return;
+
+  let searchIndex = null;
+
+  
+  async function loadIndex() {
+    if (searchIndex) return searchIndex;
+    try {
+      const res = await fetch('\/index.json');
+      searchIndex = await res.json();
+    } catch (e) {
+      searchIndex = [];
+    }
+    return searchIndex;
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  input.addEventListener('focus', loadIndex);
+
+  input.addEventListener('input', async () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q || q.length < 2) {
+      results.classList.add('hidden');
+      results.innerHTML = '';
+      return;
+    }
+    const index = await loadIndex();
+    const matches = index.filter(item =>
+      (item.title && item.title.toLowerCase().includes(q)) ||
+      (item.description && item.description.toLowerCase().includes(q))
+    ).slice(0, 8);
+
+    if (!matches.length) {
+      results.innerHTML = '<div class="px-4 py-3 text-gold-300/60 text-sm">No results found</div>';
+    } else {
+      results.innerHTML = matches.map(item => `
+        <a href="${item.permalink}" class="search-result-item">
+          <div class="font-medium text-sm text-gold-100">${escapeHtml(item.title || '')}</div>
+          ${item.description ? `<div class="text-xs text-gold-300/60 mt-0.5 line-clamp-1">${escapeHtml(item.description)}</div>` : ''}
+        </a>
+      `).join('');
+    }
+    results.classList.remove('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('search-container')?.contains(e.target)) {
+      results.classList.add('hidden');
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      results.classList.add('hidden');
+      input.blur();
+    }
+  });
+})();
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+
+document.getElementById('subscribe-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('[name="email"]').value;
+  const msg = document.getElementById('subscribe-msg');
+  if (msg) {
+    msg.textContent = 'Thank you for subscribing!';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+
+
+document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const msg = document.getElementById('contact-msg');
+  if (msg) {
+    msg.textContent = 'Thank you! We will get back to you soon.';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+</script>
+
+</body>
+</html>

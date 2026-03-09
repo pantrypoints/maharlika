@@ -13,7 +13,7 @@
       </div>
 
       <p class="font-cinzel text-gold-400 text-sm md:text-base tracking-widest uppercase mb-4 opacity-90">
-        Welcome to the Advocacy
+        {{ .Site.Params.h1 }}
       </p>
 
       <h1 class="font-cinzel text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-none">
@@ -23,17 +23,17 @@
       <div class="gold-divider"></div>
 
       <p class="text-lg md:text-xl lg:text-2xl text-gold-100/90 max-w-2xl mx-auto leading-relaxed mt-6 font-crimson">
-        An advocacy to change the name, culture, and socio-economics of The Philippines into <em class="text-gold-300 not-italic font-semibold">Maharlika</em>
+        {{ .Site.Params.s1 }} <em class="text-gold-300 not-italic font-semibold">{{ .Site.Params.s2 }}</em>
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-        <a href="{{ "/advocacy/" | relLangURL }}" class="btn-gold">
+        <a href="{{ "/advocacy/" | relLangURL }}" class="btn-primary">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          Learn More
+          {{ .Site.Params.b1 }}
         </a>
-        <a href="#quote" class="btn-primary border border-gold-500/30">
+        <a href="#quote" class="btn-gold border border-gold-500/30">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
-          Our Vision
+          {{ .Site.Params.b2 }}
         </a>
       </div>
     </div>

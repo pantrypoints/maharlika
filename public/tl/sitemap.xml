@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tl/history/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/history/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cb"
+                href="http://localhost:1313/cb/history/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tl"
+                href="http://localhost:1313/tl/history/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tl/history/meanings-maharlika/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/history/meanings-maharlika/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tl"
+                href="http://localhost:1313/tl/history/meanings-maharlika/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tl/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cb"
+                href="http://localhost:1313/cb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tl"
+                href="http://localhost:1313/tl/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tl/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -19,23 +68,6 @@
                 href="http://localhost:1313/tl/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tl/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cb"
-                href="http://localhost:1313/cb/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tl"
-                href="http://localhost:1313/tl/"
-                />
-  </url><url>
     <loc>http://localhost:1313/tl/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -51,6 +83,18 @@
                 rel="alternate"
                 hreflang="tl"
                 href="http://localhost:1313/tl/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tl/help/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/help/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tl"
+                href="http://localhost:1313/tl/help/"
                 />
   </url>
 </urlset>

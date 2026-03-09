@@ -1,7 +1,9 @@
 ---
-title: "EPIRA — Electric Power Industry Reform Act"
-description: "An analysis of Republic Act 9136 and its impact on Maharlika's energy sector"
-c: "darkred"
-icon: "RA 9136"
-weight: 1
+heading: RA 9136
+title: "EPIRA Simplified"
+image: "/covers/epira.jpg"
+weight: 10
+description: "An Act Ordaining Reforms In The Electric Power Industry, Amending For The Purpose Certain Laws And For Other Purposes"
 ---
+
+

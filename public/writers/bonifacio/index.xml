@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andres Bonifacio on Maharlikanism</title>
+    <link>http://localhost:1313/writers/bonifacio/</link>
+    <description>Recent content in Andres Bonifacio on Maharlikanism</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/writers/bonifacio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ang Dapat Mabatid Ng Mga Tagalog</title>
+      <link>http://localhost:1313/writers/bonifacio/dapat/</link>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writers/bonifacio/dapat/</guid>
+      <description>&lt;p&gt;This Tagalog region (Katagalugan), governed in the olden days by our true compatriots, before the Spaniards ever set foot on these lands, lived in complete prosperity and comfort.&lt;/p&gt;&#xA;&lt;p&gt;It was friendly with neighboring states and especially with the Japanese. They traded and exchanged goods. All sources of livelihood flourished greatly, and thus, the customs of all were rich.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

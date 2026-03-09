@@ -4,14 +4,14 @@
 
     <div class="text-center mb-16" data-animate>
       <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-gold-500 border border-gold-500/30 px-4 py-2 rounded-full inline-block mb-6">
-        The Foundation
+        {{ i18n "superphysics.foundation" | default "The Foundation" }}
       </span>
       <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-gold-300 mb-4">
-        Based on Social Superphysics
+        {{ i18n "superphysics.title" | default "Based on Social Superphysics" }}
       </h2>
       <div class="gold-divider"></div>
       <p class="text-gold-100/60 max-w-xl mx-auto mt-0">
-        Our advocacy is grounded in the principles of Social Superphysics — a new science of society
+        {{ i18n "superphysics.subtitle" | default "Our advocacy is grounded in the principles of Social Superphysics — a new science of society" }}
       </p>
     </div>
 
@@ -33,7 +33,7 @@
           {{ .sub }}
         </p>
         <div class="flex items-center gap-1 text-gold-500 text-xs opacity-0 group-hover:opacity-100 transition-all duration-300">
-          <span>Learn More</span>
+          <span>{{ i18n "superphysics.learnMore" | default "Learn More" }}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
         </div>
       </a>

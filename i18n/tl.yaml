@@ -1,9 +1,49 @@
+book:
+  badge: "Aklat"
+  title: "Ang Aklat ng Maharlika"
+  desc: "Alamin ang higit pa tungkol sa adbokasiyang Maharlika at kung paano ka makakasali sa makasaysayang kilusang ito."
+  url: "https://play.google.com/store/books/details?id=example"
+  cta: "Kunin sa Play Store"
+
+contact:
+  badge: "ᜂᜄ᜔ᜈᜌᜈ᜔"
+  title: "Sulatan Kami"
+  subtitle: "May tanong ka ba or request?"
+  name: "Pangalan"
+  namePlaceholder: "Iyong pangalan"
+  email: "Email"
+  emailPlaceholder: "iyong@email.com"
+  subject: "Paksa"
+  subjectPlaceholder: "Paano ka namin matutulungan?"
+  message: "Mensahe"
+  messagePlaceholder: "Iyong mensahe..."
+  send: "Magpadala ng Mensahe"
+  sending: "Nagpapadala..."
+  success: "Salamat! Naipadala na ang iyong mensahe."
+  error: "May error! Pakisubukan muli."
+
+superphysics:
+  foundation: "ᜊᜆᜌᜈ᜔"
+  title: "Base sa Social Superphysics"
+  subtitle: "Ang Maharlikanism ay base sa Social Superphysics na hango kay Socrates, David Hume, at Ibn Khaldun"
+  learnMore: "Ano ba yan?"
+
+
+subscribe:
+  title: "Mag-subscribe"
+  subtitle: "Mag-subscribe para makakuha ng update sa Maharlikanism."
+  placeholder: "Enter your email address"
+  button: "Subscribe"
+  privacy: "No spam. Unsubscribe at any time."
+  
 searchPlaceholder: "Maghanap ng mga artikulo…"
 readMore: "Basahin Pa"
-subscribe: "Mag-subscribe"
 contactUs: "Makipag-ugnayan"
 sendMessage: "Magpadala ng Mensahe"
 previous: "Nakaraan"
 next: "Susunod"
 tableOfContents: "Nilalaman"
 noResults: "Walang nakitang resulta"
+# subject: "Subject"
+# email: "Email"
+# name: "Name"

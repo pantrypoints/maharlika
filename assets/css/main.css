@@ -223,12 +223,21 @@ body {
   }
 
   /* Prose */
-  .prose-maharlika {
+  /*.prose-maharlika {
     @apply prose prose-lg max-w-none;
     @apply prose-headings:font-cinzel prose-headings:text-royal-800 dark:prose-headings:text-gold-300;
     @apply prose-a:text-royal-600 dark:prose-a:text-gold-400;
     @apply prose-blockquote:border-gold-400 prose-blockquote:bg-royal-50 dark:prose-blockquote:bg-royal-900/50;
-  }
+  }*/
+
+.prose-maharlika {
+  @apply prose prose-lg max-w-none;
+  @apply prose-p:text-[var(--color-text)] prose-li:text-[var(--color-text)]; /* ADD THIS LINE */
+  @apply prose-headings:font-cinzel prose-headings:text-royal-800 dark:prose-headings:text-gold-300;
+  @apply prose-a:text-royal-600 dark:prose-a:text-gold-400;
+  @apply prose-blockquote:border-gold-400 prose-blockquote:bg-royal-50 dark:prose-blockquote:bg-royal-900/50 prose-blockquote:text-[var(--color-text)]; /* ADD text color for blockquotes */
+  @apply prose-strong:text-[var(--color-text)]; /* ADD for bold text */
+}
 
   /* Search */
   .search-box {

@@ -29,8 +29,6 @@ summaryLength = 30
   tawkTo = "XXXXXXXX/XXXXXXXX"
   bookImg = "/books/towards.jpg"
   bookUrl = "https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&pli=1"
-  bookIntro = "Read the Book"
-  bookSub = "Maharlikanism is explained in the book <i>Towards Maharlika</i>, available on the Play Store"
   defaultContentLanguage = "en"
   defaultContentLanguageInSubdir = false
 
@@ -42,6 +40,10 @@ summaryLength = 30
     [languages.en.params]
       langFlag = "🇺🇸"
       h1 = "ᜋᜑᜇ᜔ᜎᜒᜃ"
+      s1 = "An advocacy to change the name, culture, and socio-economics of The Philippines into"
+      s2 = "Maharlika"
+      b1 = "Learn More"
+      b2 = "Our Vision"
       [[languages.en.params.quote]]
         content = "With the new men that sprout from their bosom and with the memory of their past, they will work together to strengthen their country, resurrect the maritime and mercantile life natural to them. This and other things may happen within a hundred years or so."
         icon = "Jose Rizal"
@@ -83,6 +85,15 @@ summaryLength = 30
         url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
         title = "The Effort Theory of Value for Economics"
         sub = "Economic Bayanihan System"
+      [[languages.en.params.book]]
+        h1 = "ᜀᜃ᜔ᜎᜆ᜔"
+        title = "Read the Book"
+        sub = "Maharlikanism is explained in the book Towards Maharlika"
+      [[languages.en.params.contact]]
+        h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
+        title = "Contact Us!"
+        sub = "Do you have any questions? Or comments?"
+
 
   [languages.tl]
     contentDir = "content/tl"
@@ -90,10 +101,17 @@ summaryLength = 30
     weight = 2
     [languages.tl.params]
       langFlag = "🇵🇭"
+      h1 = "ᜋᜑᜇ᜔ᜎᜒᜃ"
+      s1 = "Ang pagpalit ng pangalan, kultura, at socio-economics ng Pilipinas sa"
+      s2 = "Maharlika"
+      b1 = "Ano yan?"
+      b2 = "Gusto ko yan!"
+
       [[languages.tl.params.quote]]
         content = "Sa mga bagong lalaking susupling mula sa kanilang dibdib at sa alaala ng kanilang nakaraan, magtatrabaho silang magkasama upang palakasin ang kanilang bansa, buhayin muli ang natural na buhay-dagat at kalakalan. Ito at iba pa ay maaaring mangyari sa loob ng isang daang taon o higit pa."
         icon = "Jose Rizal"
         author = "Jose Rizal"
+        image = "/icons/rizal.jpg"
         src = "Ang Pilipinas sa Loob ng Isang Daang Taon"
         url = "/writers/rizal/dentro/part-4"
       [[languages.tl.params.actionCards]]
@@ -131,6 +149,24 @@ summaryLength = 30
         url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
         title = "Ang Teorya ng Pagsisikap sa Halaga"
         sub = "Sistemang Pangkatarungang Bayanihan"
+      [[languages.tl.params.book]]
+        h1 = "ᜀᜃ᜔ᜎᜆ᜔"
+        title = "Basahin ang Libro"
+        sub = "Ang Maharlikanismo ay ipinaliwanag sa aklat na Towards Maharlika, na nasa Play Store."
+      [[languages.tl.params.contact]]
+        h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
+        title = "Sulatan Kami"
+        sub = "May tanong ka ba or request?"
+
+# ᜉ᜔ᜎᜈᜓ
+
+# ᜊᜆᜌᜈ᜔
+
+# ᜀᜃ᜔ᜎᜆ᜔
+
+# ᜐᜎᜒ
+
+
 
   [languages.cb]
     contentDir = "content/cb"
@@ -179,6 +215,21 @@ summaryLength = 30
         url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
         title = "Ang Teorya sa Paningkamot sa Kantidad"
         sub = "Sistemang Pangekonomikong Bayanihan"
+      [[languages.cb.params.book]]
+        h1 = "ᜀᜃ᜔ᜎᜆ᜔"
+        title = "Basahin ang Libro"
+        sub = "Ang Maharlikanismo ay ipinaliwanag sa aklat na Towards Maharlika, na nasa Play Store."
+      [[languages.cb.params.follow]]
+        h1 = "ᜐᜎᜒ"
+        title = "Mag-Subscribe"
+        sub = "Mag-subscribe para makatanggap ng mga update sa adbokasiya ng Maharlikanismo, mga bagong artikulo, atbp."
+      [[languages.cb.params.contact]]
+        h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
+        title = "Contact Us!"
+        sub = "Do you have any questions? Or comments?"
+
+  # bookIntro = "Read the Book"
+  # bookSub = "Maharlikanism is explained in the book <i>Towards Maharlika</i>, available on the Play Store"
 
 [menu]
   [[menu.main]]

@@ -1,22 +1,26 @@
 {{ define "main" }}
-
 <!-- Article Header -->
 <div class="article-header" {{ with .Params.c }}style="background: linear-gradient(135deg, {{ . }}, #0e1f4d 100%);"{{ end }}>
   <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
   <div class="relative max-w-4xl mx-auto px-4">
     <!-- Breadcrumb -->
     {{ partial "breadcrumb.html" . }}
+    
     <!-- Heading tag -->
     {{ with .Params.heading }}
     <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-gold-400 border border-gold-500/30 px-4 py-2 rounded-full inline-block mb-4">
       {{ . }}
     </span>
     {{ end }}
+    
     <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">{{ .Title }}</h1>
+    
     <div class="gold-divider"></div>
+    
     {{ with .Description }}
     <p class="text-gold-100/80 text-xl mt-4 font-crimson italic max-w-2xl mx-auto">{{ . }}</p>
     {{ end }}
+    
     <div class="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gold-100/50">
       {{ with .Date }}
       <time datetime="{{ .Format "2006-01-02" }}" class="flex items-center gap-1.5">
@@ -24,12 +28,14 @@
         {{ .Format "January 2, 2006" }}
       </time>
       {{ end }}
+      
       {{ with .Params.icon }}
       <span class="flex items-center gap-1.5">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         {{ . }}
       </span>
       {{ end }}
+      
       <span class="flex items-center gap-1.5">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         {{ .ReadingTime }} min read
@@ -41,7 +47,7 @@
 <!-- Article Body -->
 <div class="max-w-7xl mx-auto px-4 py-12">
   <div class="flex flex-col lg:flex-row gap-10">
-
+    
     <!-- Table of Contents (sidebar) -->
     {{ if .TableOfContents }}
     <aside class="lg:w-72 shrink-0">
@@ -54,24 +60,21 @@
             {{ .TableOfContents }}
           </nav>
         </div>
+        
         <!-- AdSense slot (sidebar) -->
         {{ with .Site.Params.googleAdsense }}
         <div class="mt-6 text-center">
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="{{ . }}"
-               data-ad-slot="SIDEBAR_AD_SLOT"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="{{ . }}" data-ad-slot="SIDEBAR_AD_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
         {{ end }}
       </div>
     </aside>
     {{ end }}
-
+    
     <!-- Main article content -->
     <article class="flex-1 min-w-0">
+      
       <!-- Feature image -->
       {{ with .Params.image }}
       <div class="mb-8 rounded-2xl overflow-hidden shadow-xl">
@@ -79,10 +82,11 @@
       </div>
       {{ end }}
 
-      <!-- Content -->
-      <div class="prose-maharlika">
-        {{ .Content }}
-      </div>
+      
+<!-- Content -->
+<div class="prose-maharlika" style="color: var(--color-text);">
+  {{ .Content }}
+</div>
 
       <!-- Tags / Taxonomy -->
       <div class="mt-10 pt-6 border-t border-[var(--color-border)]">
@@ -94,7 +98,7 @@
         </div>
         {{ end }}
       </div>
-
+      
       <!-- Prev / Next navigation -->
       <nav class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Article navigation">
         {{ with .PrevInSection }}
@@ -106,6 +110,7 @@
           </div>
         </a>
         {{ end }}
+        
         {{ with .NextInSection }}
         <a href="{{ .RelPermalink }}" class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200 sm:col-start-2">
           <div class="min-w-0 text-right">
@@ -116,9 +121,8 @@
         </a>
         {{ end }}
       </nav>
-
     </article>
   </div>
 </div>
-
 {{ end }}
+

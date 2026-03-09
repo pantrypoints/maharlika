@@ -1,43 +1,63 @@
-<!-- SECTION 8: Contact Form -->
+<!-- SECTION 2: Contact Form -->
 <section class="py-24 px-4 bg-[var(--color-bg)]" id="contact">
   <div class="max-w-2xl mx-auto">
 
     <div class="text-center mb-12" data-animate>
       <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-gold-500 border border-gold-500/30 px-4 py-2 rounded-full inline-block mb-6">
-        Get in Touch
+        {{ with .Site.Params.contact }}
+          {{ $firstContact := index . 0 }}
+          {{ $firstContact.h1 | default (i18n "contact.badge" | default "Contact") }}
+        {{ else }}
+          {{ i18n "contact.badge" | default "Contact" }}
+        {{ end }}
       </span>
-      <h2 class="section-title">Contact Us</h2>
+      
+      <h2 class="section-title">
+        {{ with .Site.Params.contact }}
+          {{ $firstContact := index . 0 }}
+          {{ $firstContact.title | default (i18n "contact.title" | default "Get In Touch") }}
+        {{ else }}
+          {{ i18n "contact.title" | default "Get In Touch" }}
+        {{ end }}
+      </h2>
+      
       <div class="gold-divider"></div>
+      
       <p class="section-subtitle mt-0">
-        Have questions or want to get involved? Reach out to us.
+        {{ with .Site.Params.contact }}
+          {{ $firstContact := index . 0 }}
+          {{ $firstContact.sub | default (i18n "contact.subtitle" | default "Have questions or requests?") }}
+        {{ else }}
+          {{ i18n "contact.subtitle" | default "Have questions or requests?" }}
+        {{ end }}
       </p>
     </div>
 
-    <form id="contact-form" class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-8 shadow-lg space-y-5" novalidate>
+    <form id="contact-form" class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-8 shadow-lg space-y-5" novalidate action="https://usebasin.com/f/fe409f5e1e78" method="POST">
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label class="block text-sm font-medium text-[var(--color-text)] mb-1.5">
-            Name <span class="text-gold-500">*</span>
+            {{ i18n "contact.name" | default "Name" }} <span class="text-gold-500">*</span>
           </label>
           <input
             type="text"
             name="name"
             required
             class="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] placeholder-[var(--color-muted)] focus:outline-none focus:ring-2 focus:ring-royal-500 focus:border-transparent transition-all"
-            placeholder="Your name"
+            placeholder="{{ i18n "contact.namePlaceholder" | default "Your name" }}"
           >
         </div>
         <div>
           <label class="block text-sm font-medium text-[var(--color-text)] mb-1.5">
-            Email <span class="text-gold-500">*</span>
+            {{ i18n "contact.email" | default "Email" }} <span class="text-gold-500">*</span>
           </label>
           <input
             type="email"
             name="email"
             required
             class="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] placeholder-[var(--color-muted)] focus:outline-none focus:ring-2 focus:ring-royal-500 focus:border-transparent transition-all"
-            placeholder="your@email.com"
+            placeholder="{{ i18n "contact.emailPlaceholder" | default "your@email.com" }}"
             autocomplete="email"
           >
         </div>
@@ -45,32 +65,32 @@
 
       <div>
         <label class="block text-sm font-medium text-[var(--color-text)] mb-1.5">
-          Subject
+          {{ i18n "contact.subject" | default "Subject" }}
         </label>
         <input
           type="text"
           name="subject"
           class="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] placeholder-[var(--color-muted)] focus:outline-none focus:ring-2 focus:ring-royal-500 focus:border-transparent transition-all"
-          placeholder="How can we help?"
+          placeholder="{{ i18n "contact.subjectPlaceholder" | default "How can we help?" }}"
         >
       </div>
 
       <div>
         <label class="block text-sm font-medium text-[var(--color-text)] mb-1.5">
-          Message <span class="text-gold-500">*</span>
+          {{ i18n "contact.message" | default "Message" }} <span class="text-gold-500">*</span>
         </label>
         <textarea
           name="message"
           rows="5"
           required
           class="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] placeholder-[var(--color-muted)] focus:outline-none focus:ring-2 focus:ring-royal-500 focus:border-transparent transition-all resize-vertical"
-          placeholder="Your message..."
+          placeholder="{{ i18n "contact.messagePlaceholder" | default "Your message..." }}"
         ></textarea>
       </div>
 
       <button type="submit" class="btn-gold w-full justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-        Send Message
+        {{ i18n "contact.send" | default "Send Message" }}
       </button>
 
       <p id="contact-msg" class="text-sm text-center" aria-live="polite"></p>
@@ -79,3 +99,44 @@
 
   </div>
 </section>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const msgEl = document.getElementById('contact-msg');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.innerHTML;
+  
+  // Show loading state
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> {{ i18n "contact.sending" | default "Sending..." }}';
+  
+  msgEl.textContent = '';
+  msgEl.className = 'text-sm text-center';
+  
+  try {
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData
+    });
+    
+    if (response.ok) {
+      msgEl.textContent = '{{ i18n "contact.success" | default "Thank you! Your message has been sent." }}';
+      msgEl.classList.add('text-green-500');
+      form.reset();
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    msgEl.textContent = '{{ i18n "contact.error" | default "Oops! Something went wrong. Please try again." }}';
+    msgEl.classList.add('text-red-500');
+  } finally {
+    // Restore button
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = originalText;
+  }
+});
+</script>

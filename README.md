@@ -153,3 +153,11 @@ Place these in `/static/`:
 - `music.mp3` — Background music
 - Photos referenced in hugo.toml actionCards and superCards
 - Book cover image
+
+
+BLUE #1e4aaa;
+
+
+  {{ if $bgStyle }}
+  style="{{ $bgStyle | safeCSS }}"
+  {{ end }}

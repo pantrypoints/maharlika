@@ -1,9 +1,49 @@
+# All custom keys must be nested under a namespace
+book:
+  badge: "Libro"
+  title: "Ang Libro sa Maharlika"
+  desc: "Pagkat-on og dugang mahitungod sa adbokasiyang Maharlika ug unsaon pag-apil niining makasaysayanong kalihukan."
+  url: "https://play.google.com/store/books/details?id=example"
+  cta: "Kuhaa sa Play Store"
+
+contact:
+  badge: "ᜂᜄ᜔ᜈᜌᜈ᜔"
+  title: "Sulatan Kami"
+  subtitle: "May tanong ka ba or request?"
+  name: "Pangalan"
+  namePlaceholder: "Iyong pangalan"
+  email: "Email"
+  emailPlaceholder: "iyong@email.com"
+  subject: "Paksa"
+  subjectPlaceholder: "Paano ka namin matutulungan?"
+  message: "Mensahe"
+  messagePlaceholder: "Iyong mensahe..."
+  send: "Magpadala ng Mensahe"
+  sending: "Nagpapadala..."
+  success: "Salamat! Naipadala na ang iyong mensahe."
+  error: "May error! Pakisubukan muli."
+
+subscribe:
+  title: "Stay Informed"
+  subtitle: "Subscribe to receive updates on the Maharlikanism advocacy, new articles, and important developments."
+  placeholder: "Enter your email address"
+  button: "Subscribe"
+  privacy: "No spam. Unsubscribe at any time."
+
+superphysics:
+  foundation: "ᜊᜆᜌᜈ᜔"
+  title: "Base sa Social Superphysics"
+  subtitle: "Ang Maharlikanism ay base sa Social Superphysics na hango kay Socrates, David Hume, at Ibn Khaldun"
+  learnMore: "Ano ba yan?"
+  
 searchPlaceholder: "Pangita mga artikulo…"
 readMore: "Basaha Pa"
-subscribe: "Mag-subscribe"
 contactUs: "Makigkontak"
 sendMessage: "Magpadala ug Mensahe"
 previous: "Miaging"
 next: "Sunod"
 tableOfContents: "Sulod"
 noResults: "Walay nakitang resulta"
+# subject: "Subject"
+# email: "Email"
+# name: "Name"

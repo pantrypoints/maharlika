@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" id="html-root">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Madagascar | Maharlikanism</title>
+<meta name="description" content="An alternative to a confederation is a federation which has a central ruler and legal system, making it stronger. Examples are the Dutch Republic (United Provinces) and the United States.">
+<meta name="author" content="Maharlikanism">
+
+
+<meta property="og:title" content="Madagascar">
+<meta property="og:description" content="An alternative to a confederation is a federation which has a central ruler and legal system, making it stronger. Examples are the Dutch Republic (United Provinces) and the United States.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/writers/argensola/book-07c/">
+<meta property="og:image" content="http://localhost:1313/photos/medieval/lapu.jpg">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Madagascar">
+<meta name="twitter:description" content="An alternative to a confederation is a federation which has a central ruler and legal system, making it stronger. Examples are the Dutch Republic (United Provinces) and the United States.">
+
+
+<link rel="canonical" href="http://localhost:1313/writers/argensola/book-07c/">
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" >
+
+
+<script>
+  (function() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+
+<link rel="icon" type="image/png" href="/icons/favicon.svg">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+
+
+
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/writers/argensola/book-07c/">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="min-h-screen flex flex-col"><nav class="navbar" id="navbar">
+
+  
+  <a href="/" class="flex items-center gap-3 shrink-0">
+    <div class="w-9 h-9 flex items-center justify-center">
+      <img src="/icons/sun.svg">
+    </div>
+    <span class="font-cinzel font-bold text-gold-300 text-lg tracking-widest hidden sm:block">MAHARLIKA</span>
+  </a>
+
+  
+  <div class="hidden lg:flex items-center gap-6 xl:gap-8 mx-6">
+    
+    <div class="nav-item relative">
+      <a href="/advocacy/" class="nav-link">Advocacy</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/culture/" class="nav-link">Culture</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/governance/" class="nav-link">Governance</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/history/" class="nav-link">History</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/infrastructure/" class="nav-link">Infrastructure</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/laws/" class="nav-link">Laws</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/metaphysics/" class="nav-link">Metaphysics</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/politicians/" class="nav-link">Politicians</a>
+    </div>
+    
+    <div class="nav-item relative">
+      <a href="/writers/" class="nav-link">Writers</a>
+    </div>
+    
+  </div>
+
+  
+  <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
+
+    
+    <div class="search-box relative hidden md:block" id="search-container">
+      <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-gold-300/60 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input w-36 xl:w-52 focus:w-64 transition-all duration-300"
+        placeholder="Search articles…"
+        autocomplete="off"
+        aria-label="Search"
+      >
+      <div id="search-results" class="hidden"></div>
+    </div>
+
+    
+    <button
+      id="music-btn"
+      class="relative flex items-center gap-1 px-2 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle background music"
+      title="Toggle music"
+    >
+      <svg id="music-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span class="music-playing hidden" id="music-bars">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+    <audio id="bg-music" loop preload="none">
+      <source src="/music.mp3" type="audio/mpeg">
+    </audio>
+
+    
+    <button
+      id="theme-toggle"
+      class="p-2 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle dark mode"
+    >
+      
+      <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      
+      <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+
+    
+    <div class="relative" id="lang-dropdown">
+      <button
+        id="lang-btn"
+        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200 text-sm font-medium"
+        aria-expanded="false"
+        aria-haspopup="true"
+      >
+        <span>🇺🇸</span>
+        <span class="hidden sm:block uppercase text-xs tracking-wider font-cinzel">en</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div id="lang-menu" class="nav-dropdown min-w-36" role="menu">
+        
+        
+        <div class="flex items-center gap-2 px-4 py-2.5 text-sm bg-royal-800/50" aria-current="true">
+          <span>🇺🇸</span>
+          <span class="font-cinzel text-xs tracking-wider uppercase text-gold-400">en</span>
+          <span class="text-gold-300/60 ml-1">English</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <button
+      id="mobile-menu-btn"
+      class="lg:hidden p-2 text-gold-300 hover:text-gold-100 rounded-lg hover:bg-royal-800 transition-all"
+      aria-label="Open menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+
+  </div>
+</nav>
+<main class="flex-1 pt-16">
+
+
+<div class="article-header" >
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
+  <div class="relative max-w-4xl mx-auto px-4">
+    
+    <nav class="breadcrumb mb-6 flex-wrap justify-center" aria-label="Breadcrumb">
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  </a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Maharlikanism</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">Writers</a>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <a href="/writers/argensola/" class="hover:text-gold-400 transition-colors text-gold-100/50 font-cinzel text-xs uppercase tracking-wider">The History Of The Discovery And Conquest Of The Molucco And Philippine Islands</a>
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-gold-100/30"><path d="m9 18 6-6-6-6"/></svg>
+  <span class="text-gold-300/80 font-cinzel text-xs uppercase tracking-wider">Madagascar</span>
+  
+</nav>
+
+    
+    
+    <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-gold-400 border border-gold-500/30 px-4 py-2 rounded-full inline-block mb-4">
+      Book 7c
+    </span>
+    
+    <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Madagascar</h1>
+    <div class="gold-divider"></div>
+    
+    <p class="text-gold-100/80 text-xl mt-4 font-crimson italic max-w-2xl mx-auto">An alternative to a confederation is a federation which has a central ruler and legal system, making it stronger. Examples are the Dutch Republic (United Provinces) and the United States.</p>
+    
+    <div class="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gold-100/50">
+      
+      <time datetime="2022-04-19" class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+        April 19, 2022
+      </time>
+      
+      
+      <span class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        20 min read
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    
+    
+    <aside class="lg:w-72 shrink-0">
+      <div class="lg:sticky lg:top-24">
+        <div class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-5">
+          <h3 class="font-cinzel text-sm font-semibold text-[var(--color-primary)] tracking-widest uppercase mb-4">
+            Contents
+          </h3>
+          <nav class="toc text-sm text-[var(--color-muted)]" id="toc">
+            <nav id="TableOfContents"></nav>
+          </nav>
+        </div>
+        
+        
+        <div class="mt-6 text-center">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-XXXXXXXXXX"
+               data-ad-slot="SIDEBAR_AD_SLOT"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        
+      </div>
+    </aside>
+    
+
+    
+    <article class="flex-1 min-w-0">
+      
+      
+      <div class="mb-8 rounded-2xl overflow-hidden shadow-xl">
+        <img src="/photos/medieval/lapu.jpg" alt="Madagascar" class="w-full object-cover max-h-80">
+      </div>
+      
+
+      
+      <div class="prose-maharlika">
+        <p>The City Arosbay is Populous, and well Wall’d. The Hollanders main Design in coming to it, was, as has been said, to take in Pilots, and other Necessaries to proceed to the Molucco Islands; to which Purpose, and to avoid the Shoals lying betwixt Java and Madura, they divided their Ships.</p>
+<p>The Vice-Admiral, with the Guelder and Zealand, pass’d the Chanels of Madura, in order to joyn, at Jorta, the Junks that sail for Ternate, and thence to the other Molucco Islands.</p>
+<p>The Admiral Sticht Utrecht, running along the length of Madura, came to an Anchor before Arosbay. He sent out a Number of his Men in the Dutch taken by the King of Madura. Boat, to bring Rice, and other Provisions from Shore. No sooner were they landed, then seiz’d, disarm’d, stripp’d, and carry’d before the King.</p>
+<p>Those staying long, another Boat was sent with only three Men, and the same befell them. The Prisoners intreated the King to give leave, that those three, or any others, might go to give the Admiral an Account. He granted it, but upon Condition, that as soon as they had deliver’d the Message, they should return to Prison. They gave Notice of their Misfortune, and the Admiral sent away a Boat to carry immediate Advice to his Countrymen at the City Jorta, writing several Letters to procure the Prisoners Liberty.</p>
+<p>The Vice-Admiral came with his Ships, and joyn’d those at Arosbay. The His Demands for their Ransom. King demanded the two biggest Brass Guns aboard the Admiral, many Pieces of Silk, and one thousand Pieces of Eight for the Ransom of the Prisoners. The Admiral answer’d, That the Cannon was not his own, but belong’d to all his Nation, and therefore he desir’d him to moderate the Ransom, and turn it into Money, or take it out in such Commodities as he brought. Six Days were spent in Treating, and the Delay made the Conclusion more Difficult; and therefore the Admiral believing, that his Men were kept Prisoners in their own Boats, or near the Sea, without any considerable Guard, he order’d all his Men to land at once, and to Rescue them Attempt to Rescue them by Force. by Force. An hundred and fifty Dutchmen attempted it, but saw a great Number of People gathering on the Shore, led by the Portugueses, who carry’d white Colours, in token of Peace, giving out that they came to treat of an Accommodation, which, as Hugo affirms, was a Stratagem to gain Time for the Citizens to Arm. The Dutch either suspected, or had Notice [166]of it, and forming a small body with about 20 Musquetiers, contriv’d to have their other Boats draw nearer, that so the Seamen and Officers might come to Fight, according to the appointed Order. More Men came out of the City, at another Gate, to enclose them unawares in the Port.</p>
+<p>The Dutch saw into the Policy, and were sensible of the Danger, and therefore sent two other boats to guard the Port. This Precaution was the saving of their Lives; but they could not escape a Shower of Arrows, wherewith the Arosbayans thought to subdue them, not so much by their Force, and the Harm receiv’d, as by keeping the Enemy in Play, that so they might spend their Powder, and be oblig’d to retire to their Ships. Nor would they have been safe there, for now the Wind and Sea threatned them, and Dutch Defeated. thirty six Men belonging to the Admiral, and thirteen to the Zealand were Drown’d, and the Boats cast away. Some few escap’d, whom they did not kill, at the Request of the Renegado of Tuban, but they were made Prisoners. These kneeling down, to move Compassion, with their dismal Looks, and Tears, the Conquerors laid a Handful of Earth on their Heads, a Ceremony Ceremony in giving Quarter. they use towards the vanquish’d, whose Lives they grant. Perhaps they themselves know not the Reason, and Original of the Custom.</p>
+<p>25 were lost in this Encounter, 15 of the Admirals, John Marts, and 9 of the Zealand.</p>
+<p>The Prisoners were carry’d to a Country Cottage; three Men dangerously wounded, one Trumpeter, and a Herald put into Chains, the others only their Hands bound. The rest were carry’d far from these, and put into a deep Cellar. The Herald being brought into the King’s Presence, he ask’d him, whether he would stay in his Country, promising, among other Favours, that he would marry him to two of his own Wives. The Dutchman answer’d, returning Thanks, but with Freedom in his Looks, That with his good leave he had rather return to his Companions. He was therefore carry’d, with the Trumpeter, about the City, and at his going out at the Gate saw all the Prisoners, being fifty one, who were conducting, under a Guard, to another Island.</p>
+<p>Prisoners Ransom’d. In fine, the Agreement was concluded, and the King discharg’d them for 2000 Florines. So they return’d to their Ships, except two, who hid themselves, taking a liking to that barbarous Way of living. The Governour Jacob Marts Dy’d, his Body was cast into the Sea, and the rest sailing to the Dutch Depart. Northward, directed their Course for the Island of Celebes.</p>
+<p>They pass’d by Combay, six Leagues from it, and beyond that of Routon, and escap’d the Ridges of Rocks of Cebessa, which are not mark’d down, nor taken Notice of in Maps. Their fell mighty Rains, and they steer’d North East for the Island of Amboyna, and in sight of Boora. A Boy dy’d aboard the Zealand; another falling off a Yard, into the Sea, held a Rope’s End in his Mouth, that his arms might be at Liberty to swim, and quitted it not, till he had Help, and was sav’d.</p>
+<p>The next Day they lay by, and their Preacher made a long Spiritual Discourse upon the Sacraments, to celebrate the solemnity of Baptizing two Boys, whom he had already Catechis’d. On the first of March, not far from Blau, to the Eastward of Boora, they saw three other smaller Islands, call’d Atypoti, Maniba, and Gita, which are not far from Come to Amboyna. Amboyna. They pass’d by them, and arriv’d at Amboyna on the third of the same Month.</p>
+<p>The Port is small, and at the Mouth of it, they were receiv’d by three [167]Boats, belonging to the Town of Matel, seated on the Mountains. Thence they went on to that of Ito. Amboyna is about eight Leagues from Banda, to the Northward, in the Way to Ternate. The compass of it is fifteen Leagues, most fruitful in Cloves, Oranges, Lemmons, Citrons, Coco-Nuts, Bananas, Sugar-Canes, and other such like Product.</p>
+<p>The Natives are more open Hearted, and sincere, than those of the Moluccos or Banda; wear the same Habit; live Upon the Trade of Spice; are temperate and abstemious, Their Weapons. and great Sufferers of Hardship. Their Weapons, are Spears with Sharp twisted Ends; these they dart so dexterously, that they will hit the smallest Mark at a great Distance. They also use Cymiters and Shields, and now Muskets. They make great Masses of Sugar, Rice, and Almonds, like our Carcoas. Sugar-Loaves, and value themselves upon being able Seamen. Their Carcoas are like great Dragons, did these swim with their Bodies extended on the Water, and lifting up their two Ends of Head and Tail, which are gilt, and well Carv’d, and serve for Prow and Poop.</p>
+<p>At both of them hang Standards of several Sorts of Silk, and Colours, which are born up by the Wind, when they do not reach to the Water. The Admiral of Amboyna came with three of these Vessels full of arm’d Men, to see the Dutch, with a Musick. Noise of Kittle-Drums, and Brass Basons hanging on the Musitian’s Left-Shoulder, and striking them with the Right-Hand, as they do the Tabors in Spain. They sang their set Airs, understood by none but the Native Amboyneses, tho’ attentively listen’d to by the Dutch, for their Strangeness. The Slaves also sang to the Noise of their Oars.</p>
+<p>They fir’d the three Guns every Carcoa carry’d, being a Salute, in Honour of their Guests; who relying on that Reception, dropt their Anchors, posting many Sentinels, because they observ’d the Natives had done the same in all Parts, and there were constant Fires in many Places.</p>
+<p>Dutch permitted to Trade at Amboyna. The Amboynese Admiral ask’d them, What they came for, and who they were, and having heard their Answer, gave them leave to go ashore, and expose their Commodities, allowing them free Commerce, contrary to his Majesty’s Prohibition, which us’d to be more punctually observ’d in this Island. The Dutch Vice-Admiral went ashore, where he was well received, and conducted to a Seat cover’d with Sails of Ships, supported by Trees, full of Fruit not known in Europe. He easily prevail’d with the Governors, to allow him full Liberty to Trade.</p>
+<p>Their Success was forwarded King of Ternate’s Brother assists the Dutch. by Cachil Azude, Brother to the King of Ternate, who happen’d to be there then, celebrating his Nuptials, being newly come with his Bride, who was the Daughter of a Sangiack of Batochina. He had long courted, and desir’d to be marry’d to her, but was oppos’d by the Father, who had promised her to the King of Bachian. We shall say no more of their Love, nor of what became of the Prince, because it is no essential Part of this History.</p>
+<p>He presently repair’d to the Dutch, and order’d them to be furnish’d with those Loaves made of Sugar, Almonds and Rice, with Coco-Nuts, Bananas, and Wine made of Rice, and this so lavishly, that the Dutch Plenty of Provisions. Relations own they had scarce Room to lay up such Plenty of Provisions. The same would have been, had they bought them, for they had so much for a Pewter Spoon, that they knew not what to do with it. The Amboynese Admiral went aboard the Ships again, was pleas’d to see the great Guns, and the Variety and Plenty of Merchandise. The Prince of Ternate [168]did the same, and both of them at their coming and going were saluted by the Cannon. They had private Conferences with him, and other Noblemen of the Moluccos, who attended him. They erected Factories in several Parts of Amboyna, and agreed that the two Ships, Guelder and Zealand, should Sail for Banda, whilst the other two lay two Months to load and rest at Amboyna. We shall mention hereafter what befel these in Ternate, let us now return to the other two.</p>
+<p>Two Dutch Ships sail for Banda.</p>
+<p>They sail’d with a fair Wind, but one of them stuck in the Flats of Ceru, so that she could scarce be got off. Below Jealau, they met a Portuguese Ship at Naesau, the Inhabitants of which Place eat Mans Flesh. They pass’d on merrily by Poelsetton, two Leagues short of Banda, on that Side. It is desert, and uninhabited, infamous, for stronger Reasons, than the Greeks alledge against the Acroceraunian Rocks. There are Cryes, Whistles, and Island of Devils. Roarings heard in it at all Times, and dreadful Apparitions are seen, with Fires ascending through the Air; and long Experience has shown, that it is inhabited by Devils. Therefore Sailors, when they pass in Sight of it, which seldom happens without Storms, make all the Sail they can to get far off, from the very Wind that blows on it.</p>
+<p>The Dutch chief Pilot knowing so much, furiously took such fast hold of the Helm, that all the rest could not put him from it; He drew it to him violently, thinking that Force drove on the Ship; his Face grew fiery, and his Breast not being able to contain his Wind, he breath’d fast, and groan’d, till being past the Dutch Pilot frighted by the Devil. Island, he grew merry, and whistling loud, scoff’d at the Devil, because he could not cast away the Ship; yet soon after he was in Disorder again, and dropt the Helm; they recover’d him, and made all sail to go forward. Trade at Banda.</p>
+<p>They arriv’d at Banda, near the River, on the fifteenth of the Month. Several Bandese Boats came out, offering their Spice. The Dutch landed, carrying with them sundry Commodities, which they expos’d in Shops. A rich Turk, who was in Esteem, entertain’d them. They built Houses on the Island, and a few Days after hear’d News of their Admiral, by some Chinese Ships, that came from Amboyna; and were inform’d, that the Portugueses were already at War with the Natives, for entertaining and allowing them Factories.</p>
+<p>Return thence. On the fourth of July, having settled Trade at Banda, they sail’d thence towards Noeselau, along the Channels of Zeru, without regarding their Admiral, who was promoting, and fomenting the War at Amboyna. They sail’d in Sight of Bouton, which is in five Degrees of South Latitude, and of the Island Cobayna. On the twelfth they pass’d the Coast of Celebes, and on the seventeenth, by that of Madura, and again discover’d Arosbay, where the Misfortune we have spoken of befel them.</p>
+<p>They ran along the Coast of Java, and in the Evening came to Iacatra, where they cast Anchor, sent to visit the King, and their Compliment was return’d by him with a Present of Rice, Fowl, and Coco-Nuts, and a Buffalo for the Vice-Admiral. The Zealanders, who had been left at Banda in their Houses and Factories, in the Cities of Montelongo, and Soleparvo, by Letters of the first of August, acquainted them, how the new Friendship was establish’d. From this Time the Dutch began, without any Opposition, to possess themselves of the Provinces belonging to the Crown of Spain in Asia.</p>
+<p>They took Leave of that King, and return’d to Banda, with the Natives [169]of which Place they had now contracted such Familiarity, that some Ships belonging to Bandese Merchants, which they met by the Way, presented them with a considerable Quantity of Porcelane. At their Arrival the Governour came out to meet them, with 400 Men, inviting them to take some Refreshment ashore, which they refus’d, but made presents to each other, and drank out great Vessels of Wine made of Rice, which is a powerful and strong Liquor.</p>
+<p>Continuing their Voyage on the tenth of September, towards the South West, they thought they were under the Tropick of Capricorn. On the thirtieth, they were in 28 Degrees, with the Wind at West, somewhat Northerly, and ran thirty Leagues beyond Cape S. Roman, after they had been toss’d among many Islands, in thirty two Degrees and a half South. Next they discover’d Cape Ploemera, of the Southern Ethiopia, or Land of the Cafres. A Storm dispers’d the Ships, but they met again when it ceas’d, at Cape Anquillos. On the seventh of September they arriv’d at the Island S. Helena; the Master went ashore, kill’d many wild Beasts; and, S. Helena Island. furnish’d the Ships with Fruit, there being Plenty of both. The Sick recovered there: They went into the solitary Church, and on the first of January, 1600, they sail’d thence, and being come into five Degrees of North Latitude, on the Thirtieth of the same Month, observ’d an Eclypse. Then they began to discover the North Pole, which had been out of their Sight so long. On the thirteenth of February they had Sight of the Island Mayo, or May, one of those of Cabo Verde, and about the End of March discover’d the English Hills. In fine, they arriv’d at the Texel, and thence to Amsterdam, where they unladed that spicy Wealth, the like, for Quality and Newness, had never yet been brought to Lisbon; at least Hugo’s Relations tell us, there might have been as precious Oyl drawn from these, as when they were just gather’d.</p>
+<p>Whilst these two Ships, Zealand and Guelder, were sailing Home, the The other Dutch Ships depart the Moluccos: other two, Amsterdam and Utretcht, being almost naturaliz’d at Amboyna, departed thence for Ternate, on the eigth of March, 1599, in the Company of three Junks, full of Javanese Soldiers, well arm’d, and hir’d to attack a Fort that was defended by Portugueses.</p>
+<p>Before their Departure, some of them went ashore, and among other Game, took Abundance of green Pigeons, Green Pigeons. as big as our Ducks. They loaded with Clove, because it is sold in that Island for thirty five Royals a Bar, which is there 150 Pounds. They were inform’d, that the Dutch, who had been left at Banda, would soon come to joyn them. The Portugueses attacking a Fort with ill Success, the Dutch, who were before agreed with the Prince of Ternate, arm’d, and mix’d with his Men. This was the first Time they ever Fought with the Subjects of Spain, in those Parts; and the Dutch Author, who gives an Account of this Action, says, the Islanders look’d upon it as a Prodigy.</p>
+<p>Having settled Commerce at Amboyna, they sail’d away for the Islands of Ternate, taking for their Guide, a Captain, who pretended to them, Dutch at Ternate. that he was Brother to the King of an Island; and to magnify his Grand-Father, boasted he had kept seventy lawful Wives, besides Concubines; and that his Son, to vye with him, had forty Wives, besides Mistresses.</p>
+<p>So says the Journal of that Voyage, writ by them who perform’d it. They discover’d the Islands of Tydore and Ternate on the twenty sixth, and coming to an Anchor at the latter, in fifteen Fathom Water, put out their [170]Colours, fired their Cannon, and spar’d for no real or vain Ostentation. The King of Ternate, whose deep known Sagacity is such, that he trusts no other but himself to observe what Dangers may threaten, went into his own Carcoa, attended by many others, on the 28th of May, and sail’d The King goes to view the Ships. to the Place, where the Dutch lay at Anchor.</p>
+<p>He drew near and inclos’d the Ships, call’d to the Admiral, and ask’d him, who he was, whence his Ships, and other Particulars. These Questions and Answers held some Hours, by Means of the Naguatato’s who interpreted the Discourse. The Admiral intreated the King that he would please to come aboard his Ship. He excus’d himself, first alledging, that he did not like those Ladders they show’d him to go up to them, tho’ they had purposely cover’d them with fine Cloth; and afterwards, that the Sun was setting, and it was Time for him to repair to his Devotions. Having made this godly Excuse, he sail’d towards the City, the Air resounding with the Noise of his Brass Basons, Flat Tabors, Guns, Shouts, and Persian Songs.</p>
+<p>He returns. The 29th he drew near to the new Comers again, with 23 Carcoas; in which he had 100 Brass Guns for his Defence, and firing them all at once, to the clattering of Bells, made show of his Warlike Preparation. The Confusion of it being over, tho’ they sang Verses, as they do to denote Peace, in the Malay Tongue, so they call the Language of Malaca, whence it was convey’d to the Moluccos; yet the Dutch made ready their great Guns, Muskets, and half Pikes. They plac’d some arm’d Men out of Sight in every Ship, as also where they might be taken Notice of, showing, or at least not concealing their Jealousy, that so no sudden Surprize might find them unprovided. The King’s Carcoa drew near alone, and those who were in it spoke to the Dutch Admiral, by Means of the Naguatato, without showing themselves.</p>
+<p>The King was satisfy’d with only talking to them, and withdrew; after Noon he return’d with only two Carcoas, one of which tow’d a Boat after Talks with the Dutch. her. Being come up to the Dutch, he began to talk to the Vice-Admiral; enquir’d after their Guns, and order’d the other Carcoa to stand further off, and the Captain going too far, the Boat, either accidentally, or by Design, broke loose from the Stern, and was over-set by the Waves; the King then desired the Admiral to fire at it with a Ball, that he might see whether they could hit or sink it. They fir’d immediately, the King being well pleas’d to see that the Shot had stav’d the Boat in Pieces. The Admiral laying hold of this Opportunity, took Care, whilst they were commending the Shot, which serv’d to disguise the Threat, to let him know that he could with as much Ease sink the Carcoas. This Tryal satisfy’d the Gives them leave to Trade. King, who soon after gave leave for that Nation to Trade in his Dominions, and barter Cloves, Spice, precious Stones, and Pearls, all which is there to be found, by reason of the Resort of the Japonese, Camboxa and Chinese Ships. Of these last they then saw some all made of Wood alone, even to their Anchors, and the Sails of Cane. They came to an Anchor at Ternate, where the first Thing they did, was burying of Reynart Reynarts, a Dutch Soldier, scarce worthy of that Buryal, Idolaters and Mahometans resorting to the Funeral. The King the next Day sent a Carcoa to acquaint the Dutch, that he would go aboard their Ships, and a Boat [171]came to the Admiral’s Side, with only four Ternates in a private Habit, who, by their Questions, Curiosity, and Solicitude, seem’d to be Spyes, as they did by all their Discourse, which was on sundry Subjects, and very full of solid Reflection; which was held on, and listen’d to, with Attention and Dissimulation.</p>
+<p>When the Dutch expected the King would come, they understood he The King visits the Dutch, in Disguise. was one of the four then talking to them from the Boat. They signify’d to him that they knew him, and he did not deny it. They pay’d him the Respect due to a King; but then he refus’d to return to the Ship. Notwithstanding these Jealousies, he approved of the Behaviour of that People. On the second of June Embassadors went ashore, who carry’d the King a Present, which he accepted of, and treated them courteously. They return’d, full of Admiration of the infinite Quantity of Cloves, and the wonderful Woods of them; and bringing the News, that the Ternates would soon come to view and buy the Dutch Commodities.</p>
+<p>The next Day they came in great Numbers, Sangiacks, Cachiles, and Commons, Barbarian Ladies, and all Sorts of Women, with Variety of Concourse of People to the Dutch. Attendance. The Shores were cover’d with sundry Sorts of People; differing in Habit, Colour, and great Diversity of Feathers; among them many naked, and of various Countenances, for all flock’d out, as if it had been some publick Festival. Tho’ they admir’d the Wealth of the Ships, yet they rais’d the Price of the Bars of Clove so high, that they could not come to any Agreement, because that was to be their main Loading. They went ashore on the 10th and 11th, to see whether they abated any Thing of the Price, and to some other Purposes, which do not concern us, tho’ they might be some Ornament, but shall be left in the Originals where they were writ. They could not conclude any Thing with the King, or his Subjects, because they were celebrating a Festival, and the Dutch were present at the Shows.</p>
+<p>A Sort of Combatants, like the Roman Pugiles, and Gladiators, tho’ Indian Gladiators. differing in some Respects, fought in a large spacious Square. These Ternates did not move from one Place to another, nor hurt one another, but stood continually upon one Foot, without changing or easing it, on any Account; but the Foot that was lifted up, mov’d about and stretch’d in the Air, without being put to the Ground. Their Mistresses, Wives, or Sisters attended in the Field, with Branches of Flowers, and China Dishes full of Aromatick Liquors, to refresh those that were tyr’d; but most of them attended the Conqueror. The Sport being ended, the next Day the King repair’d to the Ships, but went not aboard. Discoursing with the Admiral, he ask’d him for a gilt Musket, which he presented him, and The King asks a Musket, and pays for it. the King did not think fit to receive Gratis, because he had ask’d for it; he therefore order’d, that when the Dutch paid the Tithe of the Spice, which is the Duty he has from Merchants, they should have two Bars and a half discounted for the Price of the Musket, and that they should be furnish’d with every Thing they had Occasion for besides. He was well pleas’d one Day, that the Dutch should see how a Boy of eleven Years of Age, was led about the Streets, with his Hands bound, because he had stolen a Tubac, Severe Punishment of petty Larceny. that is, a Leaf of a Frail, with as many Cloves as it would carry; because this was an Instance of their Severity in punishing that Offence. [172]The other Boys, shouted and sham’d him, proclaiming the Theft with loud Voices.</p>
+
+      </div>
+
+      
+      <div class="mt-10 pt-6 border-t border-[var(--color-border)]">
+        
+      </div>
+
+      
+      <nav class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Article navigation">
+        
+        <a href="/writers/argensola/book-07b/" class="group flex items-center gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m15 18-6-6 6-6"/></svg>
+          <div class="min-w-0">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Previous</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">Madagascar</p>
+          </div>
+        </a>
+        
+        
+        <a href="/writers/argensola/book-07d/" class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200 sm:col-start-2">
+          <div class="min-w-0 text-right">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Next</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">Triumph of Ternates</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        
+      </nav>
+
+    </article>
+  </div>
+</div>
+
+
+  </main><footer class="bg-royal-950 text-gold-100/80 py-12 px-4 md:px-8 mt-auto border-t border-gold-700/20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+      
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center">
+            <img src="/icons/sun.svg">
+          </div>
+          <span class="font-cinzel font-bold text-gold-300 text-xl tracking-widest">MAHARLIKA</span>
+        </div>
+        <p class="text-sm leading-relaxed text-gold-100/60">
+          An advocacy to restore the true identity, culture, and socio-economics of Maharlika.
+        </p>
+        
+        
+        <div class="flex items-center gap-4 mt-6">
+          <a href="https://www.facebook.com/maharlikanism/" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@maharlikanism" target="_blank" rel="noopener" class="text-gold-400 hover:text-gold-300 transition-colors" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+          </a>
+          <a href="mailto:maharlikanism@gmail.com" class="text-gold-400 hover:text-gold-300 transition-colors text-sm flex items-center gap-1" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span class="hidden sm:inline">maharlikanism@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Advocacy</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/advocacy/" class="hover:text-gold-300 transition-colors">Advocacy</a></li>
+          <li><a href="/culture/" class="hover:text-gold-300 transition-colors">Culture</a></li>
+          <li><a href="/governance/" class="hover:text-gold-300 transition-colors">Governance</a></li>
+          <li><a href="/history/" class="hover:text-gold-300 transition-colors">History</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Reference</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/infrastructure/" class="hover:text-gold-300 transition-colors">Infrastructure</a></li>
+          <li><a href="/laws/" class="hover:text-gold-300 transition-colors">Laws</a></li>
+          <li><a href="/metaphysics/" class="hover:text-gold-300 transition-colors">Metaphysics</a></li>
+          <li><a href="/writers/" class="hover:text-gold-300 transition-colors">Writers</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">The Book</h4>
+        
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="block">
+          <img src="/books/towards.jpg" alt="Towards Maharlika" class="w-24 rounded-lg shadow-lg mb-3 hover:scale-105 transition-transform duration-200">
+        </a>
+        <a href="https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&amp;pli=1" target="_blank" rel="noopener" class="btn-gold text-xs px-4 py-2">
+          Get the Book
+        </a>
+        
+      </div>
+
+    </div>
+
+    <div class="border-t border-gold-700/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gold-100/40">
+        © 2026 Maharlikanism. All rights reserved.
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/XXXXXXXX\/XXXXXXXX';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+
+
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  
+  <div id="mobile-menu" role="dialog" aria-modal="true">
+    <button id="mobile-menu-close" class="absolute top-5 right-5 text-gold-100 p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    
+    <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Advocacy
+    </a>
+    
+    <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Culture
+    </a>
+    
+    <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Governance
+    </a>
+    
+    <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      History
+    </a>
+    
+    <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Infrastructure
+    </a>
+    
+    <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Laws
+    </a>
+    
+    <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Metaphysics
+    </a>
+    
+    <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Politicians
+    </a>
+    
+    <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      Writers
+    </a>
+    
+    <div class="flex items-center gap-6 mt-4">
+      
+
+
+
+
+
+
+<span class="px-4 py-2 rounded-lg bg-royal-800 text-gold-400 font-cinzel text-sm uppercase tracking-wider border border-gold-500/30">
+  🇺🇸 en
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <script>
+
+const htmlRoot = document.getElementById('html-root');
+const themeToggle = document.getElementById('theme-toggle');
+const themeSun = document.getElementById('theme-sun');
+const themeMoon = document.getElementById('theme-moon');
+
+function updateThemeIcons() {
+  const isDark = htmlRoot.classList.contains('dark');
+  themeSun.classList.toggle('hidden', !isDark);
+  themeMoon.classList.toggle('hidden', isDark);
+}
+
+updateThemeIcons();
+
+themeToggle?.addEventListener('click', () => {
+  const isDark = htmlRoot.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeIcons();
+});
+
+
+const musicBtn = document.getElementById('music-btn');
+const musicAudio = document.getElementById('bg-music');
+const musicIcon = document.getElementById('music-icon');
+const musicBars = document.getElementById('music-bars');
+let isPlaying = false;
+
+musicBtn?.addEventListener('click', () => {
+  if (isPlaying) {
+    musicAudio.pause();
+    musicIcon.classList.remove('hidden');
+    musicBars.classList.add('hidden');
+  } else {
+    musicAudio.play().catch(() => {});
+    musicIcon.classList.add('hidden');
+    musicBars.classList.remove('hidden');
+  }
+  isPlaying = !isPlaying;
+});
+
+
+const langBtn = document.getElementById('lang-btn');
+const langMenu = document.getElementById('lang-menu');
+
+langBtn?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = langMenu.classList.contains('opacity-100');
+  langMenu.classList.toggle('opacity-100', !isOpen);
+  langMenu.classList.toggle('visible', !isOpen);
+  langMenu.classList.toggle('-translate-y-2', isOpen);
+  langMenu.classList.toggle('translate-y-0', !isOpen);
+  langBtn.setAttribute('aria-expanded', String(!isOpen));
+});
+
+document.addEventListener('click', () => {
+  langMenu?.classList.remove('opacity-100', 'visible', 'translate-y-0');
+  langMenu?.classList.add('-translate-y-2');
+  langBtn?.setAttribute('aria-expanded', 'false');
+});
+
+
+const scrollTopBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+  scrollTopBtn?.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+scrollTopBtn?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileClose = document.getElementById('mobile-menu-close');
+
+mobileMenuBtn?.addEventListener('click', () => {
+  mobileMenu.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+mobileClose?.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar?.classList.toggle('shadow-2xl', window.scrollY > 20);
+}, { passive: true });
+
+
+if (typeof lucide !== 'undefined') {
+  lucide.createIcons();
+}
+
+
+(function initSearch() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  if (!input || !results) return;
+
+  let searchIndex = null;
+
+  
+  async function loadIndex() {
+    if (searchIndex) return searchIndex;
+    try {
+      const res = await fetch('\/index.json');
+      searchIndex = await res.json();
+    } catch (e) {
+      searchIndex = [];
+    }
+    return searchIndex;
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  input.addEventListener('focus', loadIndex);
+
+  input.addEventListener('input', async () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q || q.length < 2) {
+      results.classList.add('hidden');
+      results.innerHTML = '';
+      return;
+    }
+    const index = await loadIndex();
+    const matches = index.filter(item =>
+      (item.title && item.title.toLowerCase().includes(q)) ||
+      (item.description && item.description.toLowerCase().includes(q))
+    ).slice(0, 8);
+
+    if (!matches.length) {
+      results.innerHTML = '<div class="px-4 py-3 text-gold-300/60 text-sm">No results found</div>';
+    } else {
+      results.innerHTML = matches.map(item => `
+        <a href="${item.permalink}" class="search-result-item">
+          <div class="font-medium text-sm text-gold-100">${escapeHtml(item.title || '')}</div>
+          ${item.description ? `<div class="text-xs text-gold-300/60 mt-0.5 line-clamp-1">${escapeHtml(item.description)}</div>` : ''}
+        </a>
+      `).join('');
+    }
+    results.classList.remove('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('search-container')?.contains(e.target)) {
+      results.classList.add('hidden');
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      results.classList.add('hidden');
+      input.blur();
+    }
+  });
+})();
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+
+document.getElementById('subscribe-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('[name="email"]').value;
+  const msg = document.getElementById('subscribe-msg');
+  if (msg) {
+    msg.textContent = 'Thank you for subscribing!';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+
+
+document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const msg = document.getElementById('contact-msg');
+  if (msg) {
+    msg.textContent = 'Thank you! We will get back to you soon.';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+</script>
+
+</body>
+</html>
