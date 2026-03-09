@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}" class="scroll-smooth" id="html-root">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="min-h-screen flex flex-col">
+
+  {{- partial "navbar.html" . -}}
+
+  <main class="flex-1 pt-16">
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  {{- partial "footer.html" . -}}
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu" role="dialog" aria-modal="true">
+    <button id="mobile-menu-close" class="absolute top-5 right-5 text-gold-100 p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" class="text-2xl font-cinzel text-gold-100 hover:text-gold-400 tracking-widest transition-colors">
+      {{ .Name }}
+    </a>
+    {{ end }}
+    <div class="flex items-center gap-6 mt-4">
+      {{ partial "icons/lang-select.html" . }}
+    </div>
+  </div>
+
+  {{ partial "scripts.html" . }}
+</body>
+</html>

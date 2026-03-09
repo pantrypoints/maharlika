@@ -1,0 +1,219 @@
+baseURL = "https://maharlikanism.com/"
+languageCode = "en-us"
+title = "Maharlikanism"
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength = 30
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[params]
+  description = "An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika"
+  author = "Maharlikanism"
+  logo = "/icons/logo.png"
+  music = "/music.mp3"
+  googleAnalytics = "G-XXXXXXXXXX"
+  googleAdsense = "ca-pub-XXXXXXXXXX"
+  tawkTo = "XXXXXXXX/XXXXXXXX"
+  bookImg = "/books/towards.jpg"
+  bookUrl = "https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&pli=1"
+  bookIntro = "Read the Book"
+  bookSub = "Maharlikanism is explained in the book <i>Towards Maharlika</i>, available on the Play Store"
+  defaultContentLanguage = "en"
+  defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 1
+    [languages.en.params]
+      langFlag = "🇺🇸"
+      h1 = "ᜋᜑᜇ᜔ᜎᜒᜃ"
+      [[languages.en.params.quote]]
+        content = "With the new men that sprout from their bosom and with the memory of their past, they will work together to strengthen their country, resurrect the maritime and mercantile life natural to them. This and other things may happen within a hundred years or so."
+        icon = "Jose Rizal"
+        author = "Jose Rizal"
+        src = "The Philippines 100 Years From Now"
+        url = "/writers/rizal/dentro/part-4"
+      [[languages.en.params.actionCards]]
+        img = "/photos/meta/anito.jpg"
+        title = "1: Constitutional Virtues"
+        url = "/advocacy/maharlikanism"
+        sub = "A New, Systemic Moral Foundation"
+      [[languages.en.params.actionCards]]
+        img = "/photos/social/lawmaker.jpg"
+        title = "2: Federalism with Bicameral Parliament"
+        url = "/governance/federalism"
+        sub = "Democracy with a Focus"
+      [[languages.en.params.actionCards]]
+        img = "/photos/econ/freight.jpg"
+        title = "3: The Fourth Branch of Government"
+        url = "/governance/fourth-branch-government"
+        sub = "The Resources Branch"
+      [[languages.en.params.actionCards]]
+        img = "/photos/social/grad.jpg"
+        title = "4: The Maharlikan Academy"
+        url = "/governance/maharlikan-academy/"
+        sub = "Preserving and Promoting Maharlikan Culture"
+      [[languages.en.params.superCards]]
+        img = "/icons/spss.png"
+        url = "https://superphysics.org/social"
+        title = "What's Social Superphysics?"
+        sub = "Sociology merged with Metaphysics"
+      [[languages.en.params.superCards]]
+        img = "/icons/specon.png"
+        url = "https://www.superphysics.org/social/supersociology/principles/part-1/chapter-05/"
+        title = "The Law of Social Cycles for Social Change"
+        sub = "Worker, Warrior, Thinker, Trader"
+      [[languages.en.params.superCards]]
+        img = "/icons/heart.png"
+        url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
+        title = "The Effort Theory of Value for Economics"
+        sub = "Economic Bayanihan System"
+
+  [languages.tl]
+    contentDir = "content/tl"
+    languageName = "Filipino"
+    weight = 2
+    [languages.tl.params]
+      langFlag = "🇵🇭"
+      [[languages.tl.params.quote]]
+        content = "Sa mga bagong lalaking susupling mula sa kanilang dibdib at sa alaala ng kanilang nakaraan, magtatrabaho silang magkasama upang palakasin ang kanilang bansa, buhayin muli ang natural na buhay-dagat at kalakalan. Ito at iba pa ay maaaring mangyari sa loob ng isang daang taon o higit pa."
+        icon = "Jose Rizal"
+        author = "Jose Rizal"
+        src = "Ang Pilipinas sa Loob ng Isang Daang Taon"
+        url = "/writers/rizal/dentro/part-4"
+      [[languages.tl.params.actionCards]]
+        img = "/photos/meta/anito.jpg"
+        title = "1: Mga Birtud sa Konstitusyon"
+        url = "/advocacy/maharlikanism"
+        sub = "Isang Bagong, Sistematikong Moral na Pundasyon"
+      [[languages.tl.params.actionCards]]
+        img = "/photos/social/lawmaker.jpg"
+        title = "2: Pederalismo na may Bicameral Parliament"
+        url = "/governance/federalism"
+        sub = "Demokrasya na may Pokus"
+      [[languages.tl.params.actionCards]]
+        img = "/photos/econ/freight.jpg"
+        title = "3: Ang Ikaapat na Sangay ng Pamahalaan"
+        url = "/governance/fourth-branch-government"
+        sub = "Ang Sangay ng Likas na Yaman"
+      [[languages.tl.params.actionCards]]
+        img = "/photos/social/grad.jpg"
+        title = "4: Ang Maharlikan Academy"
+        url = "/governance/maharlikan-academy/"
+        sub = "Pangangalaga at Pagtataguyod ng Kulturang Maharlikan"
+      [[languages.tl.params.superCards]]
+        img = "/icons/spss.png"
+        url = "https://superphysics.org/social"
+        title = "Ano ang Social Superphysics?"
+        sub = "Sosyolohiya na pinagsama sa Metapisika"
+      [[languages.tl.params.superCards]]
+        img = "/icons/specon.png"
+        url = "https://www.superphysics.org/social/supersociology/principles/part-1/chapter-05/"
+        title = "Ang Batas ng Panlipunang Siklo"
+        sub = "Manggagawa, Mandirigma, Palaisip, Mangangalakal"
+      [[languages.tl.params.superCards]]
+        img = "/icons/heart.png"
+        url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
+        title = "Ang Teorya ng Pagsisikap sa Halaga"
+        sub = "Sistemang Pangkatarungang Bayanihan"
+
+  [languages.cb]
+    contentDir = "content/cb"
+    languageName = "Bisaya"
+    weight = 3
+    [languages.cb.params]
+      langFlag = "🇵🇭"
+      [[languages.cb.params.quote]]
+        content = "Uban sa mga bag-ong lalaki nga mogitib gikan sa ilang dughan ug sa handumanan sa ilang nangagi, magkasamang molihok sila aron lig-onon ang ilang nasud, ug buhion ang natural nga kinabuhi sa dagat ug kalakalan. Kini ug uban pa mahitabo sulod sa usa ka gatus ka tuig o labaw pa."
+        icon = "Jose Rizal"
+        author = "Jose Rizal"
+        src = "Ang Pilipinas Sulod sa Usa Ka Gatus Ka Tuig"
+        url = "/writers/rizal/dentro/part-4"
+      [[languages.cb.params.actionCards]]
+        img = "/photos/meta/anito.jpg"
+        title = "1: Mga Birtud sa Konstitusyon"
+        url = "/advocacy/maharlikanism"
+        sub = "Bag-ong Sistematikong Pundasyon sa Moral"
+      [[languages.cb.params.actionCards]]
+        img = "/photos/social/lawmaker.jpg"
+        title = "2: Pederalismo uban ang Bicameral Parliament"
+        url = "/governance/federalism"
+        sub = "Demokrasya nga adunay Pokus"
+      [[languages.cb.params.actionCards]]
+        img = "/photos/econ/freight.jpg"
+        title = "3: Ang Ikaupat nga Sanga sa Gobyerno"
+        url = "/governance/fourth-branch-government"
+        sub = "Ang Sanga sa mga Kahinguhaan"
+      [[languages.cb.params.actionCards]]
+        img = "/photos/social/grad.jpg"
+        title = "4: Ang Maharlikan Academy"
+        url = "/governance/maharlikan-academy/"
+        sub = "Pagpadayon ug Pagpasikat sa Kultura sa Maharlika"
+      [[languages.cb.params.superCards]]
+        img = "/icons/spss.png"
+        url = "https://superphysics.org/social"
+        title = "Unsa ang Social Superphysics?"
+        sub = "Sosyolohiya nga gihiusa sa Metapisika"
+      [[languages.cb.params.superCards]]
+        img = "/icons/specon.png"
+        url = "https://www.superphysics.org/social/supersociology/principles/part-1/chapter-05/"
+        title = "Ang Balaod sa Panlipunang Siklo"
+        sub = "Trabahante, Manggugubat, Hunahuna, Negosyante"
+      [[languages.cb.params.superCards]]
+        img = "/icons/heart.png"
+        url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
+        title = "Ang Teorya sa Paningkamot sa Kantidad"
+        sub = "Sistemang Pangekonomikong Bayanihan"
+
+[menu]
+  [[menu.main]]
+    name = "Advocacy"
+    url = "/advocacy/"
+    weight = 1
+  [[menu.main]]
+    name = "Culture"
+    url = "/culture/"
+    weight = 2
+  [[menu.main]]
+    name = "Governance"
+    url = "/governance/"
+    weight = 3
+  [[menu.main]]
+    name = "History"
+    url = "/history/"
+    weight = 4
+  [[menu.main]]
+    name = "Infrastructure"
+    url = "/infrastructure/"
+    weight = 5
+  [[menu.main]]
+    name = "Laws"
+    url = "/laws/"
+    weight = 6
+  [[menu.main]]
+    name = "Metaphysics"
+    url = "/metaphysics/"
+    weight = 7
+  [[menu.main]]
+    name = "Politicians"
+    url = "/politicians/"
+    weight = 8
+  [[menu.main]]
+    name = "Writers"
+    url = "/writers/"
+    weight = 9

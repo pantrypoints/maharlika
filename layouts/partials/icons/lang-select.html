@@ -1,0 +1,20 @@
+{{ range .Site.AllPages | first 0 }}{{ end }}
+<!-- Language links for mobile menu -->
+{{ range .Site.Languages }}
+{{ $lang := .Lang }}
+{{ $link := "" }}
+{{ range $.Translations }}
+  {{ if eq .Language.Lang $lang }}
+    {{ $link = .Permalink }}
+  {{ end }}
+{{ end }}
+{{ if eq $lang $.Language.Lang }}
+<span class="px-4 py-2 rounded-lg bg-royal-800 text-gold-400 font-cinzel text-sm uppercase tracking-wider border border-gold-500/30">
+  {{ .Params.langFlag }} {{ $lang }}
+</span>
+{{ else if $link }}
+<a href="{{ $link }}" class="px-4 py-2 rounded-lg hover:bg-royal-800 text-gold-100/70 hover:text-gold-300 font-cinzel text-sm uppercase tracking-wider transition-all">
+  {{ .Params.langFlag }} {{ $lang }}
+</a>
+{{ end }}
+{{ end }}

@@ -1,0 +1,46 @@
+<!-- SECTION 2: Rizal Quote -->
+<section class="quote-section" id="quote">
+
+  <!-- Background pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0" style="background-image: radial-gradient(circle, #c9940e 1px, transparent 1px); background-size: 32px 32px;"></div>
+  </div>
+
+  <div class="relative max-w-5xl mx-auto px-4 text-center">
+
+    {{ range .Site.Params.quote | first 1 }}
+
+    <div class="mb-8 flex justify-center">
+      <!-- Quote icon -->
+      <div class="w-16 h-16 rounded-full bg-gold-500/20 border border-gold-500/40 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="text-gold-400">
+          <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+          <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+        </svg>
+      </div>
+    </div>
+
+    <blockquote class="quote-text mb-10">
+      "{{ .content }}"
+    </blockquote>
+
+    <div class="gold-divider"></div>
+
+    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-gold-500/20 border-2 border-gold-500/50 flex items-center justify-center overflow-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-gold-400"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="text-left">
+          <p class="font-cinzel font-semibold text-gold-300 text-lg">{{ .author }}</p>
+          <a href="{{ .url }}" class="text-gold-400/70 text-sm italic hover:text-gold-300 transition-colors">
+            {{ .src }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {{ end }}
+
+  </div>
+</section>

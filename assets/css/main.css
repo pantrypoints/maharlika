@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Nunito+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ──────────────────────────────────────────── */
+@layer base {
+  :root {
+    --color-primary:   #1e4aaa;
+    --color-secondary: #c9940e;
+    --color-bg:        #fafaf8;
+    --color-surface:   #ffffff;
+    --color-text:      #1a1a2e;
+    --color-muted:     #6b7280;
+    --color-border:    #e5e7eb;
+    --color-overlay:   rgba(14,31,77,0.7);
+  }
+
+  .dark {
+    --color-primary:   #4a7dd5;
+    --color-secondary: #e8b224;
+    --color-bg:        #070e26;
+    --color-surface:   #0e1f4d;
+    --color-text:      #f0ede6;
+    --color-muted:     #9ca3af;
+    --color-border:    #193d8e;
+    --color-overlay:   rgba(7,14,38,0.85);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Crimson Pro', Georgia, serif;
+  }
+
+/*  body {
+    @apply bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-300;
+    font-family: 'Nunito Sans', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+  }*/
+
+
+body {
+  /* Use standard CSS for the variables to avoid @apply parsing issues */
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  
+  /* Use @apply only for the standard Tailwind utilities */
+  @apply min-h-screen flex flex-col transition-colors duration-300;
+}
+
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', Georgia, serif;
+    @apply font-semibold leading-tight tracking-wide;
+  }
+
+  a { @apply transition-colors duration-200; }
+}
+
+/* ─── Components ─────────────────────────────────────── */
+@layer components {
+
+  /* Navbar */
+  .navbar {
+    @apply fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-8 h-16
+           bg-royal-900/95 dark:bg-royal-950/95 backdrop-blur-md shadow-lg;
+    border-bottom: 1px solid theme('colors.gold.600/30');
+  }
+
+  .nav-link {
+    @apply relative text-gold-100 hover:text-gold-400 text-sm font-medium tracking-wide
+           transition-all duration-200 py-1;
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 transition-all duration-300;
+  }
+
+  .nav-link:hover::after { @apply w-full; }
+
+  .nav-dropdown {
+    @apply absolute top-full left-0 min-w-52 bg-royal-900 dark:bg-royal-950
+           border border-gold-700/30 rounded-lg shadow-2xl py-2 mt-1
+           opacity-0 invisible -translate-y-2 transition-all duration-200;
+  }
+
+  .nav-item:hover .nav-dropdown {
+    @apply opacity-100 visible translate-y-0;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-white
+           bg-royal-700 hover:bg-royal-600 active:scale-95 transition-all duration-200
+           shadow-lg shadow-royal-900/30;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold
+           text-royal-950 bg-gold-400 hover:bg-gold-300 active:scale-95 transition-all duration-200
+           shadow-lg shadow-gold-900/30;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.05em;
+  }
+
+  /* Cards */
+  .card {
+    @apply rounded-xl overflow-hidden transition-all duration-300 
+           bg-[var(--color-surface)] border border-[var(--color-border)]
+           hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .card-img {
+    @apply relative overflow-hidden aspect-video;
+  }
+
+  .card-img img {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .card:hover .card-img img {
+    @apply scale-105;
+  }
+
+  .card-img-title {
+    @apply absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-royal-950/90 to-transparent;
+  }
+
+  /* Avatar card */
+  .card-avatar {
+    @apply relative flex items-center gap-4 p-5 rounded-xl
+           bg-[var(--color-surface)] border border-[var(--color-border)]
+           hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* Icon card */
+  .icon-card {
+    @apply flex flex-col items-center text-center gap-3 p-6 rounded-xl
+           bg-[var(--color-surface)] border border-[var(--color-border)]
+           hover:shadow-xl hover:-translate-y-1 hover:border-gold-400 transition-all duration-300;
+  }
+
+  /* Section */
+  .section {
+    @apply py-20 px-4 md:px-8 max-w-7xl mx-auto;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-4;
+    font-family: 'Cinzel', serif;
+    color: var(--color-primary);
+  }
+
+  .section-subtitle {
+    @apply text-center text-lg text-[var(--color-muted)] mb-12 max-w-2xl mx-auto;
+  }
+
+  /* Video section */
+  .video-section {
+    @apply relative w-full overflow-hidden;
+    min-height: 100vh;
+  }
+
+  .video-section video {
+    @apply absolute inset-0 w-full h-full object-cover;
+  }
+
+  .video-overlay {
+    @apply absolute inset-0 flex flex-col items-center justify-center text-center px-4;
+    background: linear-gradient(to bottom, rgba(7,14,38,0.5) 0%, rgba(14,31,77,0.75) 100%);
+  }
+
+  /* Quote section */
+  .quote-section {
+    @apply py-24 px-4 relative overflow-hidden;
+    background: linear-gradient(135deg, theme('colors.royal.900') 0%, theme('colors.royal.800') 100%);
+  }
+
+  .quote-text {
+    @apply text-xl md:text-2xl leading-relaxed text-gold-100 italic text-center max-w-4xl mx-auto;
+    font-family: 'Crimson Pro', serif;
+  }
+
+
+.action-card {
+  @apply relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  aspect-ratio: 3/4;
+}
+
+
+  .action-card img {
+    @apply absolute inset-0 w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .action-card:hover img { @apply scale-110; }
+
+  .action-card-overlay {
+    @apply absolute inset-0 flex flex-col justify-end p-6;
+    background: linear-gradient(to top, rgba(7,14,38,0.92) 40%, transparent 100%);
+  }
+
+  /* Subscribe form */
+  .subscribe-form {
+    @apply flex flex-col sm:flex-row gap-3 max-w-lg mx-auto;
+  }
+
+  .subscribe-input {
+    @apply flex-1 px-4 py-3 rounded-lg border border-[var(--color-border)]
+           bg-[var(--color-surface)] text-[var(--color-text)] placeholder-[var(--color-muted)]
+           focus:outline-none focus:ring-2 focus:ring-royal-500 focus:border-transparent;
+  }
+
+  /* TOC */
+  .toc {
+    @apply text-sm space-y-1 border-l-2 border-gold-400 pl-4;
+  }
+
+  /* Prose */
+  .prose-maharlika {
+    @apply prose prose-lg max-w-none;
+    @apply prose-headings:font-cinzel prose-headings:text-royal-800 dark:prose-headings:text-gold-300;
+    @apply prose-a:text-royal-600 dark:prose-a:text-gold-400;
+    @apply prose-blockquote:border-gold-400 prose-blockquote:bg-royal-50 dark:prose-blockquote:bg-royal-900/50;
+  }
+
+  /* Search */
+  .search-box {
+    @apply relative;
+  }
+
+  .search-input {
+    @apply w-full px-4 py-2 pl-9 rounded-lg text-sm
+           bg-royal-800 dark:bg-royal-950 text-gold-100 placeholder-gold-300/50
+           border border-royal-700 focus:border-gold-500 focus:outline-none focus:ring-1 focus:ring-gold-500
+           transition-all duration-200;
+  }
+
+  /* Scroll to top */
+  #scroll-top {
+    @apply fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full
+           bg-gold-500 hover:bg-gold-400 text-royal-950
+           flex items-center justify-center shadow-xl cursor-pointer
+           transition-all duration-300 opacity-0 pointer-events-none scale-90;
+  }
+
+  #scroll-top.visible {
+    @apply opacity-100 pointer-events-auto scale-100;
+  }
+
+  /*#mobile-menu {
+    @apply fixed inset-0 z-40 bg-royal-950/98 backdrop-blur-lg
+           flex flex-col items-center justify-center gap-8
+           opacity-0 pointer-events-none transition-all duration-300;
+  }*/
+
+
+/*#mobile-menu {
+  @apply fixed inset-0 z-40 backdrop-blur-lg;
+  background-color: rgba(7, 14, 38, 0.98);
+}*/
+
+
+#mobile-menu {
+  /* [rgba(7,14,38,0.98)] is an arbitrary value—Tailwind creates the class on the fly */
+  @apply fixed inset-0 z-40 backdrop-blur-lg;
+   /*bg-[#070e26]/98;  */
+  /* Ensure it is hidden by default */
+  @apply opacity-0 pointer-events-none transition-all duration-300;
+}
+
+  #mobile-menu.open {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  /* Gold divider */
+  .gold-divider {
+    @apply w-24 h-1 mx-auto rounded-full my-6;
+    background: linear-gradient(90deg, theme('colors.gold.600'), theme('colors.gold.400'), theme('colors.gold.600'));
+  }
+
+  /* Tag badge */
+  .tag {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wide
+           bg-royal-100 text-royal-700 dark:bg-royal-800 dark:text-gold-300;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    @apply flex items-center gap-2 text-sm text-[var(--color-muted)];
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  /* Article header */
+  .article-header {
+    @apply relative py-24 px-4 text-center overflow-hidden;
+    background: linear-gradient(135deg, var(--color-primary) 0%, theme('colors.royal.800') 100%);
+  }
+}
+
+/* ─── Utilities ──────────────────────────────────────── */
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, theme('colors.gold.300') 0%, theme('colors.gold.500') 50%, theme('colors.gold.300') 100%);
+  }
+
+  .text-gradient-royal {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, theme('colors.royal.400') 0%, theme('colors.royal.300') 100%);
+  }
+
+  .bg-maharlika {
+    background: linear-gradient(135deg, theme('colors.royal.900') 0%, theme('colors.royal.800') 50%, theme('colors.royal.900') 100%);
+  }
+
+  .border-gold-shine {
+    border-image: linear-gradient(90deg, theme('colors.gold.600'), theme('colors.gold.400'), theme('colors.gold.600')) 1;
+  }
+
+  .shadow-gold {
+    box-shadow: 0 4px 24px -4px theme('colors.gold.500/30');
+  }
+
+  .font-cinzel { font-family: 'Cinzel', serif; }
+  .font-crimson { font-family: 'Crimson Pro', serif; }
+}
+
+/* ─── Custom animations ──────────────────────────────── */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, theme('colors.gold.600') 25%, theme('colors.gold.300') 50%, theme('colors.gold.600') 75%);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Baybayin decorative line ───────────────────────── */
+.baybayin-border {
+  position: relative;
+}
+
+.baybayin-border::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, theme('colors.gold.400'), transparent);
+}
+
+/* ─── Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: theme('colors.gold.500');
+  border-radius: 3px;
+}
+
+/* ─── Search results ─────────────────────────────────── */
+#search-results {
+  @apply absolute top-full left-0 right-0 mt-2 rounded-xl overflow-hidden
+         bg-royal-900 border border-royal-700 shadow-2xl z-50
+         max-h-96 overflow-y-auto;
+}
+
+.search-result-item {
+  @apply block px-4 py-3 text-gold-100 hover:bg-royal-800 border-b border-royal-800/50
+         transition-colors duration-150;
+}
+
+/* ─── Music player indicator ─────────────────────────── */
+.music-playing span {
+  display: inline-block;
+  width: 3px;
+  background: theme('colors.gold.400');
+  border-radius: 2px;
+  animation: musicBars 1s ease-in-out infinite;
+}
+
+.music-playing span:nth-child(2) { animation-delay: 0.2s; }
+.music-playing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes musicBars {
+  0%, 100% { height: 4px; }
+  50% { height: 14px; }
+}

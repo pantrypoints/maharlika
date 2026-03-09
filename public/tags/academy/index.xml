@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academy on Maharlikanism</title>
+    <link>http://localhost:1313/tags/academy/</link>
+    <description>Recent content in Academy on Maharlikanism</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/academy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Maharlikan Academy</title>
+      <link>http://localhost:1313/governance/maharlikan-academy/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/governance/maharlikan-academy/</guid>
+      <description>&lt;h2 id=&#34;a-national-institution-for-maharlikan-identity&#34;&gt;A National Institution for Maharlikan Identity&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Maharlikan Academy&lt;/strong&gt; is proposed as a constitutional institution — similar to the French Académie française — charged with preserving, studying, and promoting the cultures, languages, and traditions of Maharlika.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

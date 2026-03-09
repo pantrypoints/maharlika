@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Federalism on Maharlikanism</title>
+    <link>http://localhost:1313/tags/federalism/</link>
+    <description>Recent content in Federalism on Maharlikanism</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/federalism/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Federalism with Bicameral Parliament</title>
+      <link>http://localhost:1313/governance/federalism/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/governance/federalism/</guid>
+      <description>&lt;h2 id=&#34;the-case-for-federalism&#34;&gt;The Case for Federalism&lt;/h2&gt;&#xA;&lt;p&gt;The Philippines is one of the most geographically fragmented nations in Southeast Asia — over 7,600 islands, hundreds of languages, and dozens of distinct cultural regions. Yet it is governed as a unitary state from Manila.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

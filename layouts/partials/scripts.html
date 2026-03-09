@@ -1,0 +1,199 @@
+<script>
+// ─── Theme Toggle ──────────────────────────────────────
+const htmlRoot = document.getElementById('html-root');
+const themeToggle = document.getElementById('theme-toggle');
+const themeSun = document.getElementById('theme-sun');
+const themeMoon = document.getElementById('theme-moon');
+
+function updateThemeIcons() {
+  const isDark = htmlRoot.classList.contains('dark');
+  themeSun.classList.toggle('hidden', !isDark);
+  themeMoon.classList.toggle('hidden', isDark);
+}
+
+updateThemeIcons();
+
+themeToggle?.addEventListener('click', () => {
+  const isDark = htmlRoot.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeIcons();
+});
+
+// ─── Music Player ─────────────────────────────────────
+const musicBtn = document.getElementById('music-btn');
+const musicAudio = document.getElementById('bg-music');
+const musicIcon = document.getElementById('music-icon');
+const musicBars = document.getElementById('music-bars');
+let isPlaying = false;
+
+musicBtn?.addEventListener('click', () => {
+  if (isPlaying) {
+    musicAudio.pause();
+    musicIcon.classList.remove('hidden');
+    musicBars.classList.add('hidden');
+  } else {
+    musicAudio.play().catch(() => {});
+    musicIcon.classList.add('hidden');
+    musicBars.classList.remove('hidden');
+  }
+  isPlaying = !isPlaying;
+});
+
+// ─── Language Dropdown ────────────────────────────────
+const langBtn = document.getElementById('lang-btn');
+const langMenu = document.getElementById('lang-menu');
+
+langBtn?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = langMenu.classList.contains('opacity-100');
+  langMenu.classList.toggle('opacity-100', !isOpen);
+  langMenu.classList.toggle('visible', !isOpen);
+  langMenu.classList.toggle('-translate-y-2', isOpen);
+  langMenu.classList.toggle('translate-y-0', !isOpen);
+  langBtn.setAttribute('aria-expanded', String(!isOpen));
+});
+
+document.addEventListener('click', () => {
+  langMenu?.classList.remove('opacity-100', 'visible', 'translate-y-0');
+  langMenu?.classList.add('-translate-y-2');
+  langBtn?.setAttribute('aria-expanded', 'false');
+});
+
+// ─── Scroll to Top ────────────────────────────────────
+const scrollTopBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+  scrollTopBtn?.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+scrollTopBtn?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ─── Mobile Menu ──────────────────────────────────────
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileClose = document.getElementById('mobile-menu-close');
+
+mobileMenuBtn?.addEventListener('click', () => {
+  mobileMenu.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+mobileClose?.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+// ─── Navbar scroll effect ────────────────────────────
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar?.classList.toggle('shadow-2xl', window.scrollY > 20);
+}, { passive: true });
+
+// ─── Lucide Icons ─────────────────────────────────────
+if (typeof lucide !== 'undefined') {
+  lucide.createIcons();
+}
+
+// ─── Search ───────────────────────────────────────────
+(function initSearch() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  if (!input || !results) return;
+
+  let searchIndex = null;
+
+  // Fetch Hugo JSON index
+  async function loadIndex() {
+    if (searchIndex) return searchIndex;
+    try {
+      const res = await fetch('{{ "/" | relLangURL }}index.json');
+      searchIndex = await res.json();
+    } catch (e) {
+      searchIndex = [];
+    }
+    return searchIndex;
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  input.addEventListener('focus', loadIndex);
+
+  input.addEventListener('input', async () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q || q.length < 2) {
+      results.classList.add('hidden');
+      results.innerHTML = '';
+      return;
+    }
+    const index = await loadIndex();
+    const matches = index.filter(item =>
+      (item.title && item.title.toLowerCase().includes(q)) ||
+      (item.description && item.description.toLowerCase().includes(q))
+    ).slice(0, 8);
+
+    if (!matches.length) {
+      results.innerHTML = '<div class="px-4 py-3 text-gold-300/60 text-sm">No results found</div>';
+    } else {
+      results.innerHTML = matches.map(item => `
+        <a href="${item.permalink}" class="search-result-item">
+          <div class="font-medium text-sm text-gold-100">${escapeHtml(item.title || '')}</div>
+          ${item.description ? `<div class="text-xs text-gold-300/60 mt-0.5 line-clamp-1">${escapeHtml(item.description)}</div>` : ''}
+        </a>
+      `).join('');
+    }
+    results.classList.remove('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('search-container')?.contains(e.target)) {
+      results.classList.add('hidden');
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      results.classList.add('hidden');
+      input.blur();
+    }
+  });
+})();
+
+// ─── Intersection Observer for animations ────────────
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+// ─── Subscribe form ───────────────────────────────────
+document.getElementById('subscribe-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('[name="email"]').value;
+  const msg = document.getElementById('subscribe-msg');
+  if (msg) {
+    msg.textContent = 'Thank you for subscribing!';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+
+// ─── Contact form ─────────────────────────────────────
+document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const msg = document.getElementById('contact-msg');
+  if (msg) {
+    msg.textContent = 'Thank you! We will get back to you soon.';
+    msg.className = 'mt-3 text-gold-400 text-center text-sm';
+  }
+  this.reset();
+});
+</script>

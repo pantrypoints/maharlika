@@ -1,0 +1,124 @@
+{{ define "main" }}
+
+<!-- Article Header -->
+<div class="article-header" {{ with .Params.c }}style="background: linear-gradient(135deg, {{ . }}, #0e1f4d 100%);"{{ end }}>
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
+  <div class="relative max-w-4xl mx-auto px-4">
+    <!-- Breadcrumb -->
+    {{ partial "breadcrumb.html" . }}
+    <!-- Heading tag -->
+    {{ with .Params.heading }}
+    <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-gold-400 border border-gold-500/30 px-4 py-2 rounded-full inline-block mb-4">
+      {{ . }}
+    </span>
+    {{ end }}
+    <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">{{ .Title }}</h1>
+    <div class="gold-divider"></div>
+    {{ with .Description }}
+    <p class="text-gold-100/80 text-xl mt-4 font-crimson italic max-w-2xl mx-auto">{{ . }}</p>
+    {{ end }}
+    <div class="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gold-100/50">
+      {{ with .Date }}
+      <time datetime="{{ .Format "2006-01-02" }}" class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+        {{ .Format "January 2, 2006" }}
+      </time>
+      {{ end }}
+      {{ with .Params.icon }}
+      <span class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        {{ . }}
+      </span>
+      {{ end }}
+      <span class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        {{ .ReadingTime }} min read
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Article Body -->
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    <!-- Table of Contents (sidebar) -->
+    {{ if .TableOfContents }}
+    <aside class="lg:w-72 shrink-0">
+      <div class="lg:sticky lg:top-24">
+        <div class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-5">
+          <h3 class="font-cinzel text-sm font-semibold text-[var(--color-primary)] tracking-widest uppercase mb-4">
+            Contents
+          </h3>
+          <nav class="toc text-sm text-[var(--color-muted)]" id="toc">
+            {{ .TableOfContents }}
+          </nav>
+        </div>
+        <!-- AdSense slot (sidebar) -->
+        {{ with .Site.Params.googleAdsense }}
+        <div class="mt-6 text-center">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="{{ . }}"
+               data-ad-slot="SIDEBAR_AD_SLOT"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        {{ end }}
+      </div>
+    </aside>
+    {{ end }}
+
+    <!-- Main article content -->
+    <article class="flex-1 min-w-0">
+      <!-- Feature image -->
+      {{ with .Params.image }}
+      <div class="mb-8 rounded-2xl overflow-hidden shadow-xl">
+        <img src="{{ . }}" alt="{{ $.Title }}" class="w-full object-cover max-h-80">
+      </div>
+      {{ end }}
+
+      <!-- Content -->
+      <div class="prose-maharlika">
+        {{ .Content }}
+      </div>
+
+      <!-- Tags / Taxonomy -->
+      <div class="mt-10 pt-6 border-t border-[var(--color-border)]">
+        {{ with .Params.tags }}
+        <div class="flex flex-wrap gap-2">
+          {{ range . }}
+          <span class="tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Prev / Next navigation -->
+      <nav class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Article navigation">
+        {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" class="group flex items-center gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m15 18-6-6 6-6"/></svg>
+          <div class="min-w-0">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Previous</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">{{ .Title }}</p>
+          </div>
+        </a>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200 sm:col-start-2">
+          <div class="min-w-0 text-right">
+            <p class="text-xs text-[var(--color-muted)] mb-1">Next</p>
+            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">{{ .Title }}</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        {{ end }}
+      </nav>
+
+    </article>
+  </div>
+</div>
+
+{{ end }}

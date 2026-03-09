@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<!-- Section Header -->
+<div class="article-header">
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
+  <div class="relative max-w-4xl mx-auto px-4">
+    <div class="flex items-center justify-center gap-2 mb-4">
+      {{ partial "breadcrumb.html" . }}
+    </div>
+    <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4">{{ .Title }}</h1>
+    <div class="gold-divider"></div>
+    {{ with .Description }}
+    <p class="text-gold-100/70 text-lg mt-4 font-crimson max-w-2xl mx-auto">{{ . }}</p>
+    {{ end }}
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 py-16">
+
+  <!-- Subsection navigation (if has subsections) -->
+  {{ if .Sections }}
+  <div class="mb-12">
+    <h2 class="font-cinzel text-xl text-[var(--color-primary)] mb-6 border-b border-[var(--color-border)] pb-3">
+      Sections
+    </h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+      {{ range .Sections }}
+      <a href="{{ .RelPermalink }}" class="flex items-center gap-2 p-3 rounded-lg border border-[var(--color-border)] hover:border-gold-400 hover:bg-royal-50 dark:hover:bg-royal-900/50 transition-all duration-200 text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-primary)]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold-500 shrink-0"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        {{ .Title }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <!-- Articles grid -->
+  {{ if .Pages }}
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ range .Pages.ByParam "weight" }}
+      {{ partial "article-card.html" . }}
+    {{ end }}
+  </div>
+
+  <!-- Pagination -->
+  {{ template "_internal/pagination.html" . }}
+  {{ else }}
+  <div class="text-center py-20 text-[var(--color-muted)]">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4 opacity-30"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
+    <p class="font-cinzel text-lg">No articles yet</p>
+    <p class="text-sm mt-2">Content coming soon</p>
+  </div>
+  {{ end }}
+
+</div>
+
+{{ end }}

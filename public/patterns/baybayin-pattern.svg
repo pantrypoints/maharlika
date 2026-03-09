@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <pattern id="baybayin" x="0" y="0" width="64" height="64" patternUnits="userSpaceOnUse">
+      <!-- Simplified baybayin-inspired circular motifs -->
+      <circle cx="16" cy="16" r="6" fill="none" stroke="#c9940e" stroke-width="1.5" opacity="0.4"/>
+      <circle cx="48" cy="16" r="6" fill="none" stroke="#c9940e" stroke-width="1.5" opacity="0.4"/>
+      <circle cx="16" cy="48" r="6" fill="none" stroke="#c9940e" stroke-width="1.5" opacity="0.4"/>
+      <circle cx="48" cy="48" r="6" fill="none" stroke="#c9940e" stroke-width="1.5" opacity="0.4"/>
+      <circle cx="32" cy="32" r="8" fill="none" stroke="#c9940e" stroke-width="1" opacity="0.3"/>
+      <line x1="16" y1="16" x2="48" y2="48" stroke="#c9940e" stroke-width="0.5" opacity="0.2"/>
+      <line x1="48" y1="16" x2="16" y2="48" stroke="#c9940e" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="64" height="64" fill="url(#baybayin)"/>
+</svg>

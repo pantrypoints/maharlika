@@ -1,0 +1,80 @@
+<footer class="bg-royal-950 text-gold-100/80 py-12 px-4 md:px-8 mt-auto border-t border-gold-700/20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center">
+            <span class="font-cinzel font-bold text-royal-950">M</span>
+          </div>
+          <span class="font-cinzel font-bold text-gold-300 text-xl tracking-widest">MAHARLIKA</span>
+        </div>
+        <p class="text-sm leading-relaxed text-gold-100/60">
+          An advocacy to restore the true identity, culture, and socio-economics of Maharlika.
+        </p>
+      </div>
+
+      <!-- Content Links -->
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Advocacy</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="{{ "/advocacy/" | relLangURL }}" class="hover:text-gold-300 transition-colors">Advocacy</a></li>
+          <li><a href="{{ "/culture/" | relLangURL }}" class="hover:text-gold-300 transition-colors">Culture</a></li>
+          <li><a href="{{ "/governance/" | relLangURL }}" class="hover:text-gold-300 transition-colors">Governance</a></li>
+          <li><a href="{{ "/history/" | relLangURL }}" class="hover:text-gold-300 transition-colors">History</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">Reference</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="{{ "/infrastructure/" | relLangURL }}" class="hover:text-gold-300 transition-colors">Infrastructure</a></li>
+          <li><a href="{{ "/laws/" | relLangURL }}" class="hover:text-gold-300 transition-colors">Laws</a></li>
+          <li><a href="{{ "/metaphysics/" | relLangURL }}" class="hover:text-gold-300 transition-colors">Metaphysics</a></li>
+          <li><a href="{{ "/writers/" | relLangURL }}" class="hover:text-gold-300 transition-colors">Writers</a></li>
+        </ul>
+      </div>
+
+      <!-- Book CTA -->
+      <div>
+        <h4 class="font-cinzel text-gold-400 text-sm tracking-widest uppercase mb-4">The Book</h4>
+        {{ with .Site.Params }}
+        <a href="{{ .bookUrl }}" target="_blank" rel="noopener" class="block">
+          <img src="{{ .bookImg }}" alt="Towards Maharlika" class="w-24 rounded-lg shadow-lg mb-3 hover:scale-105 transition-transform duration-200">
+        </a>
+        <a href="{{ .bookUrl }}" target="_blank" rel="noopener" class="btn-gold text-xs px-4 py-2">
+          Get the Book
+        </a>
+        {{ end }}
+      </div>
+
+    </div>
+
+    <div class="border-t border-gold-700/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gold-100/40">
+        © {{ now.Year }} Maharlikanism. All rights reserved.
+      </p>
+      <div class="flex items-center gap-6 text-xs text-gold-100/40">
+        <a href="/privacy" class="hover:text-gold-300 transition-colors">Privacy</a>
+        <a href="/terms" class="hover:text-gold-300 transition-colors">Terms</a>
+        <a href="/contact" class="hover:text-gold-300 transition-colors">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Tawk.to Live Chat -->
+{{ with .Site.Params.tawkTo }}
+<script>
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/{{ . }}';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+{{ end }}

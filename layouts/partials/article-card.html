@@ -1,0 +1,115 @@
+{{/*
+  Article card partial
+  Types:
+  1. With image (.Params.image) → image with title overlay
+  2. With icon/avatar (.Params.icon) → avatar on right, title centered
+  3. No image/avatar → text only with background color
+*/}}
+
+{{ $color := .Params.c | default "royal" }}
+{{ $bgStyle := "" }}
+{{ if .Params.c }}
+  {{ $bgStyle = printf "background-color: %s;" .Params.c }}
+{{ end }}
+
+{{ if .Params.image }}
+<!-- TYPE 1: Image card with title overlay -->
+<a href="{{ .RelPermalink }}" class="card group block" data-animate>
+  <div class="card-img" style="aspect-ratio: 16/10;">
+    <img
+      src="{{ .Params.image }}"
+      alt="{{ .Title }}"
+      loading="lazy"
+      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      onerror="this.src='/photos/placeholder.jpg'"
+    >
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-royal-950/85 via-royal-950/20 to-transparent"></div>
+    <!-- Overlay content -->
+    <div class="absolute bottom-0 left-0 right-0 p-5">
+      {{ with .Params.heading }}
+      <span class="inline-block text-xs font-cinzel text-gold-400 tracking-widest uppercase mb-2">{{ . }}</span>
+      {{ end }}
+      <h3 class="font-cinzel font-semibold text-white text-base leading-snug group-hover:text-gold-300 transition-colors">
+        {{ .Title }}
+      </h3>
+      {{ with .Description }}
+      <p class="text-gold-100/60 text-xs mt-1 line-clamp-2">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+  <!-- Date -->
+  {{ with .Date }}
+  <div class="px-4 py-2.5 flex items-center justify-between text-xs text-[var(--color-muted)] border-t border-[var(--color-border)]">
+    <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>
+    <span class="flex items-center gap-1 text-gold-500">
+      Read
+      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </span>
+  </div>
+  {{ end }}
+</a>
+
+{{ else if .Params.icon }}
+<!-- TYPE 2: Avatar card -->
+<a href="{{ .RelPermalink }}" class="card-avatar group block" data-animate
+  {{ if $bgStyle }}
+  style="{{ $bgStyle | safeCSS }} opacity: 0.92;"
+  {{ end }}
+>
+  <div class="flex-1 min-w-0">
+    {{ with .Params.heading }}
+    <span class="text-xs font-cinzel tracking-widest uppercase mb-1 block"
+      style="{{ if $.Params.c }}color: {{ $.Params.c | safeCSS }}{{ else }}color: var(--color-primary){{ end }}; filter: brightness(1.4);"
+    >{{ . }}</span>
+    {{ end }}
+    <h3 class="font-cinzel font-semibold text-base leading-snug group-hover:text-gold-500 transition-colors {{ if .Params.c }}text-white{{ else }}text-[var(--color-text)]{{ end }}">
+      {{ .Title }}
+    </h3>
+    {{ with .Description }}
+    <p class="text-xs mt-1 line-clamp-2 {{ if $.Params.c }}text-white/70{{ else }}text-[var(--color-muted)]{{ end }}">{{ . }}</p>
+    {{ end }}
+    {{ with .Date }}
+    <time class="text-xs mt-2 block {{ if $.Params.c }}text-white/50{{ else }}text-[var(--color-muted)]{{ end }}" datetime="{{ .Format "2006-01-02" }}">
+      {{ .Format "Jan 2, 2006" }}
+    </time>
+    {{ end }}
+  </div>
+  <!-- Avatar (icon name initials) -->
+  <div class="shrink-0 w-12 h-12 rounded-full bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-sm font-cinzel font-bold text-gold-400 overflow-hidden">
+    {{ $icon := .Params.icon }}
+    {{ $initials := "" }}
+    {{ $parts := split $icon " " }}
+    {{ range $parts | first 2 }}
+      {{ $initials = printf "%s%s" $initials (substr . 0 1) }}
+    {{ end }}
+    {{ $initials | upper }}
+  </div>
+</a>
+
+{{ else }}
+<!-- TYPE 3: Text only card -->
+<a href="{{ .RelPermalink }}" class="card group block p-6" data-animate
+  {{ if $bgStyle }}
+  style="{{ $bgStyle | safeCSS }}"
+  {{ end }}
+>
+  <div class="min-h-24 flex flex-col justify-center">
+    {{ with .Params.heading }}
+    <span class="text-xs font-cinzel tracking-widest uppercase mb-2 block {{ if $.Params.c }}text-white/60{{ else }}text-gold-500{{ end }}">{{ . }}</span>
+    {{ end }}
+    <h3 class="font-cinzel font-semibold text-center text-base leading-snug group-hover:text-gold-400 transition-colors {{ if .Params.c }}text-white{{ else }}text-[var(--color-text)]{{ end }}">
+      {{ .Title }}
+    </h3>
+    {{ with .Description }}
+    <p class="text-xs text-center mt-2 line-clamp-2 {{ if $.Params.c }}text-white/70{{ else }}text-[var(--color-muted)]{{ end }}">{{ . }}</p>
+    {{ end }}
+    {{ with .Date }}
+    <time class="text-xs text-center mt-3 block {{ if $.Params.c }}text-white/40{{ else }}text-[var(--color-muted)]{{ end }}" datetime="{{ .Format "2006-01-02" }}">
+      {{ .Format "Jan 2, 2006" }}
+    </time>
+    {{ end }}
+  </div>
+</a>
+
+{{ end }}

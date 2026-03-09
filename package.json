@@ -1,0 +1,21 @@
+{
+  "name": "maharlikanism",
+  "version": "1.0.0",
+  "description": "Maharlikanism Hugo Website",
+  "scripts": {
+    "start": "hugo server -D --port 1313",
+    "build": "hugo --minify",
+    "dev": "hugo server -D --port 1313 --disableFastRender"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.13",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.1",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^12.1.4",
+    "tailwindcss": "^3.4.4"
+  }
+}

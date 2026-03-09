@@ -1,0 +1,104 @@
+<nav class="navbar" id="navbar">
+
+  <!-- Logo -->
+  <a href="{{ "/" | relLangURL }}" class="flex items-center gap-3 shrink-0">
+    <div class="w-9 h-9 rounded-full bg-gold-500 flex items-center justify-center">
+      <span class="font-cinzel font-bold text-royal-950 text-sm">M</span>
+    </div>
+    <span class="font-cinzel font-bold text-gold-300 text-lg tracking-widest hidden sm:block">MAHARLIKA</span>
+  </a>
+
+  <!-- Desktop Nav Links -->
+  <div class="hidden lg:flex items-center gap-6 xl:gap-8 mx-6">
+    {{ range .Site.Menus.main }}
+    <div class="nav-item relative">
+      <a href="{{ .URL | relLangURL }}" class="nav-link">{{ .Name }}</a>
+    </div>
+    {{ end }}
+  </div>
+
+  <!-- Right Controls -->
+  <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
+
+    <!-- Search -->
+    <div class="search-box relative hidden md:block" id="search-container">
+      <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-gold-300/60 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input w-36 xl:w-52 focus:w-64 transition-all duration-300"
+        placeholder="{{ i18n "searchPlaceholder" | default "Search…" }}"
+        autocomplete="off"
+        aria-label="Search"
+      >
+      <div id="search-results" class="hidden"></div>
+    </div>
+
+    <!-- Music Player -->
+    <button
+      id="music-btn"
+      class="relative flex items-center gap-1 px-2 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle background music"
+      title="Toggle music"
+    >
+      <svg id="music-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span class="music-playing hidden" id="music-bars">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+    <audio id="bg-music" loop preload="none">
+      <source src="{{ .Site.Params.music }}" type="audio/mpeg">
+    </audio>
+
+    <!-- Dark mode toggle -->
+    <button
+      id="theme-toggle"
+      class="p-2 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
+      aria-label="Toggle dark mode"
+    >
+      <!-- Sun icon (shown in dark mode) -->
+      <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      <!-- Moon icon (shown in light mode) -->
+      <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+
+    <!-- Language Selector -->
+    <div class="relative" id="lang-dropdown">
+      <button
+        id="lang-btn"
+        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200 text-sm font-medium"
+        aria-expanded="false"
+        aria-haspopup="true"
+      >
+        <span>{{ .Language.Params.langFlag | default "🌐" }}</span>
+        <span class="hidden sm:block uppercase text-xs tracking-wider font-cinzel">{{ .Language.Lang }}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div id="lang-menu" class="nav-dropdown min-w-36" role="menu">
+        {{ range .Translations }}
+        <a href="{{ .Permalink }}" class="flex items-center gap-2 px-4 py-2.5 text-sm text-gold-100 hover:bg-royal-800 hover:text-gold-300 transition-colors" role="menuitem">
+          <span>{{ .Language.Params.langFlag }}</span>
+          <span class="font-cinzel text-xs tracking-wider uppercase">{{ .Language.Lang }}</span>
+          <span class="text-gold-400/60 ml-1">{{ .Language.LanguageName }}</span>
+        </a>
+        {{ end }}
+        <!-- Current language (non-clickable) -->
+        <div class="flex items-center gap-2 px-4 py-2.5 text-sm bg-royal-800/50" aria-current="true">
+          <span>{{ .Language.Params.langFlag | default "🌐" }}</span>
+          <span class="font-cinzel text-xs tracking-wider uppercase text-gold-400">{{ .Language.Lang }}</span>
+          <span class="text-gold-300/60 ml-1">{{ .Language.LanguageName }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="mobile-menu-btn"
+      class="lg:hidden p-2 text-gold-300 hover:text-gold-100 rounded-lg hover:bg-royal-800 transition-all"
+      aria-label="Open menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+
+  </div>
+</nav>
