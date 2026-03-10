@@ -2,7 +2,7 @@
 heading: "Article 3"
 title: "Mahar]ika Investments Corporation (MIC)"
 description: "The MIC is an independent corporate body that shall be a vehicle for mobilizing and utilizing the MIF"
-image: "/photos/city.jpg"
+c: "#1e4aaa"
 # date: 2022-09-30
 weight: 104
 ---

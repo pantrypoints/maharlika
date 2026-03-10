@@ -1,7 +1,7 @@
 ---
 heading: "Section 4"
 title: "Privileges for the Senior Citizens"
-image: "/photos/consult.jpg"
+c: "#1e4aaa"
 weight: 6
 description: "Expanded Senior Citizens Act of 2010"
 ---

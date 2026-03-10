@@ -1,7 +1,7 @@
 ---
 heading: "RA 11898"
 title: "Extended Producer Responsibility Act of 2022"
-image: "/photos/buy.jpg"
+c: "#1e4aaa"
 weight: 28
 # date: 2020-10-31
 # date: 2022-09-10

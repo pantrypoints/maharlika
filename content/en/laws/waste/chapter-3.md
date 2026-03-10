@@ -2,7 +2,7 @@
 heading: "Chapter 3A"
 title: "Extended Producer Responsibility"
 description: "EPR Act of 2022 Republic Act 11898"
-image: "/photos/city.jpg"
+c: "#1e4aaa"
 # date: 2022-09-28
 weight: 8
 ---

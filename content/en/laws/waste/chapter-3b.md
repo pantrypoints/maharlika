@@ -2,7 +2,7 @@
 heading: "Chapter 3b"
 title: "Producer Responsibility Organization (PRO)"
 description: "EPR Act of 2022 Republic Act 11898"
-image: "/photos/city.jpg"
+c: "#1e4aaa"
 weight: 9
 # date: 2022-09-20
 ---

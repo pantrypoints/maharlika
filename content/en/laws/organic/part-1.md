@@ -2,7 +2,7 @@
 heading: "Part 1"
 title: "An Act Providing For The Development And Promotion Of Organic Agriculture In The Philippines And For Other Purposes"
 description: "An Act Providing For The Development And Promotion Of Organic Agriculture In The Philippines And For Other Purposes"
-image: "/covers/organic.jpg"
+c: "#1e4aaa"
 date: 2009-07-27
 ---
 	

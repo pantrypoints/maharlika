@@ -26,7 +26,7 @@ summaryLength = 30
 [params]
   description = "An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika"
   author = "Maharlikanism"
-  # logo = "/icons/logo.png"
+  image = "/lapu.jpg"
   music = "/music.mp3"
   googleAnalytics = "G-0NM7Z55HJR"
   googleAdsense = "ca-pub-2557957536703477"

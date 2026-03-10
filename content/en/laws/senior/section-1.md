@@ -1,7 +1,7 @@
 ---
 heading: "Section 1-2"
 title: "Definitions"
-image: "/photos/consult.jpg"
+c: "#1e4aaa"
 date: 2010-02-15
 weight: 4
 description: "Expanded Senior Citizens Act of 2010"

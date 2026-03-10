@@ -2,7 +2,7 @@
 heading: "Article 8"
 title: "Distribution of Net Profits"
 description: "An Act Establishing The Maharlika Investment Fund, Providing For The Management, Investment, And Use Of The Proceeds"
-image: "/photos/city.jpg"
+c: "#1e4aaa"
 weight: 112
 # date: 2022-09-30
 ---
