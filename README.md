@@ -2,6 +2,8 @@
 
 A multi-language Hugo website for the Maharlikanism advocacy with dark/light mode, blue/gold theme, Tailwind CSS, PostCSS, and Lucide icons.
 
+{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
 ## Requirements
 
 - Hugo Extended v0.123+ (`brew install hugo` or [Hugo releases](https://github.com/gohugoio/hugo/releases))

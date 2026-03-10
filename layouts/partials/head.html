@@ -21,7 +21,8 @@
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+<meta property="og:image" content="/lapu.jpg">
+
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
