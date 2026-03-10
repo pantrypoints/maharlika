@@ -53,11 +53,17 @@
     <loc>http://localhost:1313/economics/barter/</loc>
     <lastmod>2021-09-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/economics/overpopulation/</loc>
+    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/advocacy/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writers/pigafetta/01-samar/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/economics/squatters/</loc>
+    <lastmod>2014-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/laws/bmbe/</loc>
   </url><url>
@@ -221,6 +227,8 @@
   </url><url>
     <loc>http://localhost:1313/laws/bbl/article-07/</loc>
   </url><url>
+    <loc>http://localhost:1313/governance/maharlika-2050/executive/chapter-03/</loc>
+  </url><url>
     <loc>http://localhost:1313/writers/rizal/dentro/part-3b/</loc>
   </url><url>
     <loc>http://localhost:1313/writers/morga/events/chapter-05b/</loc>
@@ -290,6 +298,9 @@
                 hreflang="en"
                 href="http://localhost:1313/history/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/history/colonization/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writers/pigafetta/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
@@ -441,6 +452,9 @@
   </url><url>
     <loc>http://localhost:1313/writers/morga/events/chapter-06c/</loc>
     <lastmod>2024-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/laws/insurance/</loc>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writers/bonifacio/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
@@ -924,13 +938,22 @@
     <loc>http://localhost:1313/writers/argensola/book-09/</loc>
     <lastmod>2022-04-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/governance/lto/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/governance/maharlikan-academy/</loc>
     <lastmod>2022-04-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/governance/federalism/</loc>
     <lastmod>2022-04-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/governance/west-ph-sea/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/economics/how-industry-failed/</loc>
+    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/economics/k-12/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/economics/industry/</loc>
@@ -1110,6 +1133,9 @@
     <loc>http://localhost:1313/governance/fourth-branch-government/</loc>
     <lastmod>2021-09-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/history/top-10-corruption/</loc>
+    <lastmod>2021-09-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/metaphysics/democracy-is-bad/</loc>
     <lastmod>2021-09-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -1134,6 +1160,9 @@
     <loc>http://localhost:1313/infrastructure/malls/</loc>
     <lastmod>2021-09-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/history/pishaye/</loc>
+    <lastmod>2021-09-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/advocacy/maharlikanism/</loc>
     <lastmod>2021-07-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -1152,11 +1181,19 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="cb"
+                href="http://localhost:1313/cb/history/meanings-maharlika/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/history/meanings-maharlika/"
                 />
   </url><url>
     <loc>http://localhost:1313/history/american-philippines/</loc>
+    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/history/biag-ni-lam-ang/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/history/colonialism/</loc>
@@ -1169,6 +1206,12 @@
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/laws/pandemic/</loc>
+    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/history/bull/</loc>
+    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/history/five-waves/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/history/was-lapu-lapu-tausug/</loc>

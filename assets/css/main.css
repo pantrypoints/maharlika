@@ -140,10 +140,10 @@ body {
            hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
   }
 
-  /* Icon card */
+  /* Icon card bg-[var(--color-surface)] */
   .icon-card {
-    @apply flex flex-col items-center text-center gap-3 p-6 rounded-xl
-           bg-[var(--color-surface)] border border-[var(--color-border)]
+    @apply flex flex-col items-center text-center gap-3 p-6 rounded-xl bg-royal-900/50
+            border border-[var(--color-border)]
            hover:shadow-xl hover:-translate-y-1 hover:border-gold-400 transition-all duration-300;
   }
 

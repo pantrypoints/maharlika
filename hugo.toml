@@ -1,9 +1,15 @@
-baseURL = "https://maharlikanism.com/"
+baseURL = "https://maharlika.superphysics.org/"
 languageCode = "en-us"
 title = "Maharlikanism"
 enableRobotsTXT = true
 enableGitInfo = false
 summaryLength = 30
+
+[build]
+  buildDrafts = false
+  buildFuture = false
+  buildExpired = false
+  writeStats = true
 
 [markup]
   [markup.highlight]
@@ -11,22 +17,20 @@ summaryLength = 30
   [markup.goldmark.renderer]
     unsafe = true
 
-[build]
-  writeStats = true
-
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
   page = ["HTML"]
 
+
 [params]
   description = "An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika"
   author = "Maharlikanism"
-  logo = "/icons/logo.png"
+  # logo = "/icons/logo.png"
   music = "/music.mp3"
-  googleAnalytics = "G-XXXXXXXXXX"
-  googleAdsense = "ca-pub-XXXXXXXXXX"
-  tawkTo = "XXXXXXXX/XXXXXXXX"
+  googleAnalytics = "G-0NM7Z55HJR"
+  googleAdsense = "ca-pub-2557957536703477"
+  tawkTo = "6306798e37898912e964f594/default"
   bookImg = "/books/towards.jpg"
   bookUrl = "https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&pli=1"
   defaultContentLanguage = "en"
@@ -149,14 +153,14 @@ summaryLength = 30
         url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
         title = "Ang Teorya ng Pagsisikap sa Halaga"
         sub = "Sistemang Pangkatarungang Bayanihan"
-      [[languages.tl.params.book]]
-        h1 = "ᜀᜃ᜔ᜎᜆ᜔"
-        title = "Basahin ang Libro"
-        sub = "Ang Maharlikanismo ay ipinaliwanag sa aklat na Towards Maharlika, na nasa Play Store."
-      [[languages.tl.params.contact]]
-        h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
-        title = "Sulatan Kami"
-        sub = "May tanong ka ba or request?"
+      # [[languages.tl.params.book]]
+      #   h1 = "ᜀᜃ᜔ᜎᜆ᜔"
+      #   title = "Basahin ang Libro"
+      #   sub = "Ang Maharlikanismo ay ipinaliwanag sa aklat na Towards Maharlika, na nasa Play Store."
+      # [[languages.tl.params.contact]]
+      #   h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
+      #   title = "Sulatan Kami"
+      #   sub = "May tanong ka ba or request?"
 
 # ᜉ᜔ᜎᜈᜓ
 
@@ -165,8 +169,6 @@ summaryLength = 30
 # ᜀᜃ᜔ᜎᜆ᜔
 
 # ᜐᜎᜒ
-
-
 
   [languages.cb]
     contentDir = "content/cb"
@@ -215,18 +217,18 @@ summaryLength = 30
         url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
         title = "Ang Teorya sa Paningkamot sa Kantidad"
         sub = "Sistemang Pangekonomikong Bayanihan"
-      [[languages.cb.params.book]]
-        h1 = "ᜀᜃ᜔ᜎᜆ᜔"
-        title = "Basahin ang Libro"
-        sub = "Ang Maharlikanismo ay ipinaliwanag sa aklat na Towards Maharlika, na nasa Play Store."
-      [[languages.cb.params.follow]]
-        h1 = "ᜐᜎᜒ"
-        title = "Mag-Subscribe"
-        sub = "Mag-subscribe para makatanggap ng mga update sa adbokasiya ng Maharlikanismo, mga bagong artikulo, atbp."
-      [[languages.cb.params.contact]]
-        h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
-        title = "Contact Us!"
-        sub = "Do you have any questions? Or comments?"
+      # [[languages.cb.params.book]]
+      #   h1 = "ᜀᜃ᜔ᜎᜆ᜔"
+      #   title = "Basahin ang Libro"
+      #   sub = "Ang Maharlikanismo ay ipinaliwanag sa aklat na Towards Maharlika, na nasa Play Store."
+      # [[languages.cb.params.follow]]
+      #   h1 = "ᜐᜎᜒ"
+      #   title = "Mag-Subscribe"
+      #   sub = "Mag-subscribe para makatanggap ng mga update sa adbokasiya ng Maharlikanismo, mga bagong artikulo, atbp."
+      # [[languages.cb.params.contact]]
+      #   h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
+      #   title = "Contact Us!"
+      #   sub = "Do you have any questions? Or comments?"
 
   # bookIntro = "Read the Book"
   # bookSub = "Maharlikanism is explained in the book <i>Towards Maharlika</i>, available on the Play Store"

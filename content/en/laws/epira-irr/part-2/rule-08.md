@@ -2,7 +2,7 @@
 heading: "Rule 8"
 title: "Supply Sector"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 date: 2021-09-30
 ---
 

@@ -3,7 +3,7 @@ heading: "Chapter 2b"
 title: Distribution Utilities
 # title: "Organization And Operation Of The Electric Power Industry"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 weight: 1
 ---
 

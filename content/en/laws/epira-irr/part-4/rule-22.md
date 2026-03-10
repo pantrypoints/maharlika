@@ -2,7 +2,7 @@
 heading: "Rule 22"
 title: "NATIONAL TRANSMISSION CORPORATION (TRANSCO)"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 date: 2021-09-30
 ---
 

@@ -2,7 +2,7 @@
 heading: "Chapter 4b"
 title: "Cross Ownership, Market Power Abuse and Anti-Competitive Behavior"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 weight: 1
 ---
 

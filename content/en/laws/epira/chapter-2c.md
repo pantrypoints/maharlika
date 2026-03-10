@@ -3,7 +3,7 @@ heading: "Chapter 2c"
 title: Retail Competition and Open Access
 # title: "Organization And Operation Of The Electric Power Industry"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 weight: 1
 ---
 

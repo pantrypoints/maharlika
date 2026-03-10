@@ -1,7 +1,6 @@
 ---
 title: "Wilkes, Commander Charles"
 description: "Commander Charles Wilkes"
-c: "darkslategray"
-# image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 weight: 122
 ---

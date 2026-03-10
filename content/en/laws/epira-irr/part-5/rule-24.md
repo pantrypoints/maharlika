@@ -2,7 +2,7 @@
 heading: "Rules 24-28"
 title: "Electric Power Crisis Provision"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 date: 2021-09-30
 ---
 

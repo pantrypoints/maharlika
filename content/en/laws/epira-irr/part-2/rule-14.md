@@ -2,7 +2,7 @@
 heading: "Rule 14"
 title: "Provision Of Electricity By Qualified Third Parties"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 date: 2021-09-30
 ---
 

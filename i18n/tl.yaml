@@ -1,5 +1,5 @@
 book:
-  badge: "Aklat"
+  badge: "ᜀᜃ᜔ᜎᜆ᜔"
   title: "Ang Aklat ng Maharlika"
   desc: "Alamin ang higit pa tungkol sa adbokasiyang Maharlika at kung paano ka makakasali sa makasaysayang kilusang ito."
   url: "https://play.google.com/store/books/details?id=example"
@@ -22,12 +22,24 @@ contact:
   success: "Salamat! Naipadala na ang iyong mensahe."
   error: "May error! Pakisubukan muli."
 
+actionSteps:
+  badge: "ᜉ᜔ᜎᜈᜓ"
+  title: "Mga Tiyak na Hakbang"
+  subtitle: "Konkreto at maisasagawang mga hakbang tungo sa pagbuo ng mas maginhawang Maharlika"
+  readMore: "Magbasa Pa"
+
 superphysics:
   foundation: "ᜊᜆᜌᜈ᜔"
   title: "Base sa Social Superphysics"
   subtitle: "Ang Maharlikanism ay base sa Social Superphysics na hango kay Socrates, David Hume, at Ibn Khaldun"
   learnMore: "Ano ba yan?"
 
+identity:
+  badge: "ᜇᜒᜏ"
+  title1: "Isang Bagong Diwa para sa"
+  title2: "Bagong Kinabukasan"
+  desc: "Sinira ng mga Europeo ang diaw ng Maharlika, na nagdulot ng maraming problema."
+  cta: "Tuklasin ang Ating Kasaysayan"
 
 subscribe:
   title: "Mag-subscribe"

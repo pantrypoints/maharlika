@@ -1,5 +1,5 @@
 book:
-  badge: "Book"
+  badge: "ᜀᜃ᜔ᜎᜆ᜔"
   title: "The Maharlika Book"
   desc: "Learn more about the Maharlika advocacy and how you can be part of this historical movement."
   url: "https://play.google.com/store/books/details?id=example"
@@ -22,6 +22,12 @@ contact:
   success: "Thank you! Your message has been sent."
   error: "Oops! Something went wrong. Please try again."
 
+actionSteps:
+  badge: "ᜉ᜔ᜎᜈᜓ"
+  title: "Specific Action Steps"
+  subtitle: "Concrete, actionable steps toward building a better Maharlika"
+  readMore: "Read More"
+
 subscribe:
   title: "Stay Informed"
   subtitle: "Subscribe to receive updates on the Maharlikanism advocacy, new articles, and important developments."
@@ -35,6 +41,12 @@ superphysics:
   subtitle: "Our advocacy is grounded in the principles of Social Superphysics — a new science of society"
   learnMore: "Learn More"
 
+identity:
+  badge: "ᜇᜒᜏ"
+  title1: "A New Identity for a"
+  title2: "New Future"
+  desc: "The Europeans destroyed the natural identity of Maharlika, causing so many problems that persist today."
+  cta: "Explore Our History"
 
 searchPlaceholder: "Search articles…"
 readMore: "Read More"

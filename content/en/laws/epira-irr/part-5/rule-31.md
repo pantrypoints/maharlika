@@ -2,7 +2,7 @@
 heading: "Rule 31"
 title: "Debts Of Electric Cooperatives (ECs)"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 date: 2021-09-30
 aliases:
   /maharlika/laws/epira-irr/rule-31/	

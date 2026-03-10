@@ -2,7 +2,7 @@
 heading: "Chapter 1"
 title: "Definition of Policy"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 weight: 1
 ---
 

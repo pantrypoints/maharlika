@@ -1,6 +1,11 @@
 <!-- SECTION 5: Based on Social Superphysics -->
-<section class="py-24 px-4 bg-royal-900 dark:bg-royal-950" id="superphysics">
-  <div class="max-w-5xl mx-auto">
+<section class="relative py-24 px-4 overflow-hidden" id="superphysics">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline preload="metadata" class="absolute inset-0 w-full h-full object-cover">
+    <source src="/socrates.mp4" type="video/mp4">
+  </video>
+  
+  <div class="max-w-5xl mx-auto relative z-10">
 
     <div class="text-center mb-16" data-animate>
       <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-gold-500 border border-gold-500/30 px-4 py-2 rounded-full inline-block mb-6">
@@ -17,8 +22,9 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       {{ range .Site.Params.superCards }}
+      <!-- bg-royal-800/80 dark:bg-royal-950/90 -->
       <a href="{{ .url }}" target="_blank" rel="noopener" class="icon-card group" data-animate>
-        <div class="w-20 h-20 rounded-2xl bg-royal-800 dark:bg-royal-900 border border-royal-700 flex items-center justify-center p-3 group-hover:border-gold-500 transition-all duration-300">
+        <div class="w-20 h-20 rounded-2xl border border-royal-700 flex items-center justify-center p-3 group-hover:border-gold-500 transition-all duration-300 backdrop-blur-sm">
           <img
             src="{{ .img }}"
             alt="{{ .title }}"

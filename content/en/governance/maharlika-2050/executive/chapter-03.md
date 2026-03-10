@@ -3,7 +3,7 @@ heading: Chapter 3
 weight: 8
 title: "The Office Of Communications"
 description: "Maharlika 2050"
-c: "mediumblue"
+c: "#1e4aaa"
 draft: true
 ---
 

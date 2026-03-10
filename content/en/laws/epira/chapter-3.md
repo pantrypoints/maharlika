@@ -2,7 +2,7 @@
 heading: "Chapter 3"
 title: "Role Of The Department Of Energy"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 weight: 1
 ---
 

@@ -6,9 +6,9 @@ description: "Procurement problems can be minimized by merging audit, procuremen
 date: 2021-09-19
 image: https://res.cloudinary.com/nara/image/upload/v1568484781/photos/govt.jpg
 author: Juan
-
 draft: true
 ---
+
 
 8 Erap is a petty thief not systemic
 7 FVR BoT thief and systemic 

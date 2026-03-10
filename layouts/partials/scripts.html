@@ -175,16 +175,16 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
 
 // ─── Subscribe form ───────────────────────────────────
-document.getElementById('subscribe-form')?.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const email = this.querySelector('[name="email"]').value;
-  const msg = document.getElementById('subscribe-msg');
-  if (msg) {
-    msg.textContent = 'Thank you for subscribing!';
-    msg.className = 'mt-3 text-gold-400 text-center text-sm';
-  }
-  this.reset();
-});
+// document.getElementById('subscribe-form')?.addEventListener('submit', function(e) {
+//   e.preventDefault();
+//   const email = this.querySelector('[name="email"]').value;
+//   const msg = document.getElementById('subscribe-msg');
+//   if (msg) {
+//     msg.textContent = 'Thank you for subscribing!';
+//     msg.className = 'mt-3 text-gold-400 text-center text-sm';
+//   }
+//   this.reset();
+// });
 
 // ─── Contact form ─────────────────────────────────────
 document.getElementById('contact-form')?.addEventListener('submit', function(e) {

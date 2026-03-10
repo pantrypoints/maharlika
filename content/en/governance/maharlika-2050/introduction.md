@@ -1,7 +1,7 @@
 ---
 heading: Introduction
 title: "What is Maharlika 2050?"
-c: "mediumblue"
+c: "#1e4aaa"
 weight: 2
 description: "A set of policies inspired by the Mandate for Leadership"
 ---

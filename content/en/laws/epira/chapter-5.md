@@ -2,7 +2,7 @@
 heading: "Chapter 5"
 title: "Privatization Of The Assets Of The National Power Corporation"
 description: "EPIRA Republic Act 9136"
-image: "/covers/epira.jpg"
+c: "#1e4aaa"
 weight: 1
 ---
 
