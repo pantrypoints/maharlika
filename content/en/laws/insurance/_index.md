@@ -1,7 +1,7 @@
 ---
 heading: "RA 10607"
 title: "Insurance"
-image: "/photos/objects/apples.jpg"
+c: "#1e4aaa"
 date: 2022-03-22
 draft: true
 weight: 20

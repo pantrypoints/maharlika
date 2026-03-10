@@ -2,7 +2,7 @@
 heading: "Sections 1-5"
 title: "An Act Liberalizing the Importation, Exportation and Trading of Rice, Lifting for the Purpose the Quantitative Import Restriction on Rice, and For Other Purposes"
 description: "Rice Tariffication Act"
-image: "/photos/team.jpg"
+c: "#1e4aaa"
 weight: 4
 # date: 2020-10-31
 ---

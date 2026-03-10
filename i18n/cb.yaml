@@ -1,4 +1,11 @@
-# All custom keys must be nested under a namespace
+hero:
+  title: "Maharlikanismo"
+  subtitle1: "Usa ka adbokasiya nga usbon ang ngalan, kultura, ug socio-economics sa Pilipinas ngadto sa"
+  subtitle2: "Maharlika"
+  cta1: "Pagkat-on Pa"
+  cta2: "Panan-aw"
+  scroll: "I-scroll"
+
 book:
   badge: "ᜀᜃ᜔ᜎᜆ᜔"
   title: "Ang Libro sa Maharlika"

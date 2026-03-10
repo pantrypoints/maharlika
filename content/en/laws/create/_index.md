@@ -4,7 +4,7 @@ title: "CREATE Law Simplified"
 subtitle': RA 11534
 linkTitle: CREATE
 description: "Simplified Corporate Recovery and Tax Incentives for Enterprises: Act An Act Reforming The Corporate Income Tax And Incentives System"
-image: "/covers/create.jpg"
+c: "#1e4aaa"
 weight: 6
 # date: 2021-09-30
 ---

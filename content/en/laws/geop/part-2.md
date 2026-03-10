@@ -2,7 +2,7 @@
 heading: "Sections 5"
 title: "RE Supplier Qualifications"
 description: ""
-image: "/covers/geop.jpg"
+c: "#1e4aaa"
 date: 2021-09-30
 ---
 

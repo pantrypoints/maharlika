@@ -29,11 +29,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cb"
-                href="http://localhost:1313/cb/history/meanings-maharlika/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="tl"
                 href="http://localhost:1313/tl/history/meanings-maharlika/"
                 />

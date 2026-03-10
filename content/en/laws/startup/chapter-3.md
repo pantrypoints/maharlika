@@ -2,7 +2,7 @@
 heading: "Chapter 3"
 title: "Startup Visas"
 description: "Foreign Investment Act Republic Act 11337"
-image: "/photos/team.jpg"
+c: "#1e4aaa"
 weight: 8
 # date: 2021-10-20
 ---

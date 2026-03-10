@@ -4,7 +4,7 @@ heading: "Articles 6"
 description: "The relationship between the Central Government and the Bangsamoro Government shall be asymmetric. This is reflective of the recognition of their Bangsamoro identity, and their aspiration for self-governance."
 weight: 6
 # date: 2021-09-22
-image: "/covers/bbl.jpg"
+c: "#1e4aaa"
 ---
 
 

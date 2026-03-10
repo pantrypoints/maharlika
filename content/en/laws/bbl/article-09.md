@@ -4,7 +4,7 @@ heading: "Article 9"
 description: "All laws and policies, including customary laws, shall conform to international human rights and humanitarian standards"
 # date: 2021-09-17
 weight: 10
-image: "/covers/bbl.jpg"
+c: "#1e4aaa"
 ---
 
 

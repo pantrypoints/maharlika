@@ -2,7 +2,7 @@
 heading: "Section 4-5"
 title: "IIPCC Powers and Foreign Inuestments Promotion ond Marketing Plan"
 description: "Foreign Investment Act Republic Act 11647"
-image: "/covers/fia.jpg"
+c: "#1e4aaa"
 date: 2022-03-25
 ---
 

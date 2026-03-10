@@ -13,35 +13,37 @@
       </div>
 
       <p class="font-cinzel text-gold-400 text-sm md:text-base tracking-widest uppercase mb-4 opacity-90">
-        {{ .Site.Params.h1 }}
+        ᜋᜑᜇ᜔ᜎᜒᜃ
       </p>
 
       <h1 class="font-cinzel text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-none">
-        <span class="shimmer">Maharlikanism</span>
+        <span class="shimmer">{{ i18n "hero.title" | default "Maharlikanism" }}</span>
       </h1>
 
       <div class="gold-divider"></div>
 
       <p class="text-lg md:text-xl lg:text-2xl text-gold-100/90 max-w-2xl mx-auto leading-relaxed mt-6 font-crimson">
-        {{ .Site.Params.s1 }} <em class="text-gold-300 not-italic font-semibold">{{ .Site.Params.s2 }}</em>
+        {{ i18n "hero.subtitle1" | default "An advocacy to change the name, culture, and socio-economics of The Philippines into" }} <em class="text-gold-300 not-italic font-semibold">{{ i18n "hero.subtitle2" | default "Maharlika" }}</em>
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-        <a href="{{ "/advocacy/" | relLangURL }}" class="btn-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          {{ .Site.Params.b1 }}
-        </a>
-        <a href="#quote" class="btn-gold border border-gold-500/30">
+        <a href="#action-steps" class="btn-gold border border-gold-500/30">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
-          {{ .Site.Params.b2 }}
+          {{ i18n "hero.cta1" | default "What is Maharlikanism" }}
         </a>
+        <!-- <a href="{{ "/advocacy/" | relLangURL }}" class="btn-primary"> -->
+        <a href="#book" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          {{ i18n "hero.cta2" | default "Our Vision" }}
+        </a>        
       </div>
     </div>
 
     <!-- Scroll indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gold-300/60">
-      <span class="text-xs tracking-widest uppercase font-cinzel">Scroll</span>
+      <span class="text-xs tracking-widest uppercase font-cinzel">{{ i18n "hero.scroll" | default "Scroll" }}</span>
       <div class="w-px h-10 bg-gradient-to-b from-gold-400/60 to-transparent animate-bounce"></div>
     </div>
   </div>
 </section>
+

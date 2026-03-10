@@ -2,16 +2,15 @@
 heading: "Chapter 3"
 title: "Rights to Ancestral Domains"
 description: "The State shall recognize and promote all the rights of Indigenous Cultural Communities/Indigenous Peoples (ICCs/IPs) hereunder enumerated within the framework of the Constitution"
-image: "/photos/objects/apples.jpg"
+c: "#1e4aaa"
 date: 2009-07-27
 ---
 
 
-CHAPTER III
+### SECTION 4. Concept of Ancestral Lands/Domains
 
-Rights to Ancestral Domains
+Ancestral lands/domains shall include such concepts of territories which cover not only the physical environment but the total environment including the spiritual and cultural bonds to the areas which the ICCs/IPs possess, occupy and use and to which they have claims of ownership.
 
-SECTION 4.            Concept of Ancestral Lands/Domains. — Ancestral lands/domains shall include such concepts of territories which cover not only the physical environment but the total environment including the spiritual and cultural bonds to the areas which the ICCs/IPs possess, occupy and use and to which they have claims of ownership.
 
 SECTION 5.            Indigenous Concept of Ownership. — Indigenous concept of ownership sustains the view that ancestral domains and all resources found therein shall serve as the material bases of their cultural integrity. The indigenous concept of ownership generally holds that ancestral domains are the ICC’s/IP’s private but community property which belongs to all generations and therefore cannot be sold, disposed or destroyed. It likewise covers sustainable traditional resource rights.
 

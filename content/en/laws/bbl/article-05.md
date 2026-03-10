@@ -4,7 +4,7 @@ heading: "Article 5"
 description: "Reserved powers are matters over which authority and jurisdiction are retained by the Central Government"
 # date: 2021-09-26
 weight: 4
-image: "/covers/bbl.jpg"
+c: "#1e4aaa"
 ---
 
 

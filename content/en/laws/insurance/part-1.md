@@ -2,7 +2,7 @@
 heading: "Section 4-5"
 title: "GENERAL PROVISIONS"
 description: "GENERAL PROVISIONS"
-image: "/photos/handshake.jpg"
+c: "#1e4aaa"
 date: 2022-03-25
 ---
 

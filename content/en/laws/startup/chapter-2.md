@@ -2,7 +2,7 @@
 heading: "Chapter 2"
 title: "Program Benefits And Incentives"
 description: "Foreign Investment Act Republic Act 11337"
-image: "/photos/team.jpg"
+c: "#1e4aaa"
 weight: 6
 # date: 2020-10-28
 ---

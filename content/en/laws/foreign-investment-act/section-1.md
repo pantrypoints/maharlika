@@ -2,7 +2,7 @@
 heading: "Sections 2-3"
 title: "Definitions and Inter-Agency Investment Promotion Coordination Committee IIPCC"
 description: "Foreign Investment Act Republic Act 11647"
-image: "/covers/fia.jpg"
+c: "#1e4aaa"
 date: 2022-03-28
 ---
 

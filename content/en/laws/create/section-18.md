@@ -2,7 +2,7 @@
 heading: "Section 18"
 title: "Amendatory Clause"
 description: "Amendatory Clause"
-image: "/covers/create.jpg"
+c: "#1e4aaa"
 # date: 2020-07-27 
 weight: 10
 ---

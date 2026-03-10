@@ -2,7 +2,7 @@
 heading: "Section 300"
 title: "Strategic Investment Priority Plan"
 description: "Expanded Functions of the Fiscal Incentives Review Board"
-image: "/covers/create.jpg"
+c: "#1e4aaa"
 # date: 2020-07-27 
 weight: 20
 ---

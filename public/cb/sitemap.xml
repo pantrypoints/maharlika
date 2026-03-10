@@ -20,26 +20,8 @@
                 href="http://localhost:1313/cb/history/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cb/history/meanings-maharlika/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/history/meanings-maharlika/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tl"
-                href="http://localhost:1313/tl/history/meanings-maharlika/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cb"
-                href="http://localhost:1313/cb/history/meanings-maharlika/"
-                />
-  </url><url>
     <loc>http://localhost:1313/cb/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

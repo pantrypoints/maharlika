@@ -2,7 +2,7 @@
 heading: "Chapter 1"
 title: "Definition of Policy"
 description: "Simplified Data Privacy Act 2012 Philippines"
-image: "/covers/data.jpg"
+c: "#1e4aaa"
 weight: 2
 ---
 

@@ -2,7 +2,7 @@
 heading: "Chapter 2"
 title: "The National Privacy Commission"
 description: "Simplified Data Privacy Act 2012 Philippines"
-image: "/covers/data.jpg"
+c: "#1e4aaa"
 weight: 4
 ---
 

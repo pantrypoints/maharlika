@@ -2,7 +2,7 @@
 heading: "Chapter 1-2"
 title: "General Provisions"
 description: "The State shall recognize and promote all the rights of Indigenous Cultural Communities/Indigenous Peoples (ICCs/IPs) hereunder enumerated within the framework of the Constitution"
-image: "/photos/objects/apples.jpg"
+c: "#1e4aaa"
 date: 2009-07-27
 ---
 

@@ -4,7 +4,7 @@ heading: "Article 11"
 description: "The Bangsamoro Government shall have primary responsibility over public order and safety within the Bangsamoro"
 # date: 2021-09-07
 weight: 16
-image: "/covers/bbl.jpg"
+c: "#1e4aaa"
 ---
 
 

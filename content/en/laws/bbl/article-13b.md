@@ -4,7 +4,7 @@ heading: "Article 13b"
 description: "The Bangsamoro Government’s economic policies and programs shall be based on the principle of social justice"
 # date: 2021-08-27
 weight: 24
-image: "/covers/bbl.jpg"
+c: "#1e4aaa"
 ---
 
 

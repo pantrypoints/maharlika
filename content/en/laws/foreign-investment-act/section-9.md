@@ -2,7 +2,7 @@
 title: "Review of Strategic Industries"
 heading: "Section 10-17"
 description: "Foreign Investment Act Republic Act 11647"
-image: "/covers/fia.jpg"
+c: "#1e4aaa"
 date: 2022-03-18
 ---
 

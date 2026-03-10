@@ -4,7 +4,7 @@ heading: "Article 7"
 description: "The powers of government shall be vested in the Bangsamoro Parliament, which shall exercise those powers and functions expressly granted to it in this Basic Law"
 weight: 8
 # date: 2021-09-20
-image: "/covers/bbl.jpg"
+c: "#1e4aaa"
 ---
 
 

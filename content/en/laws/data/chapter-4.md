@@ -2,7 +2,7 @@
 heading: "Chapter 4"
 title: "Rights Of The Data Subject"
 description: "Simplified Data Privacy Act 2012 Philippines"
-image: "/covers/data.jpg"
+c: "#1e4aaa"
 weight: 6
 ---
 

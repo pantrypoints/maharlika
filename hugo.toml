@@ -42,6 +42,7 @@ summaryLength = 30
     languageName = "English"
     weight = 1
     [languages.en.params]
+      video = "https://www.youtube.com/embed/DUQVO9ZCCg8?si=MgCvQ5Vymqi8g7E2"
       langFlag = "🇺🇸"
       h1 = "ᜋᜑᜇ᜔ᜎᜒᜃ"
       s1 = "An advocacy to change the name, culture, and socio-economics of The Philippines into"
@@ -105,6 +106,7 @@ summaryLength = 30
     weight = 2
     [languages.tl.params]
       langFlag = "🇵🇭"
+      video = "https://www.youtube.com/embed/JLGMATjNW0c?si=vBBrQymvYntkiHCK"
       h1 = "ᜋᜑᜇ᜔ᜎᜒᜃ"
       s1 = "Ang pagpalit ng pangalan, kultura, at socio-economics ng Pilipinas sa"
       s2 = "Maharlika"
@@ -176,6 +178,7 @@ summaryLength = 30
     weight = 3
     [languages.cb.params]
       langFlag = "🇵🇭"
+      video = "https://www.youtube.com/embed/JLGMATjNW0c?si=vBBrQymvYntkiHCK"
       [[languages.cb.params.quote]]
         content = "Uban sa mga bag-ong lalaki nga mogitib gikan sa ilang dughan ug sa handumanan sa ilang nangagi, magkasamang molihok sila aron lig-onon ang ilang nasud, ug buhion ang natural nga kinabuhi sa dagat ug kalakalan. Kini ug uban pa mahitabo sulod sa usa ka gatus ka tuig o labaw pa."
         icon = "Jose Rizal"

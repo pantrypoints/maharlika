@@ -4,7 +4,7 @@ heading: "Article 10"
 description: "For Muslims, the justice system in the Bangsamoro shall give primary consideration to Shari’ah, and customary rights and traditions of the indigenous peoples in the Bangsamoro."
 # date: 2021-09-15
 weight: 12
-image: "/covers/bbl.jpg"
+c: "#1e4aaa"
 ---
 
 
