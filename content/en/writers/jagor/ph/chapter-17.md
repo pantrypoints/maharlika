@@ -1,11 +1,11 @@
 ---
 title: "The Oppression Of The Igorots"
 weight: 80
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: ""
 linkTitle: "Chapter 17"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

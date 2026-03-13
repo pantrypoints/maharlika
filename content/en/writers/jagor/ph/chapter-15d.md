@@ -2,11 +2,11 @@
 heading: Chapter 15d
 title: "Early Copper-smiths and Igorot Native Science"
 weight: 74
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The locality of these rich quarries was still unknown to the Governor, although the copper implements brought thence had, according to an official statement of his in 1833, been in use in Manila over two centuries."
 linkTitle: "Chapter 15d"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

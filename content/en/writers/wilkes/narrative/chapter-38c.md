@@ -1,7 +1,7 @@
 ---
 title:  "Sulu harbor"
 heading:  "Chapter 38c"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "We passed for some distance between the bridges to the landing, and on our way saw several piratical prahus apparently laid up"
 author: Commander Charles Wilkes
 ---

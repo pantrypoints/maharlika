@@ -3,10 +3,10 @@ heading: Chapter 2b
 title: "Restrictions On Trade"
 linkTitle: Chapter 2b
 weight: 12
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The Manila merchants were used to a lucrative trade with Acapulco"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

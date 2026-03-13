@@ -3,10 +3,10 @@ heading: Chapter 4a
 linkTitle: Chapter 4a
 title: "The Europeans"
 weight: 18
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The Dutch are as unable as the English to acclimatise themselves in tropical countries. They get all they can out of those countries"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

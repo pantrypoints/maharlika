@@ -2,10 +2,10 @@
 title: "Juan de Salcédo"
 heading: Chapter 27c
 weight: 132
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Juan de Salcédo was the most illustrious of all the conquerors"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

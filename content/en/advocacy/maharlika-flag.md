@@ -5,7 +5,7 @@ description: "We propose a flag for Maharlika made up of 1 sun with 8 rays and 3
 # date: 2019-09-14
 date: 2021-07-07
 # date: 2022-04-19
-image: "/graphics/flag.png"
+image: "/graphics/flag.jpg"
 author: Juan
 icon: /icon/sun.png
 ---
@@ -27,7 +27,7 @@ To unify Filipnos, we propose a Maharlikan flag made up of=
 2. **3 golden stars** - This represents Luzon, Visayas, and Mindanao which likewise have a high value, but less bright than the supreme
 3. **A royal blue background** - This represents the high morals of Maharlika, which complement and support the virtues
 
-![Maharlika Flag](/graphics/flag.png)
+![Maharlika Flag](/graphics/flag.jpg)
 
 The stars are on the right side so that they will be beneath the sun when the flag is hung. 
 

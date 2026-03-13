@@ -2,11 +2,11 @@
 heading: Chapter 7a
 title: "Laguna"
 weight: 32
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "A banca is a boat made out of a hollow tree, with a vaulted bamboo roof which was so low that it was almost impossible to sit upright under it. The banca-builder appeared to have neglected to consider sitting inside."
 linkTitle: "Chapter 7a"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 <!-- THE PROVINCE OF LAGUNA.-BANCA-TRAVELLING.–SANDBANKS IN THE PASIG.—THE

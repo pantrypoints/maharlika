@@ -2,10 +2,10 @@
 title: "Letter Of The Commissary-general Of Chincheo To Don Pedro De Acuña, Governor Of The Philippines"
 heading: "Chapter 26c"
 weight: 126
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The Chinese who moved to the kingdom of Luzon to trade were murdered by the Spaniards. I have investigated the motives for these massacres and begged the King to exercise justice on the murderers with a view to security in the future"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title:  "Zamboanga"
 heading:  "Chapter 38b"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "Zamboanga is a convict settlement, to which the native rogues, principally thieves, are sent. The Spanish criminals are sent to Spain."
 author: Commander Charles Wilkes
 ---

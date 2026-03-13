@@ -1,11 +1,11 @@
 ---
 title: "Sulphur Smelting"
 weight: 102
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The roof of the cavern is hung with stalactites, covered with solid sulphur."
 linkTitle: "Chapter 21"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

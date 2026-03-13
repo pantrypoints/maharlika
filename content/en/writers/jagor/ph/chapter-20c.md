@@ -1,11 +1,11 @@
 ---
 title: "Idolatry Of The Dead"
 weight: 96
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Their chief idolatry consisted in the worship of those of their ancestors who had most distinguished themselves by courage and genius, whom they regarded as deities"
 linkTitle: "Chapter 20c"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

@@ -2,7 +2,7 @@
 heading: Chapter 14d
 title: "Amok, Bangungot, and Nasal Acuteness"
 weight: 66
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Probably it is only an accidental coincidence that in the Malay countries Sakit-latar and Amok exist together."
 linkTitle: "Chapter 14d"
 author: Jagor

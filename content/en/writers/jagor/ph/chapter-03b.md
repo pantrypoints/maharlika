@@ -3,10 +3,10 @@ heading: Chapter 3b
 title: "Public Promenades"
 linkTitle: Chapter 3b
 weight: 16
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "How many of the prettiest natives are of perfectly unmixed blood is difficult to decide."
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

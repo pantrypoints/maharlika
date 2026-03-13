@@ -2,11 +2,11 @@
 heading: Chapter 6
 title: "Fires in Bulacan"
 weight: 28
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The province of Bulacan is on the northern shore of Manila Bay"
 linkTitle: "Chapter 6"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

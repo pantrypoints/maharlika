@@ -1,12 +1,11 @@
 ---
 heading: Chapter 1
 title: "Commercial Relations"
-linkTitle: Chapter 1
 weight: 4
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The Philippines, or at any rate, the principal market for their commerce, would have fallen within the limits of the western hemisphere, to which indeed they were relegated by the illustrious Spanish geographers at Badajoz"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 <!-- April 10th, 1875. DIFFERENCE OF TIME. - COMMERCIAL RELATIONS OF THE PHILIPPINES.- PARTITION OF

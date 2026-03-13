@@ -1,11 +1,11 @@
 ---
 title: "Degree Of Civilisation"
 weight: 82
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Wax is in demand for church solemnities"
 linkTitle: "Chapter 17"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

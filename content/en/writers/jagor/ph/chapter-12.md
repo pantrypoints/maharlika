@@ -2,11 +2,11 @@
 heading: Chapter 12
 title: "The Spanish Priests"
 weight: 50
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Most of the priests in the eastern provinces of Luzon and Samar are Franciscan monks, brought up in seminaries in Spain specially devoted to the colonial missions"
 linkTitle: "Chapter 12"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

@@ -2,11 +2,11 @@
 title: "Rice Cultivation"
 # title: "MANNERS AND CUSTOMS OF THE BISAYAN INDIAXS"
 weight: 104
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The inhabitants of Sámar and Leyté (I have not become closely acquainted with any others) belong to one race"
 linkTitle: "Chapter 22"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

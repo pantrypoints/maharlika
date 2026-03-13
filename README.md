@@ -168,3 +168,38 @@ BLUE #1e4aaa;
 c: "#1e4aaa"
 
 c: "#1e4aaa"
+
+
+
+  {{ if $bgStyle }}
+  style="{{ $bgStyle | safeCSS }} opacity: 0.92;"
+  {{ end }}
+>
+  <div class="flex-1 min-w-0">
+    {{ with .Params.heading }}
+    <span class="text-xs font-cinzel tracking-widest uppercase mb-1 block"
+      style="{{ if $.Params.c }}color: {{ $.Params.c | safeCSS }}{{ else }}color: var(--color-primary){{ end }}; filter: brightness(1.4);"
+    >{{ . }}</span>
+    {{ end }}
+    <h3 class="font-cinzel font-semibold text-base leading-snug group-hover:text-gold-500 transition-colors {{ if .Params.c }}text-white{{ else }}text-[var(--color-text)]{{ end }}">
+      {{ .Title }}
+    </h3>
+    {{ with .Description }}
+    <p class="text-xs mt-1 line-clamp-2 {{ if $.Params.c }}text-white/70{{ else }}text-[var(--color-muted)]{{ end }}">{{ . }}</p>
+    {{ end }}
+    {{ with .Date }}
+    <time class="text-xs mt-2 block {{ if $.Params.c }}text-white/50{{ else }}text-[var(--color-muted)]{{ end }}" datetime="{{ .Format "2006-01-02" }}">
+      {{ .Format "Jan 2, 2006" }}
+    </time>
+    {{ end }}
+  </div>
+  <!-- Avatar (icon name initials) -->
+  <div class="shrink-0 w-12 h-12 rounded-full bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-sm font-cinzel font-bold text-gold-400 overflow-hidden">
+    {{ $icon := .Params.icon }}
+    {{ $initials := "" }}
+    {{ $parts := split $icon " " }}
+    {{ range $parts | first 2 }}
+      {{ $initials = printf "%s%s" $initials (substr . 0 1) }}
+    {{ end }}
+    {{ $initials | upper }}
+  </div>

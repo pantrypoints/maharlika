@@ -1,11 +1,11 @@
 ---
 title: "Superstition Invaded"
 weight: 94
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "In the caverns of these rocks, the ancient Pintados interred the corpses of their heroes and ancestors in well-locked coffins."
 linkTitle: "Chapter 20b"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title:  "Outside of Manila"
 heading:  "Chapter 37f"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "The country around Manila, though no more than an extended plain for some miles, is one of great interest and beauty, and affords many agreeable rides on the roads to Santa Ana and Marikina"
 author: Commander Charles Wilkes
 ---

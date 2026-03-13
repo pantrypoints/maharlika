@@ -2,7 +2,7 @@
 heading: Chapter 14c
 title: "The Domestic Philippine Economy"
 weight: 64
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: ""
 linkTitle: "Chapter 14C"
 author: Jagor

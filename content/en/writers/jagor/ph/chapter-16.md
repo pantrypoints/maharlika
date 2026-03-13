@@ -1,11 +1,11 @@
 ---
 title: "Journey Along The Coast Of Camarines"
 weight: 78
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: ""
 linkTitle: "Chapter 16"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

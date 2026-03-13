@@ -3,7 +3,7 @@ heading: Chapter 14a
 title: "Rice Cultivation In Bicol"
 linkTitle: Chapter 14a
 weight: 62
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: ""
 author: Jagor
 icon: /flags/ph.png

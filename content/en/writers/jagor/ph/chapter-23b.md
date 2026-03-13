@@ -1,11 +1,11 @@
 ---
 title: "Sugar and the Benefits of Free Trade"
 weight: 112
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Sugar cultivation increased in Iloilo, Antique, Panay, and Negros"
 heading: "Chapter 23b"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

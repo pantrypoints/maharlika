@@ -1,11 +1,11 @@
 ---
 title: "The Tobacco Monopoly"
 weight: 118
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "In terms of government revenue, tobacco is the most important product of the Philippines"
 heading: "Chapter 25"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

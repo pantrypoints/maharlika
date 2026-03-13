@@ -1,7 +1,7 @@
 ---
 title:  "Cigar factories"
 heading:  "Chapter 37e"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "Among the lions of the place, the great royal cigar manufactories claim especial notice from their extent and the many persons employed"
 author: Commander Charles Wilkes
 ---

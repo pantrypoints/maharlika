@@ -2,10 +2,10 @@
 title: "Spain Versus Britain Versus America"
 heading: Chapter 28d
 weight: 134
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Spain should be given credit for having bettered the condition of a people who were comparatively highly civilised"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

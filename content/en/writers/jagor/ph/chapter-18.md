@@ -2,11 +2,11 @@
 heading: "Chapter 18a"
 title: "Mazarága"
 weight: 84
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "From the Ysaróg I returned through Nága and Nabua to Yriga"
 linkTitle: "Chapter 18a"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

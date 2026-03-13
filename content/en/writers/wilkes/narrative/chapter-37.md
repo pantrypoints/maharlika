@@ -1,9 +1,10 @@
 ---
 title:  "Manila in 1842"
 heading:  "Chapter 37a"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "The art of war is of vital importance to the State. It is a matter of life and death"
 author: Commander Charles Wilkes
+icon: Commander Charles Wilkes
 ---
 
 

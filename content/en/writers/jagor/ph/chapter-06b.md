@@ -2,11 +2,11 @@
 heading: Chapter 6b
 title: "The Houses of the People"
 weight: 30
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The province of Bulacan is on the northern shore of Manila Bay"
 linkTitle: "Chapter 6b"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

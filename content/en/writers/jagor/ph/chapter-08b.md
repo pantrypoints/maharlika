@@ -2,11 +2,11 @@
 heading: Chapter 8b
 title: "Legaspi in Albay"
 weight: 38
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The traffic between Manila and Legaspi is at its height between January and October. But during the autumn months, all communication by water ceases"
 linkTitle: "Chapter 8b"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

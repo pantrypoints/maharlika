@@ -3,10 +3,10 @@ heading: Chapter 4b
 title: "The Impact of Catholicism"
 linkTitle: Chapter 4b
 weight: 20
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The lack of originality, which among the half-castes appears to arise from their equivocal position, is also to be found among the Indians"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

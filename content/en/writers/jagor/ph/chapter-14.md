@@ -3,7 +3,7 @@ heading: Chapter 14a
 title: "Manners And Customs Of The Bícol Natives"
 linkTitle: Chapter 14a
 weight: 60
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "On my second journey in Camarines, which I undertook in February, I went by water from Polangui, past Bátu, as far as Nága"
 author: Jagor
 icon: /flags/ph.png

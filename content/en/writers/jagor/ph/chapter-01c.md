@@ -3,10 +3,10 @@ heading: Chapter 1c
 title: "Earthquakes"
 linkTitle: Chapter 1c
 weight: 8
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "On June 3, 1863 at 7:31pm an earthquake shook the preparations for the festival of Corpus Christi"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

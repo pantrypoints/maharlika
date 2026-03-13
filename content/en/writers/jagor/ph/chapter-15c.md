@@ -2,11 +2,11 @@
 heading: Chapter 15c
 title: "Paracáli and Mambuláo"
 weight: 72
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: ""
 linkTitle: "Chapter 15c"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

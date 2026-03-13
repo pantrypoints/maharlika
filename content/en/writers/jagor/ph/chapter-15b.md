@@ -2,11 +2,11 @@
 heading: Chapter 15b
 title: "The Tea-societies"
 weight: 70
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The value which the Japanese attach to vessels of this kind rests upon the use which is made of them by the mysterious tea societies called Cha-no-yu"
 linkTitle: "Chapter 15b"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

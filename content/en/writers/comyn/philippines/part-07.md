@@ -3,7 +3,7 @@ heading: "Part 7"
 title: "The Spanish Government"
 description: "In our colonies, appointments and command far from being sought as a means to obtain a good reputation, or as affording opportunities of contributing to public prosperity, are, it is too well known, only solicited with a view to amass wealth, and then retire for the purpose of enjoying it"
 weight: 22
-image: "/covers/1810.jpg"
+c: "#1e4aaa"
 ---
 
 

@@ -2,11 +2,11 @@
 heading: Chapter 7b
 title: "Lucban"
 weight: 34
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The province of Bulacan is on the northern shore of Manila Bay"
 linkTitle: "Chapter 7b"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

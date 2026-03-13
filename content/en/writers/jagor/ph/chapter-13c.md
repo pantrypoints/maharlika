@@ -2,10 +2,10 @@
 heading: Chapter 13c
 title: "Stalactite Springs"
 weight: 58
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "From here, I visited the stalactite springs, not far distant, of Naglegběng. I had expected to see a calcareous fountain, but found the most magnificent masses of silica of infinite variety of forms"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

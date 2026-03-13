@@ -1,7 +1,7 @@
 ---
 title:  "Sulu History"
 heading:  "Chapter 38e"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "The island of Sulu is generally believed to have been originally inhabited by Papuans, some of whom, still inhabit the mountainous part"
 author: Commander Charles Wilkes
 ---

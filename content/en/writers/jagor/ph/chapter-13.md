@@ -2,11 +2,11 @@
 heading: Chapter 13
 title: "Native Priests"
 weight: 54
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The native priest of Bátu was full of complaints about his parishioners, who gave him no opportunities of gaining an honest penny."
 linkTitle: "Chapter 13"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

@@ -1,11 +1,11 @@
 ---
 title: "The Chinese"
 heading: 122
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The Chinese are an important portion of the population because of their contribution to the development of the land-cultivation"
 linkTitle: "Chapter 26"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

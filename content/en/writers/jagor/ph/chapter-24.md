@@ -1,11 +1,11 @@
 ---
 title: "Abacá or Manila Hemp"
 weight: 114
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "One of the most interesting products of the Philippines is Manila hemp, so called by the French."
 heading: "Chapter 24"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

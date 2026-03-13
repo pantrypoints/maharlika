@@ -3,10 +3,10 @@ heading: Chapter 2
 title: "The Galleon Trade"
 linkTitle: Chapter 2
 weight: 10
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The Manila custom-house requires many formalities which the native minor officials exercised without  discretion."
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

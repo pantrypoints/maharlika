@@ -1,10 +1,10 @@
 ---
 title: "Samar Animals"
 weight: 90
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "In Sámar, the flying monkey or lemur (the káguang of the Bisayans—galeopithecus) is not rare."
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

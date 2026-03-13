@@ -1,11 +1,11 @@
 ---
 title: "The Family Economy and Debt Slavery"
 weight: 106
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "A family consisting of father, mother, and 5 children requires daily 12 chupas of rice"
 linkTitle: "Chapter 22b"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

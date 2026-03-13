@@ -1,7 +1,7 @@
 ---
 title:  "Sulu Natives"
 heading:  "Chapter 38d"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "The inhabitants of Sulu are a tall, thin, and effeminate-looking race: I do not recollect to have seen one corpulent person among them"
 author: Commander Charles Wilkes
 ---

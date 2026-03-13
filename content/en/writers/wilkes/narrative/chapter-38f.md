@@ -1,7 +1,7 @@
 ---
 title:  "Piracies"
 heading:  "Chapter 38f"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "Most of the piratical establishments are under the rule, or sail under the auspices of the Sultan and Ruma Bechara of Sulu"
 author: Commander Charles Wilkes
 ---

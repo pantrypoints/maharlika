@@ -1,7 +1,7 @@
 ---
 title:  "Cremation"
 heading:  "Chapter 38h"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "In some parts, a rajah or chief is buried with great pomp in his war habiliments, and food and his arms are placed at his side"
 author: Commander Charles Wilkes
 ---

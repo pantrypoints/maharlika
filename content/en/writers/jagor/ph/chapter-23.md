@@ -1,11 +1,11 @@
 ---
 title: "Philippine Ports"
 weight: 110
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "In 1830, 7 new ports were opened as an experiment. But due to great frauds in the tolls, they were soon closed again."
 heading: "Chapter 23"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

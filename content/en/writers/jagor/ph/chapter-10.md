@@ -2,11 +2,11 @@
 heading: Chapter 10
 title: "Philippine Cacao"
 weight: 42
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "The best cacao of the Philippines is produced in the small island of Maripipi, which lies to the north-west of Leyté"
 linkTitle: "Chapter 10"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

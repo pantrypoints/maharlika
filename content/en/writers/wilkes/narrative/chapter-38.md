@@ -1,7 +1,7 @@
 ---
 title:  "Sulu in 1842"
 heading:  "Chapter 38a"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "On the 22nd, we passed the entrance of the Straits of San Bernardino. It would have been my most direct route to follow these straits until I had passed Mindoro"
 author: Commander Charles Wilkes
 ---

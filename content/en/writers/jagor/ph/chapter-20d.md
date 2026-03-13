@@ -1,11 +1,11 @@
 ---
 title: "The Ignatius Bean"
 weight: 98
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "In the environs of Basey, the Ignatius bean grows in remarkable abundance, as it also does in the south of Sámar and in some other of the Bisayan islands. It is not present in Luzon. But it is very likely that I have introduced it there unwittingly"
 linkTitle: "Chapter 20d"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

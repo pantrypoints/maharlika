@@ -2,11 +2,11 @@
 heading: Chapter 9a
 title: "Mayon Volcano"
 weight: 40
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "I rented a house in Darága, a well-to-do town of 20,000 at the foot of the Mayon volcano, 1.5 leagues from Legaspi"
 linkTitle: "Chapter 9"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

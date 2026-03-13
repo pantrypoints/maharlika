@@ -2,10 +2,10 @@
 linkTitle: "Chapter 18b"
 title: "Piracy"
 weight: 86
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Early in the morning I rode on the pastor's horse to Legaspi, and in the evening through deep mud to the alcalde at Albáy"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

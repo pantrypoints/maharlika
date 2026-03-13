@@ -2,10 +2,10 @@
 title: "Chinese Emigration"
 heading: "Chapter 26b"
 weight: 124
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Invigorated by the severe struggle in their own overpopulated country, the Chinese  preserved their capacity for labour perfectly unimpaired by any climate"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

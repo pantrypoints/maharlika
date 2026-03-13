@@ -2,10 +2,10 @@
 title: "Spanish Colonial Government and Cavite Mutiny"
 heading: Chapter 27b
 weight: 130
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "On January 20, 1872, between 8pm-9pm, the artillery, marines, and the garrison of the arsenal revolted in Cavite and murdered their officers"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

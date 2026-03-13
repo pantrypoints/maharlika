@@ -1,11 +1,11 @@
 ---
 title: "Manufacture Of Coconut Oil"
 weight: 100
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "On the southern half of the eastern border, on the shore from Borongan by Láuang as far as Guíuan, there are considerable plantations of coconuts, which are most imperfectly applied to oil production"
 linkTitle: "Chapter 20e"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

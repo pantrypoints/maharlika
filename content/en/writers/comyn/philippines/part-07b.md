@@ -3,7 +3,7 @@ heading: "Part 7b"
 title: "Missionaries’ achievements"
 description: "Let us listen to La Pérouse, if we wish to know and admire the army with which our missionaries subdued the natives of both Californias"
 weight: 24
-image: "/covers/1810.jpg"
+c: "#1e4aaa"
 ---
 
 

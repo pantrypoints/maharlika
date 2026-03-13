@@ -1,11 +1,11 @@
 ---
 title: "Travels in Samar"
 weight: 88
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "At the present time, each island has its separate governor"
 linkTitle: "Chapter 19"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

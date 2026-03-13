@@ -2,11 +2,11 @@
 heading: Chapter 8a
 title: "The San Bernardino Straits"
 weight: 36
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "We turned northwards and sailed up the straits of San Bernardino, which separate Luzon from Sámar"
 linkTitle: "Chapter 8"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

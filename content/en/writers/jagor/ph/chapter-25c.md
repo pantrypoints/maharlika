@@ -2,10 +2,10 @@
 title: "The System Of Control"
 heading: "Chapter 25c"
 weight: 120
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "At the time of my visit, the royal factories could not turn out a supply of cigars commensurate with the requirements of commerce"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

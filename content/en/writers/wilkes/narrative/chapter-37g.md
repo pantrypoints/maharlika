@@ -1,7 +1,7 @@
 ---
 title:  "Duck farms"
 heading:  "Chapter 37g"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "The pativas are under the care of the original inhabitants, to whom exclusively the superintendence of the ducklings seems to be committed"
 author: Commander Charles Wilkes
 ---

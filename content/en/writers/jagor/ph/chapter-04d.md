@@ -3,10 +3,10 @@ heading: Chapter 4d
 title: "Bamboo"
 linkTitle: Chapter 4d
 weight: 24
-image: /covers/travels.jpg
+c: "#1e4aaa"
 description: "Bamboos with luxuriant leafy tops grow plentifully by the huts in the rice-fields which fringe the banks of the river"
 author: Jagor
-icon: /graphics/flag.png
+icon: Jagor
 ---
 
 

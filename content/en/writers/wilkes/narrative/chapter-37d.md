@@ -1,7 +1,7 @@
 ---
 title:  "Manila hemp"
 heading:  "Chapter 37d"
-image:  "/covers/narrative.jpg"
+c: "#1e4aaa"
 description: "Of all her foreign possessions, the Philippines has cost Spain the least blood and labor."
 author: Commander Charles Wilkes
 ---

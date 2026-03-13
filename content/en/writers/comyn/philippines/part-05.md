@@ -3,7 +3,7 @@ heading: "Part 5"
 title: "Royal Philippine company"
 description: "The project of raising these Islands from the neglected state in which they were, and in some measure to place them in contact with the mother country, accompanied by a wish to give a new and great impulse to the various branches of industry which constitute the importance of a colony, could not have been more laudable"
 weight: 12
-image: "/covers/1810.jpg"
+c: "#1e4aaa"
 ---
 
 
