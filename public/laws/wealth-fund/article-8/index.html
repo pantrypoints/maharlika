@@ -84,15 +84,13 @@
 </head>
 <body class="min-h-screen flex flex-col"><nav class="navbar" id="navbar">
 
-  
   <a href="/" class="flex items-center gap-3 shrink-0">
     <div class="w-9 h-9 flex items-center justify-center">
-      <img src="/icons/sun.svg">
+      <img src="/icons/sun.svg" alt="Logo">
     </div>
     <span class="font-cinzel font-bold text-gold-300 text-lg tracking-widest hidden sm:block">MAHARLIKANISM</span>
   </a>
 
-  
   <div class="hidden lg:flex items-center gap-6 xl:gap-8 mx-6">
     
     <div class="nav-item relative">
@@ -133,67 +131,59 @@
     
   </div>
 
-<div id="mobile-menu" class="fixed inset-0 z-[100] bg-royal-950/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 lg:hidden">
-  <div class="flex flex-col h-full p-6">
-    <div class="flex justify-end mb-8">
-      <button id="mobile-menu-close" class="p-2 text-gold-300 hover:text-gold-100">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
+  <div id="mobile-menu" class="fixed inset-0 z-[100] bg-black backdrop-blur-lg transform translate-x-full transition-transform duration-300 lg:hidden">
+    <div class="flex flex-col h-full p-6">
+      <div class="flex justify-end mb-8">
+        <button id="mobile-menu-close" class="p-2 text-gold-300 hover:text-gold-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
 
-    <nav class="flex flex-col gap-6 text-center">
+      <nav class="flex flex-col gap-8 text-center mt-10 bg-blue-900">
+        
+        <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          Advocacy
+        </a>
+        
+        <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          Culture
+        </a>
+        
+        <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          Governance
+        </a>
+        
+        <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          History
+        </a>
+        
+        <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          Infrastructure
+        </a>
+        
+        <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          Laws
+        </a>
+        
+        <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          Metaphysics
+        </a>
+        
+        <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          Politicians
+        </a>
+        
+        <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+          Writers
+        </a>
+        
+      </nav>
       
-      <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        Advocacy
-      </a>
-      
-      <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        Culture
-      </a>
-      
-      <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        Governance
-      </a>
-      
-      <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        History
-      </a>
-      
-      <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        Infrastructure
-      </a>
-      
-      <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        Laws
-      </a>
-      
-      <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        Metaphysics
-      </a>
-      
-      <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        Politicians
-      </a>
-      
-      <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
-        Writers
-      </a>
-      
-    </nav>
-    
-    <div class="mt-auto pb-10">
-       <input type="search" class="w-full bg-royal-900 border border-gold-300/20 rounded-lg px-4 py-3 text-gold-100" placeholder="Search...">
-    </div>
+      </div>
   </div>
-</div>
 
-
-
-
-  
   <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
 
-    
     <div class="search-box relative hidden md:block" id="search-container">
       <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-gold-300/60 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
       <input
@@ -207,7 +197,6 @@
       <div id="search-results" class="hidden"></div>
     </div>
 
-    
     <button
       id="music-btn"
       class="relative flex items-center gap-1 px-2 py-1.5 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
@@ -222,19 +211,15 @@
       <source src="/music.mp3" type="audio/mpeg">
     </audio>
 
-    
     <button
       id="theme-toggle"
       class="p-2 rounded-lg text-gold-300 hover:text-gold-100 hover:bg-royal-800 transition-all duration-200"
       aria-label="Toggle dark mode"
     >
-      
       <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-      
       <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     </button>
 
-    
     <div class="relative" id="lang-dropdown">
       <button
         id="lang-btn"
@@ -248,7 +233,6 @@
       </button>
       <div id="lang-menu" class="nav-dropdown min-w-36" role="menu">
         
-        
         <div class="flex items-center gap-2 px-4 py-2.5 text-sm bg-royal-800/50" aria-current="true">
           <span>🇺🇸</span>
           <span class="font-cinzel text-xs tracking-wider uppercase text-gold-400">en</span>
@@ -257,7 +241,6 @@
       </div>
     </div>
 
-    
     <button
       id="mobile-menu-btn"
       class="lg:hidden p-2 text-gold-300 hover:text-gold-100 rounded-lg hover:bg-royal-800 transition-all"
@@ -265,16 +248,10 @@
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
     </button>
-
-
-
-
   </div>
 </nav>
 
-
 <style>
-   
 #mobile-menu.open {
   transform: translateX(0);
 }
@@ -856,6 +833,5 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 })();
 
 </script>
-
 </body>
 </html>
