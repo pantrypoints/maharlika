@@ -3692,10 +3692,6 @@ a{
   background-color: rgb(201 148 14 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gold-500\/15{
-  background-color: rgb(201 148 14 / 0.15);
-}
-
 .bg-gold-500\/20{
   background-color: rgb(201 148 14 / 0.2);
 }

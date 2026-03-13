@@ -5,7 +5,8 @@ hero:
   cta1: "Ano ba yan?"
   cta2: "Pananaw"
   scroll: "Mag-scroll"
-
+  
+  
 book:
   badge: "ᜀᜃ᜔ᜎᜆ᜔"
   title: "Ang Aklat ng Maharlika"
@@ -67,3 +68,6 @@ noResults: "Walang nakitang resulta"
 # subject: "Subject"
 # email: "Email"
 # name: "Name"
+advocacy: Adbokasiya
+culture: Culture
+governance: Governance

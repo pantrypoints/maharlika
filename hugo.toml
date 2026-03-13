@@ -1,10 +1,24 @@
 baseURL = "https://maharlika.superphysics.org/"
 languageCode = "en-us"
 title = "Maharlikanism"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 enableGitInfo = false
 summaryLength = 30
+description = "An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika"
+author = "Maharlikanism"
+image = "/lapu.jpg"
+music = "/music.mp3"
+googleAnalytics = "G-0NM7Z55HJR"
+googleAdsense = "ca-pub-2557957536703477"
+tawkTo = "6306798e37898912e964f594/default"
 
+[params]
+  bookImg = "/books/towards.jpg"
+  bookUrl = "https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&pli=1"
+
+  
 [build]
   buildDrafts = false
   buildFuture = false
@@ -23,18 +37,6 @@ summaryLength = 30
   page = ["HTML"]
 
 
-[params]
-  description = "An advocacy to change the name, culture, and socio-economics of The Philippines into Maharlika"
-  author = "Maharlikanism"
-  image = "/lapu.jpg"
-  music = "/music.mp3"
-  googleAnalytics = "G-0NM7Z55HJR"
-  googleAdsense = "ca-pub-2557957536703477"
-  tawkTo = "6306798e37898912e964f594/default"
-  bookImg = "/books/towards.jpg"
-  bookUrl = "https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&pli=1"
-  defaultContentLanguage = "en"
-  defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.en]
