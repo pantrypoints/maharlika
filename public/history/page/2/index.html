@@ -24,7 +24,8 @@
 <meta property="og:description" content="The history of Maharlika">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://localhost:1313/history/">
-<meta property="og:image" content="https://sorasystem.sirv.com/photos/mh/mactan.jpg">
+<meta property="og:image" content="/lapu.jpg">
+
 
 
 <meta name="twitter:card" content="summary_large_image">
@@ -137,6 +138,63 @@
     
   </div>
 
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-royal-950/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 lg:hidden">
+  <div class="flex flex-col h-full p-6">
+    <div class="flex justify-end mb-8">
+      <button id="mobile-menu-close" class="p-2 text-gold-300 hover:text-gold-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-6 text-center">
+      
+      <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Advocacy
+      </a>
+      
+      <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Culture
+      </a>
+      
+      <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Governance
+      </a>
+      
+      <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        History
+      </a>
+      
+      <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Infrastructure
+      </a>
+      
+      <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Laws
+      </a>
+      
+      <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Metaphysics
+      </a>
+      
+      <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Politicians
+      </a>
+      
+      <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Writers
+      </a>
+      
+    </nav>
+    
+    <div class="mt-auto pb-10">
+       <input type="search" class="w-full bg-royal-900 border border-gold-300/20 rounded-lg px-4 py-3 text-gold-100" placeholder="Search...">
+    </div>
+  </div>
+</div>
+
+
+
+
   
   <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
 
@@ -225,9 +283,19 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
     </button>
 
+
+
+
   </div>
 </nav>
-<main class="flex-1 pt-16">
+
+
+<style>
+   
+#mobile-menu.open {
+  transform: translateX(0);
+}
+</style><main class="flex-1 pt-16">
 
 
 
@@ -318,26 +386,42 @@
 
 
 
-<a href="/history/katipunan/" class="card group block p-6" data-animate
-  
-  style="background-color: #1e4aaa;"
-  
->
-  <div class="min-h-24 flex flex-col justify-center">
+
+<a href="/history/katipunan/" class="card group block" data-animate>
+  <div class="card-img" style="aspect-ratio: 16/10;">
+    <img
+      src="/photos/people/bonifacio.jpg"
+      alt="The Katipunan"
+      loading="lazy"
+      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      onerror="this.src='/photos/placeholder.jpg'"
+    >
     
-    <h3 class="font-cinzel text-xl font-semibold text-center text-base leading-snug group-hover:text-gold-400 transition-colors text-white">
-      The Katipunan
-    </h3>
+    <div class="absolute inset-0 bg-gradient-to-t from-royal-950/85 via-royal-950/20 to-transparent"></div>
     
-    <p class="text-xs text-center mt-2 line-clamp-2 text-white/70">The history of the KKK</p>
-    
-    
-    <time class="text-xs text-center mt-3 block text-white/40" datetime="2025-05-05">
-      May 5, 2025
-    </time>
-    
+    <div class="absolute bottom-0 left-0 right-0 p-5">
+      
+
+      <h3 class="font-cinzel leading-none font-bold text-xl text-white text-base leading-snug group-hover:text-gold-300 transition-colors bg-black/70 px-3 py-1 rounded inline-block">
+        The Katipunan
+      </h3>
+      
+      
+      <div class="mt-2">
+        <time datetime="2025-05-05" class="bg-black/70 text-gold-300 text-xs px-3 py-1 rounded font-cinzel tracking-wider">
+          May 5, 2025
+        </time>
+      </div>
+      
+      
+      
+        <p class="text-gold-100/60 text-xs mt-2 line-clamp-2">The history of the KKK</p>
+      
+    </div>
   </div>
 </a>
+
+  
 
 
 
@@ -592,22 +676,40 @@
 
 
 
-<a href="/history/pishaye/" class="card group block p-6" data-animate
-  
->
-  <div class="min-h-24 flex flex-col justify-center">
+
+<a href="/history/pishaye/" class="card group block" data-animate>
+  <div class="card-img" style="aspect-ratio: 16/10;">
+    <img
+      src="/photos/barter.jpg"
+      alt="The Pishaye are Austronesian, not Visayan nor Maharlikan"
+      loading="lazy"
+      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      onerror="this.src='/photos/placeholder.jpg'"
+    >
     
-    <h3 class="font-cinzel text-xl font-semibold text-center text-base leading-snug group-hover:text-gold-400 transition-colors text-[var(--color-text)]">
-      The Pishaye are Austronesian, not Visayan nor Maharlikan
-    </h3>
+    <div class="absolute inset-0 bg-gradient-to-t from-royal-950/85 via-royal-950/20 to-transparent"></div>
     
-    
-    <time class="text-xs text-center mt-3 block text-[var(--color-muted)]" datetime="2021-09-01">
-      Sep 1, 2021
-    </time>
-    
+    <div class="absolute bottom-0 left-0 right-0 p-5">
+      
+
+      <h3 class="font-cinzel leading-none font-bold text-xl text-white text-base leading-snug group-hover:text-gold-300 transition-colors bg-black/70 px-3 py-1 rounded inline-block">
+        The Pishaye are Austronesian, not Visayan nor Maharlikan
+      </h3>
+      
+      
+      <div class="mt-2">
+        <time datetime="2021-09-01" class="bg-black/70 text-gold-300 text-xs px-3 py-1 rounded font-cinzel tracking-wider">
+          Sep 1, 2021
+        </time>
+      </div>
+      
+      
+      
+    </div>
   </div>
 </a>
+
+  
 
 
 
@@ -715,45 +817,31 @@
 
 
 
+  
 
 
 
 
-<a href="/history/biag-ni-lam-ang/" class="card group block" data-animate>
-  <div class="card-img" style="aspect-ratio: 16/10;">
-    <img
-      src="/covers/biag.jpg"
-      alt="Biag ni Lam-ang"
-      loading="lazy"
-      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-      onerror="this.src='/photos/placeholder.jpg'"
-    >
+<a href="/history/biag-ni-lam-ang/" class="card group block p-6" data-animate
+  
+  style="background-color: darkslategray;"
+  
+>
+  <div class="min-h-24 flex flex-col justify-center">
     
-    <div class="absolute inset-0 bg-gradient-to-t from-royal-950/85 via-royal-950/20 to-transparent"></div>
+    <h3 class="font-cinzel text-xl font-semibold text-center text-base leading-snug group-hover:text-gold-400 transition-colors text-white">
+      Biag ni Lam-ang
+    </h3>
     
-    <div class="absolute bottom-0 left-0 right-0 p-5">
-      
-
-      <h3 class="font-cinzel leading-none font-bold text-xl text-white text-base leading-snug group-hover:text-gold-300 transition-colors bg-black/70 px-3 py-1 rounded inline-block">
-        Biag ni Lam-ang
-      </h3>
-      
-      
-      <div class="mt-2">
-        <time datetime="2020-07-10" class="bg-black/70 text-gold-300 text-xs px-3 py-1 rounded font-cinzel tracking-wider">
-          Jul 10, 2020
-        </time>
-      </div>
-      
-      
-      
-        <p class="text-gold-100/60 text-xs mt-2 line-clamp-2">A couple named Don Juan and Namongan lived in Nalbuan. Don Juan left his pregnant wife and went to the mountain to punish a group of Igorots</p>
-      
-    </div>
+    <p class="text-xs text-center mt-2 line-clamp-2 text-white/70">A couple named Don Juan and Namongan lived in Nalbuan. Don Juan left his pregnant wife and went to the mountain to punish a group of Igorots</p>
+    
+    
+    <time class="text-xs text-center mt-3 block text-white/40" datetime="2020-07-10">
+      Jul 10, 2020
+    </time>
+    
   </div>
 </a>
-
-  
 
 
 
@@ -857,45 +945,31 @@
 
 
 
+  
 
 
 
 
-<a href="/history/bull/" class="card group block" data-animate>
-  <div class="card-img" style="aspect-ratio: 16/10;">
-    <img
-      src="/covers/biag.jpg"
-      alt="Papal Bulls of 1493"
-      loading="lazy"
-      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-      onerror="this.src='/photos/placeholder.jpg'"
-    >
+<a href="/history/bull/" class="card group block p-6" data-animate
+  
+  style="background-color: firebrick;"
+  
+>
+  <div class="min-h-24 flex flex-col justify-center">
     
-    <div class="absolute inset-0 bg-gradient-to-t from-royal-950/85 via-royal-950/20 to-transparent"></div>
+    <h3 class="font-cinzel text-xl font-semibold text-center text-base leading-snug group-hover:text-gold-400 transition-colors text-white">
+      Papal Bulls of 1493
+    </h3>
     
-    <div class="absolute bottom-0 left-0 right-0 p-5">
-      
-
-      <h3 class="font-cinzel leading-none font-bold text-xl text-white text-base leading-snug group-hover:text-gold-300 transition-colors bg-black/70 px-3 py-1 rounded inline-block">
-        Papal Bulls of 1493
-      </h3>
-      
-      
-      <div class="mt-2">
-        <time datetime="2020-07-10" class="bg-black/70 text-gold-300 text-xs px-3 py-1 rounded font-cinzel tracking-wider">
-          Jul 10, 2020
-        </time>
-      </div>
-      
-      
-      
-        <p class="text-gold-100/60 text-xs mt-2 line-clamp-2">A couple named Don Juan and Namongan lived in Nalbuan. Don Juan left his pregnant wife and went to the mountain to punish a group of Igorots</p>
-      
-    </div>
+    <p class="text-xs text-center mt-2 line-clamp-2 text-white/70">A couple named Don Juan and Namongan lived in Nalbuan. Don Juan left his pregnant wife and went to the mountain to punish a group of Igorots</p>
+    
+    
+    <time class="text-xs text-center mt-3 block text-white/40" datetime="2020-07-10">
+      Jul 10, 2020
+    </time>
+    
   </div>
 </a>
-
-  
 
 
 
@@ -1291,6 +1365,8 @@ scrollTopBtn?.addEventListener('click', () => {
 });
 
 
+
+
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileClose = document.getElementById('mobile-menu-close');
@@ -1304,6 +1380,9 @@ mobileClose?.addEventListener('click', () => {
   mobileMenu.classList.remove('open');
   document.body.style.overflow = '';
 });
+
+
+
 
 
 const navbar = document.getElementById('navbar');

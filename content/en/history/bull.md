@@ -2,8 +2,8 @@
 title: Papal Bulls of 1493
 description: "A couple named Don Juan and Namongan lived in Nalbuan. Don Juan left his pregnant wife and went to the mountain to punish a group of Igorots"
 date: 2020-07-10
-image: /covers/biag.jpg
-
+# image: /covers/biag.jpg
+c: firebrick
 draft: true
 ---
 

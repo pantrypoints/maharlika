@@ -17,6 +17,31 @@
     {{ end }}
   </div>
 
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-royal-950/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 lg:hidden">
+  <div class="flex flex-col h-full p-6">
+    <div class="flex justify-end mb-8">
+      <button id="mobile-menu-close" class="p-2 text-gold-300 hover:text-gold-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-6 text-center">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relLangURL }}" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        {{ .Name }}
+      </a>
+      {{ end }}
+    </nav>
+    
+    <div class="mt-auto pb-10">
+       <input type="search" class="w-full bg-royal-900 border border-gold-300/20 rounded-lg px-4 py-3 text-gold-100" placeholder="Search...">
+    </div>
+  </div>
+</div>
+
+
+
+
   <!-- Right Controls -->
   <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
 
@@ -99,5 +124,16 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
     </button>
 
+
+
+
   </div>
 </nav>
+
+
+<style>
+  /* This moves the menu back into view when the 'open' class is added */
+#mobile-menu.open {
+  transform: translateX(0);
+}
+</style>

@@ -1,11 +1,7 @@
 ---
 title: "The Pishaye are Austronesian, not Visayan nor Maharlikan"
 date: 2021-09-01
-image: 
-linkf: "/maharlika/how-did-colonialism-take-root"
-linkftext: "how-did-colonialism-take-root"
-linkb: "articles"
-linkbtext: "Articles"
+image: "/photos/barter.jpg"
 description: ""
 draft: true
 ---

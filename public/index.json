@@ -101,11 +101,23 @@
     "section": "economics",
     "date": "2021-09-30"
   },{
+    "title": "Overpopulation",
+    "description": "Maharlikans transacted with foreigners using barter",
+    "permalink": "/economics/overpopulation/",
+    "section": "economics",
+    "date": "2021-09-30"
+  },{
     "title": "Magellan in Samar and Butuan",
     "description": "We simplify Pigafetta's accounts to make historical facts easier to understand",
     "permalink": "/writers/pigafetta/01-samar/",
     "section": "writers",
     "date": "2020-07-10"
+  },{
+    "title": "The Origin of Modern Squatters",
+    "description": "Maharlikans transacted with foreigners using barter",
+    "permalink": "/economics/squatters/",
+    "section": "economics",
+    "date": "2014-09-14"
   },{
     "title": "Definition of Policy",
     "description": "Simplified Data Privacy Act 2012 Philippines",
@@ -461,6 +473,12 @@
     "section": "laws",
     "date": "0001-01-01"
   },{
+    "title": "The Office Of Communications",
+    "description": "Maharlika 2050",
+    "permalink": "/governance/maharlika-2050/executive/chapter-03/",
+    "section": "governance",
+    "date": "0001-01-01"
+  },{
     "title": "The Qualities of a Filipino",
     "description": "The Filipino is considered a capable citizen when his contribution and his blood are asked to defend the homeland, why should he be denied that capacity when it comes to granting him a right?",
     "permalink": "/writers/rizal/dentro/part-3b/",
@@ -544,6 +562,12 @@
     "permalink": "/writers/morga/events/chapter-05c/",
     "section": "writers",
     "date": "2024-09-22"
+  },{
+    "title": "Is All of Colonization Bad?",
+    "description": "The history of Maharlika",
+    "permalink": "/history/colonization/",
+    "section": "history",
+    "date": "2020-10-31"
   },{
     "title": "The Battle of Mactan",
     "description": "We then went northwest, passing among 5 islands Ceylon, Bohol, Canighan, Baybai, Gatighan",
@@ -712,6 +736,12 @@
     "permalink": "/writers/morga/events/chapter-06/",
     "section": "writers",
     "date": "2024-09-22"
+  },{
+    "title": "Bonifacio",
+    "description": "An Act Promoting Foreign Investments Amending Ra 7042",
+    "permalink": "/laws/fti/section-01/",
+    "section": "laws",
+    "date": "2022-03-24"
   },{
     "title": "Public Promenades",
     "description": "How many of the prettiest natives are of perfectly unmixed blood is difficult to decide.",
@@ -1841,6 +1871,12 @@
     "section": "writers",
     "date": "2022-04-19"
   },{
+    "title": "How to Renew Your LTO Driver's Licence",
+    "description": "The LTO introduced changes in the license renewal during the Duterte administration",
+    "permalink": "/governance/lto/",
+    "section": "governance",
+    "date": "2022-04-19"
+  },{
     "title": "Maharlikan Academy",
     "description": "A Maharlikan Academy is an institution for the education and training of the leaders of Maharlika",
     "permalink": "/governance/maharlikan-academy/",
@@ -1853,9 +1889,21 @@
     "section": "governance",
     "date": "2022-04-19"
   },{
+    "title": "The West Philippine Sea Dispute",
+    "description": "The Philippines should avoid war with China",
+    "permalink": "/governance/west-ph-sea/",
+    "section": "governance",
+    "date": "2022-04-19"
+  },{
     "title": "How the Philippines fell from its Industrialization Path",
     "description": "The Philippines fell from its Industrialization Path because of Diosdado Macapagal in 1962",
     "permalink": "/economics/how-industry-failed/",
+    "section": "economics",
+    "date": "2022-03-30"
+  },{
+    "title": "How the Philippines fell from its Industrialization Path",
+    "description": "The Philippines fell from its Industrialization Path because of Diosdado Macapagal in 1962",
+    "permalink": "/economics/k-12/",
     "section": "economics",
     "date": "2022-03-30"
   },{
@@ -2141,6 +2189,12 @@
     "section": "governance",
     "date": "2021-09-19"
   },{
+    "title": "Top 10 Corrupt",
+    "description": "Procurement problems can be minimized by merging audit, procurement, and distribution into a totally separate branch of Government equivalent to the executive, legislative, and judiciary",
+    "permalink": "/history/top-10-corruption/",
+    "section": "history",
+    "date": "2021-09-19"
+  },{
     "title": "Why Democracy is Bad for the Philippines",
     "description": "Democracy is Bad for the Philippines because Maharlika was already Democratic",
     "permalink": "/metaphysics/democracy-is-bad/",
@@ -2189,6 +2243,12 @@
     "section": "infrastructure",
     "date": "2021-09-02"
   },{
+    "title": "The Pishaye are Austronesian, not Visayan nor Maharlikan",
+    "description": "",
+    "permalink": "/history/pishaye/",
+    "section": "history",
+    "date": "2021-09-01"
+  },{
     "title": "Maharlikanism and the 8 Constitutional Virtues",
     "description": "Maharlikanism is our advocacy to change the economic and political systems of the Philippines which are breaking down due to global warming and the internet",
     "permalink": "/advocacy/maharlikanism/",
@@ -2219,6 +2279,12 @@
     "section": "history",
     "date": "2020-07-10"
   },{
+    "title": "Biag ni Lam-ang",
+    "description": "A couple named Don Juan and Namongan lived in Nalbuan. Don Juan left his pregnant wife and went to the mountain to punish a group of Igorots",
+    "permalink": "/history/biag-ni-lam-ang/",
+    "section": "history",
+    "date": "2020-07-10"
+  },{
     "title": "How did Colonialism Take Root?",
     "description": "Native populations bowed down to colonizers for the sake of peace and development or political power",
     "permalink": "/history/colonialism/",
@@ -2241,6 +2307,18 @@
     "description": "Miriam Defensor Santiago wrote the Pandemic Bill way before the pandemic struck the Philippines",
     "permalink": "/laws/pandemic/",
     "section": "laws",
+    "date": "2020-07-10"
+  },{
+    "title": "Papal Bulls of 1493",
+    "description": "A couple named Don Juan and Namongan lived in Nalbuan. Don Juan left his pregnant wife and went to the mountain to punish a group of Igorots",
+    "permalink": "/history/bull/",
+    "section": "history",
+    "date": "2020-07-10"
+  },{
+    "title": "The Five Waves that led to the Maharlikan people",
+    "description": "America caused the Philippines to have its current set of problems such as corruption, materialism, and drugs",
+    "permalink": "/history/five-waves/",
+    "section": "history",
     "date": "2020-07-10"
   },{
     "title": "Was Lapu-Lapu a Tausug?",

@@ -24,6 +24,7 @@
 <meta property="og:description" content="EPIRA Republic Act 9136">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://localhost:1313/laws/epira-irr/part-2/rule-12/">
+<meta property="og:image" content="/lapu.jpg">
 
 
 
@@ -132,6 +133,63 @@
     
   </div>
 
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-royal-950/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 lg:hidden">
+  <div class="flex flex-col h-full p-6">
+    <div class="flex justify-end mb-8">
+      <button id="mobile-menu-close" class="p-2 text-gold-300 hover:text-gold-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-6 text-center">
+      
+      <a href="/advocacy/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Advocacy
+      </a>
+      
+      <a href="/culture/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Culture
+      </a>
+      
+      <a href="/governance/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Governance
+      </a>
+      
+      <a href="/history/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        History
+      </a>
+      
+      <a href="/infrastructure/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Infrastructure
+      </a>
+      
+      <a href="/laws/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Laws
+      </a>
+      
+      <a href="/metaphysics/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Metaphysics
+      </a>
+      
+      <a href="/politicians/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Politicians
+      </a>
+      
+      <a href="/writers/" class="text-2xl font-cinzel text-gold-100 hover:text-gold-300 transition-colors">
+        Writers
+      </a>
+      
+    </nav>
+    
+    <div class="mt-auto pb-10">
+       <input type="search" class="w-full bg-royal-900 border border-gold-300/20 rounded-lg px-4 py-3 text-gold-100" placeholder="Search...">
+    </div>
+  </div>
+</div>
+
+
+
+
   
   <div class="flex items-center gap-2 md:gap-3 ml-auto lg:ml-0">
 
@@ -208,9 +266,19 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
     </button>
 
+
+
+
   </div>
 </nav>
-<main class="flex-1 pt-16">
+
+
+<style>
+   
+#mobile-menu.open {
+  transform: translateX(0);
+}
+</style><main class="flex-1 pt-16">
 
 <div class="article-header" style="background: linear-gradient(135deg, #1e4aaa, #0e1f4d 100%);">
   <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #c9940e 1.5px, transparent 1.5px); background-size: 28px 28px;"></div>
@@ -647,6 +715,8 @@ scrollTopBtn?.addEventListener('click', () => {
 });
 
 
+
+
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileClose = document.getElementById('mobile-menu-close');
@@ -660,6 +730,9 @@ mobileClose?.addEventListener('click', () => {
   mobileMenu.classList.remove('open');
   document.body.style.overflow = '';
 });
+
+
+
 
 
 const navbar = document.getElementById('navbar');
