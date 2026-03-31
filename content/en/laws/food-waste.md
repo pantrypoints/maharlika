@@ -3,7 +3,7 @@ heading: "Senate Bill 423"
 title: "Food Waste Reduction Act"
 description: "Food Waste Reduction Act"
 date: 2015-07-19
-image: /photos/objects/apples.jpg
+image: /photos/food/sinig.jpg
 ---
 
 

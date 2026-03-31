@@ -3,7 +3,7 @@ heading: "Senate Bill 1573"
 title: "Pandemic and All-Hazards Preparedness Act"
 description: "Miriam Defensor Santiago wrote the Pandemic Bill way before the pandemic struck the Philippines"
 date: 2020-07-10
-image: /photos/med/covid.jpg
+c: "#1e4aaa"
 aliases:
   "/maharlika/governance/pandemic-bill"
 ---

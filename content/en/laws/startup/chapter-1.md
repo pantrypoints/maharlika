@@ -8,9 +8,9 @@ c: "#1e4aaa"
 ---
 
 
-<!-- Declaration of Policy.— It is hereby declared the policy of  -->
+<!-- .— It is hereby declared the policy of  -->
 
-Section 2. 
+## Section 2: Declaration of Policy
 
 The State shall foster inclusive growth through an innovative economy by streamlining government and nongovernment initiatives, in both local and international spheres, to create new jobs and opportunities, improve production, and advance innovation and trade in the country.
 
@@ -19,7 +19,8 @@ To this end, the State shall:
 - strengthen, promote, and develop an ecosystem of businesses and government and nongovernment institutions that foster an innovative entrepreneurial culture in the Philippines.
 
 
-Section 3. Definitions
+
+## Section 3. Definitions
 
 - a) Host agency – DOST, DTI, DICT. or other national government agency, local government unit, or public academic institution that provides programs, benefits and incentives to startups or startup enablers as defined in this Act subject to an application or selection process
 
@@ -33,12 +34,12 @@ Section 3. Definitions
 
 - f) Research and development – any activity which is a systematic, intensive study directed toward greater knowledge or understanding of the subject studied: a systematic study directed specifically toward applying new knowledge to meet a recognized need; or a systematic application of knowledge toward the production of useful materials, devices, and systems or methods, including design, development, and improvement of prototypes and new processes to meet specific requirements;
 
-(g) Startup – any person or registered entity in the Philippines which aims to develop an innovative product, process, or business model; and
+- (g) Startup – any person or registered entity in the Philippines which aims to develop an innovative product, process, or business model; and
 
-(h) Startup enabler – any person or registered entity in the Philippines registered under the Philippine Startup Development Program that provides goods, services, or capital identified to be crucial in supporting the operation and growth of startups by the DTI in consultation with DOST, DICT, and pertinent government and nongovernment organizations (NGOs).
+- (h) Startup enabler – any person or registered entity in the Philippines registered under the Philippine Startup Development Program that provides goods, services, or capital identified to be crucial in supporting the operation and growth of startups by the DTI in consultation with DOST, DICT, and pertinent government and nongovernment organizations (NGOs).
 
 
-Section 4. Philippine Startup Development Program
+## Section 4. Philippine Startup Development Program
 
 The Program shall be composed of programs, benefits, and incentives for startups and startup enablers promulgated through the respective mandates of national government agencies, and through additional mandates provided by the provisions of this Act. The Program shall also include programs, benefits, and incentives for startup and startup enablers extended by NGOs in partnership with any national government agency.
 
@@ -48,7 +49,7 @@ The DTI shall promulgate the rules for the efficient registration and assessment
 
 
 
-Section 5. Program Objectives
+## Section 5. Program Objectives
 
 (a) Support the research and development of startups and startup enablers in the Philippines;
 
@@ -73,4 +74,3 @@ Section 6. General Roles arid Responsibilities of the Host Agencies. -The DOST, 
 (c) Promote the access to the benefits, incentives, and opportunities for startups and startup enablers; and
 
 (d) Ensure the immediate and efficient provision of the benefits and incentives provided under this Act.
-

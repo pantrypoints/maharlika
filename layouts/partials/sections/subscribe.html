@@ -16,17 +16,19 @@
       </p>
     </div>
  
- <!-- novalidate -->
-    <form id="subscribe-form" class="subscribe-form mt-10" action="https://usebasin.com/f/fe409f5e1e78" method="POST">
-      <input name="Maharlikanism Subscriber" type="hidden">
+<!-- novalidate -->
+
+<!-- action="https://usebasin.com/f/fe409f5e1e78" -->
+
+    <form id="subscribe-form" class="subscribe-form mt-10" action="https://pantrypoints.com/api/external" method="POST">
+      <input name="source" name="Maharlikanism Subscriber" type="hidden">
       <input
         type="email"
         name="email"
         class="subscribe-input"
         placeholder='{{ i18n "subscribe.placeholder" | default "Enter your email address" }}'
         required
-        autocomplete="email"
-      >
+        autocomplete="email">
       <button type="submit" class="btn-gold whitespace-nowrap">
         {{ i18n "subscribe.button" | default "Subscribe" }}
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>

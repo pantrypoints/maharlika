@@ -9,8 +9,9 @@ weight: 6
 
 
 
+## Section 7. General Registration and Operational Benefits and Incentives
 
-Section 7. General Registration and Operational Benefits and Incentives. -Host agencies shall be authorized to provide the following benefits and incentives to startups and/or startup enablers who have passed their selection and application process:
+Host agencies shall be authorized to provide the following benefits and incentives to startups and/or startup enablers who have passed their selection and application process:
 
 (a) Full or partial subsidy for the registration and cost in the application and processing of permits and certificates required for the business registration and operation of an enterprise with the appropriate local or national government agencies;
 
@@ -27,7 +28,9 @@ Provided, That the full or partial subsidies provided by the host agency may be 
 The DTI shall be the agency tasked to initiate and coordinate with national and local government agencies involved with the registration, licensing, certification, including those who levy fees and charges for services subsidized by host agencies, and such other regulatory process to be undertaken by startups and startup enablers endorsed by host agencies.
 
 
-Section 8. General Benefits for Participation in Local and International Startup Events. -Host agencies shall be authorized to provide the following benefits and incentives in order to support members of startups and/or startup enablers who have passed their respective selection and application process for the purpose of participating in local or international startup events or competitions:
+## Section 8. General Benefits for Participation in Local and International Startup Events
+
+Host agencies shall be authorized to provide the following benefits and incentives in order to support members of startups and/or startup enablers who have passed their respective selection and application process for the purpose of participating in local or international startup events or competitions:
 
 (a) Endorsement of the host agency for the expedited or prioritized processing of travel documents, such as, but not limited to, passport and/or visa application;
 
@@ -40,7 +43,9 @@ Section 8. General Benefits for Participation in Local and International Startup
 (e) Per diem allowance.
 
 
-Section 9. Philippine Startup Ecozones. -
+
+## Section 9. Philippine Startup Ecozones
+
 
 PEZA, in consultation and coordination with the DTI, DOST, and DICT, shall pursue and promote the creation of Philippine Startup Ecozones, or Special Economic Zones to spur the growth and development of startups and startup enablers through either private initiative, local government initiative with the assistance of the national government, and/or national government initiative consistent with the provisions of Republic Act No 7916, as amended by Republic Act No. 8748, otherwise known as "The Special Economic Zones Act of 1995", and its implementing rules and regulations. Investment Promotion Agencies (IPAs) are hereby authorized to extend applicable benefits to startups and/or startup enablers subject to the respective rules and regulations promulgated by the IPA for the effective implementation of this provision.
 
@@ -56,7 +61,7 @@ The BOI shall assist the DTI. DICT, DOST, and other host agencies in training th
 
 
 
-Section 11. Startup Grant Fund
+## Section 11. Startup Grant Fund
 
 There is hereby created a Startup Grant Fund (SGF) under each of the following agencies:
 
@@ -71,7 +76,7 @@ Each agency shall use its respective SGF to provide initial and supplemental GIA
 Each agency shall propose and include in its respective budget under the annual General Appropriations Act the initial and succeeding appropriations for the creation and replenishment of its SGF.
 
 
-Section 12. Startup Venture Fund
+## Section 12. Startup Venture Fund
 
 This is under the DTI, to be administered in coordination with the National Development Company (NDC). 
 
@@ -80,3 +85,5 @@ The SVF shall be used to match investments by selected investors in startups bas
 The NDC and DTI shall jointly develop and issue the appropriate rules and regulations for the selection of investors and the effective management and utilization of the SVF.
 
 The initial and succeeding appropriations for the SVF shall be proposed by the DTI and included in the budget of the NDC under the annual General Appropriations Act.
+
+

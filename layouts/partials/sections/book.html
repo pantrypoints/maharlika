@@ -42,12 +42,11 @@
   {{ i18n "book.description" | default "Learn more about the Maharlika advocacy" | safeHTML }}
 </p>
 
-<a
-  href="{{ i18n "book.url" | default "#" }}"
+<!-- https://play.google.com/store/books/details/Juan_Dalisay_Jr_Towards_Maharlika?id=T-H4DwAAQBAJ -->
+<a href="{{ .Site.Params.bookUrl }}"
   target="_blank"
   rel="noopener"
-  class="btn-gold inline-flex"
->
+  class="btn-gold inline-flex">
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
   {{ i18n "book.cta" | default "Get on Play Store" }}
 </a>

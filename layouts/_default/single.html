@@ -99,30 +99,53 @@
         {{ end }}
       </div>
       
-      <!-- Prev / Next navigation -->
-      <nav class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Article navigation">
-        {{ with .PrevInSection }}
-        <a href="{{ .RelPermalink }}" class="group flex items-center gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m15 18-6-6 6-6"/></svg>
-          <div class="min-w-0">
-            <p class="text-xs text-[var(--color-muted)] mb-1">Previous</p>
-            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">{{ .Title }}</p>
-          </div>
-        </a>
-        {{ end }}
-        
-        {{ with .NextInSection }}
-        <a href="{{ .RelPermalink }}" class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200 sm:col-start-2">
-          <div class="min-w-0 text-right">
-            <p class="text-xs text-[var(--color-muted)] mb-1">Next</p>
-            <p class="font-cinzel text-sm font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] truncate transition-colors">{{ .Title }}</p>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gold-500"><path d="m9 18 6-6-6-6"/></svg>
-        </a>
-        {{ end }}
-      </nav>
+
+
+
+<nav class="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-10">
+  
+  {{/* 1. NEXT ARTICLE (Now on the Left) */}}
+  {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}" 
+       class="group flex items-center gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200">
+      <svg class="w-5 h-5 text-blue-100 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/>
+      </svg>
+      <div>
+        <p class="text-xs dark:text-white font-display mb-1 uppercase tracking-tighter">
+          {{ .Params.heading | default (i18n "next_article" | default "Next") }}
+        </p>
+        <p class="font-display font-bold dark:text-white transition-colors">{{ .Title }}</p>
+      </div>
+    </a>
+  {{ else }}
+    <div class="hidden sm:block"></div>{{/* Spacer for grid alignment */}}
+  {{ end }}
+
+  {{/* 2. PREVIOUS ARTICLE (Now on the Right) */}}
+  {{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}" 
+       class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-[var(--color-border)] hover:border-gold-400 bg-[var(--color-surface)] transition-all duration-200 sm:col-start-2">
+      <div>
+        <p class="text-xs text-blue-100 font-display mb-1 uppercase tracking-tighter">
+          {{ .Params.heading | default (i18n "prev_article" | default "Previous") }}
+        </p>
+        <p class="font-display font-bold dark:text-white transition-colors] truncate transition-colors">{{ .Title }}</p>
+      </div>
+      <svg class="w-5 h-5 text-blue-100 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
+      </svg>
+    </a>
+  {{ else }}
+    <div class="hidden sm:block"></div>
+  {{ end }}
+
+</nav>
+
     </article>
   </div>
 </div>
 {{ end }}
+
+
 

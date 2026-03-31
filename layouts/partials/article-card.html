@@ -58,8 +58,6 @@
   </div>
 </a>
 
-
-
   
 {{ else }}
 <a href="{{ .RelPermalink }}" class="group block p-6 rounded-xl border border-white/5 transition-all hover:bg-white/5" 
@@ -68,7 +66,7 @@
   
   <div class="text-left">
     {{ with .Params.heading }}
-      <span class="text-[10px] font-cinzel tracking-widest uppercase mb-2 block text-gold-500/60">{{ . }}</span>
+      <span class="text-[10px] font-cinzel tracking-widest uppercase mb-2 block text-gold-500">{{ . }}</span>
     {{ end }}
     <h3 class="font-cinzel text-lg font-semibold leading-snug text-white group-hover:text-gold-400 transition-colors">
       {{ .Title }}
