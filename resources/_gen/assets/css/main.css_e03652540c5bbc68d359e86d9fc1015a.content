@@ -3068,6 +3068,10 @@ a{
   margin-top: 2.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -3853,6 +3857,10 @@ a{
   padding-right: 1rem;
 }
 
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .pt-16{
   padding-top: 4rem;
 }
@@ -3869,12 +3877,12 @@ a{
   text-align: center;
 }
 
-.text-right{
-  text-align: right;
-}
-
 .indent-2{
   text-indent: 0.5rem;
+}
+
+.font-display{
+  font-family: "Cinzel", Georgia, serif;
 }
 
 .font-sans{
@@ -3987,6 +3995,10 @@ a{
   letter-spacing: 0.3em;
 }
 
+.tracking-tighter{
+  letter-spacing: -0.05em;
+}
+
 .tracking-wide{
   letter-spacing: 0.025em;
 }
@@ -4014,6 +4026,11 @@ a{
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-100{
+  --tw-text-opacity: 1;
+  color: rgb(219 234 254 / var(--tw-text-opacity, 1));
 }
 
 .text-blue-600{
@@ -4096,10 +4113,6 @@ a{
 
 .text-gold-500\/40{
   color: rgb(201 148 14 / 0.4);
-}
-
-.text-gold-500\/60{
-  color: rgb(201 148 14 / 0.6);
 }
 
 .text-gray-400{
@@ -4568,6 +4581,16 @@ a{
   width: 4rem;
 }
 
+.group:hover .group-hover\:-translate-x-1{
+  --tw-translate-x: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:translate-x-1{
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:translate-y-0{
   --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4588,10 +4611,6 @@ a{
 .group:hover .group-hover\:border-gold-500{
   --tw-border-opacity: 1;
   border-color: rgb(201 148 14 / var(--tw-border-opacity, 1));
-}
-
-.group:hover .group-hover\:text-\[var\(--color-primary\)\]{
-  color: var(--color-primary);
 }
 
 .group:hover .group-hover\:text-gold-100\/70{
