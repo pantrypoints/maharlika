@@ -14,10 +14,45 @@ googleAnalytics = "G-0NM7Z55HJR"
 googleAdsense = "ca-pub-2557957536703477"
 tawkTo = "6306798e37898912e964f594/default"
 
+
+
+[module]
+  # English: Only uses the English folder
+  [[module.mounts]]
+    source = "content/en"
+    target = "content"
+    lang = "en"
+
+  # Tagalog: Uses Tagalog folder first, then English as fallback
+  [[module.mounts]]
+    source = "content/en"
+    target = "content"
+    lang = "tl"
+  [[module.mounts]]
+    source = "content/tl"
+    target = "content"
+    lang = "tl"
+
+  # Bisaya: Uses Bisaya folder first, then English as fallback
+  [[module.mounts]]
+    source = "content/en"
+    target = "content"
+    lang = "cb"
+  [[module.mounts]]
+    source = "content/cb"
+    target = "content"
+    lang = "cb"
+
+
+
+
+
+
+
 [params]
   bookImg = "/books/towards.jpg"
   bookUrl = "https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&pli=1"
-
+  fallbackToDefaultLanguage = true
   
 [build]
   buildDrafts = false

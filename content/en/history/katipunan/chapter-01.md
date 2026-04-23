@@ -1,27 +1,23 @@
 ---
-title: "The Katipunan"
+heading: Chapter 1
+title: "Introduction"
 c: "#1e4aaa"
 date: 2025-05-05
 weight: 10
-description: "The history of the KKK"
+description: "Vast organization of secret societies discovered with anti-national tendencies."
+aliases:
+  /history/katipunan/spanish/chapter-01/
 ---
 
 
-The Katipunan: The Rise and Fall of the Filipino Commune
+<!-- Author: J. Brecknock Watson (AKA Francis St. Clair) -->
 
-Author: J. Brecknock Watson (AKA Francis St. Clair)
-
-
-Triangular logo of the Katipunan with the letters K. K. K. Z. Ll. B.
-
-The Katipunan: The Rise and Fall of the Filipino Commune
-
-Francis St. Clair
+<!-- Francis St. Clair
 Manila
-1902
+1902 -->
 
 
-Introduction
+## Introduction
 
 Manila, 21st (Aug. ’96).—The Governor General to the Colonial Minister:
 
@@ -78,4 +74,5 @@ This document being an official statement, is of vital interest in the study of 
 I have taken the document as a base, and by a series of notes in the form of a somewhat more lengthy appendix, have endeavored to provide my readers with a file of interesting items of historical value.[12]
 
 This pamphlet is not intended to be a history of the rebellion; I have endeavored to confine myself to the society which brought about the revolt, and if at any time I have strayed from the path I laid out for myself, it has been because there was by the wayside some flower I wished to pluck to add to the bouquet I herewith present to you.[13]
+
 
