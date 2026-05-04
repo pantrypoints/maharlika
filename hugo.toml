@@ -14,16 +14,12 @@ googleAnalytics = "G-0NM7Z55HJR"
 googleAdsense = "ca-pub-2557957536703477"
 tawkTo = "6306798e37898912e964f594/default"
 
-
-
 [module]
-  # English: Only uses the English folder
   [[module.mounts]]
     source = "content/en"
     target = "content"
     lang = "en"
 
-  # Tagalog: Uses Tagalog folder first, then English as fallback
   [[module.mounts]]
     source = "content/en"
     target = "content"
@@ -33,7 +29,6 @@ tawkTo = "6306798e37898912e964f594/default"
     target = "content"
     lang = "tl"
 
-  # Bisaya: Uses Bisaya folder first, then English as fallback
   [[module.mounts]]
     source = "content/en"
     target = "content"
@@ -43,17 +38,10 @@ tawkTo = "6306798e37898912e964f594/default"
     target = "content"
     lang = "cb"
 
-
-
-
-
-
-
 [params]
   bookImg = "/books/towards.jpg"
   bookUrl = "https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&pli=1"
-  fallbackToDefaultLanguage = true
-  
+
 [build]
   buildDrafts = false
   buildFuture = false
@@ -71,11 +59,8 @@ tawkTo = "6306798e37898912e964f594/default"
   section = ["HTML", "RSS"]
   page = ["HTML"]
 
-
-
 [languages]
   [languages.en]
-    contentDir = "content/en"
     languageName = "English"
     weight = 1
     [languages.en.params]
@@ -136,9 +121,7 @@ tawkTo = "6306798e37898912e964f594/default"
         title = "Contact Us!"
         sub = "Do you have any questions? Or comments?"
 
-
   [languages.tl]
-    contentDir = "content/tl"
     languageName = "Filipino"
     weight = 2
     [languages.tl.params]
@@ -149,7 +132,6 @@ tawkTo = "6306798e37898912e964f594/default"
       s2 = "Maharlika"
       b1 = "Ano yan?"
       b2 = "Gusto ko yan!"
-
       [[languages.tl.params.quote]]
         content = "Sa mga bagong lalaking susupling mula sa kanilang dibdib at sa alaala ng kanilang nakaraan, magtatrabaho silang magkasama upang palakasin ang kanilang bansa, buhayin muli ang natural na buhay-dagat at kalakalan. Ito at iba pa ay maaaring mangyari sa loob ng isang daang taon o higit pa."
         icon = "Jose Rizal"
@@ -192,25 +174,8 @@ tawkTo = "6306798e37898912e964f594/default"
         url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
         title = "Ang Teorya ng Pagsisikap sa Halaga"
         sub = "Sistemang Pangkatarungang Bayanihan"
-      # [[languages.tl.params.book]]
-      #   h1 = "ᜀᜃ᜔ᜎᜆ᜔"
-      #   title = "Basahin ang Libro"
-      #   sub = "Ang Maharlikanismo ay ipinaliwanag sa aklat na Towards Maharlika, na nasa Play Store."
-      # [[languages.tl.params.contact]]
-      #   h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
-      #   title = "Sulatan Kami"
-      #   sub = "May tanong ka ba or request?"
-
-# ᜉ᜔ᜎᜈᜓ
-
-# ᜊᜆᜌᜈ᜔
-
-# ᜀᜃ᜔ᜎᜆ᜔
-
-# ᜐᜎᜒ
 
   [languages.cb]
-    contentDir = "content/cb"
     languageName = "Bisaya"
     weight = 3
     [languages.cb.params]
@@ -257,21 +222,6 @@ tawkTo = "6306798e37898912e964f594/default"
         url = "https://www.superphysics.org/social/economics/principles/part-2/chapter-01c/"
         title = "Ang Teorya sa Paningkamot sa Kantidad"
         sub = "Sistemang Pangekonomikong Bayanihan"
-      # [[languages.cb.params.book]]
-      #   h1 = "ᜀᜃ᜔ᜎᜆ᜔"
-      #   title = "Basahin ang Libro"
-      #   sub = "Ang Maharlikanismo ay ipinaliwanag sa aklat na Towards Maharlika, na nasa Play Store."
-      # [[languages.cb.params.follow]]
-      #   h1 = "ᜐᜎᜒ"
-      #   title = "Mag-Subscribe"
-      #   sub = "Mag-subscribe para makatanggap ng mga update sa adbokasiya ng Maharlikanismo, mga bagong artikulo, atbp."
-      # [[languages.cb.params.contact]]
-      #   h1 = "ᜂᜄ᜔ᜈᜌᜈ᜔"
-      #   title = "Contact Us!"
-      #   sub = "Do you have any questions? Or comments?"
-
-  # bookIntro = "Read the Book"
-  # bookSub = "Maharlikanism is explained in the book <i>Towards Maharlika</i>, available on the Play Store"
 
 [menu]
   [[menu.main]]
@@ -310,3 +260,4 @@ tawkTo = "6306798e37898912e964f594/default"
     name = "Writers"
     url = "/writers/"
     weight = 9
+    
