@@ -14,51 +14,24 @@ googleAnalytics = "G-0NM7Z55HJR"
 googleAdsense = "ca-pub-2557957536703477"
 tawkTo = "6306798e37898912e964f594/default"
 
-# [module]
-#   [[module.mounts]]
-#     source = "content/en"
-#     target = "content"
-#     lang = "en"
-
-#   [[module.mounts]]
-#     source = "content/en"
-#     target = "content"
-#     lang = "tl"
-#   [[module.mounts]]
-#     source = "content/tl"
-#     target = "content"
-#     lang = "tl"
-
-#   [[module.mounts]]
-#     source = "content/en"
-#     target = "content"
-#     lang = "cb"
-#   [[module.mounts]]
-#     source = "content/cb"
-#     target = "content"
-#     lang = "cb"
-
-
-[languages.en]
-  contentDir = "content/en"
-  languageName = "English"
-  weight = 1
-
-[languages.cb]
-  contentDir = "content/cb"
-  languageName = "Bisaya"
-  weight = 3
-  fallbackToDefaultLanguage = true
-  
-[languages.tl]
-  contentDir = "content/tl"
-  languageName = "Filipino"
-  weight = 2
-  fallbackToDefaultLanguage = true
+[module]
+  [[module.mounts]]
+    source = "content/en"
+    target = "content"
+    lang = "en"
+  [[module.mounts]]
+    source = "content/tl"
+    target = "content"
+    lang = "tl"
+  [[module.mounts]]
+    source = "content/cb"
+    target = "content"
+    lang = "cb"
 
 [params]
   bookImg = "/books/towards.jpg"
   bookUrl = "https://play.google.com/store/books/details?id=T-H4DwAAQBAJ&pli=1"
+  fallbackToDefaultLanguage = true
 
 [build]
   buildDrafts = false
@@ -79,6 +52,7 @@ tawkTo = "6306798e37898912e964f594/default"
 
 [languages]
   [languages.en]
+    contentDir = "content/en"
     languageName = "English"
     weight = 1
     [languages.en.params]
@@ -140,6 +114,7 @@ tawkTo = "6306798e37898912e964f594/default"
         sub = "Do you have any questions? Or comments?"
 
   [languages.tl]
+    contentDir = "content/tl"
     languageName = "Filipino"
     weight = 2
     [languages.tl.params]
@@ -194,6 +169,7 @@ tawkTo = "6306798e37898912e964f594/default"
         sub = "Sistemang Pangkatarungang Bayanihan"
 
   [languages.cb]
+    contentDir = "content/cb"
     languageName = "Bisaya"
     weight = 3
     [languages.cb.params]
@@ -278,4 +254,3 @@ tawkTo = "6306798e37898912e964f594/default"
     name = "Writers"
     url = "/writers/"
     weight = 9
-    
