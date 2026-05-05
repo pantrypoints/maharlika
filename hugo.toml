@@ -14,29 +14,47 @@ googleAnalytics = "G-0NM7Z55HJR"
 googleAdsense = "ca-pub-2557957536703477"
 tawkTo = "6306798e37898912e964f594/default"
 
-[module]
-  [[module.mounts]]
-    source = "content/en"
-    target = "content"
-    lang = "en"
+# [module]
+#   [[module.mounts]]
+#     source = "content/en"
+#     target = "content"
+#     lang = "en"
 
-  [[module.mounts]]
-    source = "content/en"
-    target = "content"
-    lang = "tl"
-  [[module.mounts]]
-    source = "content/tl"
-    target = "content"
-    lang = "tl"
+#   [[module.mounts]]
+#     source = "content/en"
+#     target = "content"
+#     lang = "tl"
+#   [[module.mounts]]
+#     source = "content/tl"
+#     target = "content"
+#     lang = "tl"
 
-  [[module.mounts]]
-    source = "content/en"
-    target = "content"
-    lang = "cb"
-  [[module.mounts]]
-    source = "content/cb"
-    target = "content"
-    lang = "cb"
+#   [[module.mounts]]
+#     source = "content/en"
+#     target = "content"
+#     lang = "cb"
+#   [[module.mounts]]
+#     source = "content/cb"
+#     target = "content"
+#     lang = "cb"
+
+
+[languages.en]
+  contentDir = "content/en"
+  languageName = "English"
+  weight = 1
+
+[languages.cb]
+  contentDir = "content/cb"
+  languageName = "Bisaya"
+  weight = 3
+  fallbackToDefaultLanguage = true
+  
+[languages.tl]
+  contentDir = "content/tl"
+  languageName = "Filipino"
+  weight = 2
+  fallbackToDefaultLanguage = true
 
 [params]
   bookImg = "/books/towards.jpg"
